@@ -2545,12 +2545,12 @@ footer {
   color: #ecf0f1;
   text-align: left;
   overflow: hidden;
-  position: relative; }
+  position: static; }
   /* line 385, home.scss */
-  footer a {
+  footer .content a {
     color: #ecf0f1; }
     /* line 387, home.scss */
-    footer a:hover {
+    footer .content a:hover {
       color: #16a085; }
   /* line 391, home.scss */
   footer .skyward {
@@ -2592,19 +2592,26 @@ modal#credits window {
   background: #2c3e50;
   color: white; }
   /* line 432, home.scss */
-  modal#credits window a {
-    color: white; }
+  modal#credits window .content a {
+    color: white;
+    transition: padding 0.2s;
+    -webkit-transition: padding 0.2s;
+    line-height: 1.8em; }
+    /* line 437, home.scss */
+    modal#credits window .content a:hover {
+      color: #16a085;
+      padding-left: 20px; }
 
 @media only screen and (max-width: 780px) {
-  /* line 439, home.scss */
+  /* line 446, home.scss */
   body {
     padding-left: 0px; }
 
-  /* line 442, home.scss */
+  /* line 449, home.scss */
   .hidden-mobile, #mhacks, canvas, iframe, .browser, #about figure {
     display: none !important; }
 
-  /* line 445, home.scss */
+  /* line 452, home.scss */
   header, section, footer {
     position: relatve;
     width: 100%;
@@ -2612,40 +2619,40 @@ modal#credits window {
     padding: 20px 5px;
     text-align: center; }
 
-  /* line 450, home.scss */
+  /* line 457, home.scss */
   header {
     padding: 50px 10px 72px 10px; }
-    /* line 452, home.scss */
+    /* line 459, home.scss */
     header h1 {
       font-size: 50px;
       line-height: 1em; }
-      /* line 455, home.scss */
+      /* line 462, home.scss */
       header h1 span {
         opacity: 1 !important;
         text-shadow: 0 0 4px rgba(0, 0, 0, 0.5) !important; }
-    /* line 460, home.scss */
+    /* line 467, home.scss */
     header form {
       display: none !important; }
-    /* line 463, home.scss */
+    /* line 470, home.scss */
     header p {
       font-size: 20px; }
 
-  /* line 467, home.scss */
+  /* line 474, home.scss */
   #social a {
     display: block !important;
     width: 100% !important;
     text-shadow: none !important; } }
-/* line 475, home.scss */
+/* line 482, home.scss */
 html.mobile, body.mobile {
   background-color: #34495e;
   max-width: 500px;
   margin: auto;
   box-shadow: 0 0 20px black; }
 
-/* line 483, home.scss */
+/* line 490, home.scss */
 body.reset {
   background: white !important; }
-  /* line 485, home.scss */
+  /* line 492, home.scss */
   body.reset *, body.reset *:before, body.reset *:after {
     background: none !important;
     margin: 0 !important;
@@ -2671,10 +2678,10 @@ body.reset {
     visibility: visible !important;
     opacity: 1 !important;
     line-height: 1.5em !important; }
-  /* line 511, home.scss */
+  /* line 518, home.scss */
   body.reset a, body.reset a * {
     color: blue !important;
     text-decoration: underline !important; }
-  /* line 515, home.scss */
+  /* line 522, home.scss */
   body.reset window, body.reset modal {
     display: none !important; }

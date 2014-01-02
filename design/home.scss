@@ -381,8 +381,8 @@ footer {
   overflow: hidden;
   // Background Effect
   // -@ http://stackoverflow.com/questions/3032856/z-index-of-before-or-after-to-be-below-the-element-is-that-possible
-  position: relative;
-  a {
+  position: static;
+  .content a {
     color: $clouds;
     &:hover {
       color: $green-sea;
@@ -429,8 +429,15 @@ modal#likemystatus window {
 modal#credits window {
   background: $midnight-blue;
   color: $white;
-  a {
+  .content a {
     color: $white;
+    transition: padding 0.2s;
+    -webkit-transition: padding 0.2s;
+    line-height: 1.8em;
+    &:hover {
+      color: $green-sea;
+      padding-left: 20px;
+    }
   }
 }
 
