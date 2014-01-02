@@ -1,7 +1,7 @@
 # Huge Vectors #
 ################
 test/
-vectors/test
+vectors/test/
 
 # Testfiles #
 #############

@@ -117,6 +117,24 @@ canvas {
 }
 
 // Banner
+#mhacks {
+  color: #FEC00F;
+  background: #646464;
+  display: block;
+  line-height: 66px;
+  padding: 0 30px;
+  cursor: pointer;
+  transition: background 0.25s ease-in;
+  -webkit-transition: background 0.25s ease-in;
+  &:hover {
+    background: darken(#646464, 25%);
+  }
+ i {
+    font-size: 30px;
+    padding-right: 20px;
+  }
+}
+
 
 // Header
 header {
@@ -395,6 +413,15 @@ footer {
       }
     }
   }
+}
+
+// MHacks Modal
+modal#likemystatus window {
+  top: 10%;
+  vertical-align: 80%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  bottom: 10%;
 }
 
 // Credits

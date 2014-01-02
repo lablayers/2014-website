@@ -89,7 +89,7 @@
       <!--     span Twitter-->
     </menu>
   </nav>
-  <banner id="mhacks"><i class="icon-mhacks"></i>Get me to MHacks!</banner>
+  <banner id="mhacks" onclick="launch(&quot;likemystatus&quot;);"><i class="icon-mhacks"></i>Get me to MHacks!</banner>
   <header id="top" data-identity="victor" class="visible">
     <canvas id="snow"></canvas>
     <h1><span>Victor Lourng</span>
@@ -121,7 +121,7 @@
         <div class="menu"><i class="icon-rows"></i></div>
       </div>
       <div class="frame">
-        <nav class="navbar"><a class="brand">Blue Cheese</a><a class="item">Home</a><a class="item">About</a><a class="item">Products</a><a class="item right"><i class="icon-user"> </i><span class="firstname">Jake</span> <span class="lastname">Smith</span></a></nav>
+        <nav class="navbar"><a class="brand">Blue Cheese</a><a class="item">Home</a><a class="item">About</a><a class="item">Products</a><a class="item right"><i class="icon-emo-happy"> </i><span class="firstname">Jake</span> <span class="lastname">Smith</span></a></nav>
         <div class="row">
           <div class="col9">
             <article>Lorem ipsum sat and donated blood to the Red Cross.</article>
@@ -275,3 +275,20 @@
     </window>
   </modal>
 </body>
+<modal id="likemystatus" style="display:none" class="hidden">
+  <window>
+    <h1>Like This Status!<a onclick="blast(&quot;likemystatus&quot;); mixpanel.track(&quot;Close Window&quot;);" class="right"><i class="icon-close"></i></a></h1>
+    <div class="fb-root">
+      <script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
+      <div data-href="https://www.facebook.com/photo.php?fbid=247016672125437&amp;amp;set=a.124621211031651.25621.124349814392124&amp;amp;type=1" data-width="440" class="fb-post">
+        <div class="fb-xfbml-parse-ignore">
+          <div class="content">
+            <p>Erm, nevermind. Facebook appears to be blocked. i.icon-emo-p</p>
+            <hr><a href="https://www.facebook.com/photo.php?fbid=247016672125437&amp;amp;set=a.124621211031651.25621.124349814392124&amp;amp;type=1">Post</a>
+            <by></by><a href="https://www.facebook.com/MHacksHackathon">MHacks</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </window>
+</modal>

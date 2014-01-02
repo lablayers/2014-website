@@ -25,6 +25,7 @@ small {
     color: #fff;
     text-shadow: 0 0 3px rgba(0,0,0,.2);
 }
+
 ::selection {
     background: #553387;
     color: #fff;
@@ -39,6 +40,7 @@ body{
   -webkit-font-smoothing: antialiased;
   font-family: $fonts;
   font-weight: normal;
+  vertical-align: middle;
 }
 
 a {
