@@ -1,0 +1,92 @@
+// Browser Window
+
+.browser {
+  position: relative;
+  border-radius: 6px;
+  text-align: left;
+  color: #B4B3B1;
+  box-shadow: 0px 2px 12px 1px rgba(0, 0, 0, 0.25), inset 0px 0px 3px 2px #FFF;
+  padding: 20px;
+  padding-top: 10px;
+  background-color: #F6F4EE;
+  text-align: left;
+  .toolbar {
+    vertical-align: middle;
+    padding-bottom: 17px;
+    line-height: 35px;
+    width: 100%;
+    display: table;
+    i {
+      display: inline-block;
+      margin-right: 10px;
+      font-size: 20px;
+      vertical-align: middle;
+      text-shadow: 0px 2px 0px #FFF;
+    }
+    .controls {
+      width: 95px;
+      display: table-cell;
+    }
+    .omnibox, .urlbar {
+      border-radius: 3px;
+      background: white;
+      border: 1px solid #D3C9AB;
+      border-top: 1px solid #C1B38A;
+      box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.1), 0px 2px 0px 0px rgba(255, 255, 255, 0.5);
+      padding: 5px 10px 5px 25px;
+      vertical-align: middle;
+      font-size: 14px;
+      line-height: 23px;
+      height: 33px;
+      overflow: hidden;
+      color: #3A3833;
+      position: relative;
+      font-weight: 400;
+      display: table-cell;
+      width: 100%;
+      &:focus {
+        -webkit-outline: none;
+        outline: none;
+        border: 1px solid $blue;
+      }
+      &:after {
+        content: 'Visit Site'
+      }
+    }
+    .menu {
+      width: 36px;
+      display: table-cell;
+      text-align: right;
+      font-size: 24px;
+      text-shadow: 0px 2px 0px #FFF;
+      i {
+        margin-right: 0px;
+      }
+    }
+  }
+  &>.urlbar {
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border-radius: 3px;
+    background-color: #FFF;
+    border: 1px solid #D3C9AB;
+    border-top: 1px solid #C1B38A;
+    box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.1), 0px 2px 0px 0px rgba(255, 255, 255, 0.5);
+    height: 25px;
+    padding: 5px 10px 5px 25px;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 23px;
+    overflow: hidden;
+    color: #3A3833;
+    position: relative;
+    font-weight: 400;
+  }
+  .frame {
+    min-height: 100px;
+    border: 1px solid #D3C9AB;
+    border-radius: 3px;
+    box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.1), 0px 2px 0px 0px rgba(255, 255, 255, 0.5);
+    background: white;
+  }
+}

@@ -1,0 +1,265 @@
+// Colors
+// -> Here is my awesome color selection, with PANTONE/PMS/CMYK codes in
+//    case some crazy person decides to showcase my website on a billboard
+//    the size of the Empire State Buiding.
+
+// Layers of Nior
+// -> Strong contrasting colors give a sense of what time it is.
+
+// PANTONE 125 C
+$white: white;
+
+// PANTONE 7541 c
+$ltgray: #EBEFF1;
+
+// PANTONE 7542 C
+$gray: #BEC2C3;
+$grey: #BEC2C3;
+
+// PANTONE BLACK C
+$black: black;
+
+// Swatch
+// -> A subtle dark purple, the default link colors.
+
+// PANTONE 7680 C
+$swatch: #553387;
+
+// PANTONE 446 C
+$dark: #4F4E4C;
+
+// PANTONE WHITE C
+$light: #EDECE3;
+
+// Colors of the Rainbow
+// -> Put white over this! (except yellow)
+
+// PMS Red 032 C
+$red: #EE4144;
+
+// PANTONE 172 C
+$orange: #F37033;
+
+// PANTONE 100 C
+$yellow: #F8EC76;
+
+// PANTONE 368 C
+$green: #62BC4D;
+
+// PMS Process Blue C
+$blue: #1E98D3;
+
+// PANTONE 526 C
+$purple: #672F89;
+
+// PANTONE 205 C
+$pink: #ED458B;
+
+// PANTONE 227 C
+$magenta: #BE1D77;
+
+// Colors of the Stargazer
+// -> Put black over this!
+
+//
+$ltred: black;
+
+// 
+$ltorange: black;
+
+// CYMK 3C 0M 38Y 0K
+$ltyellow: #FAF9AF;
+
+// 
+$ltgreen: black;
+
+// PANTONE 2095 C
+$ltblue: #9EDBF9;
+$skyblue: #9EDBF9;
+
+// PANTONE 2572 C
+$ltpurple: #C590C9;
+
+// PANTONE 2573
+$ltpink: #828DC0;
+
+// Festive Colors TBD
+// -> Let's party!
+
+// $fresh: black;
+// $spike: black;
+// $tan: black;
+// $splash: black;
+// $cloud: black;
+// $cottoncandy: black;
+// $mango: black;
+
+// Flat UI Colors
+// -> Inspired by Designmodo.
+// -@ https://github.com/obibring/flat-ui-colors-sass/blob/master/_flat-colors.scss
+
+// Here is my awesome color selection, with PANTONE/PMS/CMYK codes in
+// case some crazy person decides to showcase my website on a billboard
+// the size of the Empire State Buiding.
+
+// Layers of Nior
+// -> Strong contrasting colors give a sense of what time it is.
+
+// PANTONE 125 C
+$white: white;
+
+// PANTONE 7541 c
+$ltgray: #EBEFF1;
+
+// PANTONE 7542 C
+$gray: #BEC2C3;
+$grey: #BEC2C3;
+
+// PANTONE BLACK C
+$black: black;
+
+// Swatch
+// -> A subtle dark purple, the default link colors.
+
+// PANTONE 7680 C
+$swatch: #553387;
+
+// Colors of the Dash
+// -> Put white over this! (except yellow)
+
+// PMS Red 032 C
+$red: #EE4144;
+
+// PANTONE 172 C
+$orange: #F37033;
+
+// PANTONE 100 C
+$yellow: #F8EC76;
+
+// PANTONE 368 C
+$green: #62BC4D;
+
+// PMS Process Blue C
+$blue: #1E98D3;
+
+// PANTONE 526 C
+$purple: #672F89;
+
+// PANTONE 205 C
+$pink: #ED458B;
+
+// PANTONE 227 C
+$magenta: #BE1D77;
+
+// Colors of the Stargazer
+// -> Put black over this!
+
+//
+$ltred: lighten($red, 40%);
+
+// 
+$ltorange: lighten($orange, 40%);
+
+// CYMK 3C 0M 38Y 0K
+$ltyellow: lighten($yellow, 20%);
+
+// 
+$ltgreen: lighten($green, 40%);
+
+// PANTONE 2095 C
+$ltblue: #9EDBF9;
+$skyblue: #9EDBF9;
+
+// PANTONE 2572 C
+$ltpurple: #C590C9;
+
+// PANTONE 2573
+$ltpink: #828DC0;
+
+// Festive Colors
+// -> Let's party!
+
+$spike: #5ba525;
+$tan: #db7132;
+$nimbus: #00aff0;
+$candy: #ea4c89;
+$mango: #FFA004;
+$sky: #1AD4FF;
+$orchid: #390333;
+$fireplace: #CF5C60;
+
+// Flat UI Colors
+// -> Inspired by Designmodo.
+// -@ https://github.com/obibring/flat-ui-colors-sass/blob/master/_flat-colors.scss
+
+// Greens
+$turquoise: #1ABC9C;
+$green-sea: #16A085;
+$emerald: #2ECC71;
+$nephritis: #27AE60;
+
+// Blues
+$peter-river: #3498DB;
+$belize-hole: #2980B9;
+$wet-asphalt: #34495E;
+$midnight-blue: #2C3E50;
+
+// Purples
+$amethyst: #9B59B6;
+$wisteria: #8E44AD;
+
+// Yellows
+$sunflower: #F1C40F;
+
+// Oranges
+$orange: #F39C12;
+$carrot: #E67E22;
+$pumpkin: #D35400;
+
+// Reds
+$alizarin: #E74C3C;
+$pomegranate: #C0392B;
+
+// Grays
+$clouds: #ECF0F1;
+$silver: #BDC3C7;
+$concrete: #95A5A6;
+$asbestos: #7F8C8D;
+
+// Aliases make colors easier to remember.
+
+// Greens
+$flat-green-1: $turquoise;
+$flat-green-2: $green-sea;
+$flat-green-3: $emerald;
+$flat-green-4: $nephritis;
+
+// Blues
+$flat-blue-1: $peter-river;
+$flat-blue-2: $belize-hole;
+$flat-blue-3: $wet-asphalt;
+$flat-blue-4: $midnight-blue;
+
+// Purples
+$flat-purple-1: $amethyst;
+$flat-purple-2: $wisteria;
+
+// Yellows
+$flat-yellow-1: $sunflower;
+
+// Oranges
+$flat-orange-1: $orange;
+$flat-orange-2: $carrot;
+$flat-orange-3: $pumpkin;
+
+// Refs
+$flat-red-1: $alizarin;
+$flat-red-2: $pomegranate;
+
+// Grays
+$flat-gray-1: $clouds;
+$flat-gray-2: $silver;
+$flat-gray-3: $concrete;
+$flat-gray-4: $asbestos;
+
+// OMG Too Many Colors! Let's have a paint party one day, shall we?

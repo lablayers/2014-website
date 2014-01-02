@@ -1,0 +1,140 @@
+nav {
+    background: black;
+    text-align: center;
+    color: white;
+    animation: fade-in-top .7s ease;
+    -webkit-animation: fade-in-top .7s ease;
+    -moz-animation: fade-in-top .7s ease;
+    transition: all .1s ease;
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    background: linear-gradient(rgba(10, 10, 10, 0.8), rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.2));
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.4), 0 1px 0 rgba(255, 255, 255, 0.05), 0 0 0 2px rgba(255, 255, 255, 0.5);
+    z-index: 65536;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 2em;
+
+    &.active { //, &:hover {
+        line-height: 3em;
+    }
+
+    menu {
+        position: relative;
+        list-style: none;
+        display: block;
+        text-align: center;
+        padding: 0px;
+        li {
+            padding: 0px;
+            display: inline;
+            a {
+                position: relative;
+                margin: 0px;
+                color: white;
+                display: inline-block;
+                padding: 0px 12px;
+                border-radius: 0px;
+                transition: 0.2s all;
+                -webkit-transition: 0.2s all;
+                &:hover {
+                    background: rgba(0,0,0,.2);
+                }
+                &.menu {
+                    float: left;
+                    i:before {
+                        padding: 0 8px 0 0;
+                        font-size: 28px;
+                        vertical-align: text-top;
+                    }
+                }
+                &.me {
+                    background: url(../../shutter/ava-coolio.png) #672f89;
+                    background-size: cover;
+                    background-position: center;
+                    transition: 0.5s all;
+                    i {
+                        opacity: 0;
+                        font-size: 22px;
+                    }
+                    &:hover {
+                        box-shadow: inset 0 0 0 50px rgba(0, 0, 0, 0.7);
+                        i {
+                            opacity: 1;
+                        }
+                    }
+                }
+                &.assist {
+                    float: right;
+                    i:before {
+                        padding: 0 0 0 8px;
+                        font-size: 28px;
+                        vertical-align: text-top;
+                    }
+                }
+            }
+            span {
+                opacity: 0;
+                transition: opacity 0.2s;
+                -webkit-transition: opacity 0.2s;
+            }
+            &:hover span {
+                opacity: .7;
+            }
+        }
+        menu {
+            visibility: hidden;
+            opacity: 0;
+            transition: all 0.2s;
+            -webkit-transition: all 0.2s;
+            float: right;
+            display: block;
+            position: absolute;
+            top: 100%;
+            min-width: 160px;
+            right: 0px;
+            line-height: 2em;
+            background: rgba(255, 255, 255, 0.5);
+            text-align: left;
+            color: black;
+            li {
+                padding: 0px 12px;
+                display: block;
+                border-bottom: 1px dotted lightGray;
+                &:last-child {
+                    border-bottom: none;
+                }
+                .tooltip {
+                    position: absolute;
+                    background: rgba(0, 0, 0, 0.7);
+                    line-height: 16px;
+                    font-size: 16px;
+                    padding: 6px;
+                    border-radius: 6px;
+                    top: 100%;
+                    margin: auto;
+                    display: none;
+                    opacity: 0;
+                    transition: 0.5s all;
+                }
+                &:hover .tooltip {
+                    display: block;
+                    opacity: 1;
+                }
+                input#search {
+                    display: block;
+                    font-size: inherit;
+                    border-radius: 4px;
+                    border: none;
+                    margin-bottom: 12px;
+                }
+            }
+        }
+        li:hover menu {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}

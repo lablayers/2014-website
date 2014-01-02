@@ -1,0 +1,275 @@
+nav[role="navigation"] menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 66px;
+    z-index: 65536;
+    background: $dark;
+    color: $light;
+    overflow-x: visible;
+    overflow-y: visible;
+    padding-bottom: 66px;
+    transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+    user-select: none;
+    -webkit-user-select: none;
+    li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        a {
+            color: $light;
+            line-height: 66px;
+            height: 66px;
+            display: block;
+            text-align: left;
+            font-size: 32px;
+            vertical-align: middle;
+            transition: all 0.25s;
+            -webkit-transition: all 0.25s;
+            border-radius: 0px;
+            position: relative;
+            i {
+                float: left;
+                display: block;
+                line-height: 66px;
+                width: 66px;
+                text-align: center;
+            }
+            span {
+                opacity: 0;
+            }
+            &.test {
+                display: none;
+                &.visible {
+                    display: block;
+                    animation: fade-in-bottom 0.5s ease-in;
+                    -webkit-animation: fade-in-bottom 0.5s ease-in;
+                }
+            }
+        }
+        &.active .top, .top:hover {
+            background: #2F7E89;
+        }
+        &.active .about, .about:hover {
+            background: $purple;
+        }
+
+        &.bottom {
+            position: fixed!important;
+            bottom: 0!important;
+            left: 0!important;
+            border-bottom: none!important;
+            width: 66px;
+            background: $dark;
+            box-shadow: 0 0 50px $dark;
+        }
+    }
+    &.collapsed {
+        a {
+            float: left;
+            width: 100%;
+            span {
+                display: none;
+                // Hover and fade-in animations cause MAJOR performance problems
+                // -> Need to look into alternatives
+                // transition: none;
+                // -webkit-transition: none;
+                // @extend .fade-in-right-transition;
+                // visibility: none;
+                opacity: 0;
+                position: fixed;
+                left: 80px;
+                top: auto;
+                width: auto;
+                margin-top: 16px;
+                padding: 0px 6px;
+                background: linear-gradient(rgba(0, 0, 0, 0.6), #000);
+                box-shadow: #000 0px 0px 2px, rgba(255, 255, 255, 0.4) 0px 2px 0px inset;
+                z-index: 90000;
+                border-radius: 6px;
+                font-size: 16px;
+                line-height: 2em;
+            }
+            &:hover span {
+                display: block;
+                // visibility: visible;
+                // @extend .fade-in-right-transition-hover;
+                opacity: 1;
+            }
+            &:hover span:after {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-width: 10px;
+                border-style: solid;
+                border-color: transparent rgba(0,0,0,.6) transparent transparent;
+                top: 6px;
+                left: -20px;
+            }
+        }
+        .toolbar {
+            height: 0px;
+            visibility: none;
+            display: none;
+            overflow: hidden;
+        }
+    }
+    &.expanded {
+        width: 300px;
+        box-shadow: 0 0 50px black;
+        .toolbar {
+            position: absolute;
+            background: $light;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 66px;
+            overflow: hidden;
+            transition: none;
+            a {
+                display: inline-block;
+                color: $dark;
+                &.close {
+                    float: right;
+                    i {
+                        @extend .spinning-transition;
+                    }
+                    &:hover i {
+                        @extend .spinning-transition-hover;
+                    }
+                }
+            }
+            i {
+                float: none;
+                display: inline-block;
+                width: 66px;
+            }
+        }
+        li {
+            a {
+                span {
+                    transition: none;
+                    -webkit-transition: none;
+                    position: absolute;
+                    opacity: 1;
+                    animation: fade-in-left 0.5s ease-out;
+                    -webkit-animation: fade-in-left 0.5s ease-out;
+                }
+                &.menu span {
+                    display: none;
+                }
+            }
+//            @mixin delay-span-entry ($time) {
+//                &:nth-child($time) a span {
+//                    animation-duration: 0.$time;
+//                    -webkit-animation-duration: 0.$time;
+//                }
+//            }
+            &:first-child a span, &:nth-child(1) a span {
+                animation-duration: 0s;
+                -webkit-animation-duration: 0s;
+            }
+            &:nth-child(2) a span {
+                animation-duration: 0.2s;
+                -webkit-animation-duration: 0.2s;
+            }
+            &:nth-child(3) a span {
+                animation-duration: 0.3s;
+                -webkit-animation-duration: 0.3s;
+            }
+            &:nth-child(4) a span {
+                animation-duration: 0.4s;
+                -webkit-animation-duration: 0.4s;
+            }
+            &:nth-child(5) a span {
+                animation-duration: 0.5s;
+                -webkit-animation-duration: 0.5s;
+            }
+            &:nth-child(6) a span {
+                animation-duration: 0.6s;
+                -webkit-animation-duration: 0.6s;
+            }
+            &:nth-child(7) a span {
+                animation-duration: 0.7s;
+                -webkit-animation-duration: 0.7s;
+            }
+            &:nth-child(8) a span {
+                animation-duration: 0.8s;
+                -webkit-animation-duration: 0.8s;
+            }
+            &:nth-child(9) a span {
+                animation-duration: 0.9s;
+                -webkit-animation-duration: 0.9s;
+            }
+            &.bottom {
+                width: 300px;
+                transition: width 0.5s;
+                -webkit-transition: width 0.5s;
+            }
+        }
+    }
+    &.tiny {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        // ::-webkit-scrollbar {
+        //     height: 0;
+        //     width: 8px;
+        //     background: black;
+        //     opacity: 0;
+        // }
+        // ::-webkit-scrollbar-thumb {
+        //     background: #fff;
+        //     height: 8px;
+        //     width: 8px;
+        //     border-radius: 0px;
+        //     -moz-border-radius: 0px;
+        //     -webkit-border-radius: 0px;
+        //     -ms-border-radius: 0px;
+        // }
+    }
+}
+
+// Close Menu Shadow
+.close-menu-bubble {
+    display: none;
+}
+
+body.menu-expanded {
+    .close-menu-bubble {
+        display: block!important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: box-shadow 0.5s;
+        -webkit-transition: box-shadow 0.5s;
+        content:'';
+        width: 100%;
+        height: 100%;
+        position:fixed;
+        background: rgba(0,0,0,.5);
+        top: 0;
+        left: 0;
+        z-index: 2000;
+        box-shadow: inset 0 0 50px black;
+    }
+}
+
+// Mobile
+@media only screen and (max-width: $mobile) {
+    menu.collapsed {
+        height: 66px!important;
+        width: 66px!important;
+        overflow: hidden!important;
+    }
+    menu.expanded {
+        width: 100%!important;
+        a span {
+            font-size: 24px;
+        }
+    }
+}

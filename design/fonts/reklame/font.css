@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'ReklameScript';
+    src: url('ReklameScriptDemo.eot');
+    src: url('ReklameScriptDemo.eot?#iefix') format('embedded-opentype'),
+         url('ReklameScriptDemo.woff') format('woff'),
+         url('ReklameScriptDemo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}

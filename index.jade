@@ -1,0 +1,339 @@
+extends layout
+
+block content
+  body.home(data-spy='scroll' data-target='nav[role="navigation"]')
+    a.screen-reader(href='#top') Skip to Content
+    progress(data-status='empty')
+    a.close-menu-bubble(data-toggle='menu')
+    nav(role='navigation')
+      menu.collapsed(data-identity='victor' type='toolbar')
+        li.menu
+          a.menu(data-toggle='menu' title='Menu')
+            i.icon-rows
+            span Menu
+        li.toolbar
+          a.menu(data-toggle='menu' title='Menu')
+            i.icon-rows
+          a.credits(data-toggle='menu' title='Menu' onclick='launch("credits");')
+            i.icon-info
+          a.assist(title='Accessibility')
+            i.icon-accessibility
+          menu#assist(style='display:none')
+            li
+              i.icon-search
+              |  Find in Page...
+              br
+              input(type='text' placeholder='Justin Bieber' id='search' data-search='')
+            li
+              .onoff
+                input(type='checkbox' data-view='1984' name='1984' id='1984' value='none')
+                label(for='1984')
+              i.icon-frozen
+              label Screen Reader Mode
+            li
+              .onoff
+                input(type='checkbox' data-view='mobile' name='mobile' id='mobile' value='none')
+                label(for='mobile')
+              i.icon-mobile
+              label Mobile Simulator (Alpha)
+            li
+              .onoff
+                input(type='checkbox' data-view='no-analytics' name='no-analytics' id='no-analytics' value='none')
+                label(for='no-analytics')
+              i.icon-brush
+              label Disable Analytics
+          a.close(data-toggle='menu' title='Close Menu')
+            i.icon-close
+        li
+          a.top(href='#top' onclick='launch("identity"); mixpanel.track("Open Window");')
+            i.icon-home
+            span Home
+            <!-- .tooltip Back to Top -->
+        li
+          a.about(href='#about')
+            i.icon-user
+            span About
+        li
+          a.creative(href='#creative')
+            i.icon-brush
+            span Creative
+        li
+          a.design(href='#design')
+            i.icon-suitcase
+            span Ventures
+        li
+          a.science(href='#science')
+            i.icon-rocket
+            span Science
+        li
+          a.howdy(href='#howdy')
+            i.icon-email
+            span Contact
+        li.bottom
+          a.test(href='#' for='test' title='Test')
+            i.icon-flightdeck
+            span Easter Eggs
+        // li.bottom
+        //   a(href='http://twitter.com/lablayers')
+        //     i.icon-twitter
+        //     span Twitter
+    banner#mhacks
+      i.icon-mhacks
+      | Get me to MHacks!
+    header#top(data-identity='victor').visible
+      canvas#snow
+      h1
+        span Victor Lourng
+        form(method='post' action='#')
+          input#message(type='text' placeholder='Victor Lourng' title='Victor Lourng' name='message' onfocus='if(this.value=="Victor Lourng"){this.value="";}')
+          input#submit(type='submit' name='submit' value='Submit')
+      p Nerd. Genius. Imagineer.
+      a(href='#about')
+        i.icon-down
+    section#about
+      .row
+        figure
+          br
+          img(src='../vectors/victor.svg' alt='Me as an SVG!')
+          a(href='http://thiefoworld.deviantart.com/') Artist: thiefoworld 
+            i.icon-deviantart
+        .col8
+          h2 A little about me
+          p I'm a well-seasoned and award-winning high school student — a enthusiast passionate about making things awesome. I’ve made it to international robotics competitions, regional science fairs, and huge comic conventions. I’ve built and managed startups from ideas, websites from scratch, and art from pure nothingness. I’m on a quest for world domination, one small thing at a time.
+    section#social(data-identity='victor')
+      a.twitter(href='http://twitter.com/LabLayers')
+        i.icon-twitter
+        | @LabLayers
+        span 360 Followers
+      a.gplus(href='http://google.com/+VictorLourng')
+        i.icon-googleplus
+        | +VictorLourng
+        span 75 Circles
+      a.devart(href='http://lablayers.deviantart.com')
+        i.icon-deviantart
+        | LabLayers*
+        span 116 Watchers
+    section#unicorn(data-identity='victor') <!-- data-pin='please' -->
+      p They call me a
+      h2
+        i.icon-colt-horn
+        | Web Unicorn
+      p Frontend
+        span + Backend
+      div.browser
+        .toolbar
+          .controls
+            i.icon-chevron-left
+            i.icon-chevron-right
+            i.icon-refresh
+          input.omnibox(placeholder='http://iliterobotics.org/')
+          .menu
+            i.icon-rows
+        .frame
+          nav.navbar
+            a.brand Blue Cheese
+            a.item Home
+            a.item About
+            a.item Products
+            a.item.right
+              i.icon-user  
+              span.firstname Jake
+              |  
+              span.lastname Smith
+          .row
+            .col9
+              article Lorem ipsum sat and donated blood to the Red Cross.
+            .col3
+              aside Sidebar yeah! Blah blah blah Pikachu!
+      div.parallax.stars
+      div.parallax.code
+    section#showcase(data-identity='victor')
+      h2 Things I Do
+      p Let's get into my portfolio, shall we?
+      div.gallery.reset
+        figure
+        figure item
+        figure item
+        figure item
+        figure item
+        figure item
+    section#ilite(data-identity='victor') <!-- data-pin='please' -->
+      .row
+        .col6
+          .slideshow
+            canvas Slideshow
+            canvas Site Screenshot
+            canvas Team Photo
+        .col6
+           h2 ILITE Robotics
+           tech
+             i.icon-php
+             i.icon-mysql
+             i.icon-wordpress
+             i.icon-bootstrap
+           p This website was created using WordPress and many modern technologies.
+           a.button.gradient.purple(href='http://iliterobotics.org') ILITE Robotics
+           a.button.gradient.purple(href='http://yabby.victorlourng.com') Backend Demo
+    section#hackerchat(data-identity='victor')
+      .row
+        .col4
+          iframe(src='http://hackerchat.im/' sandbox='allow-same-origin allow-scripts allow-forms allow-popups')
+        .col8
+          h2
+            i.icon-hackerchat
+            |  HackerChat
+          p.lead Hackable Collaboration
+          p Cool! Winner of the PilotPhilly Hackathon.
+          tech
+            i.icon-nodejs
+            i.icon-jade
+            i.icon-coffeescript
+            i.icon-less
+            i.icon-express
+            i.icon-mongodb
+            i.icon-socketio
+          a.button.gradient.purple(href='http://hackerchat.im') Hackerchat
+          a.button.gradient.purple(href='http://GitHub.com/aroman/hackerchat') GitHub Repo
+          a.button.gradient.purple(href='http://fav.me/...') Blog Post
+    section#cloudchat(data-identity='victor')
+      h2
+        i.icon-cloud
+        | CloudChat
+      p Connect with your friends in Realtime via WebRTC.
+      a.button.gradient.blue(href='http://babbleplz-sugarplums.rhcloud.com/') Cloudchat
+       img
+    section#phlclosings(data-identity='victor') <!-- data-pin='please' -->
+      h2 Philly School Closings
+      p.lead An API for school closings.
+      h5 ANIMATE THIS
+      img slideshow
+      a.button.gradient.blue(href='http://closings.victorlourng.com') Visit Site
+      a.button.gradient.blue(href='http://closings.victorlourng.com/API') API Docs
+    section#drones(data-identity='victor')
+      h2 drones4u
+      p An initiative for bringing drones to the field civilian use...
+      img
+      a.button.gradient.green(href='http://drones4u.tumblr.com/') Visit Site
+    section#more(data-identity='victor')
+      p Even more sites that zoom on hover.
+    section#science(data-identity='victor')
+      h2 Science Fair
+      .row
+        article
+          h3 Artificial Intelligence
+          img
+        article
+          h3 Passwords
+          img
+        article
+          h3 File Compression
+          img
+    section#cad(data-identity='victor')
+      h2 CAD Renderings
+    section#art(data-identity='victor')
+      h2 My Art
+    section#film(data-identity='victor')
+      h2 Film!
+      p.lead I am taking documentary/film at school.
+      .col3
+        iframe
+      .col3
+        iframe
+      .col3
+        iframe
+    section#music(data-identity='victor' data-playing='none')
+      h2 Music
+      iframe Vinyl.app
+      controller Powered by meteor.js
+        prev i.icon-prev
+        play i.icon-play
+        pause i.icon-pause
+        next i.icon-next
+      metadata Song Title
+      seeker
+    section#contact(data-identity='victor')
+      h2 Get In Touch
+      form DARN DATA
+        h3 Something
+        input(type='email' placeholder='Email')
+        input(type='text' placeholder='Subject')
+        input(type='textarea' placeholder='Message' contenteditable='contenteditable')
+        button.button.gradient.blue Send
+      article
+        h3 Something
+    footer
+      a.skyward(href='#top')
+        i.icon-tardis
+        | Back to Top
+      aside
+        i.icon-cc 
+        i.icon-cc-by 
+        i.icon-cc-remix 
+        |  2014 Created with 
+        i.icon-network
+          i.icon-heart
+        |  by Victor Lourng in Philadelphia, PA.
+        br
+        i.github
+        |  Take a look at the 
+        a(href='#credits' onclick='launch("credits")') credits. 
+        | Fork me on 
+        a(href='http://github.com/lablayers/lablayers.github.io/')
+          i.icon-github 
+        | Pages!
+    <!--[if lt IE 10]>
+    modal.visible#iesucks
+      window
+        h1 You're using an outdated version of Internet Explorer :(
+        div.content
+          div.body
+            img.iepony(src='/shutter/logo-iepony.png' width='150' height='150')
+            p It's time to step into the world of modern web browsing.
+            hr
+            a.button.border(href='http://windows.microsoft.com/en-us/internet-explorer/download-ie') Upgrade to Internet Explorer 11
+            a.button.border(href='http://chrome.google.com/')
+              img(src='/shutter/logo-chrome-small.png' width='15' height='15')
+              |     Get Google Chrome
+          br
+          hr
+          div.footer
+            small.left
+              small Warning: This site may not display correctly!
+            a.button.border.right(href='#top' onclick='hide("iesucks")') Nevermind
+    <![endif]-->
+    modal.hidden#credits(style='display:none')
+      window.metro
+        h1 Credits
+          a.right(onclick='blast("credits"); mixpanel.track("Close Window");')
+            i.icon-close
+        div.content
+          h4 Icons
+          a(href='http://abonive.deviantart.com/art/Free-SVG-IconSet-389441971')
+            i.icon-cc 
+            i.icon-cc-nc 
+            | Free SVG IconSet by abonive on deviantART
+          br
+          a(href='http://thenounproject.com/collections/national-park-service/') 
+            i.icon-cc(style='opacity:0') 
+            i.icon-cc-pd 
+            | Human Icons by National Park Service from the Noun Project
+          br
+          a(href='http://thenounproject.com/term/yeti/2987/#copy')
+            i.icon-cc 
+            i.icon-cc-by 
+            | Yeti designed by Darrin Higgins from the Noun Project
+          br
+          a(href='http://thenounproject.com/xoxo/')
+            i.icon-cc 
+            i.icon-cc-by 
+            | Various icons by XOXO Festival from the Noun Project
+          br
+          a(href='http://thenounproject.com/alessandro.suraci')
+            i.icon-cc 
+            i.icon-cc-by 
+            | Google Glass designed by Alessandro Suraci from the Noun Project
+          br
+          a(href='#')
+            i.icon-cc(style='opacity:0') 
+            i.icon-cc-pd(style='opacity:0') 
+            | Various company logos belong to their respective owners.

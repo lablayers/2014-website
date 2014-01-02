@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Snow';
+    src: url('snow.eot');
+    src: url('snow.eot?#iefix') format('embedded-opentype'),
+         url('snow.woff') format('woff'),
+         url('snow.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}

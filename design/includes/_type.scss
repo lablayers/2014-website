@@ -1,0 +1,73 @@
+// Typography.
+// -> It's something Ms. McGann taught me to love in art class. :)
+
+body {
+     font-family: $fonts;
+     font-size: $font-size;
+     line-height: 1.5em;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: bold;
+    color: inherit;
+    line-height: 1.2em;
+    margin: 0.2em auto;
+    text-rendering: optimizelegibility;
+    -webkit-text-rendering: optimizelegibility;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 56px;
+}
+
+h3 {
+    font-size: 42px;
+}
+
+h4 {
+    font-size: 32px;
+}
+
+h5 {
+    font-size: 22px;
+}
+
+// Paragraphs
+p.lead {
+    font-size: 22.5px;
+    line-height: 1.4em;
+    // margin-bottom: 20px;
+}
+
+p.hero {
+    font-size: 40px;
+    line-height: 1.4em;
+}
+
+@media only screen and (max-width: $mobile) {
+    body {
+        font-size: ($font-size - 1);
+    }
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 42px;
+    }
+    h3 {
+        font-size: 32px;
+    }
+    h4 {
+        font-size: 24px;
+    }
+    h5 {
+        font-size: 18px;
+    }
+    p.lead {
+        font-size: 24px;
+    }
+}

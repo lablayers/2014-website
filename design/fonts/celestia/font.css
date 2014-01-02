@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'CelestiaRedux';
+    src: url('celestiamediumredux.eot');
+    src: url('celestiamediumredux.eot?#iefix') format('embedded-opentype'),
+         url('celestiamediumredux.woff') format('woff'),
+         url('celestiamediumredux.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}

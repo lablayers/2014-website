@@ -1,0 +1,11 @@
+{
+  "name": "Victor Lourng",
+  "version": "9000.1",
+  "homepage": "http://victorlourng.com/",
+  "main": ["app.js"],
+  "dependencies": {
+    "jquery": "~1.10.2",
+    "greensock-js": "~1.9.6",
+    "superscrollorama": "latest"
+  }
+}
