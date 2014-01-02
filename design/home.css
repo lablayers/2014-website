@@ -1136,8 +1136,8 @@ window {
       opacity: 0.5;
       transition: all 0.25s;
       -webkit-transition: all 0.25s;
-      transform-origin: center center;
-      -webkit-transform-origin: center center; }
+      transform-origin: center;
+      -webkit-transform-origin: center; }
       /* line 36, includes/_modal.scss */
       window h1 a:hover {
         opacity: 1;
@@ -1162,8 +1162,8 @@ window {
       /* line 57, includes/_modal.scss */
       window.fullscreen h1 a, window.metro h1 a {
         margin-top: 3px;
-        transform-origin: center 43%;
-        -webkit-transform-origin: center 43%; }
+        transform-origin: center;
+        -webkit-transform-origin: center; }
     /* line 63, includes/_modal.scss */
     window.fullscreen .content, window.metro .content {
       padding: 36px; }

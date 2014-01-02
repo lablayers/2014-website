@@ -31,8 +31,8 @@ modal {
         opacity: 0.5;
         transition: all 0.25s;
         -webkit-transition: all 0.25s;
-        transform-origin: center center;
-        -webkit-transform-origin: center center;
+        transform-origin: center;
+        -webkit-transform-origin: center;
         &:hover { 
           opacity: 1;
           -webkit-transform: rotate(180deg);
@@ -56,8 +56,8 @@ modal {
         padding: 0px 12px 0 36px;
         a {
           margin-top: 3px;
-          transform-origin: center 43%;
-          -webkit-transform-origin: center 43%;
+          transform-origin: center;
+          -webkit-transform-origin: center;
         }
       }
       .content { padding: 36px; }
