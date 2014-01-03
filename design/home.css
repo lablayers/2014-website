@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Varela+Round);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
-/* line 17, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,38 +21,38 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline; }
 
-/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1; }
 
-/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none; }
 
-/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
 
-/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none; }
-  /* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  /* line 103, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
   q:before, q:after, blockquote:before, blockquote:after {
     content: "";
     content: none; }
 
-/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none; }
 
-/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
@@ -1328,12 +1328,12 @@ modal.visible window {
 
 @font-face {
   font-family: 'Stargazer';
-  src: url("/icons/fonts/Stargazer.eot");
-  src: url("/icons/fonts/Stargazer.eot?#iefix") format("embedded-opentype"), url("/icons/fonts/Stargazer.woff") format("woff"), url("/icons/fonts/Stargazer.ttf") format("truetype"), url("/icons/fonts/Stargazer.svg#Stargazer") format("svg");
+  src: url("../icons/fonts/Stargazer.eot");
+  src: url("../icons/fonts/Stargazer.eot?#iefix") format("embedded-opentype"), url("../icons/fonts/Stargazer.woff") format("woff"), url("../icons/fonts/Stargazer.ttf") format("truetype"), url("../icons/fonts/Stargazer.svg#Stargazer") format("svg");
   font-weight: normal;
   font-style: normal; }
 
-/* line 12, ../icons/_font.scss */
+/* line 12, includes/_stargazer.scss */
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'Stargazer';
   speak: none;
@@ -1347,655 +1347,655 @@ modal.visible window {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/* line 27, ../icons/_font.scss */
+/* line 27, includes/_stargazer.scss */
 .icon-solar:before {
   content: "\e600"; }
 
-/* line 30, ../icons/_font.scss */
+/* line 30, includes/_stargazer.scss */
 .icon-database:before {
   content: "\e601"; }
 
-/* line 33, ../icons/_font.scss */
+/* line 33, includes/_stargazer.scss */
 .icon-yeti:before {
   content: "\e602"; }
 
-/* line 36, ../icons/_font.scss */
+/* line 36, includes/_stargazer.scss */
 .icon-php-circle:before {
   content: "\e626"; }
 
-/* line 39, ../icons/_font.scss */
+/* line 39, includes/_stargazer.scss */
 .icon-mysql:before {
   content: "\e62a"; }
 
-/* line 42, ../icons/_font.scss */
+/* line 42, includes/_stargazer.scss */
 .icon-laravel:before {
   content: "\e603"; }
 
-/* line 45, ../icons/_font.scss */
+/* line 45, includes/_stargazer.scss */
 .icon-css3:before {
   content: "\e604"; }
 
-/* line 48, ../icons/_font.scss */
+/* line 48, includes/_stargazer.scss */
 .icon-mongodb:before {
   content: "\e625"; }
 
-/* line 51, ../icons/_font.scss */
+/* line 51, includes/_stargazer.scss */
 .icon-nodejs:before {
   content: "\e624"; }
 
-/* line 54, ../icons/_font.scss */
+/* line 54, includes/_stargazer.scss */
 .icon-npm:before {
   content: "\e623"; }
 
-/* line 57, ../icons/_font.scss */
+/* line 57, includes/_stargazer.scss */
 .icon-jquery:before {
   content: "\e628"; }
 
-/* line 60, ../icons/_font.scss */
+/* line 60, includes/_stargazer.scss */
 .icon-webrtc:before {
   content: "\e629"; }
 
-/* line 63, ../icons/_font.scss */
+/* line 63, includes/_stargazer.scss */
 .icon-wordpress:before {
   content: "\e605"; }
 
-/* line 66, ../icons/_font.scss */
+/* line 66, includes/_stargazer.scss */
 .icon-network:before {
   content: "\e606"; }
 
-/* line 69, ../icons/_font.scss */
+/* line 69, includes/_stargazer.scss */
 .icon-food:before {
   content: "\e607"; }
 
-/* line 72, ../icons/_font.scss */
+/* line 72, includes/_stargazer.scss */
 .icon-drone-farming:before {
   content: "\e608"; }
 
-/* line 75, ../icons/_font.scss */
+/* line 75, includes/_stargazer.scss */
 .icon-idea:before {
   content: "\e609"; }
 
-/* line 78, ../icons/_font.scss */
+/* line 78, includes/_stargazer.scss */
 .icon-social-media:before {
   content: "\e60a"; }
 
-/* line 81, ../icons/_font.scss */
+/* line 81, includes/_stargazer.scss */
 .icon-google-glass:before {
   content: "\e60b"; }
 
-/* line 84, ../icons/_font.scss */
+/* line 84, includes/_stargazer.scss */
 .icon-google-glass-user:before {
   content: "\e60c"; }
 
-/* line 87, ../icons/_font.scss */
+/* line 87, includes/_stargazer.scss */
 .icon-html5:before {
   content: "\e800"; }
 
-/* line 90, ../icons/_font.scss */
+/* line 90, includes/_stargazer.scss */
 .icon-php:before {
   content: "\e60d"; }
 
-/* line 93, ../icons/_font.scss */
+/* line 93, includes/_stargazer.scss */
 .icon-colt-joy:before {
   content: "\e619"; }
 
-/* line 96, ../icons/_font.scss */
+/* line 96, includes/_stargazer.scss */
 .icon-pencil:before {
   content: "\e61a"; }
 
-/* line 99, ../icons/_font.scss */
+/* line 99, includes/_stargazer.scss */
 .icon-flightdeck:before {
   content: "\e61b"; }
 
-/* line 102, ../icons/_font.scss */
+/* line 102, includes/_stargazer.scss */
 .icon-colt-curious:before {
   content: "\e61c"; }
 
-/* line 105, ../icons/_font.scss */
+/* line 105, includes/_stargazer.scss */
 .icon-colt-fu:before {
   content: "\e61d"; }
 
-/* line 108, ../icons/_font.scss */
+/* line 108, includes/_stargazer.scss */
 .icon-colt-horn:before {
   content: "\e61e"; }
 
-/* line 111, ../icons/_font.scss */
+/* line 111, includes/_stargazer.scss */
 .icon-colt-horn-fill:before {
   content: "\e61f"; }
 
-/* line 114, ../icons/_font.scss */
+/* line 114, includes/_stargazer.scss */
 .icon-social:before {
   content: "\e034"; }
 
-/* line 117, ../icons/_font.scss */
+/* line 117, includes/_stargazer.scss */
 .icon-refresh:before {
   content: "\e01b"; }
 
-/* line 120, ../icons/_font.scss */
+/* line 120, includes/_stargazer.scss */
 .icon-search:before {
   content: "\e033"; }
 
-/* line 123, ../icons/_font.scss */
+/* line 123, includes/_stargazer.scss */
 .icon-rows:before {
   content: "\e032"; }
 
-/* line 126, ../icons/_font.scss */
+/* line 126, includes/_stargazer.scss */
 .icon-more:before {
   content: "\e01a"; }
 
-/* line 129, ../icons/_font.scss */
+/* line 129, includes/_stargazer.scss */
 .icon-question:before {
   content: "\e031"; }
 
-/* line 132, ../icons/_font.scss */
+/* line 132, includes/_stargazer.scss */
 .icon-dash:before {
   content: "\e030"; }
 
-/* line 135, ../icons/_font.scss */
+/* line 135, includes/_stargazer.scss */
 .icon-news:before {
   content: "\e02f"; }
 
-/* line 138, ../icons/_font.scss */
+/* line 138, includes/_stargazer.scss */
 .icon-spinner:before {
   content: "\e02b"; }
 
-/* line 141, ../icons/_font.scss */
+/* line 141, includes/_stargazer.scss */
 .icon-frozen:before {
   content: "\e02e"; }
 
-/* line 144, ../icons/_font.scss */
+/* line 144, includes/_stargazer.scss */
 .icon-notification:before {
   content: "\e02c"; }
 
-/* line 147, ../icons/_font.scss */
+/* line 147, includes/_stargazer.scss */
 .icon-check:before {
   content: "\e02a"; }
 
-/* line 150, ../icons/_font.scss */
+/* line 150, includes/_stargazer.scss */
 .icon-lock:before {
   content: "\e029"; }
 
-/* line 153, ../icons/_font.scss */
+/* line 153, includes/_stargazer.scss */
 .icon-back:before {
   content: "\e028"; }
 
-/* line 156, ../icons/_font.scss */
+/* line 156, includes/_stargazer.scss */
 .icon-edit:before {
   content: "\e00a"; }
 
-/* line 159, ../icons/_font.scss */
+/* line 159, includes/_stargazer.scss */
 .icon-add:before {
   content: "\e027"; }
 
-/* line 162, ../icons/_font.scss */
+/* line 162, includes/_stargazer.scss */
 .icon-user-add:before {
   content: "\e026"; }
 
-/* line 165, ../icons/_font.scss */
+/* line 165, includes/_stargazer.scss */
 .icon-warning:before {
   content: "\e025"; }
 
-/* line 168, ../icons/_font.scss */
+/* line 168, includes/_stargazer.scss */
 .icon-error:before {
   content: "\e024"; }
 
-/* line 171, ../icons/_font.scss */
+/* line 171, includes/_stargazer.scss */
 .icon-help:before {
   content: "\e023"; }
 
-/* line 174, ../icons/_font.scss */
+/* line 174, includes/_stargazer.scss */
 .icon-priority:before {
   content: "\e021"; }
 
-/* line 177, ../icons/_font.scss */
+/* line 177, includes/_stargazer.scss */
 .icon-user:before {
   content: "\e020"; }
 
-/* line 180, ../icons/_font.scss */
+/* line 180, includes/_stargazer.scss */
 .icon-upload:before {
   content: "\e01f"; }
 
-/* line 183, ../icons/_font.scss */
+/* line 183, includes/_stargazer.scss */
 .icon-up:before {
   content: "\e01e"; }
 
-/* line 186, ../icons/_font.scss */
+/* line 186, includes/_stargazer.scss */
 .icon-share:before {
   content: "\e01d"; }
 
-/* line 189, ../icons/_font.scss */
+/* line 189, includes/_stargazer.scss */
 .icon-settings:before {
   content: "\e01c"; }
 
-/* line 192, ../icons/_font.scss */
+/* line 192, includes/_stargazer.scss */
 .icon-right:before {
   content: "\e019"; }
 
-/* line 195, ../icons/_font.scss */
+/* line 195, includes/_stargazer.scss */
 .icon-reply:before {
   content: "\e018"; }
 
-/* line 198, ../icons/_font.scss */
+/* line 198, includes/_stargazer.scss */
 .icon-photo:before {
   content: "\e017"; }
 
-/* line 201, ../icons/_font.scss */
+/* line 201, includes/_stargazer.scss */
 .icon-people:before {
   content: "\e016"; }
 
-/* line 204, ../icons/_font.scss */
+/* line 204, includes/_stargazer.scss */
 .icon-location:before {
   content: "\e014"; }
 
-/* line 207, ../icons/_font.scss */
+/* line 207, includes/_stargazer.scss */
 .icon-list:before {
   content: "\e013"; }
 
-/* line 210, ../icons/_font.scss */
+/* line 210, includes/_stargazer.scss */
 .icon-link:before {
   content: "\e012"; }
 
-/* line 213, ../icons/_font.scss */
+/* line 213, includes/_stargazer.scss */
 .icon-like:before {
   content: "\e011"; }
 
-/* line 216, ../icons/_font.scss */
+/* line 216, includes/_stargazer.scss */
 .icon-left:before {
   content: "\e010"; }
 
-/* line 219, ../icons/_font.scss */
+/* line 219, includes/_stargazer.scss */
 .icon-image:before {
   content: "\e00f"; }
 
-/* line 222, ../icons/_font.scss */
+/* line 222, includes/_stargazer.scss */
 .icon-groups:before {
   content: "\e00e"; }
 
-/* line 225, ../icons/_font.scss */
+/* line 225, includes/_stargazer.scss */
 .icon-favorite:before {
   content: "\e00d"; }
 
-/* line 228, ../icons/_font.scss */
+/* line 228, includes/_stargazer.scss */
 .icon-event:before {
   content: "\e00c"; }
 
-/* line 231, ../icons/_font.scss */
+/* line 231, includes/_stargazer.scss */
 .icon-email:before {
   content: "\e00b"; }
 
-/* line 234, ../icons/_font.scss */
+/* line 234, includes/_stargazer.scss */
 .icon-down:before {
   content: "\e008"; }
 
-/* line 237, ../icons/_font.scss */
+/* line 237, includes/_stargazer.scss */
 .icon-close:before {
   content: "\e007"; }
 
-/* line 240, ../icons/_font.scss */
+/* line 240, includes/_stargazer.scss */
 .icon-chevron-right:before {
   content: "\e006"; }
 
-/* line 243, ../icons/_font.scss */
+/* line 243, includes/_stargazer.scss */
 .icon-chevron-left:before {
   content: "\e005"; }
 
-/* line 246, ../icons/_font.scss */
+/* line 246, includes/_stargazer.scss */
 .icon-checkin:before {
   content: "\e004"; }
 
-/* line 249, ../icons/_font.scss */
+/* line 249, includes/_stargazer.scss */
 .icon-chat:before {
   content: "\e003"; }
 
-/* line 252, ../icons/_font.scss */
+/* line 252, includes/_stargazer.scss */
 .icon-call:before {
   content: "\e002"; }
 
-/* line 255, ../icons/_font.scss */
+/* line 255, includes/_stargazer.scss */
 .icon-bookmark:before {
   content: "\e001"; }
 
-/* line 258, ../icons/_font.scss */
+/* line 258, includes/_stargazer.scss */
 .icon-attach:before {
   content: "\e000"; }
 
-/* line 261, ../icons/_font.scss */
+/* line 261, includes/_stargazer.scss */
 .icon-download:before {
   content: "\e009"; }
 
-/* line 264, ../icons/_font.scss */
+/* line 264, includes/_stargazer.scss */
 .icon-logout:before {
   content: "\e015"; }
 
-/* line 267, ../icons/_font.scss */
+/* line 267, includes/_stargazer.scss */
 .icon-filter:before {
   content: "\e022"; }
 
-/* line 270, ../icons/_font.scss */
+/* line 270, includes/_stargazer.scss */
 .icon-info:before {
   content: "\e02d"; }
 
-/* line 273, ../icons/_font.scss */
+/* line 273, includes/_stargazer.scss */
 .icon-action:before {
   content: "\e62c"; }
 
-/* line 276, ../icons/_font.scss */
+/* line 276, includes/_stargazer.scss */
 .icon-chemist:before {
   content: "\e62d"; }
 
-/* line 279, ../icons/_font.scss */
+/* line 279, includes/_stargazer.scss */
 .icon-wings:before {
   content: "\e62e"; }
 
-/* line 282, ../icons/_font.scss */
+/* line 282, includes/_stargazer.scss */
 .icon-colt-chocolate:before {
   content: "\e62f"; }
 
-/* line 285, ../icons/_font.scss */
+/* line 285, includes/_stargazer.scss */
 .icon-smoothie:before {
   content: "\e630"; }
 
-/* line 288, ../icons/_font.scss */
+/* line 288, includes/_stargazer.scss */
 .icon-muffin:before {
   content: "\e631"; }
 
-/* line 291, ../icons/_font.scss */
+/* line 291, includes/_stargazer.scss */
 .icon-colt-spitfire:before {
   content: "\e632"; }
 
-/* line 294, ../icons/_font.scss */
+/* line 294, includes/_stargazer.scss */
 .icon-colt-filly:before {
   content: "\e633"; }
 
-/* line 297, ../icons/_font.scss */
+/* line 297, includes/_stargazer.scss */
 .icon-emo-blink:before {
   content: "\e847"; }
 
-/* line 300, ../icons/_font.scss */
+/* line 300, includes/_stargazer.scss */
 .icon-emo-laugh:before {
   content: "\e858"; }
 
-/* line 303, ../icons/_font.scss */
+/* line 303, includes/_stargazer.scss */
 .icon-emo-squint:before {
   content: "\e857"; }
 
-/* line 306, ../icons/_font.scss */
+/* line 306, includes/_stargazer.scss */
 .icon-emo-coffee:before {
   content: "\e84e"; }
 
-/* line 309, ../icons/_font.scss */
+/* line 309, includes/_stargazer.scss */
 .icon-emo-beer:before {
   content: "\e851"; }
 
-/* line 312, ../icons/_font.scss */
+/* line 312, includes/_stargazer.scss */
 .icon-emo-grin:before {
   content: "\e852"; }
 
-/* line 315, ../icons/_font.scss */
+/* line 315, includes/_stargazer.scss */
 .icon-emo-sunglasses:before {
   content: "\e84f"; }
 
-/* line 318, ../icons/_font.scss */
+/* line 318, includes/_stargazer.scss */
 .icon-emo-p:before {
   content: "\e84d"; }
 
-/* line 321, ../icons/_font.scss */
+/* line 321, includes/_stargazer.scss */
 .icon-emo-like:before {
   content: "\e84a"; }
 
-/* line 324, ../icons/_font.scss */
+/* line 324, includes/_stargazer.scss */
 .icon-emo-wink:before {
   content: "\e846"; }
 
-/* line 327, ../icons/_font.scss */
+/* line 327, includes/_stargazer.scss */
 .icon-emo-happy:before {
   content: "\e801"; }
 
-/* line 330, ../icons/_font.scss */
+/* line 330, includes/_stargazer.scss */
 .icon-cc-remix:before {
   content: "\e878"; }
 
-/* line 333, ../icons/_font.scss */
+/* line 333, includes/_stargazer.scss */
 .icon-cc-sa:before {
   content: "\e874"; }
 
-/* line 336, ../icons/_font.scss */
+/* line 336, includes/_stargazer.scss */
 .icon-cc:before {
   content: "\e86f"; }
 
-/* line 339, ../icons/_font.scss */
+/* line 339, includes/_stargazer.scss */
 .icon-cc-by:before {
   content: "\e870"; }
 
-/* line 342, ../icons/_font.scss */
+/* line 342, includes/_stargazer.scss */
 .icon-cc-nc:before {
   content: "\e871"; }
 
-/* line 345, ../icons/_font.scss */
+/* line 345, includes/_stargazer.scss */
 .icon-cc-nd:before {
   content: "\e875"; }
 
-/* line 348, ../icons/_font.scss */
+/* line 348, includes/_stargazer.scss */
 .icon-cc-pd:before {
   content: "\e876"; }
 
-/* line 351, ../icons/_font.scss */
+/* line 351, includes/_stargazer.scss */
 .icon-magnet:before {
   content: "\e869"; }
 
-/* line 354, ../icons/_font.scss */
+/* line 354, includes/_stargazer.scss */
 .icon-brush:before {
   content: "\e86a"; }
 
-/* line 357, ../icons/_font.scss */
+/* line 357, includes/_stargazer.scss */
 .icon-flow-tree:before {
   content: "\e863"; }
 
-/* line 360, ../icons/_font.scss */
+/* line 360, includes/_stargazer.scss */
 .icon-flow-branch:before {
   content: "\e864"; }
 
-/* line 363, ../icons/_font.scss */
+/* line 363, includes/_stargazer.scss */
 .icon-road:before {
   content: "\e85e"; }
 
-/* line 366, ../icons/_font.scss */
+/* line 366, includes/_stargazer.scss */
 .icon-suitcase:before {
   content: "\e87c"; }
 
-/* line 369, ../icons/_font.scss */
+/* line 369, includes/_stargazer.scss */
 .icon-mouse:before {
   content: "\e86d"; }
 
-/* line 372, ../icons/_font.scss */
+/* line 372, includes/_stargazer.scss */
 .icon-install:before {
   content: "\e86b"; }
 
-/* line 375, ../icons/_font.scss */
+/* line 375, includes/_stargazer.scss */
 .icon-spotify:before {
   content: "\e83d"; }
 
-/* line 378, ../icons/_font.scss */
+/* line 378, includes/_stargazer.scss */
 .icon-thunder:before {
   content: "\e86c"; }
 
-/* line 381, ../icons/_font.scss */
+/* line 381, includes/_stargazer.scss */
 .icon-direction:before {
   content: "\e861"; }
 
-/* line 384, ../icons/_font.scss */
+/* line 384, includes/_stargazer.scss */
 .icon-down-hand:before {
   content: "\e85c"; }
 
-/* line 387, ../icons/_font.scss */
+/* line 387, includes/_stargazer.scss */
 .icon-up-hand:before {
   content: "\e85b"; }
 
-/* line 390, ../icons/_font.scss */
+/* line 390, includes/_stargazer.scss */
 .icon-right-hand:before {
   content: "\e859"; }
 
-/* line 393, ../icons/_font.scss */
+/* line 393, includes/_stargazer.scss */
 .icon-left-hand:before {
   content: "\e85a"; }
 
-/* line 396, ../icons/_font.scss */
+/* line 396, includes/_stargazer.scss */
 .icon-cloudapp:before {
   content: "\e842"; }
 
-/* line 399, ../icons/_font.scss */
+/* line 399, includes/_stargazer.scss */
 .icon-helicopter:before {
   content: "\e89a"; }
 
-/* line 402, ../icons/_font.scss */
+/* line 402, includes/_stargazer.scss */
 .icon-trophy-alt:before {
   content: "\e87a"; }
 
-/* line 405, ../icons/_font.scss */
+/* line 405, includes/_stargazer.scss */
 .icon-education:before {
   content: "\e866"; }
 
-/* line 408, ../icons/_font.scss */
+/* line 408, includes/_stargazer.scss */
 .icon-desktop:before {
   content: "\e88c"; }
 
-/* line 411, ../icons/_font.scss */
+/* line 411, includes/_stargazer.scss */
 .icon-tablet:before {
   content: "\e88e"; }
 
-/* line 414, ../icons/_font.scss */
+/* line 414, includes/_stargazer.scss */
 .icon-rocket:before {
   content: "\e86e"; }
 
-/* line 417, ../icons/_font.scss */
+/* line 417, includes/_stargazer.scss */
 .icon-water:before {
   content: "\e865"; }
 
-/* line 420, ../icons/_font.scss */
+/* line 420, includes/_stargazer.scss */
 .icon-responsive:before {
   content: "\e636"; }
 
-/* line 423, ../icons/_font.scss */
+/* line 423, includes/_stargazer.scss */
 .icon-liberty-bell:before {
   content: "\e637"; }
 
-/* line 426, ../icons/_font.scss */
+/* line 426, includes/_stargazer.scss */
 .icon-pennapps:before {
   content: "\e638"; }
 
-/* line 429, ../icons/_font.scss */
+/* line 429, includes/_stargazer.scss */
 .icon-mhacks:before {
   content: "\e639"; }
 
-/* line 432, ../icons/_font.scss */
+/* line 432, includes/_stargazer.scss */
 .icon-pilotphilly:before {
   content: "\e63a"; }
 
-/* line 435, ../icons/_font.scss */
+/* line 435, includes/_stargazer.scss */
 .icon-cloud:before {
   content: "\e63b"; }
 
-/* line 438, ../icons/_font.scss */
+/* line 438, includes/_stargazer.scss */
 .icon-first:before {
   content: "\e63c"; }
 
-/* line 441, ../icons/_font.scss */
+/* line 441, includes/_stargazer.scss */
 .icon-kaboom:before {
   content: "\e63d"; }
 
-/* line 444, ../icons/_font.scss */
+/* line 444, includes/_stargazer.scss */
 .icon-ilite:before {
   content: "\e63e"; }
 
-/* line 447, ../icons/_font.scss */
+/* line 447, includes/_stargazer.scss */
 .icon-github:before {
   content: "\e63f"; }
 
-/* line 450, ../icons/_font.scss */
+/* line 450, includes/_stargazer.scss */
 .icon-hackerchat:before {
   content: "\e640"; }
 
-/* line 453, ../icons/_font.scss */
+/* line 453, includes/_stargazer.scss */
 .icon-dog:before {
   content: "\e803"; }
 
-/* line 456, ../icons/_font.scss */
+/* line 456, includes/_stargazer.scss */
 .icon-bitcoin:before {
   content: "\e802"; }
 
-/* line 459, ../icons/_font.scss */
+/* line 459, includes/_stargazer.scss */
 .icon-heart:before {
   content: "\e804"; }
 
-/* line 462, ../icons/_font.scss */
+/* line 462, includes/_stargazer.scss */
 .icon-googleplus:before {
   content: "\e60e"; }
 
-/* line 465, ../icons/_font.scss */
+/* line 465, includes/_stargazer.scss */
 .icon-youtube:before {
   content: "\e60f"; }
 
-/* line 468, ../icons/_font.scss */
+/* line 468, includes/_stargazer.scss */
 .icon-facebook:before {
   content: "\e610"; }
 
-/* line 471, ../icons/_font.scss */
+/* line 471, includes/_stargazer.scss */
 .icon-twitter:before {
   content: "\e611"; }
 
-/* line 474, ../icons/_font.scss */
+/* line 474, includes/_stargazer.scss */
 .icon-deviantart:before {
   content: "\e612"; }
 
-/* line 477, ../icons/_font.scss */
+/* line 477, includes/_stargazer.scss */
 .icon-octocat:before {
   content: "\e613"; }
 
-/* line 480, ../icons/_font.scss */
+/* line 480, includes/_stargazer.scss */
 .icon-soundcloud:before {
   content: "\e614"; }
 
-/* line 483, ../icons/_font.scss */
+/* line 483, includes/_stargazer.scss */
 .icon-safari:before {
   content: "\e615"; }
 
-/* line 486, ../icons/_font.scss */
+/* line 486, includes/_stargazer.scss */
 .icon-ie:before {
   content: "\e616"; }
 
-/* line 489, ../icons/_font.scss */
+/* line 489, includes/_stargazer.scss */
 .icon-firefox:before {
   content: "\e617"; }
 
-/* line 492, ../icons/_font.scss */
+/* line 492, includes/_stargazer.scss */
 .icon-chrome:before {
   content: "\e618"; }
 
-/* line 495, ../icons/_font.scss */
+/* line 495, includes/_stargazer.scss */
 .icon-dc:before {
   content: "\e620"; }
 
-/* line 498, ../icons/_font.scss */
+/* line 498, includes/_stargazer.scss */
 .icon-tardis:before {
   content: "\e621"; }
 
-/* line 501, ../icons/_font.scss */
+/* line 501, includes/_stargazer.scss */
 .icon-accessibility:before {
   content: "\e622"; }
 
-/* line 504, ../icons/_font.scss */
+/* line 504, includes/_stargazer.scss */
 .icon-trophy:before {
   content: "\e627"; }
 
-/* line 507, ../icons/_font.scss */
+/* line 507, includes/_stargazer.scss */
 .icon-home:before {
   content: "\e62b"; }
 
-/* line 510, ../icons/_font.scss */
+/* line 510, includes/_stargazer.scss */
 .icon-html5:before {
   content: "\e634"; }
 
-/* line 513, ../icons/_font.scss */
+/* line 513, includes/_stargazer.scss */
 .icon-lastfm:before {
   content: "\e635"; }
 
