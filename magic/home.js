@@ -56,16 +56,62 @@ $('.toggler').click(function(){
   };
 })(jQuery);
 
-$(window).scroll(function(event) {
-  $("section, header, footer").each(function(i, el) {
-    var el = $(el);
-    if (el.visible(true)) {
-        el.addClass("visible");
-    } else {
-        el.removeClass("visible");
+// Scroll Timer!
+// -> This actually improves the framerate and rendering time by 95%!
+// -@ http://stackoverflow.com/questions/15591002/jquery-setinterval-or-scroll
+var scrollTimer = null;
+$(window).scroll(function () {
+    if (scrollTimer) {
+        clearTimeout(scrollTimer);   // clear any previous pending timer
     }
-  });
+    scrollTimer = setTimeout(handleScroll, 500);   // set new timer
 });
+
+function handleScroll() {
+    scrollTimer = null;
+    $("section").each(function(i, el) {
+        var el = $(el);
+        if (el.visible(true)) {
+            el.addClass("visible"); 
+        } else {
+            el.removeClass("visible"); 
+        }
+    });
+}
+
+// // -> PERFORMANCE ISSUES!
+// function isScrolledIntoView(elem)
+// {
+//     var docViewTop = $(window).scrollTop();
+//     var docViewBottom = docViewTop + $(window).height();
+// 
+//     var elemTop = $(elem).offset().top;
+//     var elemBottom = elemTop + $(elem).height();
+// 
+//     return ((elemBottom >= docViewTop) && (elemTop <= docViewBottom)
+//       && (elemBottom <= docViewBottom) &&  (elemTop >= docViewTop) );
+// }
+
+// $(window).scroll(function(event) {
+//   $("section, header, footer").each(function(i, el) {
+//     var el = $(el);
+//     if (el.visible(true)) {
+//         el.addClass("visible");
+//         // Load iFrames only when visible
+//         // -> Improves site performance by like 20 frames and lowers bandwidth.
+//         // -@ http://stackoverflow.com/questions/19482601/have-iframe-load-when-visible
+//         // Show our element, then call our callback
+//         // Find the iframes within our newly-visible element
+//         $(this).find("iframe").not(".loaded").prop("src", function(){
+//             // Set their src attribute to the value of data-src
+//             $(this).addClass("loaded");
+//             return $(this).data("src");
+//         });
+//     } else {
+//         el.removeClass("visible");
+//     }
+//   });
+// });
 
 // Old Visibility Classes
 // -> Doesn't work in the middle of scrolling
@@ -74,16 +120,17 @@ $(window).scroll(function(event) {
 // } else {}
 
 // Top Tooltips
-$(window).scroll(function() {
-    // remove active
-    $("body").removeClass("top");
-    // get the amount the window has scrolled
-    var scroll = $(window).scrollTop();
-    // add active IF the user has scrolled more than 120px
-    if (scroll <= 400) {
-        $("body").addClass("top");
-    }
-});
+// -> PERFORNANCE ISSUE!
+// $(window).scroll(function() {
+//     // remove active
+//     $("body").removeClass("top");
+//     // get the amount the window has scrolled
+//     var scroll = $(window).scrollTop();
+//     // add active IF the user has scrolled more than 120px
+//     if (scroll <= 400) {
+//         $("body").addClass("top");
+//     }
+// });
 
 // Accessibility
 $(function(){
@@ -220,13 +267,15 @@ $(document).ready(function(){
     });
 });
 
-
+// Scroll up, TARDIS!
 $(document).on('click', '.skyward', function () {
     $("body").addClass("inthetardis");
     setTimeout( function() {
         $("body").removeClass("inthetardis"); 
     }, 1500);
 });
+
+
 
 // Plugins and Fascinatingly Boring Code BELOW:
 // -> Now that you've made it this far... you've been warned. ;P

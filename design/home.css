@@ -2030,8 +2030,8 @@ nav[role="navigation"] menu {
       text-align: left;
       font-size: 32px;
       vertical-align: middle;
-      transition: all 0.25s;
-      -webkit-transition: all 0.25s;
+      transition: transform 0.25s;
+      -webkit-transition: transform 0.25s;
       border-radius: 0px;
       position: relative; }
       /* line 33, includes/_nav.scss */
@@ -2547,10 +2547,10 @@ footer {
   overflow: hidden;
   position: static; }
   /* line 385, home.scss */
-  footer .content a {
+  footer a {
     color: #ecf0f1; }
     /* line 387, home.scss */
-    footer .content a:hover {
+    footer a:hover {
       color: #16a085; }
   /* line 391, home.scss */
   footer .skyward {
