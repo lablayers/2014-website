@@ -64,7 +64,7 @@ $(window).scroll(function () {
     if (scrollTimer) {
         clearTimeout(scrollTimer);   // clear any previous pending timer
     }
-    scrollTimer = setTimeout(handleScroll, 500);   // set new timer
+    scrollTimer = setTimeout(handleScroll, 20);   // set new timer
 });
 
 function handleScroll() {
@@ -73,6 +73,16 @@ function handleScroll() {
         var el = $(el);
         if (el.visible(true)) {
             el.addClass("visible"); 
+            // Load iFrames only when visible
+            // -> Improves site performance by like 20 frames and lowers bandwidth.
+            // -@ http://stackoverflow.com/questions/19482601/have-iframe-load-when-visible
+            // Show our element, then call our callback
+            // Find the iframes within our newly-visible element
+            $(this).find("iframe").not(".loaded").prop("src", function(){
+                // Set their src attribute to the value of data-src
+                $(this).addClass("loaded");
+                return $(this).data("src");
+            });
         } else {
             el.removeClass("visible"); 
         }
@@ -91,7 +101,6 @@ function handleScroll() {
 //     return ((elemBottom >= docViewTop) && (elemTop <= docViewBottom)
 //       && (elemBottom <= docViewBottom) &&  (elemTop >= docViewTop) );
 // }
-
 // $(window).scroll(function(event) {
 //   $("section, header, footer").each(function(i, el) {
 //     var el = $(el);
