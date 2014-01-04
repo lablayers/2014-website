@@ -1170,12 +1170,13 @@ modal {
   height: 100%;
   display: block;
   background: rgba(0, 0, 0, 0.5);
-  line-height: 1.2em; }
-  /* line 8, includes/_modal.scss */
+  line-height: 1.2em;
+  z-index: 1000; }
+  /* line 9, includes/_modal.scss */
   modal#identity {
     background: rgba(0, 0, 0, 0.85); }
 
-/* line 12, includes/_modal.scss */
+/* line 13, includes/_modal.scss */
 window {
   position: absolute;
   z-index: 2000;
@@ -1187,14 +1188,14 @@ window {
   background: #FFF;
   border: 5px solid #02adea;
   color: black; }
-  /* line 23, includes/_modal.scss */
+  /* line 24, includes/_modal.scss */
   window h1 {
     background: #02adea;
     color: white;
     margin: 0px;
     padding: 10px;
     font-size: 30px; }
-    /* line 29, includes/_modal.scss */
+    /* line 30, includes/_modal.scss */
     window h1 a {
       color: white;
       opacity: 0.5;
@@ -1202,12 +1203,12 @@ window {
       -webkit-transition: all 0.25s;
       transform-origin: center;
       -webkit-transform-origin: center; }
-      /* line 36, includes/_modal.scss */
+      /* line 37, includes/_modal.scss */
       window h1 a:hover {
         opacity: 1;
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg); }
-  /* line 43, includes/_modal.scss */
+  /* line 44, includes/_modal.scss */
   window.fullscreen, window.metro {
     top: 0;
     left: 0;
@@ -1219,51 +1220,51 @@ window {
     height: 100%;
     overflow: auto;
     z-index: 2000; }
-    /* line 54, includes/_modal.scss */
+    /* line 55, includes/_modal.scss */
     window.fullscreen h1, window.metro h1 {
       line-height: 66px;
       padding: 0px 12px 0 36px; }
-      /* line 57, includes/_modal.scss */
+      /* line 58, includes/_modal.scss */
       window.fullscreen h1 a, window.metro h1 a {
         margin-top: 3px;
         transform-origin: center;
         -webkit-transform-origin: center; }
-    /* line 63, includes/_modal.scss */
+    /* line 64, includes/_modal.scss */
     window.fullscreen .content, window.metro .content {
       padding: 36px; }
-  /* line 65, includes/_modal.scss */
+  /* line 66, includes/_modal.scss */
   window img.iepony {
     float: left; }
-  /* line 68, includes/_modal.scss */
+  /* line 69, includes/_modal.scss */
   window div.content {
     padding: 12px 0px; }
-    /* line 71, includes/_modal.scss */
+    /* line 72, includes/_modal.scss */
     window div.content div.body hr {
       margin: 0.4em 0; }
-  /* line 76, includes/_modal.scss */
+  /* line 77, includes/_modal.scss */
   window div.footer {
     padding: 0px 4px; }
-    /* line 78, includes/_modal.scss */
+    /* line 79, includes/_modal.scss */
     window div.footer small {
       padding: 8px; }
-  /* line 82, includes/_modal.scss */
+  /* line 83, includes/_modal.scss */
   window hr {
     border-style: solid;
     border-color: #02adea;
     margin: 0 0; }
 
-/* line 88, includes/_modal.scss */
+/* line 89, includes/_modal.scss */
 modal.hidden window, modal.hidden {
   visibility: none;
   opacity: 0; }
 
-/* line 92, includes/_modal.scss */
+/* line 93, includes/_modal.scss */
 modal, modal window {
   -webkit-transition: all .3s ease-out;
   -moz-transition: all .3s ease-out;
   transition: all .3s ease-out; }
 
-/* line 97, includes/_modal.scss */
+/* line 98, includes/_modal.scss */
 modal window {
   opacity: 0;
   -webkit-transform: scale(0.6) translate(0, -20%);
@@ -1273,7 +1274,7 @@ modal window {
   -moz-transition: all .3s ease-out;
   transition: all .3s ease-out; }
 
-/* line 106, includes/_modal.scss */
+/* line 107, includes/_modal.scss */
 modal.visible window {
   opacity: 1;
   visibility: visible;
@@ -1285,18 +1286,18 @@ modal.visible window {
   transition: all .3s ease-out; }
 
 @media only screen and (max-width: 780px) {
-  /* line 120, includes/_modal.scss */
+  /* line 121, includes/_modal.scss */
   modal window {
-    top: 0;
+    top: 0 !important;
     left: 0;
     right: 0;
     width: auto;
-    margin-left: 0;
+    margin-top: 0 !important;
     border: none;
-    margin-left: 0px !important;
+    margin-left: 0 !important;
     height: 100%;
     overflow: auto; }
-    /* line 130, includes/_modal.scss */
+    /* line 131, includes/_modal.scss */
     modal window h1 {
       padding-left: 76px !important; } }
 /* line 3, includes/_browser.scss */
