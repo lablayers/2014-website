@@ -47,7 +47,7 @@ block content
           a.close(data-toggle='menu' title='Close Menu')
             i.icon-close
         li
-          a.top(href='#top' onclick='launch("identity"); mixpanel.track("Open Window");')
+          a.top(href='#top')
             i.icon-home
             span Home
             <!-- .tooltip Back to Top -->
@@ -306,7 +306,7 @@ block content
     modal.hidden#credits(style='display:none')
       window.metro
         h1 Credits
-          a.right(onclick='blast("credits"); mixpanel.track("Close Window");')
+          a.right(onclick='blast("credits");mixpanel.track("Looked at Credits");')
             i.icon-close
         div.content
           h4 Stuff
@@ -347,7 +347,7 @@ block content
   modal.hidden#likemystatus(style='display:none')
     window
       h1 Like This Status!
-        a.right(onclick='blast("likemystatus"); mixpanel.track("Close Window");')
+        a.right(onclick='blast("likemystatus"); mixpanel.track("Liked MHacks Status");')
           i.icon-close
       .fb-root
         script (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));
