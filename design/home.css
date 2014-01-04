@@ -648,17 +648,81 @@ section, header, footer {
     transform: translateY(10rem) rotate(-10deg);
     opacity: 0; } }
 
-/* line 70, includes/_animations.scss */
+@-webkit-keyframes heartbeat {
+  /* line 71, includes/_animations.scss */
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1); }
+
+  /* line 72, includes/_animations.scss */
+  50% {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5); }
+
+  /* line 73, includes/_animations.scss */
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1); } }
+
+@-moz-keyframes heartbeat {
+  /* line 71, includes/_animations.scss */
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1); }
+
+  /* line 72, includes/_animations.scss */
+  50% {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5); }
+
+  /* line 73, includes/_animations.scss */
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1); } }
+
+@-o-keyframes heartbeat {
+  /* line 71, includes/_animations.scss */
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1); }
+
+  /* line 72, includes/_animations.scss */
+  50% {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5); }
+
+  /* line 73, includes/_animations.scss */
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1); } }
+
+@keyframes heartbeat {
+  /* line 71, includes/_animations.scss */
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1); }
+
+  /* line 72, includes/_animations.scss */
+  50% {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5); }
+
+  /* line 73, includes/_animations.scss */
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1); } }
+
+/* line 76, includes/_animations.scss */
 .margin-transition {
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   transition: all 0.2s linear; }
-  /* line 74, includes/_animations.scss */
+  /* line 80, includes/_animations.scss */
   .margin-transition:hover {
     margin-top: -5px;
     margin-bottom: 5px; }
 
-/* line 80, includes/_animations.scss */
+/* line 86, includes/_animations.scss */
 .fade-in-top-transition, section#about figure a {
   -webkit-transform: translate(0, -20%);
   -ms-transform: translate(0, -20%);
@@ -667,13 +731,13 @@ section, header, footer {
   -moz-transition: all .3s ease-out;
   transition: all .3s ease-out; }
 
-/* line 88, includes/_animations.scss */
+/* line 94, includes/_animations.scss */
 .fade-in-top-transition-hover, section#about figure:hover a {
   -webkit-transform: translate(0, 0%);
   -ms-transform: translate(0, 0%);
   transform: translate(0, 0%); }
 
-/* line 94, includes/_animations.scss */
+/* line 100, includes/_animations.scss */
 .fade-in-right-transition {
   -webkit-transform: translate(20%, 0);
   -ms-transform: translate(20%, 0);
@@ -682,13 +746,13 @@ section, header, footer {
   -moz-transition: all .3s ease-out;
   transition: all .3s ease-out; }
 
-/* line 102, includes/_animations.scss */
+/* line 108, includes/_animations.scss */
 .fade-in-right-transition-hover {
   -webkit-transform: translate(0, 0%);
   -ms-transform: translate(0, 0%);
   transform: translate(0, 0%); }
 
-/* line 108, includes/_animations.scss */
+/* line 114, includes/_animations.scss */
 .fade-in-bottom-transition {
   -webkit-transform: translate(0, 20%);
   -ms-transform: translate(0, 20%);
@@ -697,20 +761,20 @@ section, header, footer {
   -moz-transition: all .3s ease-out;
   transition: all .3s ease-out; }
 
-/* line 117, includes/_animations.scss */
+/* line 123, includes/_animations.scss */
 .fade-in-bottom-transition-hover {
   -webkit-transform: translate(0, 0%);
   -ms-transform: translate(0, 0%);
   transform: translate(0, 0%); }
 
-/* line 123, includes/_animations.scss */
+/* line 129, includes/_animations.scss */
 .spinning-transition, nav[role="navigation"] menu.expanded .toolbar a.close i {
   transition: all 0.25s;
   -webkit-transition: all 0.25s;
   transform-origin: center;
   -webkit-transform-origin: center; }
 
-/* line 130, includes/_animations.scss */
+/* line 136, includes/_animations.scss */
 .spinning-transition-hover, nav[role="navigation"] menu.expanded .toolbar a.close:hover i {
   opacity: 1;
   -webkit-transform: rotate(180deg);
@@ -2556,30 +2620,44 @@ footer {
   footer .skyward {
     float: right;
     color: #ecf0f1; }
-  /* line 395, home.scss */
-  footer aside {
+  /* line 396, home.scss */
+  footer aside a {
     position: relative;
-    z-index: 20; }
-    /* line 398, home.scss */
-    footer aside i.icon-network {
-      display: inline-block;
-      position: relative;
-      width: 30px;
-      height: 1em;
+    z-index: 5; }
+  /* line 400, home.scss */
+  footer aside i.icon-network {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 1em;
+    text-align: center;
+    text-transform: none;
+    color: #ee4144;
+    width: 30px;
+    margin-right: 20px;
+    z-index: 0; }
+    /* line 414, home.scss */
+    footer aside i.icon-network i.icon-heart:before {
+      animation: heartbeat 1s infinite;
+      -webkit-animation: heartbeat 1s infinite;
+      position: absolute; }
+    /* line 420, home.scss */
+    footer aside i.icon-network:before {
+      position: absolute;
+      z-index: -1;
+      zoom: 100%;
+      font-size: 226px;
+      margin-left: -107px;
+      margin-top: 15px;
+      vertical-align: top;
+      line-height: 22px;
       text-align: center;
-      text-transform: none;
-      color: #ee4144;
-      z-index: 0; }
-      /* line 407, home.scss */
-      footer aside i.icon-network:before {
-        position: absolute;
-        opacity: 0.3;
-        zoom: 800%;
-        margin-top: -6px;
-        margin-left: -9px;
-        color: #ecf0f1; }
+      opacity: 0.3;
+      color: #ecf0f1; }
 
-/* line 420, home.scss */
+/* line 440, home.scss */
 modal#likemystatus window {
   top: 10%;
   vertical-align: 80%;
@@ -2587,31 +2665,31 @@ modal#likemystatus window {
   overflow-x: hidden;
   bottom: 10%; }
 
-/* line 429, home.scss */
+/* line 449, home.scss */
 modal#credits window {
   background: #2c3e50;
   color: white; }
-  /* line 432, home.scss */
+  /* line 452, home.scss */
   modal#credits window .content a {
     color: white;
     transition: padding 0.2s;
     -webkit-transition: padding 0.2s;
     line-height: 1.8em; }
-    /* line 437, home.scss */
+    /* line 457, home.scss */
     modal#credits window .content a:hover {
       color: #16a085;
       padding-left: 20px; }
 
 @media only screen and (max-width: 780px) {
-  /* line 446, home.scss */
+  /* line 466, home.scss */
   body {
     padding-left: 0px; }
 
-  /* line 449, home.scss */
+  /* line 469, home.scss */
   .hidden-mobile, #mhacks, canvas, iframe, .browser, #about figure {
     display: none !important; }
 
-  /* line 452, home.scss */
+  /* line 472, home.scss */
   header, section, footer {
     position: relatve;
     width: 100%;
@@ -2619,40 +2697,40 @@ modal#credits window {
     padding: 20px 5px;
     text-align: center; }
 
-  /* line 457, home.scss */
+  /* line 477, home.scss */
   header {
     padding: 50px 10px 72px 10px; }
-    /* line 459, home.scss */
+    /* line 479, home.scss */
     header h1 {
       font-size: 50px;
       line-height: 1em; }
-      /* line 462, home.scss */
+      /* line 482, home.scss */
       header h1 span {
         opacity: 1 !important;
         text-shadow: 0 0 4px rgba(0, 0, 0, 0.5) !important; }
-    /* line 467, home.scss */
+    /* line 487, home.scss */
     header form {
       display: none !important; }
-    /* line 470, home.scss */
+    /* line 490, home.scss */
     header p {
       font-size: 20px; }
 
-  /* line 474, home.scss */
+  /* line 494, home.scss */
   #social a {
     display: block !important;
     width: 100% !important;
     text-shadow: none !important; } }
-/* line 482, home.scss */
+/* line 502, home.scss */
 html.mobile, body.mobile {
   background-color: #34495e;
   max-width: 500px;
   margin: auto;
   box-shadow: 0 0 20px black; }
 
-/* line 490, home.scss */
+/* line 510, home.scss */
 body.reset {
   background: white !important; }
-  /* line 492, home.scss */
+  /* line 512, home.scss */
   body.reset *, body.reset *:before, body.reset *:after {
     background: none !important;
     margin: 0 !important;
@@ -2678,10 +2756,10 @@ body.reset {
     visibility: visible !important;
     opacity: 1 !important;
     line-height: 1.5em !important; }
-  /* line 518, home.scss */
+  /* line 538, home.scss */
   body.reset a, body.reset a * {
     color: blue !important;
     text-decoration: underline !important; }
-  /* line 522, home.scss */
+  /* line 542, home.scss */
   body.reset window, body.reset modal {
     display: none !important; }

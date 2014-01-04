@@ -393,9 +393,13 @@ footer {
     color: $clouds;
   }
   aside {
-    position: relative;
-    z-index: 20;
+    a {
+      position: relative;
+      z-index: 5;
+    }
     i.icon-network {
+      position: relative;
+      z-index: 1;
       display: inline-block;
       position: relative;
       width: 30px;
@@ -403,13 +407,29 @@ footer {
       text-align: center;
       text-transform: none;
       color: $red;
+      width: 30px;
+      margin-right: 20px;
       z-index: 0;
+      i.icon-heart {
+        &:before {
+          animation: heartbeat 1s infinite;
+          -webkit-animation: heartbeat 1s infinite;
+          position: absolute;
+        }
+      }
       &:before {
+        // animation: orbit 1s infinite;
+        // -webkit-animation: orbit 1s infinite;
         position: absolute;
+        z-index: -1;
+        zoom: 100%;
+        font-size: 226px;
+        margin-left: -107px;
+        margin-top: 15px;
+        vertical-align: top;
+        line-height: 22px;
+        text-align: center;
         opacity: 0.3;
-        zoom: 800%;
-        margin-top: -6px;
-        margin-left: -9px;
         color: $clouds;
       }
     }
