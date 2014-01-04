@@ -2580,28 +2580,29 @@ canvas {
 header#top {
   color: white;
   padding: 160px 60px;
-  background: url(../shutter/pattern-triangles.png) #672f89;
-  background-repeat: no-repeat;
+  background-color: #64B4B0;
+  background-image: repeating-linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 1px, transparent 1px, transparent 60px), repeating-linear-gradient(60deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 1px, transparent 1px, transparent 60px), linear-gradient(60deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1)), linear-gradient(120deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1));
   background-size: cover;
+  background-repeat: repeat;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.5); }
-  /* line 148, home.scss */
+  /* line 154, home.scss */
   header#top p {
     font-size: 40px;
     position: relative; }
-  /* line 153, home.scss */
+  /* line 159, home.scss */
   header#top h1 {
     font-weight: bold;
     font-size: 80px;
     position: relative; }
-    /* line 157, home.scss */
+    /* line 163, home.scss */
     header#top h1 span {
       opacity: 0.2;
       text-shadow: none; }
-    /* line 161, home.scss */
+    /* line 167, home.scss */
     header#top h1 form {
       opacity: 1;
       display: block; }
-    /* line 165, home.scss */
+    /* line 171, home.scss */
     header#top h1 input {
       background: none;
       text-shadow: inherit;
@@ -2615,22 +2616,22 @@ header#top {
       width: 100%;
       position: relative;
       margin-top: -1.2em; }
-      /* line 178, home.scss */
+      /* line 184, home.scss */
       header#top h1 input::-webkit-input-placeholder {
         color: white;
         opacity: 1; }
-      /* line 182, home.scss */
+      /* line 188, home.scss */
       header#top h1 input:-moz-input-placeholder {
         color: white;
         opacity: 1; }
-      /* line 186, home.scss */
+      /* line 192, home.scss */
       header#top h1 input:-ms-input-placeholder {
         color: white;
         opacity: 1; }
-    /* line 191, home.scss */
+    /* line 197, home.scss */
     header#top h1 input#submit {
       display: none; }
-  /* line 195, home.scss */
+  /* line 201, home.scss */
   header#top a {
     position: absolute;
     bottom: 20px;
@@ -2642,24 +2643,24 @@ header#top {
     border-radius: 200px;
     border: 4px solid rgba(255, 255, 255, 0.2);
     font-size: 30px; }
-    /* line 207, home.scss */
+    /* line 213, home.scss */
     header#top a:hover {
       background: rgba(0, 0, 0, 0.5);
       border: 4px solid rgba(255, 255, 255, 0.5); }
 
-/* line 215, home.scss */
+/* line 221, home.scss */
 section#about {
   color: #FFF;
   background: #672f89;
   text-shadow: rgba(41, 52, 63, 0.4) 0px -1px 0px; }
-  /* line 219, home.scss */
+  /* line 225, home.scss */
   section#about figure {
     animation: fade-in-bottom 0.5s;
     -webkit-amimation: fade-in-bottom 0.5s;
     position: relative;
     height: 100%;
     display: table-cell; }
-    /* line 226, home.scss */
+    /* line 232, home.scss */
     section#about figure a {
       background: #672f89;
       color: white;
@@ -2678,10 +2679,10 @@ section#about {
       /* line 142, includes/_buttons.scss */
       section#about figure a:active, section#about figure a:focus {
         background-color: #50256b; }
-    /* line 239, home.scss */
+    /* line 245, home.scss */
     section#about figure:hover a {
       opacity: 1; }
-    /* line 243, home.scss */
+    /* line 249, home.scss */
     section#about figure img {
       position: absolute;
       left: 0px;
@@ -2695,17 +2696,17 @@ section#about {
       margin: -300px 0px 0px 0px;
       padding-top: 300px;
       transition: opacity 0.7s 0.25s, margin 0.8s 0.25s, padding 0.8s 0.25s; }
-  /* line 259, home.scss */
+  /* line 265, home.scss */
   section#about.visible img {
     opacity: 1;
     margin: 0px 0px 0px 0px;
     padding-top: 0px; }
 
-/* line 268, home.scss */
+/* line 274, home.scss */
 section#social {
   background: black;
   padding: 0; }
-  /* line 271, home.scss */
+  /* line 277, home.scss */
   section#social a {
     border-radius: 0px;
     display: inline-block;
@@ -2713,45 +2714,45 @@ section#social {
     color: white;
     padding: 20px 0px;
     transition: all 0.2s; }
-    /* line 278, home.scss */
+    /* line 284, home.scss */
     section#social a i {
       float: left;
       font-size: 60px;
       line-height: 60px;
       margin-left: 20%; }
-    /* line 284, home.scss */
+    /* line 290, home.scss */
     section#social a span {
       display: block; }
-    /* line 289, home.scss */
+    /* line 295, home.scss */
     section#social a.twitter {
       background: #00acee;
       text-shadow: #0094CD 1px 1px, #0094CD 2px 2px, #0094CD 3px 3px, #0094CD 4px 4px, #0094CD 5px 5px, #0094CD 6px 6px, #0094CD 7px 7px, #0094CD 8px 8px, #0094CD 9px 9px, #0094CD 10px 10px, #0094CD 11px 11px, #0094CD 12px 12px, #0094CD 13px 13px, #0094CD 14px 14px, #0094CD 15px 15px, #0094CD 16px 16px, #0094CD 17px 17px, #0094CD 18px 18px, #0094CD 19px 19px, #0094CD 20px 20px, #0094CD 21px 21px, #0094CD 22px 22px, #0094CD 23px 23px, #0094CD 24px 24px, #0094CD 25px 25px, #0094CD 26px 26px, #0094CD 27px 27px, #0094CD 28px 28px, #0094CD 29px 29px, #0094CD 30px 30px, #0094CD 31px 31px, #0094CD 32px 32px, #0094CD 33px 33px, #0094CD 34px 34px, #0094CD 35px 35px, #0094CD 36px 36px, #0094CD 37px 37px, #0094CD 38px 38px, #0094CD 39px 39px, #0094CD 40px 40px, #0094CD 41px 41px, #0094CD 42px 42px, #0094CD 43px 43px, #0094CD 44px 44px, #0094CD 45px 45px, #0094CD 46px 46px, #0094CD 47px 47px, #0094CD 48px 48px, #0094CD 49px 49px, #0094CD 50px 50px, #0094CD 51px 51px, #0094CD 52px 52px, #0095CE 53px 53px, #0095CF 54px 54px, #0096D0 55px 55px, #0097D1 56px 56px, #0097D2 57px 57px, #0098D2 58px 58px, #0098D3 59px 59px, #0099D4 60px 60px, #009AD5 61px 61px, #009AD6 62px 62px, #009BD7 63px 63px, #009CD8 64px 64px, #009CD8 65px 65px, #009DD9 66px 66px, #009DDA 67px 67px, #009EDB 68px 68px, #009FDC 69px 69px, #009FDD 70px 70px, #00A0DD 71px 71px, #00A0DE 72px 72px, #00A1DF 73px 73px, #00A2E0 74px 74px, #00A2E1 75px 75px, #00A3E2 76px 76px, #00A4E3 77px 77px, #00A4E3 78px 78px, #00A5E4 79px 79px, #00A5E5 80px 80px, #00A6E6 81px 81px, #00A7E7 82px 82px, #00A7E8 83px 83px, #00A8E8 84px 84px, #00A8E9 85px 85px, #00A9EA 86px 86px, #00AAEB 87px 87px, #00AAEC 88px 88px, #00ABED 89px 89px, #00ACEE 90px 90px; }
-      /* line 291, home.scss */
+      /* line 297, home.scss */
       section#social a.twitter:hover {
         background: #22c2ff; }
-    /* line 293, home.scss */
+    /* line 299, home.scss */
     section#social a.gplus {
       background: #dd1812;
       text-shadow: #BE150F 1px 1px, #BE150F 2px 2px, #BE150F 3px 3px, #BE150F 4px 4px, #BE150F 5px 5px, #BE150F 6px 6px, #BE150F 7px 7px, #BE150F 8px 8px, #BE150F 9px 9px, #BE150F 10px 10px, #BE150F 11px 11px, #BE150F 12px 12px, #BE150F 13px 13px, #BE150F 14px 14px, #BE150F 15px 15px, #BE150F 16px 16px, #BE150F 17px 17px, #BE150F 18px 18px, #BE150F 19px 19px, #BE150F 20px 20px, #BE150F 21px 21px, #BE150F 22px 22px, #BE150F 23px 23px, #BE150F 24px 24px, #BE150F 25px 25px, #BE150F 26px 26px, #BE150F 27px 27px, #BE150F 28px 28px, #BE150F 29px 29px, #BE150F 30px 30px, #BE150F 31px 31px, #BE150F 32px 32px, #BE150F 33px 33px, #BE150F 34px 34px, #BE150F 35px 35px, #BE150F 36px 36px, #BE150F 37px 37px, #BE150F 38px 38px, #BE150F 39px 39px, #BE150F 40px 40px, #BE150F 41px 41px, #BE150F 42px 42px, #BE150F 43px 43px, #BE150F 44px 44px, #BE150F 45px 45px, #BE150F 46px 46px, #BE150F 47px 47px, #BE150F 48px 48px, #BE150F 49px 49px, #BE150F 50px 50px, #BE150F 51px 51px, #BE150F 52px 52px, #BF150F 53px 53px, #C0150F 54px 54px, #C1150F 55px 55px, #C1150F 56px 56px, #C2150F 57px 57px, #C3150F 58px 58px, #C4150F 59px 59px, #C5150F 60px 60px, #C5150F 61px 61px, #C6150F 62px 62px, #C7150F 63px 63px, #C81610 64px 64px, #C91610 65px 65px, #C91610 66px 66px, #CA1610 67px 67px, #CB1610 68px 68px, #CC1610 69px 69px, #CD1610 70px 70px, #CD1610 71px 71px, #CE1610 72px 72px, #CF1610 73px 73px, #D01610 74px 74px, #D11610 75px 75px, #D11610 76px 76px, #D21711 77px 77px, #D31711 78px 78px, #D41711 79px 79px, #D51711 80px 80px, #D51711 81px 81px, #D61711 82px 82px, #D71711 83px 83px, #D81711 84px 84px, #D91711 85px 85px, #D91711 86px 86px, #DA1711 87px 87px, #DB1711 88px 88px, #DC1711 89px 89px, #DD1812 90px 90px; }
-      /* line 295, home.scss */
+      /* line 301, home.scss */
       section#social a.gplus:hover {
         background: #ee3934; }
-    /* line 297, home.scss */
+    /* line 303, home.scss */
     section#social a.devart {
       background: #4e6252;
       text-shadow: #435447 1px 1px, #435447 2px 2px, #435447 3px 3px, #435447 4px 4px, #435447 5px 5px, #435447 6px 6px, #435447 7px 7px, #435447 8px 8px, #435447 9px 9px, #435447 10px 10px, #435447 11px 11px, #435447 12px 12px, #435447 13px 13px, #435447 14px 14px, #435447 15px 15px, #435447 16px 16px, #435447 17px 17px, #435447 18px 18px, #435447 19px 19px, #435447 20px 20px, #435447 21px 21px, #435447 22px 22px, #435447 23px 23px, #435447 24px 24px, #435447 25px 25px, #435447 26px 26px, #435447 27px 27px, #435447 28px 28px, #435447 29px 29px, #435447 30px 30px, #435447 31px 31px, #435447 32px 32px, #435447 33px 33px, #435447 34px 34px, #435447 35px 35px, #435447 36px 36px, #435447 37px 37px, #435447 38px 38px, #435447 39px 39px, #435447 40px 40px, #435447 41px 41px, #435447 42px 42px, #435447 43px 43px, #435447 44px 44px, #435447 45px 45px, #435447 46px 46px, #435447 47px 47px, #435447 48px 48px, #435447 49px 49px, #435447 50px 50px, #435447 51px 51px, #435447 52px 52px, #435447 53px 53px, #435547 54px 54px, #445548 55px 55px, #445548 56px 56px, #445648 57px 57px, #445648 58px 58px, #455649 59px 59px, #455749 60px 60px, #455749 61px 61px, #46574A 62px 62px, #46584A 63px 63px, #46584A 64px 64px, #46594A 65px 65px, #47594B 66px 66px, #47594B 67px 67px, #475A4B 68px 68px, #485A4C 69px 69px, #485A4C 70px 70px, #485B4C 71px 71px, #485B4C 72px 72px, #495B4D 73px 73px, #495C4D 74px 74px, #495C4D 75px 75px, #4A5C4E 76px 76px, #4A5D4E 77px 77px, #4A5D4E 78px 78px, #4A5E4E 79px 79px, #4B5E4F 80px 80px, #4B5E4F 81px 81px, #4B5F4F 82px 82px, #4C5F50 83px 83px, #4C5F50 84px 84px, #4C6050 85px 85px, #4C6050 86px 86px, #4D6051 87px 87px, #4D6151 88px 88px, #4D6151 89px 89px, #4E6252 90px 90px; }
-      /* line 299, home.scss */
+      /* line 305, home.scss */
       section#social a.devart:hover {
         background: #657e6a; }
 
-/* line 308, home.scss */
+/* line 314, home.scss */
 #unicorn .browser {
   max-width: 850px;
   margin: auto; }
-/* line 312, home.scss */
+/* line 318, home.scss */
 #unicorn .frame {
   font-family: Arial; }
-  /* line 314, home.scss */
+  /* line 320, home.scss */
   #unicorn .frame nav.navbar {
     display: block;
     background: linear-gradient(#505050, #000000);
@@ -2763,65 +2764,65 @@ section#social {
     overflow: hidden;
     height: 48px;
     vertical-align: middle; }
-    /* line 325, home.scss */
+    /* line 331, home.scss */
     #unicorn .frame nav.navbar a {
       color: white;
       padding: 0 16px;
       line-height: 48px;
       font-size: 18px; }
-      /* line 330, home.scss */
+      /* line 336, home.scss */
       #unicorn .frame nav.navbar a.brand {
         font-size: 24px;
         padding-left: 20px; }
-  /* line 336, home.scss */
+  /* line 342, home.scss */
   #unicorn .frame aside {
     margin: 20px;
     background: #005a78;
     color: white;
     padding: 10px;
     border-radius: 4px; }
-  /* line 343, home.scss */
+  /* line 349, home.scss */
   #unicorn .frame article {
     margin: 20px;
     background: #005a78;
     color: white;
     padding: 10px;
     border-radius: 4px; }
-/* line 353, home.scss */
+/* line 359, home.scss */
 #unicorn.visible
 .frame nav.navbar {
   opacity: 1;
   transform: scale(1) translate(0, 0%);
   -webkit-transform: scale(1) translate(0, 0%); }
 
-/* line 362, home.scss */
+/* line 368, home.scss */
 #hackerchat {
   background: url("../shutter/pattern-dark-matter.png") black;
   background-repeat: repeat;
   color: #C8C8C8; }
 
-/* line 377, home.scss */
+/* line 383, home.scss */
 footer {
   background: #34495e;
   color: #ecf0f1;
   text-align: left;
   overflow: hidden;
   position: static; }
-  /* line 385, home.scss */
+  /* line 391, home.scss */
   footer a {
     color: #ecf0f1; }
-    /* line 387, home.scss */
+    /* line 393, home.scss */
     footer a:hover {
       color: #16a085; }
-  /* line 391, home.scss */
+  /* line 397, home.scss */
   footer .skyward {
     float: right;
     color: #ecf0f1;
     position: relative; }
-    /* line 395, home.scss */
+    /* line 401, home.scss */
     footer .skyward i.icon-tardis {
       position: absolute; }
-    /* line 398, home.scss */
+    /* line 404, home.scss */
     footer .skyward i.icon-tardis:before {
       position: absolute;
       font-size: 300px;
@@ -2833,7 +2834,7 @@ footer {
       transition: all 0.25s;
       -webkit-transform: rotate(-15deg);
       -webkit-transition: all 0.25s; }
-    /* line 410, home.scss */
+    /* line 416, home.scss */
     footer .skyward:hover i.icon-tardis:before {
       -webkit-transform: rotate(0deg);
       transform: rotate(0deg);
@@ -2841,7 +2842,7 @@ footer {
       color: #003865;
       text-shadow: 0 0 50px white;
       background: radial-gradient(#ffffff 0%, rgba(255, 255, 255, 0) 80%); }
-    /* line 418, home.scss */
+    /* line 424, home.scss */
     footer .skyward span {
       margin-right: 140px;
       background: #4f4e4c;
@@ -2855,11 +2856,11 @@ footer {
       /* line 142, includes/_buttons.scss */
       footer .skyward span:active, footer .skyward span:focus {
         background-color: #3a3938; }
-  /* line 426, home.scss */
+  /* line 432, home.scss */
   footer aside a {
     position: relative;
     z-index: 5; }
-  /* line 430, home.scss */
+  /* line 436, home.scss */
   footer aside i.icon-network {
     position: relative;
     z-index: 1;
@@ -2873,12 +2874,12 @@ footer {
     width: 30px;
     margin-right: 20px;
     z-index: 0; }
-    /* line 444, home.scss */
+    /* line 450, home.scss */
     footer aside i.icon-network i.icon-heart:before {
       animation: heartbeat 1s infinite;
       -webkit-animation: heartbeat 1s infinite;
       position: absolute; }
-    /* line 450, home.scss */
+    /* line 456, home.scss */
     footer aside i.icon-network:before {
       position: absolute;
       z-index: -1;
@@ -2892,7 +2893,7 @@ footer {
       opacity: 0.3;
       color: #ecf0f1; }
 
-/* line 470, home.scss */
+/* line 476, home.scss */
 modal#likemystatus window {
   top: 10%;
   vertical-align: 80%;
@@ -2900,31 +2901,31 @@ modal#likemystatus window {
   overflow-x: hidden;
   bottom: 10%; }
 
-/* line 479, home.scss */
+/* line 485, home.scss */
 modal#credits window {
   background: #2c3e50;
   color: white; }
-  /* line 482, home.scss */
+  /* line 488, home.scss */
   modal#credits window .content a {
     color: white;
     transition: padding 0.2s;
     -webkit-transition: padding 0.2s;
     line-height: 1.8em; }
-    /* line 487, home.scss */
+    /* line 493, home.scss */
     modal#credits window .content a:hover {
       color: #16a085;
       padding-left: 20px; }
 
 @media only screen and (max-width: 780px) {
-  /* line 496, home.scss */
+  /* line 502, home.scss */
   body {
     padding-left: 0px; }
 
-  /* line 499, home.scss */
+  /* line 505, home.scss */
   .hidden-mobile, #mhacks, canvas, iframe, .browser, #about figure {
     display: none !important; }
 
-  /* line 502, home.scss */
+  /* line 508, home.scss */
   header, section, footer {
     position: relatve;
     width: 100%;
@@ -2932,52 +2933,52 @@ modal#credits window {
     padding: 20px 5px;
     text-align: center; }
 
-  /* line 507, home.scss */
+  /* line 513, home.scss */
   header#top {
     padding: 50px 10px 72px 10px; }
-    /* line 509, home.scss */
+    /* line 515, home.scss */
     header#top h1 {
       font-size: 50px;
       line-height: 1em; }
-      /* line 512, home.scss */
+      /* line 518, home.scss */
       header#top h1 span {
         opacity: 1 !important;
         text-shadow: 0 0 4px rgba(0, 0, 0, 0.5) !important; }
-    /* line 517, home.scss */
+    /* line 523, home.scss */
     header#top form {
       display: none !important; }
-    /* line 520, home.scss */
+    /* line 526, home.scss */
     header#top p {
       font-size: 20px; }
 
-  /* line 524, home.scss */
+  /* line 530, home.scss */
   #social a {
     display: block !important;
     width: 100% !important;
     text-shadow: none !important; }
 
-  /* line 529, home.scss */
+  /* line 535, home.scss */
   .skyward {
     float: none;
     display: block;
     width: 100%;
     z-index: 5;
     margin-bottom: 1em; }
-    /* line 535, home.scss */
+    /* line 541, home.scss */
     .skyward i.icon-tardis {
       display: none; }
-    /* line 538, home.scss */
+    /* line 544, home.scss */
     .skyward span {
       margin-right: 0px !important;
       display: block;
       width: 100%;
       padding: 12px !important;
       font-size: 30px; } }
-/* line 549, home.scss */
+/* line 555, home.scss */
 body.inthetardis {
   background: #4f4e4c;
   background: linear-gradient(#81375c, #624c73, #1f2643, #16223c, #27324e, #1a344b); }
-  /* line 554, home.scss */
+  /* line 560, home.scss */
   body.inthetardis header, body.inthetardis section {
     animation: inthetardis 4s ease;
     -webkit-animation: inthetardis 4s ease;
@@ -2985,7 +2986,7 @@ body.inthetardis {
     background: #edece3;
     transition: box-shadow 0.5s ease;
     -webkit-transition: box-shadow 0.5s ease; }
-  /* line 562, home.scss */
+  /* line 568, home.scss */
   body.inthetardis i.icon-tardis {
     position: fixed !important;
     bottom: 120px !important;
@@ -2996,17 +2997,17 @@ body.inthetardis {
     animation: shimmydown 4s linear;
     -webkit-animation: shimmydown 4s linear; }
 
-/* line 574, home.scss */
+/* line 580, home.scss */
 html.mobile, body.mobile {
   background-color: #34495e;
   max-width: 500px;
   margin: auto;
   box-shadow: 0 0 20px black; }
 
-/* line 582, home.scss */
+/* line 588, home.scss */
 body.reset {
   background: white !important; }
-  /* line 584, home.scss */
+  /* line 590, home.scss */
   body.reset *, body.reset *:before, body.reset *:after {
     background: none !important;
     margin: 0 !important;
@@ -3032,10 +3033,10 @@ body.reset {
     visibility: visible !important;
     opacity: 1 !important;
     line-height: 1.5em !important; }
-  /* line 610, home.scss */
+  /* line 616, home.scss */
   body.reset a, body.reset a * {
     color: blue !important;
     text-decoration: underline !important; }
-  /* line 614, home.scss */
+  /* line 620, home.scss */
   body.reset window, body.reset modal {
     display: none !important; }

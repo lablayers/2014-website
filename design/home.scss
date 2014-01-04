@@ -141,9 +141,15 @@ canvas {
 header#top {
   color: white;
   padding: 160px 60px;
-  background: url(../shutter/pattern-triangles.png) $purple;
-  background-repeat: no-repeat;
+  // -> Look Ma, No Images!
+  // background: url(../shutter/pattern-triangles.png) $purple;
+  background-color: #64B4B0;
+  background-image: repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+  repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+  linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+  linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
   background-size: cover;
+  background-repeat: repeat;
   text-shadow: 0 0 4px rgba(0,0,0,.5);
   p {
     @extend p.lead;
