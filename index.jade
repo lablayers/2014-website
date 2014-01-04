@@ -21,9 +21,11 @@ block content
           menu#assist(style='display:none')
             li
               i.icon-search
-              |  Find in Page...
-              br
-              input(type='text' placeholder='Justin Bieber' id='search' data-search='')
+              input(type='text' placeholder='Find in Page...' id='search' data-search='')
+            li
+              a(href='http://translate.google.com/translate?sl=auto&tl=es&js=n&prev=_t&hl=en&ie=UTF-8&u=http%3A%2F%2Flablayers.github.io%2F&act=url&ref=translatemenu')
+                i.icon-location  
+                |   Translate this page!
             li
               .onoff
                 input(type='checkbox' data-view='1984' name='1984' id='1984' value='none')
@@ -34,7 +36,7 @@ block content
               .onoff
                 input(type='checkbox' data-view='mobile' name='mobile' id='mobile' value='none')
                 label(for='mobile')
-              i.icon-mobile
+              i.icon-responsive
               label Mobile Simulator (Alpha)
             li
               .onoff
@@ -126,7 +128,7 @@ block content
             i.icon-chevron-left
             i.icon-chevron-right
             i.icon-refresh
-          input.omnibox(placeholder='http://iliterobotics.org/')
+          input.omnibox(placeholder='https://awesome.store/')
           .menu
             i.icon-rows
         .frame
@@ -307,6 +309,7 @@ block content
           a.right(onclick='blast("credits"); mixpanel.track("Close Window");')
             i.icon-close
         div.content
+          h4 Stuff
           h4 Icons
           a(href='http://abonive.deviantart.com/art/Free-SVG-IconSet-389441971')
             i.icon-cc 

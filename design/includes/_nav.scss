@@ -230,6 +230,37 @@ nav[role="navigation"] menu {
         //     -ms-border-radius: 0px;
         // }
     }
+    menu#assist {
+    top: 66px;
+    left: 0px;
+    max-width: 75%;
+    display: block;
+    position: fixed;
+    z-index: 65540;
+    height: auto;
+    width: auto;
+    padding: 0px;
+    li {
+        background: white;
+        color: black;
+        padding: 0px 20px;
+        margin: 0;
+        i {
+            width: auto;
+        }
+        #search {
+            border: none;
+            border-bottom: 1px dotted;
+            font-family: $fonts;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+    }
+        div.onoff {
+            display: inline-block;
+            margin-right: 12px;
+        }
+    }
 }
 
 // Close Menu Shadow
@@ -271,5 +302,8 @@ body.menu-expanded {
         a span {
             font-size: 24px;
         }
+    }
+    a.assist, menu#assist {
+        display: none!important;
     }
 }

@@ -1459,7 +1459,8 @@ modal.visible window {
     overflow: auto; }
     /* line 131, includes/_modal.scss */
     modal window h1 {
-      padding-left: 76px !important; } }
+      line-height: 66px;
+      padding: 0px 10px 0px 76px !important; } }
 /* line 3, includes/_browser.scss */
 .browser {
   position: relative;
@@ -2415,12 +2416,43 @@ nav[role="navigation"] menu {
   nav[role="navigation"] menu.tiny {
     overflow-y: scroll;
     overflow-x: hidden; }
+  /* line 233, includes/_nav.scss */
+  nav[role="navigation"] menu menu#assist {
+    top: 66px;
+    left: 0px;
+    max-width: 75%;
+    display: block;
+    position: fixed;
+    z-index: 65540;
+    height: auto;
+    width: auto;
+    padding: 0px; }
+    /* line 243, includes/_nav.scss */
+    nav[role="navigation"] menu menu#assist li {
+      background: white;
+      color: black;
+      padding: 0px 20px;
+      margin: 0; }
+      /* line 248, includes/_nav.scss */
+      nav[role="navigation"] menu menu#assist li i {
+        width: auto; }
+      /* line 251, includes/_nav.scss */
+      nav[role="navigation"] menu menu#assist li #search {
+        border: none;
+        border-bottom: 1px dotted;
+        font-family: "Proxima", "Proxima Nova", Arial;
+        font-size: 16px;
+        margin-top: 20px; }
+    /* line 259, includes/_nav.scss */
+    nav[role="navigation"] menu menu#assist div.onoff {
+      display: inline-block;
+      margin-right: 12px; }
 
-/* line 236, includes/_nav.scss */
+/* line 267, includes/_nav.scss */
 .close-menu-bubble {
   display: none; }
 
-/* line 241, includes/_nav.scss */
+/* line 272, includes/_nav.scss */
 body.menu-expanded .close-menu-bubble {
   display: block !important;
   position: fixed;
@@ -2441,18 +2473,22 @@ body.menu-expanded .close-menu-bubble {
   box-shadow: inset 0 0 50px black; }
 
 @media only screen and (max-width: 780px) {
-  /* line 264, includes/_nav.scss */
+  /* line 295, includes/_nav.scss */
   menu.collapsed {
     height: 66px !important;
     width: 66px !important;
     overflow: hidden !important; }
 
-  /* line 269, includes/_nav.scss */
+  /* line 300, includes/_nav.scss */
   menu.expanded {
     width: 100% !important; }
-    /* line 271, includes/_nav.scss */
+    /* line 302, includes/_nav.scss */
     menu.expanded a span {
-      font-size: 24px; } }
+      font-size: 24px; }
+
+  /* line 306, includes/_nav.scss */
+  a.assist, menu#assist {
+    display: none !important; } }
 /* line 59, home.scss */
 body {
   box-shadow: 0 0 20px black;
@@ -2897,21 +2933,21 @@ modal#credits window {
     text-align: center; }
 
   /* line 507, home.scss */
-  header {
+  header#top {
     padding: 50px 10px 72px 10px; }
     /* line 509, home.scss */
-    header h1 {
+    header#top h1 {
       font-size: 50px;
       line-height: 1em; }
       /* line 512, home.scss */
-      header h1 span {
+      header#top h1 span {
         opacity: 1 !important;
         text-shadow: 0 0 4px rgba(0, 0, 0, 0.5) !important; }
     /* line 517, home.scss */
-    header form {
+    header#top form {
       display: none !important; }
     /* line 520, home.scss */
-    header p {
+    header#top p {
       font-size: 20px; }
 
   /* line 524, home.scss */

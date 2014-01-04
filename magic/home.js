@@ -174,6 +174,10 @@ $(document).ready(function(){
         $("menu").toggleClass("expanded");
         $("menu").toggleClass("collapsed");
     });
+    $('a.assist').click(function() {
+        // -> TODO: Change that slow to a class toggle...
+        $("menu#assist").toggle("slow");
+    });
 });
 $(document).on('click', 'menu.expanded a[href^="#"]', function () {
     $("body").toggleClass("menu-expanded");
