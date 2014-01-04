@@ -2629,7 +2629,7 @@ header#top {
         color: white;
         opacity: 1; }
     /* line 197, home.scss */
-    header#top h1 input#submit {
+    header#top h1 input[type="submit"] {
       display: none; }
   /* line 201, home.scss */
   header#top a {

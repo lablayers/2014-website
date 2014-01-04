@@ -194,7 +194,7 @@ header#top {
         opacity: 1;
       }
     }
-    input#submit {
+    input[type="submit"] {
       display: none;
     }
   }
