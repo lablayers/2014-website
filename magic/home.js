@@ -280,8 +280,17 @@ $(document).ready(function(){
 $(document).on('click', '.skyward', function () {
     $("body").addClass("inthetardis");
     setTimeout( function() {
+        var target = "top",
+        $target = $("#top");
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 3000, 'swing', function () {
+            window.location.hash = target;
+        });
+    }, 1000);
+    setTimeout( function() {
         $("body").removeClass("inthetardis"); 
-    }, 1500);
+    }, 4000);
 });
 
 

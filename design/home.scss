@@ -138,7 +138,7 @@ canvas {
 
 
 // Header
-header {
+header#top {
   color: white;
   padding: 160px 60px;
   background: url(../shutter/pattern-triangles.png) $purple;
@@ -391,6 +391,36 @@ footer {
   .skyward {
     float: right;
     color: $clouds;
+    position: relative;
+    i.icon-tardis {
+      position: absolute;
+    }
+    i.icon-tardis:before {
+      position: absolute;
+      font-size: 300px;
+      margin-top: -60px;
+      margin-left: -110px;
+      z-index: 5;
+      opacity: 0.6;
+      transform: rotate(-15deg);
+      transition: all 0.25s;
+      -webkit-transform: rotate(-15deg);
+      -webkit-transition: all 0.25s;
+    }
+    &:hover i.icon-tardis:before {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      opacity: 1;
+      color: $tardis;
+      text-shadow: 0 0 50px white;
+      background: radial-gradient(rgba(255,255,255,1) 0%, rgba(255,255,255,0) 80%);
+    }
+    span {
+      margin-right: 140px;
+      @include button-subtle($dark);
+      @extend .button-large;
+      @extend .button-rounded;
+    }
   }
   aside {
     a {
@@ -496,8 +526,50 @@ modal#credits window {
     width: 100%!important;
     text-shadow: none!important;
   }
+  .skyward {
+    float: none;
+    display: block;
+    width: 100%;
+    z-index: 5;
+    margin-bottom: 1em;
+    i.icon-tardis {
+      display: none;
+    }
+    span {
+      margin-right: 0px!important;
+      display: block;
+      width: 100%;
+      padding: 12px!important;
+      font-size: 30px;
+    }
+  }
 }
 
+// Hmm...
+body.inthetardis { // , body.menu-expanded {
+  background: $dark;
+  background: linear-gradient(#81375C, #624C73, #1F2643, #16223C, #27324E, #1A344B);
+  // transition: background 0.5s ease-in;
+  // -webkit-transition: background 0.5s ease-in;
+  header, section {
+    animation: inthetardis 4s ease;
+    -webkit-animation: inthetardis 4s ease;
+    box-shadow: 0 0 20px rgba(0,0,0,.5);
+    background: $light;
+    transition: box-shadow 0.5s ease;
+    -webkit-transition: box-shadow 0.5s ease;
+  }
+  i.icon-tardis {
+    position: fixed!important;
+    bottom: 120px!important;
+    right: 80px!important;
+    color: $tardis!important;
+    text-shadow: 0 0 50px white;
+    opacity: 1!important;
+    animation: shimmydown 4s linear;
+    -webkit-animation: shimmydown 4s linear;
+  }
+}
 // Mobile Emulator
 html.mobile, body.mobile {
   background-color: $wet-asphalt;
