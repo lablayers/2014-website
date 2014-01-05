@@ -2,8 +2,8 @@
 // -@ http://codepen.io/LabLayers/pen/vFfJm
 
 // Variables
-$blue: #02adea;
-$orange: #ff6600;
+$skyblue: #02adea;
+$skyorange: #ff6600;
 
 // Base Button
 .button {
@@ -16,6 +16,7 @@ $orange: #ff6600;
   text-decoration: none;
   text-align: center;
   cursor: pointer;
+  background: none;
 }
 
 // Mixins

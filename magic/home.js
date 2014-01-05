@@ -408,6 +408,20 @@ window.onload = function(){
     setInterval(draw, 33);
 }
 
+
+// jQuery Stick 'Em
+// -> Minified with YUI. Sorta but not really a position: sticky polyfill.
+// -@ Trevor Davis https://github.com/davist11/jQuery-Stickem
+(function(d,b,a,e){var c=function(g,f){this.elem=g;this.$elem=d(g);this.options=f;this.metadata=this.$elem.data("stickem-options");this.$win=d(b)};c.prototype={defaults:{item:".stickem",container:".stickem-container",stickClass:"stickit",endStickClass:"stickit-end",offset:0,start:0,onStick:null,onUnstick:null},init:function(){var f=this;f.config=d.extend({},f.defaults,f.options,f.metadata);f.setWindowHeight();f.getItems();f.bindEvents();return f},bindEvents:function(){var f=this;
+f.$win.on("scroll.stickem",d.proxy(f.handleScroll,f));f.$win.on("resize.stickem",d.proxy(f.handleResize,f))},destroy:function(){var f=this;f.$win.off("scroll.stickem");f.$win.off("resize.stickem")},getItem:function(g,h){var f=this;var j=d(h);var i={$elem:j,elemHeight:j.height(),$container:j.parents(f.config.container),isStuck:false};if(f.windowHeight>i.elemHeight){i.containerHeight=i.$container.outerHeight();
+i.containerInner={border:{bottom:parseInt(i.$container.css("border-bottom"),10)||0,top:parseInt(i.$container.css("border-top"),10)||0},padding:{bottom:parseInt(i.$container.css("padding-bottom"),10)||0,top:parseInt(i.$container.css("padding-top"),10)||0}};i.containerInnerHeight=i.$container.height();i.containerStart=i.$container.offset().top-f.config.offset+f.config.start+i.containerInner.padding.top+i.containerInner.border.top;i.scrollFinish=i.containerStart-f.config.start+(i.containerInnerHeight-i.elemHeight);
+if(i.containerInnerHeight>i.elemHeight){f.items.push(i)}}else{i.$elem.removeClass(f.config.stickClass+" "+f.config.endStickClass)}},getItems:function(){var f=this;f.items=[];f.$elem.find(f.config.item).each(d.proxy(f.getItem,f))},handleResize:function(){var f=this;f.getItems();f.setWindowHeight()},handleScroll:function(){var g=this;if(g.items.length>0){var k=g.$win.scrollTop();for(var h=0,f=g.items.length;h<f;h++){var j=g.items[h];if((j.isStuck&&(k<j.containerStart||k>j.scrollFinish))||k>j.scrollFinish){j.$elem.removeClass(g.config.stickClass);
+if(k>j.scrollFinish){j.$elem.addClass(g.config.endStickClass)}j.isStuck=false;if(g.config.onUnstick){g.config.onUnstick(j)}}else{if(j.isStuck===false&&k>j.containerStart&&k<j.scrollFinish){j.$elem.removeClass(g.config.endStickClass).addClass(g.config.stickClass);j.isStuck=true;if(g.config.onStick){g.config.onStick(j)}}}}}},setWindowHeight:function(){var f=this;f.windowHeight=f.$win.height()-f.config.offset}};c.defaults=c.prototype.defaults;d.fn.stickem=function(f){this.destroy=function(){this.each(function(){new c(this,f).destroy()})};
+return this.each(function(){new c(this,f).init()})}})(jQuery,window,document);
+
+$('#unicorn .browser').stickem();
+
+
 // Konami.js v1.4.2
 // -> Works on iPhone, too!
 // -@ https://github.com/snaptortoise/konami-js, MIT License

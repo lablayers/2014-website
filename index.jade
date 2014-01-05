@@ -101,7 +101,7 @@ block content
             i.icon-deviantart
         .col8
           h2 A little about me
-          p I'm a well-seasoned and award-winning high school student — a enthusiast passionate about making things awesome. I’ve made it to international robotics competitions, regional science fairs, and huge comic conventions. I’ve built and managed startups from ideas, websites from scratch, and art from pure nothingness. I’m on a quest for world domination, one small thing at a time.
+          p I'm a well-seasoned and award-winning high school student — a enthusiast passionate about making things awesome. I’ve made it to international robotics competitions, regional science fairs, huge college hackathons, and huge comic conventions. I’ve built and managed startups from ideas, websites from scratch, and art from pure nothingness. I’m on a quest for world domination, one small thing at a time.
     section#social(data-identity='victor')
       a.twitter(href='http://twitter.com/LabLayers')
         i.icon-twitter
@@ -115,40 +115,63 @@ block content
         i.icon-deviantart
         | LabLayers*
         span 116 Watchers
-    section#unicorn(data-identity='victor') <!-- data-pin='please' -->
+    section#unicorn(data-identity='victor' data-abtesting='3') <!-- data-pin='please' -->
       p They call me a
       h2
         i.icon-colt-horn
-        | Web Unicorn
+        |   Web Unicorn
       p Frontend
         span + Backend
-      div.browser
-        .toolbar
-          .controls
-            i.icon-chevron-left
-            i.icon-chevron-right
-            i.icon-refresh
-          input.omnibox(placeholder='https://awesome.store/')
-          .menu
-            i.icon-rows
-        .frame
-          nav.navbar
-            a.brand Blue Cheese
-            a.item Home
-            a.item About
-            a.item Products
-            a.item.right
-              i.icon-emo-happy  
-              span.firstname Jake
-              |  
-              span.lastname Smith
-          .row
-            .col9
-              article Lorem ipsum sat and donated blood to the Red Cross.
-            .col3
-              aside Sidebar yeah! Blah blah blah Pikachu!
-      div.parallax.stars
-      div.parallax.code
+      div(data-stick='container')
+        div.browser(data-position='sticky')
+          .toolbar
+            .controls
+              i.icon-chevron-left
+              i.icon-chevron-right
+              i.icon-refresh
+            input.omnibox(placeholder='https://awesome. store/')
+            .menu
+              i.icon-rows
+          .frame
+            nav.navbar
+              a.brand Blue Cheese
+              a.item Home
+              a.item About
+              a.item Products
+              a.item.right
+                i.icon-emo-happy  
+                span.firstname Jake
+                |  
+                span.lastname Smith
+            .row
+              .col9
+                .notice
+                  b
+                    i.icon-warning 
+                    | Important announcement: 
+                  | all items are on sale for the next 24 hours. 
+                article
+                  p Welcome! Please click an item to add it to your cart!
+                  .row
+                    .span4
+                      .thumbnail
+                      .caption Item 1
+                      a Add to Cart
+                    .span4
+                      .thumbnail
+                      .caption Item 2
+                      a Add to Cart
+                    .span4
+                      .thumbnail
+                      .caption Item 3
+                      a Add to Cart
+              .col3
+                aside
+                  strong My Cart
+                  | Lorem ipsum sat and donated blood to the Red Cross. 
+                  a(href='http://www.redcross.org/') You should too!
+        div.parallax.stars
+        div.parallax.code
     section#showcase(data-identity='victor')
       h2 Things I Do
       p Let's get into my portfolio, shall we?
@@ -321,15 +344,15 @@ block content
             i.icon-cc-pd 
             | Human Icons by National Park Service from the Noun Project
           br
+          a(href='http://thenounproject.com/xoxo/')
+            i.icon-cc(style='opacity:0') 
+            i.icon-cc-nc 
+            | Various icons by XOXO Festival from the Noun Project
+          br
           a(href='http://thenounproject.com/term/yeti/2987/#copy')
             i.icon-cc 
             i.icon-cc-by 
             | Yeti designed by Darrin Higgins from the Noun Project
-          br
-          a(href='http://thenounproject.com/xoxo/')
-            i.icon-cc 
-            i.icon-cc-by 
-            | Various icons by XOXO Festival from the Noun Project
           br
           a(href='http://thenounproject.com/alessandro.suraci')
             i.icon-cc 

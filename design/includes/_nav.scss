@@ -26,8 +26,8 @@ nav[role="navigation"] menu {
             text-align: left;
             font-size: 32px;
             vertical-align: middle;
-            transition: transform 0.25s;
-            -webkit-transition: transform 0.25s;
+            transition: background 0.25s;
+            -webkit-transition: background 0.25s;
             border-radius: 0px;
             position: relative;
             i {
@@ -55,7 +55,6 @@ nav[role="navigation"] menu {
         &.active .about, .about:hover {
             background: $purple;
         }
-
         &.bottom {
             position: fixed!important;
             bottom: 0!important;
