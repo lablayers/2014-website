@@ -70,6 +70,7 @@ $(window).scroll(function () {
 
 function handleScroll() {
     scrollTimer = null;
+    $(".browser").toggleClass("code", ($(document).offsetTop > 200));
     $("section").each(function(i, el) {
         var el = $(el);
         // if (el.visible(true)) {
@@ -321,18 +322,17 @@ var _gaq = [
 
 // SNOW!
 // -> Winter wrap-up planned for March.
+//    Minification breaks it!
 // -@ http://thecodeplayer.com/walkthrough/html5-canvas-snow-effect
 window.onload = function(){
     //canvas init
     var canvas = document.getElementById("snow");
     var ctx = canvas.getContext("2d");
-
     //canvas dimensions
     var W = window.innerWidth;
     var H = window.innerHeight;
     canvas.width = W;
     canvas.height = H;
-
     //snowflake particles
     var mp = 25; //max particles
     var particles = [];
@@ -345,7 +345,6 @@ window.onload = function(){
             d: Math.random()*mp //density
         })
     }
-
     //Lets draw the flakes
     function draw()
     {
@@ -362,7 +361,6 @@ window.onload = function(){
         ctx.fill();
         update();
     }
-
     //Function to move the snowflakes
     //angle will be an ongoing incremental flag. Sin and Cos functions will be applied to it to create vertical and horizontal movements of the flakes
     var angle = 0;
@@ -408,19 +406,147 @@ window.onload = function(){
     setInterval(draw, 33);
 }
 
-
 // jQuery Stick 'Em
-// -> Minified with YUI. Sorta but not really a position: sticky polyfill.
+// -> Sorta but not really a position: sticky polyfill.
+//    Minification breaks it!
 // -@ Trevor Davis https://github.com/davist11/jQuery-Stickem
-(function(d,b,a,e){var c=function(g,f){this.elem=g;this.$elem=d(g);this.options=f;this.metadata=this.$elem.data("stickem-options");this.$win=d(b)};c.prototype={defaults:{item:".stickem",container:".stickem-container",stickClass:"stickit",endStickClass:"stickit-end",offset:0,start:0,onStick:null,onUnstick:null},init:function(){var f=this;f.config=d.extend({},f.defaults,f.options,f.metadata);f.setWindowHeight();f.getItems();f.bindEvents();return f},bindEvents:function(){var f=this;
-f.$win.on("scroll.stickem",d.proxy(f.handleScroll,f));f.$win.on("resize.stickem",d.proxy(f.handleResize,f))},destroy:function(){var f=this;f.$win.off("scroll.stickem");f.$win.off("resize.stickem")},getItem:function(g,h){var f=this;var j=d(h);var i={$elem:j,elemHeight:j.height(),$container:j.parents(f.config.container),isStuck:false};if(f.windowHeight>i.elemHeight){i.containerHeight=i.$container.outerHeight();
-i.containerInner={border:{bottom:parseInt(i.$container.css("border-bottom"),10)||0,top:parseInt(i.$container.css("border-top"),10)||0},padding:{bottom:parseInt(i.$container.css("padding-bottom"),10)||0,top:parseInt(i.$container.css("padding-top"),10)||0}};i.containerInnerHeight=i.$container.height();i.containerStart=i.$container.offset().top-f.config.offset+f.config.start+i.containerInner.padding.top+i.containerInner.border.top;i.scrollFinish=i.containerStart-f.config.start+(i.containerInnerHeight-i.elemHeight);
-if(i.containerInnerHeight>i.elemHeight){f.items.push(i)}}else{i.$elem.removeClass(f.config.stickClass+" "+f.config.endStickClass)}},getItems:function(){var f=this;f.items=[];f.$elem.find(f.config.item).each(d.proxy(f.getItem,f))},handleResize:function(){var f=this;f.getItems();f.setWindowHeight()},handleScroll:function(){var g=this;if(g.items.length>0){var k=g.$win.scrollTop();for(var h=0,f=g.items.length;h<f;h++){var j=g.items[h];if((j.isStuck&&(k<j.containerStart||k>j.scrollFinish))||k>j.scrollFinish){j.$elem.removeClass(g.config.stickClass);
-if(k>j.scrollFinish){j.$elem.addClass(g.config.endStickClass)}j.isStuck=false;if(g.config.onUnstick){g.config.onUnstick(j)}}else{if(j.isStuck===false&&k>j.containerStart&&k<j.scrollFinish){j.$elem.removeClass(g.config.endStickClass).addClass(g.config.stickClass);j.isStuck=true;if(g.config.onStick){g.config.onStick(j)}}}}}},setWindowHeight:function(){var f=this;f.windowHeight=f.$win.height()-f.config.offset}};c.defaults=c.prototype.defaults;d.fn.stickem=function(f){this.destroy=function(){this.each(function(){new c(this,f).destroy()})};
-return this.each(function(){new c(this,f).init()})}})(jQuery,window,document);
 
-$('#unicorn .browser').stickem();
+;(function($, window, document, undefined) {
+    var Stickem = function(elem, options) {
+        this.elem = elem;
+        this.$elem = $(elem);
+        this.options = options;
+        this.metadata = this.$elem.data("stickem-options");
+        this.$win = $(window);
+    };
+    Stickem.prototype = {
+        defaults: {
+            item: '.stickem',
+            container: '.stickem-container',
+            stickClass: 'stickit',
+            endStickClass: 'stickit-end',
+            offset: 0,
+            start: 0,
+            onStick: null,
+            onUnstick: null
+        },
+        init: function() {
+            var _self = this;
+            //Merge options
+            _self.config = $.extend({}, _self.defaults, _self.options, _self.metadata);
+            _self.setWindowHeight();
+            _self.getItems();
+            _self.bindEvents();
+            return _self;
+        },
+        bindEvents: function() {
+            var _self = this;
+            _self.$win.on('scroll.stickem', $.proxy(_self.handleScroll, _self));
+            _self.$win.on('resize.stickem', $.proxy(_self.handleResize, _self));
+        },
+        destroy: function() {
+            var _self = this;
 
+            _self.$win.off('scroll.stickem');
+            _self.$win.off('resize.stickem');
+        },
+        getItem: function(index, element) {
+            var _self = this;
+            var $this = $(element);
+            var item = {
+                $elem: $this,
+                elemHeight: $this.height(),
+                $container: $this.parents(_self.config.container),
+                isStuck: false
+            };
+            //If the element is smaller than the window
+            if(_self.windowHeight > item.elemHeight) {
+                item.containerHeight = item.$container.outerHeight();
+                item.containerInner = {
+                    border: {
+                        bottom: parseInt(item.$container.css('border-bottom'), 10) || 0,
+                        top: parseInt(item.$container.css('border-top'), 10) || 0
+                    },
+                    padding: {
+                        bottom: parseInt(item.$container.css('padding-bottom'), 10) || 0,
+                        top: parseInt(item.$container.css('padding-top'), 10) || 0
+                    }
+                };
+                item.containerInnerHeight = item.$container.height();
+                item.containerStart = item.$container.offset().top - _self.config.offset + _self.config.start + item.containerInner.padding.top + item.containerInner.border.top;
+                item.scrollFinish = item.containerStart - _self.config.start + (item.containerInnerHeight - item.elemHeight);
+
+                //If the element is smaller than the container
+                if(item.containerInnerHeight > item.elemHeight) {
+                    _self.items.push(item);
+                }
+            } else {
+                item.$elem.removeClass(_self.config.stickClass + ' ' + _self.config.endStickClass);
+            }
+        },
+        getItems: function() {
+            var _self = this;
+            _self.items = [];
+            _self.$elem.find(_self.config.item).each($.proxy(_self.getItem, _self));
+        },
+        handleResize: function() {
+            var _self = this;
+            _self.getItems();
+            _self.setWindowHeight();
+        },
+        handleScroll: function() {
+            var _self = this;
+            if(_self.items.length > 0) {
+                var pos = _self.$win.scrollTop();
+                for(var i = 0, len = _self.items.length; i < len; i++) {
+                    var item = _self.items[i];
+                    //If it's stuck, and we need to unstick it, or if the page loads below it
+                    if((item.isStuck && (pos < item.containerStart || pos > item.scrollFinish)) || pos > item.scrollFinish) {
+                        item.$elem.removeClass(_self.config.stickClass);
+                        //only at the bottom
+                        if(pos > item.scrollFinish) {
+                            item.$elem.addClass(_self.config.endStickClass);
+                        }
+                        item.isStuck = false;
+                        //if supplied fire the onUnstick callback
+                        if(_self.config.onUnstick) {
+                            _self.config.onUnstick(item);
+                        }
+                    //If we need to stick it
+                    } else if(item.isStuck === false && pos > item.containerStart && pos < item.scrollFinish) {
+                            item.$elem.removeClass(_self.config.endStickClass).addClass(_self.config.stickClass);
+                            item.isStuck = true;
+
+                            //if supplied fire the onStick callback
+                            if(_self.config.onStick) {
+                                _self.config.onStick(item);
+                            }
+                    }
+                }
+            }
+        },
+        setWindowHeight: function() {
+            var _self = this;
+            _self.windowHeight = _self.$win.height() - _self.config.offset;
+        }
+    };
+    Stickem.defaults = Stickem.prototype.defaults;
+    $.fn.stickem = function(options) {
+        //Create a destroy method so that you can kill it and call it again.
+        this.destroy = function() {
+            this.each(function() {
+                new Stickem(this, options).destroy();
+            });
+        };
+        return this.each(function() {
+            new Stickem(this, options).init();
+        });
+    };
+})(jQuery, window , document);
+
+$(document).ready(function() {
+    $('[data-stickem="please"]').stickem();
+});
 
 // Konami.js v1.4.2
 // -> Works on iPhone, too!

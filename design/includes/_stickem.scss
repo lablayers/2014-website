@@ -1,0 +1,21 @@
+// jQuery Stickem
+// -@ https://github.com/davist11/jQuery-Stickem
+
+.stickem-container {
+    position: relative;
+}
+
+.stickit {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    padding: 0px 60px 0px 126px;
+}
+
+.stickit-end {
+    bottom: 40px;
+    position: absolute;
+    width: 100%;
+}

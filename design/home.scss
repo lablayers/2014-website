@@ -52,6 +52,9 @@
 // Navigation
 @import "includes/_nav.scss";
 
+// Stickem
+@import "includes/_stickem.scss";
+
 // Custom Variables
 $thickness: 4px;
 
@@ -85,6 +88,10 @@ header, section, footer {
   @extend .button-large;
   @extend .button-rounded;
   margin-right: 0.2em;
+}
+
+.dark-text-shadow {
+  text-shadow: rgba(41, 52, 63, 0.4) 0px -1px 0px;
 }
 
 // Loading
@@ -220,11 +227,11 @@ header#top {
 
 // About
 section#about {
-  color: #FFF;
+  color: white;
   background: $purple; //#0099B5;
   animation: colors 20s infinite;
   -webkit-animation: colors 20s infinite;
-  text-shadow: rgba(41, 52, 63, 0.4) 0px -1px 0px;
+  @extend .dark-text-shadow;
   figure {
     @extend .col4;
     animation: fade-in-bottom 0.5s;
@@ -285,12 +292,14 @@ section#social {
     padding: 20px 0px;
     transition: all 0.2s;
     i {
+      @extend .transition;
       float: left;
       font-size: 60px;
       line-height: 60px;
       margin-left: 20%;
     }
     span {
+      @extend .transition;
       display: block;
     }
     // Almost-Infinite Southeast Flat Shadow
@@ -307,6 +316,10 @@ section#social {
         background: #4e6252; text-shadow: #435447 1px 1px, #435447 2px 2px, #435447 3px 3px, #435447 4px 4px, #435447 5px 5px, #435447 6px 6px, #435447 7px 7px, #435447 8px 8px, #435447 9px 9px, #435447 10px 10px, #435447 11px 11px, #435447 12px 12px, #435447 13px 13px, #435447 14px 14px, #435447 15px 15px, #435447 16px 16px, #435447 17px 17px, #435447 18px 18px, #435447 19px 19px, #435447 20px 20px, #435447 21px 21px, #435447 22px 22px, #435447 23px 23px, #435447 24px 24px, #435447 25px 25px, #435447 26px 26px, #435447 27px 27px, #435447 28px 28px, #435447 29px 29px, #435447 30px 30px, #435447 31px 31px, #435447 32px 32px, #435447 33px 33px, #435447 34px 34px, #435447 35px 35px, #435447 36px 36px, #435447 37px 37px, #435447 38px 38px, #435447 39px 39px, #435447 40px 40px, #435447 41px 41px, #435447 42px 42px, #435447 43px 43px, #435447 44px 44px, #435447 45px 45px, #435447 46px 46px, #435447 47px 47px, #435447 48px 48px, #435447 49px 49px, #435447 50px 50px, #435447 51px 51px, #435447 52px 52px, #435447 53px 53px, #435547 54px 54px, #445548 55px 55px, #445548 56px 56px, #445648 57px 57px, #445648 58px 58px, #455649 59px 59px, #455749 60px 60px, #455749 61px 61px, #46574A 62px 62px, #46584A 63px 63px, #46584A 64px 64px, #46594A 65px 65px, #47594B 66px 66px, #47594B 67px 67px, #475A4B 68px 68px, #485A4C 69px 69px, #485A4C 70px 70px, #485B4C 71px 71px, #485B4C 72px 72px, #495B4D 73px 73px, #495C4D 74px 74px, #495C4D 75px 75px, #4A5C4E 76px 76px, #4A5D4E 77px 77px, #4A5D4E 78px 78px, #4A5E4E 79px 79px, #4B5E4F 80px 80px, #4B5E4F 81px 81px, #4B5F4F 82px 82px, #4C5F50 83px 83px, #4C5F50 84px 84px, #4C6050 85px 85px, #4C6050 86px 86px, #4D6051 87px 87px, #4D6151 88px 88px, #4D6151 89px 89px, #4E6252 90px 90px;
           &:hover { background: lighten(#4e6252, 10%); }
       }
+    &:hover i, &:hover span {
+      transform: translate(0px,-2px);
+      -webkit-transform: translate(0px,-2px);
+    }
   }
 
 }
@@ -315,7 +328,9 @@ section#social {
 // -> Bonus points if you know where the TERM came from (Hint: It's *NOT* MLP.)
 #unicorn {
   background: #5E4FA2;
+  background: linear-gradient(#5E4FA2, darken(#5E4FA2, 20%));
   color: white;
+  @extend .dark-text-shadow;
   i.icon-colt-horn {
     position: relative;
     display: inline-block;
@@ -324,9 +339,15 @@ section#social {
     transform: rotate(0) scale(1) translate(0,0);
     -webkit-transform: rotate(0) scale(1) translate(0,0);
   }
+  .stickem-container {
+    height: 800px;
+    display: block;
+  }
   .browser {
+    text-shadow: none;
     max-width: 850px;
     margin: auto;
+    margin-top: 20px;
     b {
       font-weight: bold;
     }
@@ -452,8 +473,8 @@ section#social {
     i.icon-colt-horn {
       animation: radiance 8s ease infinite;
       -webkit-animation: radiance 8s ease infinite;
-      transform: rotate(-30deg) scale(2) translate(-30px,2px);
-      -webkit-transform: rotate(-30deg) scale(2) translate(-30px,2px);
+      transform: rotate(-30deg) scale(2) translate(-45px,5px);
+      -webkit-transform: rotate(-30deg) scale(2) translate(-45px,5px);
     }
     .frame {
       nav.navbar {
@@ -629,7 +650,7 @@ modal#credits window {
   body {
     padding-left: 0px;
   }
-  .hidden-mobile, canvas, iframe, .browser, #about figure {
+  .hidden-mobile, canvas, iframe, .browser, #about figure, .stickem-container {
     display: none!important;
   }
   header, section, footer {

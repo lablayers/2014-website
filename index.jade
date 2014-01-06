@@ -115,61 +115,62 @@ block content
         i.icon-deviantart
         | LabLayers*
         span 116 Watchers
-    section#unicorn(data-identity='victor' data-abtesting='3') <!-- data-pin='please' -->
+    section#unicorn(data-identity='victor' data-abtesting='3' data-stickem='please')
       p They call me a
       h2
         i.icon-colt-horn
         |   Web Unicorn
-      p Frontend
-        span + Backend
-      div(data-stick='container')
-        div.browser(data-position='sticky')
-          .toolbar
-            .controls
-              i.icon-chevron-left
-              i.icon-chevron-right
-              i.icon-refresh
-            input.omnibox(placeholder='https://awesome. store/')
-            .menu
-              i.icon-rows
-          .frame
-            nav.navbar
-              a.brand Blue Cheese
-              a.item Home
-              a.item About
-              a.item Products
-              a.item.right
-                i.icon-emo-happy  
-                span.firstname Jake
-                |  
-                span.lastname Smith
-            .row
-              .col9
-                .notice
-                  b
-                    i.icon-warning 
-                    | Important announcement: 
-                  | all items are on sale for the next 24 hours. 
-                article
-                  p Welcome! Please click an item to add it to your cart!
-                  .row
-                    .span4
-                      .thumbnail
-                      .caption Item 1
-                      a Add to Cart
-                    .span4
-                      .thumbnail
-                      .caption Item 2
-                      a Add to Cart
-                    .span4
-                      .thumbnail
-                      .caption Item 3
-                      a Add to Cart
-              .col3
-                aside
-                  strong My Cart
-                  | Lorem ipsum sat and donated blood to the Red Cross. 
-                  a(href='http://www.redcross.org/') You should too!
+      p I do a lot of cool frontend &amp; backend stuff.
+      div.stickem-container
+        div.stickem
+          div.browser
+            .toolbar
+              .controls
+                i.icon-chevron-left
+                i.icon-chevron-right
+                i.icon-refresh
+              // i.icon-lock
+              input.omnibox(placeholder='https://awesome.store/')
+              .menu
+                i.icon-rows
+            .frame
+              nav.navbar
+                a.brand Blue Cheese
+                a.item Home
+                a.item About
+                a.item Products
+                a.item.right
+                  i.icon-emo-happy  
+                  span.firstname Jake
+                  |  
+                  span.lastname Smith
+              .row
+                .col9
+                  .notice
+                    b
+                      i.icon-warning 
+                      | Important announcement: 
+                    | all items are on sale for the next 24 hours. 
+                  article
+                    p Welcome! Please click an item to add it to your cart!
+                    .row
+                      .span4
+                        .thumbnail
+                        .caption Item 1
+                        a Add to Cart
+                      .span4
+                        .thumbnail
+                        .caption Item 2
+                        a Add to Cart
+                      .span4
+                        .thumbnail
+                        .caption Item 3
+                        a Add to Cart
+                .col3
+                  aside
+                    strong My Cart
+                    | Lorem ipsum sat and donated blood to the Red Cross. 
+                    a(href='http://www.redcross.org/') You should too!
         div.parallax.stars
         div.parallax.code
     section#showcase(data-identity='victor')
