@@ -53,6 +53,9 @@
 // Navigation
 @import "includes/_nav.scss";
 
+// Tooltips
+@import "includes/_tooltips.scss";
+
 // Stickem
 @import "includes/_stickem.scss";
 
@@ -80,11 +83,11 @@ header, section, footer {
 }
 
 .transition {
-  transition: all .25s linear;
-  -webkit-transition: all .25s linear;
+  transition: all .25s ease;
+  -webkit-transition: all .25s ease;
 }
 
-.button.gradient {
+.button {
   @include button-subtle($dark);
   @extend .button-large;
   @extend .button-rounded;
@@ -93,6 +96,23 @@ header, section, footer {
 
 .dark-text-shadow {
   text-shadow: rgba(41, 52, 63, 0.4) 0px -1px 0px;
+}
+
+ul.details {
+    border-top: 1px dotted;
+    margin: 1em 2em;
+    li {
+        padding: .5em;
+        border-bottom: 1px dotted;
+    }
+}
+
+.tech attr {
+  text-shadow: none;
+  padding: 6px;
+  border-radius: 4px;
+  font-size: 24px;
+  margin: 0 0.5em;
 }
 
 // Loading
@@ -242,8 +262,8 @@ section#about {
     display: table-cell;
     a {
       @include button-subtle($purple);
-      @extend .button-large;
-      @extend .button-rounded;
+      /// @extend .button-large;
+      // @extend .button-rounded;
       margin: auto;
       transition: all 0.2s;
       position: absolute;
@@ -252,6 +272,8 @@ section#about {
       bottom: 12px;
       opacity: 0;
       @extend .fade-in-top-transition;
+      animation: colors 20s infinite;
+      -webkit-animation: colors 20s infinite;
     }
     &:hover a {
       opacity: 1;
@@ -436,6 +458,7 @@ section#social {
         @include button-border(#005a78);
         // @extend .button-large;
         // @extend .button-rounded;
+        background: white;
         border-radius: 4px;
       }
     }
@@ -518,6 +541,57 @@ section#social {
   background: url("../shutter/pattern-dark-matter.png") black;
   background-repeat: repeat;
   color: #C8C8C8;
+  .browser {
+    @extend .col5;
+    iframe {
+      width: 100%;
+      height: 380px;
+      margin-bottom: -8px;
+    }
+  }
+  article {
+    @extend .col7;
+    a {
+      @include button-gradient($green);
+      @extend .button-jumbo;
+    }
+  }
+  .pilot {
+    color: inherit;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    span {
+      margin-top: 2em;
+      @extend .transition;
+      opacity: 0;
+      -webkit-transform: translate(-20%,0);
+      transform: translate(-20%,0);
+      display: inline-block;
+      padding-right: 20px;
+    }
+    i.icon-pilotphilly {
+      float: right;
+      font-size: 120px;
+      @extend .transition;
+      opacity: 0.5;
+      transform: rotate(-20deg);
+      -webkit-transform: rotate(-20deg);
+    }
+    &:hover {
+      span {
+        opacity: 1;
+        -webkit-transform: translate(0,0);
+        transform: translate(0,0);
+
+      }
+      i.icon-pilotphilly {
+        opacity: 1;
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+      }
+    }
+  }
 }
 
 // Science

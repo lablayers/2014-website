@@ -118,8 +118,8 @@ block content
     section#unicorn(data-identity='victor' data-abtesting='3' data-stickem='please')
       p They call me a
       h2
-        i.icon-colt-horn
-        |   Web Unicorn
+        i.icon-colt-horn  
+        | Web Unicorn
       p I do a lot of cool frontend &amp; backend stuff.
       div.stickem-container
         div.stickem
@@ -202,25 +202,52 @@ block content
            a.button.gradient.purple(href='http://yabby.victorlourng.com') Backend Demo
     section#hackerchat(data-identity='victor')
       .row
-        .col4
-          iframe(src='about:blank' data-src='http://hackerchat.im/' sandbox='allow-same-origin allow-scripts allow-forms allow-popups')
-        .col8
+        div.browser
+          .toolbar
+            input.omnibox(placeholder='http://hackerchat.im/ - Hackerchat Mobile')
+          .frame
+            iframe(src='about:blank' data-src='http://hackerchat.im/' sandbox='allow-same-origin allow-scripts allow-forms allow-popups' height='350')
+        article
           h2
             i.icon-hackerchat
             |  HackerChat
-          p.lead Hackable Collaboration
-          p Cool! Winner of the PilotPhilly Hackathon.
-          tech
-            i.icon-nodejs
-            i.icon-jade
-            i.icon-coffeescript
-            i.icon-less
-            i.icon-express
-            i.icon-mongodb
-            i.icon-socketio
-          a.button.gradient.purple(href='http://hackerchat.im') Hackerchat
-          a.button.gradient.purple(href='http://GitHub.com/aroman/hackerchat') GitHub Repo
-          a.button.gradient.purple(href='http://fav.me/...') Blog Post
+          // p.lead Hackable Collaboration
+          .tech
+            attr
+              tooltip
+                ul
+                  li Node.js
+                  li Jade
+                  li Express
+                  li Socket.io
+                  li Coffeescript
+                  li LESS
+                  li Bootstrap
+              i.icon-nodejs
+            attr
+              tooltip
+                ul
+                  li MongoDB
+              i.icon-mongodb
+          ul.details
+            li Winner of the PilotPhilly Hackathon
+            li An instant messaging client with many cool features.
+          a.main(href='http://hackerchat.im')
+            i.icon-right-hand.button-jumbo-prefix
+            | Hackerchat.im
+          a(href='http://github.com/aroman/hackerchat') 
+            i.icon-octocat.button-jumbo-prefix
+            i.icon-github
+            |  Repo
+          a(href='http://fav.me/d6ttmo3')
+            i.icon-news.button-jumbo-prefix
+            | Blog Post
+          br
+      a.pilot(href='http:///gopilot.org/')
+        span Pilot brings hackathons to high school students.
+          br
+          .button Learn More
+        i.icon-pilotphilly
     section#cloudchat(data-identity='victor')
       h2
         i.icon-cloud
@@ -378,7 +405,8 @@ block content
         div.fb-post(data-href="https://www.facebook.com/photo.php?fbid=247016672125437&amp;set=a.124621211031651.25621.124349814392124&amp;type=1" data-width="440")
           .fb-xfbml-parse-ignore
             .content
-              p Erm, nevermind. Facebook appears to be blocked. i.icon-emo-p
+              p Erm, nevermind. Facebook appears to be blocked. 
+                i.icon-emo-p
               hr
               a(href="https://www.facebook.com/photo.php?fbid=247016672125437&amp;set=a.124621211031651.25621.124349814392124&amp;type=1") Post
               by

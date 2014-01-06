@@ -1,0 +1,48 @@
+// Tooltips, my way!
+
+attr {
+    position: relative;
+    z-index: 1;
+    tooltip {
+        position: absolute;
+        top: 2em;
+        left: 0px;
+        color: white;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), #000);
+        box-shadow: 0px 0px 2px, rgba(255, 255, 255, 0.5) 0px 1px 0px inset;
+        border-radius: 4px;
+        z-index: 5;
+        visibility: none;
+        display: none;
+        opacity: 0;
+        -webkit-user-select: none;
+        cursor: default;
+        &:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-width: 10px;
+            border-style: solid;
+            border-color: transparent transparent rgba(255,255,255,.4) transparent ;
+            top: -20px;
+            left: 30px;
+        }
+        li {
+            list-style: none;
+            padding: 2px 14px;
+            font-size: 14px;
+            line-height: 1.5em;
+            border-bottom: 1px solid rgba(200,200,200,.5);
+            display: block;
+            &::last-child {
+                border-bottom: none;
+            }
+        }
+    }
+    &:hover tooltip {
+        opacity: 1;
+        visibility: visible;
+        display: block;
+    }
+}

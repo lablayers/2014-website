@@ -63,7 +63,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   clear: both; }
 
 /* line 8, includes/_grid.scss */
-.col1, .col2, .col3, .col4, section#about figure, #science article, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
+.col1, .col2, .col3, .col4, section#about figure, #science article, .col5, #hackerchat .browser, .col6, .col7, #hackerchat article, .col8, .col9, .col10, .col11, .col12 {
   float: left;
   box-sizing: border-box; }
 
@@ -92,7 +92,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 32.3333333333%; }
 
 /* line 11, includes/_grid.scss */
-.col5 {
+.col5, #hackerchat .browser {
   width: 40.7916666667%; }
 
 /* line 11, includes/_grid.scss */
@@ -100,7 +100,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 49.25%; }
 
 /* line 11, includes/_grid.scss */
-.col7 {
+.col7, #hackerchat article {
   width: 57.7083333333%; }
 
 /* line 11, includes/_grid.scss */
@@ -138,16 +138,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   min-width: 30px; }
 
 /* line 13, includes/_grid.scss */
-.col4, section#about figure, #science article, .col5 {
+.col4, section#about figure, #science article, .col5, #hackerchat .browser {
   min-width: 50px; }
 
 /* line 14, includes/_grid.scss */
-.col6, .col7, .col8, .col9, .col10, .col11, .col12 {
+.col6, .col7, #hackerchat article, .col8, .col9, .col10, .col11, .col12 {
   min-width: 100px; }
 
 @media only screen and (max-width: 780px) {
   /* line 17, includes/_grid.scss */
-  .col1, .col2, .col3, .col4, section#about figure, #science article, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
+  .col1, .col2, .col3, .col4, section#about figure, #science article, .col5, #hackerchat .browser, .col6, .col7, #hackerchat article, .col8, .col9, .col10, .col11, .col12 {
     display: block;
     width: 100%; } }
 /* line 21, includes/_grid.scss */
@@ -1414,7 +1414,7 @@ e(1.6) translateX(-20px);opacity:0}100%{transform:scale(1) translateX(0px);opaci
   opacity: 1; }
 
 /* line 9, includes/_buttons.scss */
-.button, .button.gradient, section#about figure a, #unicorn .frame article a, footer .skyward span {
+.button, section#about figure a, #unicorn .frame article a, #hackerchat article a, footer .skyward span {
   color: inherit;
   padding: 6px 8px;
   font-size: 14px;
@@ -1431,7 +1431,7 @@ e(1.6) translateX(-20px);opacity:0}100%{transform:scale(1) translateX(0px);opaci
   display: block; }
 
 /* line 153, includes/_buttons.scss */
-.button-rounded, .gradient.button, #unicorn .frame article a.gradient, footer .skyward span.gradient, section#about figure a, footer .skyward span {
+.button-rounded, .button, section#about figure a, #unicorn .frame article a, #hackerchat article a, footer .skyward span {
   border-radius: 6px; }
 
 /* line 157, includes/_buttons.scss */
@@ -1439,15 +1439,27 @@ e(1.6) translateX(-20px);opacity:0}100%{transform:scale(1) translateX(0px);opaci
   border-radius: 300px; }
 
 /* line 161, includes/_buttons.scss */
-.button-large, .gradient.button, #unicorn .frame article a.gradient, footer .skyward span.gradient, section#about figure a, footer .skyward span {
+.button-large, .button, section#about figure a, #unicorn .frame article a, #hackerchat article a, footer .skyward span {
   font-size: 18px;
   line-height: 1.2em; }
 
 /* line 166, includes/_buttons.scss */
-.button-jumbo {
+.button-jumbo, #hackerchat article a {
   font-size: 24px;
-  line-height: 1.2em;
-  padding: 14px 20px; }
+  line-height: 2.6em;
+  padding: 0 16px; }
+
+/* line 172, includes/_buttons.scss */
+.button-jumbo-prefix {
+  display: inline-block !important;
+  line-height: inherit !important;
+  float: left !important;
+  background: rgba(255, 255, 255, 0.4);
+  margin: 0px 16px 0px -16px;
+  padding: 0px 16px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-right: 1px solid rgba(0, 0, 0, 0.45); }
 
 /* line 4, includes/_type.scss */
 body {
@@ -2521,7 +2533,7 @@ nav[role="navigation"] menu {
       margin-top: 16px;
       padding: 0px 6px;
       background: linear-gradient(rgba(0, 0, 0, 0.6), #000000);
-      box-shadow: black 0px 0px 2px, rgba(255, 255, 255, 0.4) 0px 2px 0px inset;
+      box-shadow: rgba(255, 255, 255, 0.4) 0px 2px 0px inset;
       z-index: 90000;
       border-radius: 6px;
       font-size: 16px;
@@ -2702,6 +2714,53 @@ body.menu-expanded .close-menu-bubble {
   /* line 305, includes/_nav.scss */
   a.assist, menu#assist {
     display: none !important; } }
+/* line 3, includes/_tooltips.scss */
+attr {
+  position: relative;
+  z-index: 1; }
+  /* line 6, includes/_tooltips.scss */
+  attr tooltip {
+    position: absolute;
+    top: 2em;
+    left: 0px;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #000000);
+    box-shadow: 0px 0px 2px, rgba(255, 255, 255, 0.5) 0px 1px 0px inset;
+    border-radius: 4px;
+    z-index: 5;
+    visibility: none;
+    display: none;
+    opacity: 0;
+    -webkit-user-select: none;
+    cursor: default; }
+    /* line 20, includes/_tooltips.scss */
+    attr tooltip:before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-width: 10px;
+      border-style: solid;
+      border-color: transparent transparent rgba(255, 255, 255, 0.4) transparent;
+      top: -20px;
+      left: 30px; }
+    /* line 31, includes/_tooltips.scss */
+    attr tooltip li {
+      list-style: none;
+      padding: 2px 14px;
+      font-size: 14px;
+      line-height: 1.5em;
+      border-bottom: 1px solid rgba(200, 200, 200, 0.5);
+      display: block; }
+      /* line 38, includes/_tooltips.scss */
+      attr tooltip li::last-child {
+        border-bottom: none; }
+  /* line 43, includes/_tooltips.scss */
+  attr:hover tooltip {
+    opacity: 1;
+    visibility: visible;
+    display: block; }
+
 /* line 4, includes/_stickem.scss */
 .stickem-container {
   position: relative; }
@@ -2721,17 +2780,17 @@ body.menu-expanded .close-menu-bubble {
   position: absolute;
   width: 100%; }
 
-/* line 63, home.scss */
+/* line 66, home.scss */
 body {
   box-shadow: 0 0 20px black;
   padding-left: 66px;
   font-family: "Open Sans", "Proxima", "Proxima Nova", Arial; }
 
-/* line 72, home.scss */
+/* line 75, home.scss */
 h1, h2, h3, h4, h5, .btn, .nav {
   font-family: "Varela Round", "Proxima Nova Soft", ProximaSoft, Montserrat, Arial; }
 
-/* line 76, home.scss */
+/* line 79, home.scss */
 header, section, footer {
   position: relatve;
   width: 100%;
@@ -2739,13 +2798,13 @@ header, section, footer {
   padding: 60px;
   text-align: center; }
 
-/* line 82, home.scss */
-.transition, header#top a, section#social a i, section#social a span {
-  transition: all .25s linear;
-  -webkit-transition: all .25s linear; }
+/* line 85, home.scss */
+.transition, header#top a, section#social a i, section#social a span, #hackerchat .pilot span, #hackerchat .pilot i.icon-pilotphilly {
+  transition: all .25s ease;
+  -webkit-transition: all .25s ease; }
 
-/* line 87, home.scss */
-.gradient.button, section#about figure a.gradient, #unicorn .frame article a.gradient, footer .skyward span.gradient {
+/* line 90, home.scss */
+.button, section#about figure a, #unicorn .frame article a, #hackerchat article a, footer .skyward span {
   background: #4f4e4c;
   color: white;
   border: 1px solid #1b1b1a;
@@ -2753,29 +2812,46 @@ header, section, footer {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   margin-right: 0.2em; }
   /* line 140, includes/_buttons.scss */
-  .gradient.button:hover, section#about figure a.gradient:hover, #unicorn .frame article a.gradient:hover, footer .skyward span.gradient:hover {
+  .button:hover, section#about figure a:hover, #unicorn .frame article a:hover, #hackerchat article a:hover, footer .skyward span:hover {
     background-color: #646360; }
   /* line 143, includes/_buttons.scss */
-  .gradient.button:active, section#about figure a.gradient:active, #unicorn .frame article a.gradient:active, footer .skyward span.gradient:active, .gradient.button:focus, section#about figure a.gradient:focus, #unicorn .frame article a.gradient:focus, footer .skyward span.gradient:focus {
+  .button:active, section#about figure a:active, #unicorn .frame article a:active, #hackerchat article a:active, footer .skyward span:active, .button:focus, section#about figure a:focus, #unicorn .frame article a:focus, #hackerchat article a:focus, footer .skyward span:focus {
     background-color: #3a3938; }
 
-/* line 94, home.scss */
+/* line 97, home.scss */
 .dark-text-shadow, section#about, #unicorn {
   text-shadow: rgba(41, 52, 63, 0.4) 0px -1px 0px; }
 
-/* line 99, home.scss */
+/* line 101, home.scss */
+ul.details {
+  border-top: 1px dotted;
+  margin: 1em 2em; }
+  /* line 104, home.scss */
+  ul.details li {
+    padding: .5em;
+    border-bottom: 1px dotted; }
+
+/* line 110, home.scss */
+.tech attr {
+  text-shadow: none;
+  padding: 6px;
+  border-radius: 4px;
+  font-size: 24px;
+  margin: 0 0.5em; }
+
+/* line 119, home.scss */
 progress[data-status='empty'] {
   display: none; }
 
-/* line 100, home.scss */
+/* line 120, home.scss */
 progress[data-status='loading'] {
   display: block; }
 
-/* line 101, home.scss */
+/* line 121, home.scss */
 progress[data-status='done'] {
   display: none; }
 
-/* line 104, home.scss */
+/* line 124, home.scss */
 canvas {
   display: block;
   position: absolute;
@@ -2785,7 +2861,7 @@ canvas {
   width: 100%;
   z-index: 0; }
 
-/* line 117, home.scss */
+/* line 137, home.scss */
 #billboard .halfCircle {
   height: 45px;
   width: 90px;
@@ -2794,7 +2870,7 @@ canvas {
   -webkit-border-radius: 90px 90px 0 0;
   background: green; }
 
-/* line 128, home.scss */
+/* line 148, home.scss */
 #mhacks {
   color: #FEC00F;
   background: #646464;
@@ -2804,15 +2880,15 @@ canvas {
   cursor: pointer;
   transition: background 0.25s ease-in;
   -webkit-transition: background 0.25s ease-in; }
-  /* line 138, home.scss */
+  /* line 158, home.scss */
   #mhacks:hover {
     background: #242424; }
-  /* line 141, home.scss */
+  /* line 161, home.scss */
   #mhacks i {
     font-size: 30px;
     padding-right: 20px; }
 
-/* line 149, home.scss */
+/* line 169, home.scss */
 header#top {
   color: white;
   padding: 160px 60px;
@@ -2821,24 +2897,24 @@ header#top {
   background-size: cover;
   background-repeat: repeat;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.5); }
-  /* line 162, home.scss */
+  /* line 182, home.scss */
   header#top p {
     font-size: 40px;
     position: relative; }
-  /* line 167, home.scss */
+  /* line 187, home.scss */
   header#top h1 {
     font-weight: bold;
     font-size: 80px;
     position: relative; }
-    /* line 171, home.scss */
+    /* line 191, home.scss */
     header#top h1 span {
       opacity: 0.2;
       text-shadow: none; }
-    /* line 175, home.scss */
+    /* line 195, home.scss */
     header#top h1 form {
       opacity: 1;
       display: block; }
-    /* line 179, home.scss */
+    /* line 199, home.scss */
     header#top h1 input {
       background: none;
       text-shadow: inherit;
@@ -2852,22 +2928,22 @@ header#top {
       width: 100%;
       position: relative;
       margin-top: -1.2em; }
-      /* line 192, home.scss */
+      /* line 212, home.scss */
       header#top h1 input::-webkit-input-placeholder {
         color: white;
         opacity: 1; }
-      /* line 196, home.scss */
+      /* line 216, home.scss */
       header#top h1 input:-moz-input-placeholder {
         color: white;
         opacity: 1; }
-      /* line 200, home.scss */
+      /* line 220, home.scss */
       header#top h1 input:-ms-input-placeholder {
         color: white;
         opacity: 1; }
-    /* line 205, home.scss */
+    /* line 225, home.scss */
     header#top h1 input[type="submit"] {
       display: none; }
-  /* line 209, home.scss */
+  /* line 229, home.scss */
   header#top a {
     position: absolute;
     bottom: 20px;
@@ -2879,26 +2955,26 @@ header#top {
     border-radius: 200px;
     border: 4px solid rgba(255, 255, 255, 0.2);
     font-size: 30px; }
-    /* line 221, home.scss */
+    /* line 241, home.scss */
     header#top a:hover {
       line-height: 50px;
       background: rgba(0, 0, 0, 0.5);
       border: 4px solid rgba(255, 255, 255, 0.5); }
 
-/* line 230, home.scss */
+/* line 250, home.scss */
 section#about {
   color: white;
   background: #672f89;
   animation: colors 20s infinite;
   -webkit-animation: colors 20s infinite; }
-  /* line 236, home.scss */
+  /* line 256, home.scss */
   section#about figure {
     animation: fade-in-bottom 0.5s;
     -webkit-amimation: fade-in-bottom 0.5s;
     position: relative;
     height: 100%;
     display: table-cell; }
-    /* line 243, home.scss */
+    /* line 263, home.scss */
     section#about figure a {
       background: #672f89;
       color: white;
@@ -2910,17 +2986,19 @@ section#about {
       position: absolute;
       left: 0;
       bottom: 12px;
-      opacity: 0; }
+      opacity: 0;
+      animation: colors 20s infinite;
+      -webkit-animation: colors 20s infinite; }
       /* line 140, includes/_buttons.scss */
       section#about figure a:hover {
         background-color: #7e39a7; }
       /* line 143, includes/_buttons.scss */
       section#about figure a:active, section#about figure a:focus {
         background-color: #50256b; }
-    /* line 256, home.scss */
+    /* line 278, home.scss */
     section#about figure:hover a {
       opacity: 1; }
-    /* line 260, home.scss */
+    /* line 282, home.scss */
     section#about figure img {
       position: absolute;
       left: 0px;
@@ -2934,17 +3012,17 @@ section#about {
       margin: -45px 0px 0px 0px !important;
       padding-top: 300px;
       transition: opacity 0.7s 0.25s, margin 0.8s 0.25s, padding 0.8s 0.25s; }
-  /* line 276, home.scss */
+  /* line 298, home.scss */
   section#about.visible img {
     opacity: 1;
     margin: 0px 0px 0px 0px;
     padding-top: 0px; }
 
-/* line 285, home.scss */
+/* line 307, home.scss */
 section#social {
   background: black;
   padding: 0; }
-  /* line 288, home.scss */
+  /* line 310, home.scss */
   section#social a {
     border-radius: 0px;
     display: inline-block;
@@ -2952,47 +3030,47 @@ section#social {
     color: white;
     padding: 20px 0px;
     transition: all 0.2s; }
-    /* line 295, home.scss */
+    /* line 317, home.scss */
     section#social a i {
       float: left;
       font-size: 60px;
       line-height: 60px;
       margin-left: 20%; }
-    /* line 302, home.scss */
+    /* line 324, home.scss */
     section#social a span {
       display: block; }
-    /* line 308, home.scss */
+    /* line 330, home.scss */
     section#social a.twitter {
       background: #00acee;
       text-shadow: #0094CD 1px 1px, #0094CD 2px 2px, #0094CD 3px 3px, #0094CD 4px 4px, #0094CD 5px 5px, #0094CD 6px 6px, #0094CD 7px 7px, #0094CD 8px 8px, #0094CD 9px 9px, #0094CD 10px 10px, #0094CD 11px 11px, #0094CD 12px 12px, #0094CD 13px 13px, #0094CD 14px 14px, #0094CD 15px 15px, #0094CD 16px 16px, #0094CD 17px 17px, #0094CD 18px 18px, #0094CD 19px 19px, #0094CD 20px 20px, #0094CD 21px 21px, #0094CD 22px 22px, #0094CD 23px 23px, #0094CD 24px 24px, #0094CD 25px 25px, #0094CD 26px 26px, #0094CD 27px 27px, #0094CD 28px 28px, #0094CD 29px 29px, #0094CD 30px 30px, #0094CD 31px 31px, #0094CD 32px 32px, #0094CD 33px 33px, #0094CD 34px 34px, #0094CD 35px 35px, #0094CD 36px 36px, #0094CD 37px 37px, #0094CD 38px 38px, #0094CD 39px 39px, #0094CD 40px 40px, #0094CD 41px 41px, #0094CD 42px 42px, #0094CD 43px 43px, #0094CD 44px 44px, #0094CD 45px 45px, #0094CD 46px 46px, #0094CD 47px 47px, #0094CD 48px 48px, #0094CD 49px 49px, #0094CD 50px 50px, #0094CD 51px 51px, #0094CD 52px 52px, #0095CE 53px 53px, #0095CF 54px 54px, #0096D0 55px 55px, #0097D1 56px 56px, #0097D2 57px 57px, #0098D2 58px 58px, #0098D3 59px 59px, #0099D4 60px 60px, #009AD5 61px 61px, #009AD6 62px 62px, #009BD7 63px 63px, #009CD8 64px 64px, #009CD8 65px 65px, #009DD9 66px 66px, #009DDA 67px 67px, #009EDB 68px 68px, #009FDC 69px 69px, #009FDD 70px 70px, #00A0DD 71px 71px, #00A0DE 72px 72px, #00A1DF 73px 73px, #00A2E0 74px 74px, #00A2E1 75px 75px, #00A3E2 76px 76px, #00A4E3 77px 77px, #00A4E3 78px 78px, #00A5E4 79px 79px, #00A5E5 80px 80px, #00A6E6 81px 81px, #00A7E7 82px 82px, #00A7E8 83px 83px, #00A8E8 84px 84px, #00A8E9 85px 85px, #00A9EA 86px 86px, #00AAEB 87px 87px, #00AAEC 88px 88px, #00ABED 89px 89px, #00ACEE 90px 90px; }
-      /* line 310, home.scss */
+      /* line 332, home.scss */
       section#social a.twitter:hover {
         background: #22c2ff; }
-    /* line 312, home.scss */
+    /* line 334, home.scss */
     section#social a.gplus {
       background: #dd1812;
       text-shadow: #BE150F 1px 1px, #BE150F 2px 2px, #BE150F 3px 3px, #BE150F 4px 4px, #BE150F 5px 5px, #BE150F 6px 6px, #BE150F 7px 7px, #BE150F 8px 8px, #BE150F 9px 9px, #BE150F 10px 10px, #BE150F 11px 11px, #BE150F 12px 12px, #BE150F 13px 13px, #BE150F 14px 14px, #BE150F 15px 15px, #BE150F 16px 16px, #BE150F 17px 17px, #BE150F 18px 18px, #BE150F 19px 19px, #BE150F 20px 20px, #BE150F 21px 21px, #BE150F 22px 22px, #BE150F 23px 23px, #BE150F 24px 24px, #BE150F 25px 25px, #BE150F 26px 26px, #BE150F 27px 27px, #BE150F 28px 28px, #BE150F 29px 29px, #BE150F 30px 30px, #BE150F 31px 31px, #BE150F 32px 32px, #BE150F 33px 33px, #BE150F 34px 34px, #BE150F 35px 35px, #BE150F 36px 36px, #BE150F 37px 37px, #BE150F 38px 38px, #BE150F 39px 39px, #BE150F 40px 40px, #BE150F 41px 41px, #BE150F 42px 42px, #BE150F 43px 43px, #BE150F 44px 44px, #BE150F 45px 45px, #BE150F 46px 46px, #BE150F 47px 47px, #BE150F 48px 48px, #BE150F 49px 49px, #BE150F 50px 50px, #BE150F 51px 51px, #BE150F 52px 52px, #BF150F 53px 53px, #C0150F 54px 54px, #C1150F 55px 55px, #C1150F 56px 56px, #C2150F 57px 57px, #C3150F 58px 58px, #C4150F 59px 59px, #C5150F 60px 60px, #C5150F 61px 61px, #C6150F 62px 62px, #C7150F 63px 63px, #C81610 64px 64px, #C91610 65px 65px, #C91610 66px 66px, #CA1610 67px 67px, #CB1610 68px 68px, #CC1610 69px 69px, #CD1610 70px 70px, #CD1610 71px 71px, #CE1610 72px 72px, #CF1610 73px 73px, #D01610 74px 74px, #D11610 75px 75px, #D11610 76px 76px, #D21711 77px 77px, #D31711 78px 78px, #D41711 79px 79px, #D51711 80px 80px, #D51711 81px 81px, #D61711 82px 82px, #D71711 83px 83px, #D81711 84px 84px, #D91711 85px 85px, #D91711 86px 86px, #DA1711 87px 87px, #DB1711 88px 88px, #DC1711 89px 89px, #DD1812 90px 90px; }
-      /* line 314, home.scss */
+      /* line 336, home.scss */
       section#social a.gplus:hover {
         background: #ee3934; }
-    /* line 316, home.scss */
+    /* line 338, home.scss */
     section#social a.devart {
       background: #4e6252;
       text-shadow: #435447 1px 1px, #435447 2px 2px, #435447 3px 3px, #435447 4px 4px, #435447 5px 5px, #435447 6px 6px, #435447 7px 7px, #435447 8px 8px, #435447 9px 9px, #435447 10px 10px, #435447 11px 11px, #435447 12px 12px, #435447 13px 13px, #435447 14px 14px, #435447 15px 15px, #435447 16px 16px, #435447 17px 17px, #435447 18px 18px, #435447 19px 19px, #435447 20px 20px, #435447 21px 21px, #435447 22px 22px, #435447 23px 23px, #435447 24px 24px, #435447 25px 25px, #435447 26px 26px, #435447 27px 27px, #435447 28px 28px, #435447 29px 29px, #435447 30px 30px, #435447 31px 31px, #435447 32px 32px, #435447 33px 33px, #435447 34px 34px, #435447 35px 35px, #435447 36px 36px, #435447 37px 37px, #435447 38px 38px, #435447 39px 39px, #435447 40px 40px, #435447 41px 41px, #435447 42px 42px, #435447 43px 43px, #435447 44px 44px, #435447 45px 45px, #435447 46px 46px, #435447 47px 47px, #435447 48px 48px, #435447 49px 49px, #435447 50px 50px, #435447 51px 51px, #435447 52px 52px, #435447 53px 53px, #435547 54px 54px, #445548 55px 55px, #445548 56px 56px, #445648 57px 57px, #445648 58px 58px, #455649 59px 59px, #455749 60px 60px, #455749 61px 61px, #46574A 62px 62px, #46584A 63px 63px, #46584A 64px 64px, #46594A 65px 65px, #47594B 66px 66px, #47594B 67px 67px, #475A4B 68px 68px, #485A4C 69px 69px, #485A4C 70px 70px, #485B4C 71px 71px, #485B4C 72px 72px, #495B4D 73px 73px, #495C4D 74px 74px, #495C4D 75px 75px, #4A5C4E 76px 76px, #4A5D4E 77px 77px, #4A5D4E 78px 78px, #4A5E4E 79px 79px, #4B5E4F 80px 80px, #4B5E4F 81px 81px, #4B5F4F 82px 82px, #4C5F50 83px 83px, #4C5F50 84px 84px, #4C6050 85px 85px, #4C6050 86px 86px, #4D6051 87px 87px, #4D6151 88px 88px, #4D6151 89px 89px, #4E6252 90px 90px; }
-      /* line 318, home.scss */
+      /* line 340, home.scss */
       section#social a.devart:hover {
         background: #657e6a; }
-    /* line 320, home.scss */
+    /* line 342, home.scss */
     section#social a:hover i, section#social a:hover span {
       transform: translate(0px, -2px);
       -webkit-transform: translate(0px, -2px); }
 
-/* line 330, home.scss */
+/* line 352, home.scss */
 #unicorn {
   background: #5E4FA2;
   background: linear-gradient(#5e4fa2, #362e5d);
   color: white; }
-  /* line 335, home.scss */
+  /* line 357, home.scss */
   #unicorn i.icon-colt-horn {
     position: relative;
     display: inline-block;
@@ -3000,23 +3078,23 @@ section#social {
     -webkit-transition: all 0.5s ease;
     transform: rotate(0) scale(1) translate(0, 0);
     -webkit-transform: rotate(0) scale(1) translate(0, 0); }
-  /* line 343, home.scss */
+  /* line 365, home.scss */
   #unicorn .stickem-container {
     height: 800px;
     display: block; }
-  /* line 347, home.scss */
+  /* line 369, home.scss */
   #unicorn .browser {
     text-shadow: none;
     max-width: 850px;
     margin: auto;
     margin-top: 20px; }
-    /* line 352, home.scss */
+    /* line 374, home.scss */
     #unicorn .browser b {
       font-weight: bold; }
-  /* line 356, home.scss */
+  /* line 378, home.scss */
   #unicorn .frame {
     font-family: Arial; }
-    /* line 358, home.scss */
+    /* line 380, home.scss */
     #unicorn .frame nav.navbar {
       display: block;
       background: linear-gradient(#505050, #000000);
@@ -3028,17 +3106,17 @@ section#social {
       overflow: hidden;
       height: 48px;
       vertical-align: middle; }
-      /* line 369, home.scss */
+      /* line 391, home.scss */
       #unicorn .frame nav.navbar a {
         color: white;
         padding: 0 16px;
         line-height: 48px;
         font-size: 18px; }
-        /* line 374, home.scss */
+        /* line 396, home.scss */
         #unicorn .frame nav.navbar a.brand {
           font-size: 24px;
           padding-left: 20px; }
-    /* line 380, home.scss */
+    /* line 402, home.scss */
     #unicorn .frame .notice {
       margin: 0px 20px 0px 20px;
       background: #005a78;
@@ -3054,7 +3132,7 @@ section#social {
       -webkit-filter: blur(1px);
       transition: all .3s 3.3s ease;
       -webkit-transition: all .3s 3.3s ease; }
-    /* line 396, home.scss */
+    /* line 418, home.scss */
     #unicorn .frame article {
       margin: 0px 20px 5px 20px;
       padding: 0px;
@@ -3062,7 +3140,7 @@ section#social {
       font-size: 12px;
       line-height: 1.8em;
       color: black; }
-      /* line 403, home.scss */
+      /* line 425, home.scss */
       #unicorn .frame article p {
         padding: 22px 10px;
         transition: all 0.5s 1.3s ease;
@@ -3070,7 +3148,7 @@ section#social {
         transform: rotate(0) scale(1) translate(0, 20%);
         -webkit-transform: rotate(0) scale(1) translate(0, 20%);
         opacity: 0; }
-      /* line 411, home.scss */
+      /* line 433, home.scss */
       #unicorn .frame article .span4 {
         padding: 8px;
         border-radius: 4px;
@@ -3080,31 +3158,32 @@ section#social {
         transform: translate(0, 20%);
         -webkit-transform: translate(0, 20%);
         opacity: 0; }
-        /* line 420, home.scss */
+        /* line 442, home.scss */
         #unicorn .frame article .span4:nth-child(2) {
           transition-delay: 2.3s;
           -webkit-transition-delay: 2.3s; }
-        /* line 424, home.scss */
+        /* line 446, home.scss */
         #unicorn .frame article .span4:nth-child(3) {
           transition-delay: 2.6s;
           -webkit-transition-delay: 2.6s; }
-        /* line 428, home.scss */
+        /* line 450, home.scss */
         #unicorn .frame article .span4 .thumbnail {
           display: block;
           height: 150px;
           margin-bottom: 0.5em;
           background: lightGray; }
-      /* line 435, home.scss */
+      /* line 457, home.scss */
       #unicorn .frame article a {
         border-radius: 0px;
         color: #005a78;
         border: 1px solid #005a78;
+        background: white;
         border-radius: 4px; }
         /* line 33, includes/_buttons.scss */
         #unicorn .frame article a:hover {
           background: #005a78;
           color: white; }
-    /* line 442, home.scss */
+    /* line 465, home.scss */
     #unicorn .frame aside {
       margin: 20px;
       background: white;
@@ -3119,7 +3198,7 @@ section#social {
       -webkit-transition: all 0.5s 2.9s ease;
       transform: translate(-50%, 100%) scale(0.8);
       -webkit-transform: translate(-50%, 100%) scale(0.8); }
-      /* line 456, home.scss */
+      /* line 479, home.scss */
       #unicorn .frame aside strong {
         color: black;
         font-weight: bold;
@@ -3128,24 +3207,24 @@ section#social {
         margin-bottom: 1em;
         border-bottom: 1px solid lightGray;
         display: block; }
-      /* line 465, home.scss */
+      /* line 488, home.scss */
       #unicorn .frame aside a {
         color: #ee4144; }
-        /* line 467, home.scss */
+        /* line 490, home.scss */
         #unicorn .frame aside a:hover {
           text-decoration: underline; }
-  /* line 474, home.scss */
+  /* line 497, home.scss */
   #unicorn.visible i.icon-colt-horn {
     animation: radiance 8s ease infinite;
     -webkit-animation: radiance 8s ease infinite;
     transform: rotate(-30deg) scale(2) translate(-45px, 5px);
     -webkit-transform: rotate(-30deg) scale(2) translate(-45px, 5px); }
-  /* line 481, home.scss */
+  /* line 504, home.scss */
   #unicorn.visible .frame nav.navbar {
     opacity: 1;
     transform: scale(1) translate(0, 0%);
     -webkit-transform: scale(1) translate(0, 0%); }
-  /* line 486, home.scss */
+  /* line 509, home.scss */
   #unicorn.visible .frame .notice {
     margin: 20px 20px 0px 20px;
     line-height: 1.8em;
@@ -3154,50 +3233,98 @@ section#social {
     -webkit-transform: translate(0, 0) scale(1);
     filter: blur(0px);
     -webkit-filter: blur(0px); }
-  /* line 496, home.scss */
+  /* line 519, home.scss */
   #unicorn.visible .frame article p {
     opacity: 1;
     transform: scale(1) translate(0, 0%);
     -webkit-transform: scale(1) translate(0, 0%); }
-  /* line 501, home.scss */
+  /* line 524, home.scss */
   #unicorn.visible .frame article .span4 {
     opacity: 1;
     transform: translate(0, 0%);
     -webkit-transform: translate(0, 0%); }
-  /* line 507, home.scss */
+  /* line 530, home.scss */
   #unicorn.visible .frame aside {
     opacity: 1;
     transform: scale(1) translate(0, 0%);
     -webkit-transform: scale(1) translate(0, 0%); }
 
-/* line 517, home.scss */
+/* line 540, home.scss */
 #hackerchat {
   background: url("../shutter/pattern-dark-matter.png") black;
   background-repeat: repeat;
   color: #C8C8C8; }
+  /* line 546, home.scss */
+  #hackerchat .browser iframe {
+    width: 100%;
+    height: 380px;
+    margin-bottom: -8px; }
+  /* line 554, home.scss */
+  #hackerchat article a {
+    color: white;
+    background: linear-gradient(#62bc4d, #3b762d);
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+    transition: box-shadow .05s ease; }
+    /* line 75, includes/_buttons.scss */
+    #hackerchat article a:hover {
+      box-shadow: inset 0 0 500px rgba(255, 255, 255, 0.25); }
+    /* line 78, includes/_buttons.scss */
+    #hackerchat article a:active, #hackerchat article a:focus {
+      box-shadow: inset 0 0 500px rgba(50, 50, 50, 0.2); }
+  /* line 559, home.scss */
+  #hackerchat .pilot {
+    color: inherit;
+    position: absolute;
+    bottom: 20px;
+    right: 20px; }
+    /* line 564, home.scss */
+    #hackerchat .pilot span {
+      margin-top: 2em;
+      opacity: 0;
+      -webkit-transform: translate(-20%, 0);
+      transform: translate(-20%, 0);
+      display: inline-block;
+      padding-right: 20px; }
+    /* line 573, home.scss */
+    #hackerchat .pilot i.icon-pilotphilly {
+      float: right;
+      font-size: 120px;
+      opacity: 0.5;
+      transform: rotate(-20deg);
+      -webkit-transform: rotate(-20deg); }
+    /* line 582, home.scss */
+    #hackerchat .pilot:hover span {
+      opacity: 1;
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0); }
+    /* line 588, home.scss */
+    #hackerchat .pilot:hover i.icon-pilotphilly {
+      opacity: 1;
+      transform: rotate(0deg);
+      -webkit-transform: rotate(0deg); }
 
-/* line 532, home.scss */
+/* line 606, home.scss */
 footer {
   background: #34495e;
   color: #ecf0f1;
   text-align: left;
   overflow: hidden;
   position: static; }
-  /* line 540, home.scss */
+  /* line 614, home.scss */
   footer a {
     color: #ecf0f1; }
-    /* line 542, home.scss */
+    /* line 616, home.scss */
     footer a:hover {
       color: #16a085; }
-  /* line 546, home.scss */
+  /* line 620, home.scss */
   footer .skyward {
     float: right;
     color: #ecf0f1;
     position: relative; }
-    /* line 550, home.scss */
+    /* line 624, home.scss */
     footer .skyward i.icon-tardis {
       position: absolute; }
-    /* line 553, home.scss */
+    /* line 627, home.scss */
     footer .skyward i.icon-tardis:before {
       position: absolute;
       font-size: 300px;
@@ -3209,7 +3336,7 @@ footer {
       transition: all 0.25s;
       -webkit-transform: rotate(-15deg);
       -webkit-transition: all 0.25s; }
-    /* line 565, home.scss */
+    /* line 639, home.scss */
     footer .skyward:hover i.icon-tardis:before {
       -webkit-transform: rotate(0deg);
       transform: rotate(0deg);
@@ -3217,7 +3344,7 @@ footer {
       color: #003865;
       text-shadow: 0 0 50px white;
       background: radial-gradient(#ffffff 0%, rgba(255, 255, 255, 0) 80%); }
-    /* line 573, home.scss */
+    /* line 647, home.scss */
     footer .skyward span {
       margin-right: 140px;
       background: #4f4e4c;
@@ -3231,11 +3358,11 @@ footer {
       /* line 143, includes/_buttons.scss */
       footer .skyward span:active, footer .skyward span:focus {
         background-color: #3a3938; }
-  /* line 581, home.scss */
+  /* line 655, home.scss */
   footer aside a {
     position: relative;
     z-index: 5; }
-  /* line 585, home.scss */
+  /* line 659, home.scss */
   footer aside i.icon-network {
     position: relative;
     z-index: 1;
@@ -3249,12 +3376,12 @@ footer {
     width: 30px;
     margin-right: 20px;
     z-index: 0; }
-    /* line 599, home.scss */
+    /* line 673, home.scss */
     footer aside i.icon-network i.icon-heart:before {
       animation: heartbeat 1s infinite;
       -webkit-animation: heartbeat 1s infinite;
       position: absolute; }
-    /* line 605, home.scss */
+    /* line 679, home.scss */
     footer aside i.icon-network:before {
       position: absolute;
       z-index: -1;
@@ -3268,7 +3395,7 @@ footer {
       opacity: 0.3;
       color: #ecf0f1; }
 
-/* line 625, home.scss */
+/* line 699, home.scss */
 modal#likemystatus window {
   top: 10%;
   vertical-align: 80%;
@@ -3276,31 +3403,31 @@ modal#likemystatus window {
   overflow-x: hidden;
   bottom: 10%; }
 
-/* line 634, home.scss */
+/* line 708, home.scss */
 modal#credits window {
   background: #2c3e50;
   color: white; }
-  /* line 637, home.scss */
+  /* line 711, home.scss */
   modal#credits window .content a {
     color: white;
     transition: padding 0.2s;
     -webkit-transition: padding 0.2s;
     line-height: 1.8em; }
-    /* line 642, home.scss */
+    /* line 716, home.scss */
     modal#credits window .content a:hover {
       color: #16a085;
       padding-left: 20px; }
 
 @media only screen and (max-width: 780px) {
-  /* line 651, home.scss */
+  /* line 725, home.scss */
   body {
     padding-left: 0px; }
 
-  /* line 654, home.scss */
+  /* line 728, home.scss */
   .hidden-mobile, #mhacks, canvas, iframe, .browser, #about figure, .stickem-container {
     display: none !important; }
 
-  /* line 657, home.scss */
+  /* line 731, home.scss */
   header, section, footer {
     position: relatve;
     width: 100%;
@@ -3308,52 +3435,52 @@ modal#credits window {
     padding: 20px 5px;
     text-align: center; }
 
-  /* line 662, home.scss */
+  /* line 736, home.scss */
   header#top {
     padding: 50px 10px 72px 10px; }
-    /* line 664, home.scss */
+    /* line 738, home.scss */
     header#top h1 {
       font-size: 50px;
       line-height: 1em; }
-      /* line 667, home.scss */
+      /* line 741, home.scss */
       header#top h1 span {
         opacity: 1 !important;
         text-shadow: 0 0 4px rgba(0, 0, 0, 0.5) !important; }
-    /* line 672, home.scss */
+    /* line 746, home.scss */
     header#top form {
       display: none !important; }
-    /* line 675, home.scss */
+    /* line 749, home.scss */
     header#top p {
       font-size: 20px; }
 
-  /* line 679, home.scss */
+  /* line 753, home.scss */
   #social a {
     display: block !important;
     width: 100% !important;
     text-shadow: none !important; }
 
-  /* line 684, home.scss */
+  /* line 758, home.scss */
   .skyward {
     float: none;
     display: block;
     width: 100%;
     z-index: 5;
     margin-bottom: 1em; }
-    /* line 690, home.scss */
+    /* line 764, home.scss */
     .skyward i.icon-tardis {
       display: none; }
-    /* line 693, home.scss */
+    /* line 767, home.scss */
     .skyward span {
       margin-right: 0px !important;
       display: block;
       width: 100%;
       padding: 12px !important;
       font-size: 30px; } }
-/* line 704, home.scss */
+/* line 778, home.scss */
 body.inthetardis {
   background: #4f4e4c;
   background: linear-gradient(#81375c, #624c73, #1f2643, #16223c, #27324e, #1a344b); }
-  /* line 709, home.scss */
+  /* line 783, home.scss */
   body.inthetardis header, body.inthetardis section {
     animation: inthetardis 4s ease;
     -webkit-animation: inthetardis 4s ease;
@@ -3361,7 +3488,7 @@ body.inthetardis {
     background: #edece3;
     transition: box-shadow 0.5s ease;
     -webkit-transition: box-shadow 0.5s ease; }
-  /* line 717, home.scss */
+  /* line 791, home.scss */
   body.inthetardis i.icon-tardis {
     position: fixed !important;
     bottom: 120px !important;
@@ -3372,17 +3499,17 @@ body.inthetardis {
     animation: shimmydown 4s linear;
     -webkit-animation: shimmydown 4s linear; }
 
-/* line 729, home.scss */
+/* line 803, home.scss */
 html.mobile, body.mobile {
   background-color: #34495e;
   max-width: 500px;
   margin: auto;
   box-shadow: 0 0 20px black; }
 
-/* line 737, home.scss */
+/* line 811, home.scss */
 body.reset {
   background: white !important; }
-  /* line 739, home.scss */
+  /* line 813, home.scss */
   body.reset *, body.reset *:before, body.reset *:after {
     background: white !important;
     margin: 0 !important;
@@ -3414,10 +3541,10 @@ body.reset {
     -webkit-animation: none !important;
     -webkit-transition: none !important;
     -webkit-transform: none !important; }
-  /* line 771, home.scss */
+  /* line 845, home.scss */
   body.reset a, body.reset a * {
     color: blue !important;
     text-decoration: underline !important; }
-  /* line 775, home.scss */
+  /* line 849, home.scss */
   body.reset window, body.reset modal, body.reset canvas, body.reset iframe, body.reset li.bottom {
     display: none !important; }
