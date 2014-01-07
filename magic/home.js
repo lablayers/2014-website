@@ -239,6 +239,14 @@ function blast(obj) {
         setTimeout( function() { el.style.display='none' }, 500);
 }
 
+// Temporary Workaround for Hash
+// -> NEED TO FIX THIS!
+$(document).ready(function(){
+    if (window.location.hash.indexOf('credits') == 1) { // not 0 because # is first character of window.location.hash
+        launch("credits");
+    }
+});
+
 // Random Business Name Picker
 $(document).ready(function(){
     var businessArray = ['Cupcake Shop', 'Fashion Designer', 'Savvy Servers', 'Magic Music',

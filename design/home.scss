@@ -799,12 +799,20 @@ body.inthetardis { // , body.menu-expanded {
     -webkit-animation: shimmydown 4s linear;
   }
 }
+
 // Mobile Emulator
 html.mobile, body.mobile {
   background-color: $wet-asphalt;
   max-width: 500px;
   margin: auto;
   box-shadow: 0 0 20px black;
+}
+
+// OMGIE6
+#iesucks {
+  @include button($blue);
+  border-radius: 0px;
+  background: none;
 }
 
 // Reset
