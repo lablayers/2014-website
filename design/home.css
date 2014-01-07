@@ -65,7 +65,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   clear: both; }
 
 /* line 8, includes/_grid.scss */
-.col1, .col2, .col3, .col4, section#about figure, #science article, .col5, #hackerchat .heightfix, .col6, .col7, #hackerchat article, .col8, .col9, .col10, .col11, .col12 {
+.col1, .col2, .col3, .col4, section#about figure, #science article, .col5, #hackerchat .heightfix, #cloudchat .demo, .col6, #contact form, #contact article, .col7, #hackerchat article, #cloudchat article, .col8, .col9, .col10, .col11, .col12 {
   float: left;
   box-sizing: border-box; }
 
@@ -94,15 +94,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 32.3333333333%; }
 
 /* line 11, includes/_grid.scss */
-.col5, #hackerchat .heightfix {
+.col5, #hackerchat .heightfix, #cloudchat .demo {
   width: 40.7916666667%; }
 
 /* line 11, includes/_grid.scss */
-.col6 {
+.col6, #contact form, #contact article {
   width: 49.25%; }
 
 /* line 11, includes/_grid.scss */
-.col7, #hackerchat article {
+.col7, #hackerchat article, #cloudchat article {
   width: 57.7083333333%; }
 
 /* line 11, includes/_grid.scss */
@@ -140,16 +140,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   min-width: 30px; }
 
 /* line 13, includes/_grid.scss */
-.col4, section#about figure, #science article, .col5, #hackerchat .heightfix {
+.col4, section#about figure, #science article, .col5, #hackerchat .heightfix, #cloudchat .demo {
   min-width: 50px; }
 
 /* line 14, includes/_grid.scss */
-.col6, .col7, #hackerchat article, .col8, .col9, .col10, .col11, .col12 {
+.col6, #contact form, #contact article, .col7, #hackerchat article, #cloudchat article, .col8, .col9, .col10, .col11, .col12 {
   min-width: 100px; }
 
 @media only screen and (max-width: 780px) {
   /* line 17, includes/_grid.scss */
-  .col1, .col2, .col3, .col4, section#about figure, #science article, .col5, #hackerchat .heightfix, .col6, .col7, #hackerchat article, .col8, .col9, .col10, .col11, .col12 {
+  .col1, .col2, .col3, .col4, section#about figure, #science article, .col5, #hackerchat .heightfix, #cloudchat .demo, .col6, #contact form, #contact article, .col7, #hackerchat article, #cloudchat article, .col8, .col9, .col10, .col11, .col12 {
     display: block;
     width: 100%; } }
 /* line 21, includes/_grid.scss */
@@ -1421,7 +1421,7 @@ e(1.6) translateX(-20px);opacity:0}100%{transform:scale(1) translateX(0px);opaci
   opacity: 1; }
 
 /* line 9, includes/_buttons.scss */
-.button, section#about figure a, #unicorn .frame article a, #hackerchat article a:not(.pilot), footer .skyward span, #iesucks {
+.button, section#about figure a, #unicorn .frame article a, #hackerchat article a:not(.pilot), #cloudchat a.button, footer .skyward span, #iesucks {
   color: inherit;
   padding: 6px 8px;
   font-size: 14px;
@@ -1438,7 +1438,7 @@ e(1.6) translateX(-20px);opacity:0}100%{transform:scale(1) translateX(0px);opaci
   display: block; }
 
 /* line 153, includes/_buttons.scss */
-.button-rounded, .button, section#about figure a, #unicorn .frame article a, #hackerchat article a:not(.pilot), footer .skyward span, #iesucks {
+.button-rounded, .button, section#about figure a, #unicorn .frame article a, #hackerchat article a:not(.pilot), #cloudchat a.button, footer .skyward span, #iesucks {
   border-radius: 6px; }
 
 /* line 157, includes/_buttons.scss */
@@ -1446,7 +1446,7 @@ e(1.6) translateX(-20px);opacity:0}100%{transform:scale(1) translateX(0px);opaci
   border-radius: 300px; }
 
 /* line 161, includes/_buttons.scss */
-.button-large, .button, section#about figure a, #unicorn .frame article a, #hackerchat article a:not(.pilot), footer .skyward span, #iesucks {
+.button-large, .button, section#about figure a, #unicorn .frame article a, #hackerchat article a:not(.pilot), #cloudchat a.button, footer .skyward span, #iesucks {
   font-size: 18px;
   line-height: 1.2em; }
 
@@ -2836,7 +2836,7 @@ header, section, footer {
   -webkit-transition: all .25s ease; }
 
 /* line 90, home.scss */
-.button, section#about figure a, #unicorn .frame article a, #hackerchat article a:not(.pilot), footer .skyward span, #iesucks {
+.button, section#about figure a, #unicorn .frame article a, #hackerchat article a:not(.pilot), #cloudchat a.button, footer .skyward span, #iesucks {
   background: #4f4e4c;
   color: white;
   border: 1px solid #1b1b1a;
@@ -2844,10 +2844,10 @@ header, section, footer {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   margin-right: 0.2em; }
   /* line 140, includes/_buttons.scss */
-  .button:hover, section#about figure a:hover, #unicorn .frame article a:hover, #hackerchat article a:hover:not(.pilot), footer .skyward span:hover, #iesucks:hover {
+  .button:hover, section#about figure a:hover, #unicorn .frame article a:hover, #hackerchat article a:hover:not(.pilot), #cloudchat a.button:hover, footer .skyward span:hover, #iesucks:hover {
     background-color: #646360; }
   /* line 143, includes/_buttons.scss */
-  .button:active, section#about figure a:active, #unicorn .frame article a:active, #hackerchat article a:active:not(.pilot), footer .skyward span:active, #iesucks:active, .button:focus, section#about figure a:focus, #unicorn .frame article a:focus, #hackerchat article a:focus:not(.pilot), footer .skyward span:focus, #iesucks:focus {
+  .button:active, section#about figure a:active, #unicorn .frame article a:active, #hackerchat article a:active:not(.pilot), #cloudchat a.button:active, footer .skyward span:active, #iesucks:active, .button:focus, section#about figure a:focus, #unicorn .frame article a:focus, #hackerchat article a:focus:not(.pilot), #cloudchat a.button:focus, footer .skyward span:focus, #iesucks:focus {
     background-color: #3a3938; }
 
 /* line 97, home.scss */
@@ -3325,57 +3325,100 @@ section#social {
         box-shadow: inset 0 0 500px rgba(50, 50, 50, 0.2); }
   /* line 575, home.scss */
   #hackerchat a.pilot {
-    padding-top: 30px;
+    margin-top: 30px;
     color: inherit;
-    position: relative; }
-    /* line 582, home.scss */
+    position: relative;
+    display: block;
+    border-radius: 4px; }
+    /* line 585, home.scss */
     #hackerchat a.pilot span {
-      margin-top: 2em;
+      margin-top: 1em;
       opacity: 0;
       -webkit-transform: translate(-20%, 0);
       transform: translate(-20%, 0);
       display: inline-block;
-      padding-right: 20px; }
-    /* line 591, home.scss */
+      padding-right: 20px;
+      text-align: right; }
+    /* line 596, home.scss */
     #hackerchat a.pilot i.icon-pilotphilly {
       float: right;
+      display: inline;
+      position: absolute;
+      right: 0px;
       font-size: 120px;
       opacity: 0.5;
       transform: rotate(-20deg);
       -webkit-transform: rotate(-20deg); }
-    /* line 600, home.scss */
+    /* line 608, home.scss */
     #hackerchat a.pilot:hover span {
       opacity: 1;
       -webkit-transform: translate(0, 0);
       transform: translate(0, 0); }
-    /* line 605, home.scss */
+    /* line 613, home.scss */
     #hackerchat a.pilot:hover i.icon-pilotphilly {
       opacity: 1;
       transform: rotate(0deg);
       -webkit-transform: rotate(0deg); }
 
 /* line 623, home.scss */
+#cloudchat {
+  background: #ceedfc;
+  color: black; }
+  /* line 626, home.scss */
+  #cloudchat section#about figure a, section#about figure #cloudchat a, #cloudchat #unicorn .frame article a, #unicorn .frame article #cloudchat a, #cloudchat #hackerchat article a:not(.pilot), #hackerchat article #cloudchat a:not(.pilot), #cloudchat a.button, #cloudchat a#iesucks {
+    background: #1e98d3;
+    color: white;
+    border: 1px solid #11587a;
+    transition: background-color .15s;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
+    /* line 140, includes/_buttons.scss */
+    #cloudchat section#about figure a:hover, section#about figure #cloudchat a:hover, #cloudchat #unicorn .frame article a:hover, #unicorn .frame article #cloudchat a:hover, #cloudchat #hackerchat article a:hover:not(.pilot), #hackerchat article #cloudchat a:hover:not(.pilot), #cloudchat a.button:hover, #cloudchat a#iesucks:hover {
+      background-color: #37abe3; }
+    /* line 143, includes/_buttons.scss */
+    #cloudchat section#about figure a:active, section#about figure #cloudchat a:active, #cloudchat #unicorn .frame article a:active, #unicorn .frame article #cloudchat a:active, #cloudchat #hackerchat article a:active:not(.pilot), #hackerchat article #cloudchat a:active:not(.pilot), #cloudchat a.button:active, #cloudchat a#iesucks:active, #cloudchat section#about figure a:focus, section#about figure #cloudchat a:focus, #cloudchat #unicorn .frame article a:focus, #unicorn .frame article #cloudchat a:focus, #cloudchat #hackerchat article a:focus:not(.pilot), #hackerchat article #cloudchat a:focus:not(.pilot), #cloudchat a.button:focus, #cloudchat a#iesucks:focus {
+      background-color: #197eaf; }
+  /* line 629, home.scss */
+  #cloudchat article {
+    display: table-cell; }
+  /* line 633, home.scss */
+  #cloudchat .demo {
+    display: table-cell;
+    position: relative; }
+
+/* line 649, home.scss */
+#contact {
+  background: #672f89;
+  color: white; }
+  /* line 660, home.scss */
+  #contact .correo .dota {
+    visibility: hidden; }
+    /* line 662, home.scss */
+    #contact .correo .dota:before {
+      content: '-';
+      visibility: visible; }
+
+/* line 671, home.scss */
 footer {
   background: #34495e;
   color: #ecf0f1;
   text-align: left;
   overflow: hidden;
   position: static; }
-  /* line 631, home.scss */
+  /* line 679, home.scss */
   footer a {
     color: #ecf0f1; }
-    /* line 633, home.scss */
+    /* line 681, home.scss */
     footer a:hover {
       color: #16a085; }
-  /* line 637, home.scss */
+  /* line 685, home.scss */
   footer .skyward {
     float: right;
     color: #ecf0f1;
     position: relative; }
-    /* line 641, home.scss */
+    /* line 689, home.scss */
     footer .skyward i.icon-tardis {
       position: absolute; }
-    /* line 644, home.scss */
+    /* line 692, home.scss */
     footer .skyward i.icon-tardis:before {
       position: absolute;
       font-size: 300px;
@@ -3387,7 +3430,7 @@ footer {
       transition: all 0.25s;
       -webkit-transform: rotate(-15deg);
       -webkit-transition: all 0.25s; }
-    /* line 656, home.scss */
+    /* line 704, home.scss */
     footer .skyward:hover i.icon-tardis:before {
       -webkit-transform: rotate(0deg);
       transform: rotate(0deg);
@@ -3395,7 +3438,7 @@ footer {
       color: #003865;
       text-shadow: 0 0 50px white;
       background: radial-gradient(#ffffff 0%, rgba(255, 255, 255, 0) 80%); }
-    /* line 664, home.scss */
+    /* line 712, home.scss */
     footer .skyward span {
       margin-right: 140px;
       background: #4f4e4c;
@@ -3409,11 +3452,11 @@ footer {
       /* line 143, includes/_buttons.scss */
       footer .skyward span:active, footer .skyward span:focus {
         background-color: #3a3938; }
-  /* line 672, home.scss */
+  /* line 720, home.scss */
   footer aside a {
     position: relative;
     z-index: 5; }
-  /* line 676, home.scss */
+  /* line 724, home.scss */
   footer aside i.icon-network {
     position: relative;
     z-index: 1;
@@ -3427,12 +3470,12 @@ footer {
     width: 30px;
     margin-right: 20px;
     z-index: 0; }
-    /* line 690, home.scss */
+    /* line 738, home.scss */
     footer aside i.icon-network i.icon-heart:before {
       animation: heartbeat 1s infinite;
       -webkit-animation: heartbeat 1s infinite;
       position: absolute; }
-    /* line 696, home.scss */
+    /* line 744, home.scss */
     footer aside i.icon-network:before {
       position: absolute;
       z-index: -1;
@@ -3446,7 +3489,7 @@ footer {
       opacity: 0.3;
       color: #ecf0f1; }
 
-/* line 716, home.scss */
+/* line 764, home.scss */
 modal#likemystatus window {
   top: 10%;
   vertical-align: 80%;
@@ -3454,31 +3497,31 @@ modal#likemystatus window {
   overflow-x: hidden;
   bottom: 10%; }
 
-/* line 725, home.scss */
+/* line 773, home.scss */
 modal#credits window {
   background: #2c3e50;
   color: white; }
-  /* line 728, home.scss */
+  /* line 776, home.scss */
   modal#credits window .content a {
     color: white;
     transition: padding 0.2s;
     -webkit-transition: padding 0.2s;
     line-height: 1.8em; }
-    /* line 733, home.scss */
+    /* line 781, home.scss */
     modal#credits window .content a:hover {
       color: #16a085;
       padding-left: 20px; }
 
 @media only screen and (max-width: 780px) {
-  /* line 742, home.scss */
+  /* line 790, home.scss */
   body {
     padding-left: 0px; }
 
-  /* line 745, home.scss */
+  /* line 793, home.scss */
   .hidden-mobile, #mhacks, #hackerchat a.pilot, canvas, iframe, .browser, #about figure, .stickem-container {
     display: none !important; }
 
-  /* line 748, home.scss */
+  /* line 796, home.scss */
   header, section, footer {
     position: relatve;
     width: 100%;
@@ -3486,52 +3529,52 @@ modal#credits window {
     padding: 20px 5px;
     text-align: center; }
 
-  /* line 753, home.scss */
+  /* line 801, home.scss */
   header#top {
     padding: 50px 10px 72px 10px; }
-    /* line 755, home.scss */
+    /* line 803, home.scss */
     header#top h1 {
       font-size: 50px;
       line-height: 1em; }
-      /* line 758, home.scss */
+      /* line 806, home.scss */
       header#top h1 span {
         opacity: 1 !important;
         text-shadow: 0 0 4px rgba(0, 0, 0, 0.5) !important; }
-    /* line 763, home.scss */
+    /* line 811, home.scss */
     header#top form {
       display: none !important; }
-    /* line 766, home.scss */
+    /* line 814, home.scss */
     header#top p {
       font-size: 20px; }
 
-  /* line 770, home.scss */
+  /* line 818, home.scss */
   #social a {
     display: block !important;
     width: 100% !important;
     text-shadow: none !important; }
 
-  /* line 775, home.scss */
+  /* line 823, home.scss */
   .skyward {
     float: none;
     display: block;
     width: 100%;
     z-index: 5;
     margin-bottom: 1em; }
-    /* line 781, home.scss */
+    /* line 829, home.scss */
     .skyward i.icon-tardis {
       display: none; }
-    /* line 784, home.scss */
+    /* line 832, home.scss */
     .skyward span {
       margin-right: 0px !important;
       display: block;
       width: 100%;
       padding: 12px !important;
       font-size: 30px; } }
-/* line 795, home.scss */
+/* line 843, home.scss */
 body.inthetardis {
   background: #4f4e4c;
   background: linear-gradient(#81375c, #624c73, #1f2643, #16223c, #27324e, #1a344b); }
-  /* line 800, home.scss */
+  /* line 848, home.scss */
   body.inthetardis header, body.inthetardis section {
     animation: inthetardis 4s ease;
     -webkit-animation: inthetardis 4s ease;
@@ -3539,7 +3582,7 @@ body.inthetardis {
     background: #edece3;
     transition: box-shadow 0.5s ease;
     -webkit-transition: box-shadow 0.5s ease; }
-  /* line 808, home.scss */
+  /* line 856, home.scss */
   body.inthetardis i.icon-tardis {
     position: fixed !important;
     bottom: 120px !important;
@@ -3550,23 +3593,23 @@ body.inthetardis {
     animation: shimmydown 4s linear;
     -webkit-animation: shimmydown 4s linear; }
 
-/* line 821, home.scss */
+/* line 869, home.scss */
 html.mobile, body.mobile {
   background-color: #34495e;
   max-width: 500px;
   margin: auto;
   box-shadow: 0 0 20px black; }
 
-/* line 829, home.scss */
+/* line 877, home.scss */
 #iesucks {
   background: #1e98d3;
   border-radius: 0px;
   background: none; }
 
-/* line 836, home.scss */
+/* line 884, home.scss */
 body.reset {
   background: white !important; }
-  /* line 838, home.scss */
+  /* line 886, home.scss */
   body.reset *, body.reset *:before, body.reset *:after {
     background: white !important;
     margin: 0 !important;
@@ -3598,10 +3641,10 @@ body.reset {
     -webkit-animation: none !important;
     -webkit-transition: none !important;
     -webkit-transform: none !important; }
-  /* line 870, home.scss */
+  /* line 918, home.scss */
   body.reset a, body.reset a * {
     color: blue !important;
     text-decoration: underline !important; }
-  /* line 874, home.scss */
+  /* line 922, home.scss */
   body.reset window, body.reset modal, body.reset canvas, body.reset iframe, body.reset li.bottom {
     display: none !important; }

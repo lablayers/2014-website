@@ -249,17 +249,25 @@ block content
             | Blog Post
           br
           a.pilot(href='http:///gopilot.org/')
-            span Pilot brings hackathons to high school students.
+            span Pilot brings hackathons
+              br
+              | to high school students.
               br
               .button Learn More
             i.icon-pilotphilly
     section#cloudchat(data-identity='victor')
-      h2
-        i.icon-cloud
-        | CloudChat
-      p Connect with your friends in Realtime via WebRTC.
-      a.button.gradient.blue(href='http://babbleplz-sugarplums.rhcloud.com/') Cloudchat
-       img
+      .row
+        article
+          h2
+            i.icon-cloudapp  
+            | CloudChat
+          p Connect with your friends in Realtime via WebRTC.
+          a.button(href='http://babbleplz-sugarplums.rhcloud.com/') Cloudchat
+        .demo
+          div.demoplz Demo!
+      .background
+        i.icon-cloud.thing-1
+        i.icon-cloud.thing-2
     section#phlclosings(data-identity='victor') <!-- data-pin='please' -->
       h2 Philly School Closings
       p.lead An API for school closings.
@@ -311,7 +319,7 @@ block content
       seeker
     section#contact(data-identity='victor')
       h2 Get In Touch
-      form DARN DATA
+      form Contact Me! Just be nice...
         h3 Something
         input(type='email' placeholder='Email')
         input(type='text' placeholder='Subject')

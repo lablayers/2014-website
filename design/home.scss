@@ -573,23 +573,31 @@ section#social {
     }
   }
   a.pilot {
-    padding-top: 30px;
+    margin-top: 30px;
     @extend .hidden-mobile;
     color: inherit;
     position: relative;
+    display: block;
+    // width: 100%;
+    border-radius: 4px;
     // bottom: 20px;
     // right: 20px;
     span {
-      margin-top: 2em;
+      // float: left;
+      margin-top: 1em;
       @extend .transition;
       opacity: 0;
       -webkit-transform: translate(-20%,0);
       transform: translate(-20%,0);
       display: inline-block;
       padding-right: 20px;
+      text-align: right;
     }
     i.icon-pilotphilly {
       float: right;
+      display: inline;
+      position: absolute;
+      right: 0px;
       font-size: 120px;
       @extend .transition;
       opacity: 0.5;
@@ -611,11 +619,51 @@ section#social {
   }
 }
 
+// Cloudchat
+#cloudchat {
+  background: lighten($ltblue, 10%);
+  color: black;
+  a.button {
+    @include button-subtle($blue);
+  }
+  article {
+    display: table-cell;
+    @extend .col7;
+  }
+  .demo {
+    @extend .col5;
+    display: table-cell;
+    position: relative;
+  }
+}
+
 // Science
 #science {
   article {
     @extend .col4;
     @extend .tile;
+  }
+}
+
+// Contact
+#contact {
+  background: $purple;
+  color: white;
+  form {
+    @extend .col6;
+  }
+  article {
+    @extend .col6;
+  }
+  .telefono {}
+  .correo {
+    .dota {
+      visibility: hidden;
+      &:before {
+        content: '-';
+        visibility: visible;
+      }
+    }
   }
 }
 
