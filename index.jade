@@ -202,11 +202,16 @@ block content
            a.button.gradient.purple(href='http://yabby.victorlourng.com') Backend Demo
     section#hackerchat(data-identity='victor')
       .row
-        div.browser
-          .toolbar
-            input.omnibox(placeholder='http://hackerchat.im/ - Hackerchat Mobile')
-          .frame
-            iframe(src='about:blank' data-src='http://hackerchat.im/' sandbox='allow-same-origin allow-scripts allow-forms allow-popups' height='350')
+        .heightfix
+          br
+          div.browser
+            .toolbar
+              input.omnibox(placeholder='http://hackerchat.im/ - Hackerchat Mobile')
+              div.menu
+                a(href='http://hackerchat.im/' target='_blank')
+                  i.icon-share
+            .frame
+              iframe(src='about:blank' data-src='http://hackerchat.im/' sandbox='allow-same-origin allow-scripts allow-forms allow-popups' height='350')
         article
           h2
             i.icon-hackerchat
@@ -243,11 +248,11 @@ block content
             i.icon-news.button-jumbo-prefix
             | Blog Post
           br
-      a.pilot(href='http:///gopilot.org/')
-        span Pilot brings hackathons to high school students.
-          br
-          .button Learn More
-        i.icon-pilotphilly
+          a.pilot(href='http:///gopilot.org/')
+            span Pilot brings hackathons to high school students.
+              br
+              .button Learn More
+            i.icon-pilotphilly
     section#cloudchat(data-identity='victor')
       h2
         i.icon-cloud

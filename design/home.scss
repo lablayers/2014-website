@@ -541,26 +541,44 @@ section#social {
   background: url("../shutter/pattern-dark-matter.png") black;
   background-repeat: repeat;
   color: #C8C8C8;
-  .browser {
+  .heightfix {
     @extend .col5;
-    iframe {
+    display: table-cell;
+    position: relative;
+    .browser {
+      position: absolute;
       width: 100%;
-      height: 380px;
-      margin-bottom: -8px;
+      height: 100%;
+      position: absolute;
+      display: table;
+      .frame {
+        position: relative;
+        position: absolute;
+        display: table;
+        width: 100%;
+        height: 90%;
+      }
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
   article {
+    display: table-cell;
     @extend .col7;
-    a {
+    a:not(.pilot) {
       @include button-gradient($green);
       @extend .button-jumbo;
     }
   }
-  .pilot {
+  a.pilot {
+    padding-top: 30px;
+    @extend .hidden-mobile;
     color: inherit;
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
+    position: relative;
+    // bottom: 20px;
+    // right: 20px;
     span {
       margin-top: 2em;
       @extend .transition;
@@ -583,7 +601,6 @@ section#social {
         opacity: 1;
         -webkit-transform: translate(0,0);
         transform: translate(0,0);
-
       }
       i.icon-pilotphilly {
         opacity: 1;
