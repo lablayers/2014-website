@@ -626,6 +626,29 @@ section#social {
   a.button {
     @include button-subtle($blue);
   }
+  .icon-pilot-philly {
+      -webkit-transform: rotate(-20deg);
+      position: relative;
+      transform: rotate(-20deg);
+  }
+  i.thing-1, i.thing-2 {
+    position: absolute;
+    color: white;
+    opacity: 0.4;
+    font-size: 180px;
+    bottom: 0px;
+    z-index: 0px;
+  }
+  i.thing-2 {
+      left: -30px;
+  }
+  i.thing-1 {
+      right: -30px;
+  }
+  #cloudchat .row {
+      z-index: 5;
+      position: relative;
+  }
   article {
     display: table-cell;
     @extend .col7;

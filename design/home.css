@@ -3378,47 +3378,70 @@ section#social {
     #cloudchat section#about figure a:active, section#about figure #cloudchat a:active, #cloudchat #unicorn .frame article a:active, #unicorn .frame article #cloudchat a:active, #cloudchat #hackerchat article a:active:not(.pilot), #hackerchat article #cloudchat a:active:not(.pilot), #cloudchat a.button:active, #cloudchat a#iesucks:active, #cloudchat section#about figure a:focus, section#about figure #cloudchat a:focus, #cloudchat #unicorn .frame article a:focus, #unicorn .frame article #cloudchat a:focus, #cloudchat #hackerchat article a:focus:not(.pilot), #hackerchat article #cloudchat a:focus:not(.pilot), #cloudchat a.button:focus, #cloudchat a#iesucks:focus {
       background-color: #197eaf; }
   /* line 629, home.scss */
+  #cloudchat .icon-pilot-philly {
+    -webkit-transform: rotate(-20deg);
+    position: relative;
+    transform: rotate(-20deg); }
+  /* line 634, home.scss */
+  #cloudchat i.thing-1, #cloudchat i.thing-2 {
+    position: absolute;
+    color: white;
+    opacity: 0.4;
+    font-size: 180px;
+    bottom: 0px;
+    z-index: 0px; }
+  /* line 642, home.scss */
+  #cloudchat i.thing-2 {
+    left: -30px; }
+  /* line 645, home.scss */
+  #cloudchat i.thing-1 {
+    right: -30px; }
+  /* line 648, home.scss */
+  #cloudchat #cloudchat .row {
+    z-index: 5;
+    position: relative; }
+  /* line 652, home.scss */
   #cloudchat article {
     display: table-cell; }
-  /* line 633, home.scss */
+  /* line 656, home.scss */
   #cloudchat .demo {
     display: table-cell;
     position: relative; }
 
-/* line 649, home.scss */
+/* line 672, home.scss */
 #contact {
   background: #672f89;
   color: white; }
-  /* line 660, home.scss */
+  /* line 683, home.scss */
   #contact .correo .dota {
     visibility: hidden; }
-    /* line 662, home.scss */
+    /* line 685, home.scss */
     #contact .correo .dota:before {
       content: '-';
       visibility: visible; }
 
-/* line 671, home.scss */
+/* line 694, home.scss */
 footer {
   background: #34495e;
   color: #ecf0f1;
   text-align: left;
   overflow: hidden;
   position: static; }
-  /* line 679, home.scss */
+  /* line 702, home.scss */
   footer a {
     color: #ecf0f1; }
-    /* line 681, home.scss */
+    /* line 704, home.scss */
     footer a:hover {
       color: #16a085; }
-  /* line 685, home.scss */
+  /* line 708, home.scss */
   footer .skyward {
     float: right;
     color: #ecf0f1;
     position: relative; }
-    /* line 689, home.scss */
+    /* line 712, home.scss */
     footer .skyward i.icon-tardis {
       position: absolute; }
-    /* line 692, home.scss */
+    /* line 715, home.scss */
     footer .skyward i.icon-tardis:before {
       position: absolute;
       font-size: 300px;
@@ -3430,7 +3453,7 @@ footer {
       transition: all 0.25s;
       -webkit-transform: rotate(-15deg);
       -webkit-transition: all 0.25s; }
-    /* line 704, home.scss */
+    /* line 727, home.scss */
     footer .skyward:hover i.icon-tardis:before {
       -webkit-transform: rotate(0deg);
       transform: rotate(0deg);
@@ -3438,7 +3461,7 @@ footer {
       color: #003865;
       text-shadow: 0 0 50px white;
       background: radial-gradient(#ffffff 0%, rgba(255, 255, 255, 0) 80%); }
-    /* line 712, home.scss */
+    /* line 735, home.scss */
     footer .skyward span {
       margin-right: 140px;
       background: #4f4e4c;
@@ -3452,11 +3475,11 @@ footer {
       /* line 143, includes/_buttons.scss */
       footer .skyward span:active, footer .skyward span:focus {
         background-color: #3a3938; }
-  /* line 720, home.scss */
+  /* line 743, home.scss */
   footer aside a {
     position: relative;
     z-index: 5; }
-  /* line 724, home.scss */
+  /* line 747, home.scss */
   footer aside i.icon-network {
     position: relative;
     z-index: 1;
@@ -3470,12 +3493,12 @@ footer {
     width: 30px;
     margin-right: 20px;
     z-index: 0; }
-    /* line 738, home.scss */
+    /* line 761, home.scss */
     footer aside i.icon-network i.icon-heart:before {
       animation: heartbeat 1s infinite;
       -webkit-animation: heartbeat 1s infinite;
       position: absolute; }
-    /* line 744, home.scss */
+    /* line 767, home.scss */
     footer aside i.icon-network:before {
       position: absolute;
       z-index: -1;
@@ -3489,7 +3512,7 @@ footer {
       opacity: 0.3;
       color: #ecf0f1; }
 
-/* line 764, home.scss */
+/* line 787, home.scss */
 modal#likemystatus window {
   top: 10%;
   vertical-align: 80%;
@@ -3497,31 +3520,31 @@ modal#likemystatus window {
   overflow-x: hidden;
   bottom: 10%; }
 
-/* line 773, home.scss */
+/* line 796, home.scss */
 modal#credits window {
   background: #2c3e50;
   color: white; }
-  /* line 776, home.scss */
+  /* line 799, home.scss */
   modal#credits window .content a {
     color: white;
     transition: padding 0.2s;
     -webkit-transition: padding 0.2s;
     line-height: 1.8em; }
-    /* line 781, home.scss */
+    /* line 804, home.scss */
     modal#credits window .content a:hover {
       color: #16a085;
       padding-left: 20px; }
 
 @media only screen and (max-width: 780px) {
-  /* line 790, home.scss */
+  /* line 813, home.scss */
   body {
     padding-left: 0px; }
 
-  /* line 793, home.scss */
+  /* line 816, home.scss */
   .hidden-mobile, #mhacks, #hackerchat a.pilot, canvas, iframe, .browser, #about figure, .stickem-container {
     display: none !important; }
 
-  /* line 796, home.scss */
+  /* line 819, home.scss */
   header, section, footer {
     position: relatve;
     width: 100%;
@@ -3529,52 +3552,52 @@ modal#credits window {
     padding: 20px 5px;
     text-align: center; }
 
-  /* line 801, home.scss */
+  /* line 824, home.scss */
   header#top {
     padding: 50px 10px 72px 10px; }
-    /* line 803, home.scss */
+    /* line 826, home.scss */
     header#top h1 {
       font-size: 50px;
       line-height: 1em; }
-      /* line 806, home.scss */
+      /* line 829, home.scss */
       header#top h1 span {
         opacity: 1 !important;
         text-shadow: 0 0 4px rgba(0, 0, 0, 0.5) !important; }
-    /* line 811, home.scss */
+    /* line 834, home.scss */
     header#top form {
       display: none !important; }
-    /* line 814, home.scss */
+    /* line 837, home.scss */
     header#top p {
       font-size: 20px; }
 
-  /* line 818, home.scss */
+  /* line 841, home.scss */
   #social a {
     display: block !important;
     width: 100% !important;
     text-shadow: none !important; }
 
-  /* line 823, home.scss */
+  /* line 846, home.scss */
   .skyward {
     float: none;
     display: block;
     width: 100%;
     z-index: 5;
     margin-bottom: 1em; }
-    /* line 829, home.scss */
+    /* line 852, home.scss */
     .skyward i.icon-tardis {
       display: none; }
-    /* line 832, home.scss */
+    /* line 855, home.scss */
     .skyward span {
       margin-right: 0px !important;
       display: block;
       width: 100%;
       padding: 12px !important;
       font-size: 30px; } }
-/* line 843, home.scss */
+/* line 866, home.scss */
 body.inthetardis {
   background: #4f4e4c;
   background: linear-gradient(#81375c, #624c73, #1f2643, #16223c, #27324e, #1a344b); }
-  /* line 848, home.scss */
+  /* line 871, home.scss */
   body.inthetardis header, body.inthetardis section {
     animation: inthetardis 4s ease;
     -webkit-animation: inthetardis 4s ease;
@@ -3582,7 +3605,7 @@ body.inthetardis {
     background: #edece3;
     transition: box-shadow 0.5s ease;
     -webkit-transition: box-shadow 0.5s ease; }
-  /* line 856, home.scss */
+  /* line 879, home.scss */
   body.inthetardis i.icon-tardis {
     position: fixed !important;
     bottom: 120px !important;
@@ -3593,23 +3616,23 @@ body.inthetardis {
     animation: shimmydown 4s linear;
     -webkit-animation: shimmydown 4s linear; }
 
-/* line 869, home.scss */
+/* line 892, home.scss */
 html.mobile, body.mobile {
   background-color: #34495e;
   max-width: 500px;
   margin: auto;
   box-shadow: 0 0 20px black; }
 
-/* line 877, home.scss */
+/* line 900, home.scss */
 #iesucks {
   background: #1e98d3;
   border-radius: 0px;
   background: none; }
 
-/* line 884, home.scss */
+/* line 907, home.scss */
 body.reset {
   background: white !important; }
-  /* line 886, home.scss */
+  /* line 909, home.scss */
   body.reset *, body.reset *:before, body.reset *:after {
     background: white !important;
     margin: 0 !important;
@@ -3641,10 +3664,10 @@ body.reset {
     -webkit-animation: none !important;
     -webkit-transition: none !important;
     -webkit-transform: none !important; }
-  /* line 918, home.scss */
+  /* line 941, home.scss */
   body.reset a, body.reset a * {
     color: blue !important;
     text-decoration: underline !important; }
-  /* line 922, home.scss */
+  /* line 945, home.scss */
   body.reset window, body.reset modal, body.reset canvas, body.reset iframe, body.reset li.bottom {
     display: none !important; }
