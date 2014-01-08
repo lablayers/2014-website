@@ -1,0 +1,58 @@
+// WebTunes Mini
+// -@ Victor Lourng
+// -> http://trumpet-sugarplums.rhcloud.com/
+
+.webtunes_container {
+    background: white;
+    padding: 0px;
+    display: block;
+    position: relative;
+    color: black;
+    box-shadow: 0 0 12px rgba(0,0,0,.7);
+    font-size: 12px;
+    line-height: 1em;
+    .controller {
+        border-top: 1px solid rgb(252,252,252);
+        background: linear-gradient(rgb(239,239,239) 0%, rgb(233,233,233) 15%, rgb(220,220,220) 50%, rgb(201,201,201) 80%, rgb(198,198,198) 100%);
+        border-bottom: 1px solid rgb(185,185,185);
+        width: 100%;
+        position: relative;
+        padding: 2px 0px;
+        .left {
+            float: left;
+            display: table-cell;
+            width: 30%;
+            .prev, .play, .pause, .next {
+                display: inline-block;
+                i:before {
+                    background: -webkit-linear-gradient(rgb(58, 58, 58), rgb(148, 148, 148));
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    text-shadow: none;
+                    -webkit-filter: drop-shadow(0px 1px rgba(255, 255, 255, 0.5));
+                    -webkit-backface-visibility: hidden;
+                }
+            }
+        }
+        .lcd {
+            position: relative;
+            width: 40%;
+            display: table-cell;
+            border-top: 1px solid rgb(120, 122, 127);
+            background: linear-gradient(rgb(157,161,168)0%, rgb(191,195,199) 50%, rgb(213,219,223)85%, rgb(200,207,211) 95%);
+            border-bottom: 1px solid rgb(234,234,234);
+            border-left: 1px solid rgb(157,158,160);
+            border-right: 1px solid rgb(157,158,160);
+            box-shadow: inset 0 1px 0 0 rgba(100,100,100,0.3), inset 0 -2px 0 0 rgb(196,202,207), inset 0 0 4px 0 rgba(100,100,100,0.36), 0 1px 0 0 rgb(208,208,208);
+            border-radius: 4px;
+            text-shadow: 0px 1px 0px hsla(0, 0%, 0%, 0.1);
+            .title {
+                color: rgb(34, 34, 34);
+            }
+        }
+        .search {
+            display: table-cell;
+            width: 30%;
+        }
+    }
+}

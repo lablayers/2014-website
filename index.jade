@@ -309,25 +309,69 @@ block content
         iframe
     section#music(data-identity='victor' data-playing='none')
       h2 Music
-      iframe Vinyl.app
-      controller Powered by meteor.js
-        prev i.icon-prev
-        play i.icon-play
-        pause i.icon-pause
-        next i.icon-next
-      metadata Song Title
-      seeker
+      .webtunes_container
+        .controller
+          .left
+            .prev
+              i.icon-chevron-left
+            .play
+              i.icon-right
+            .pause
+              i.icon-dash
+            .next
+              i.icon-chevron-right
+          .lcd
+            .nosong(style='display: none')
+            .info(style='display: block')
+              .artwork(style='background-image:url()')
+              .title title
+              .artist artist
+              .album album
+              .playback
+                .progress(data-time='') 0:00
+                input.seeker(type='range' min='0' max='100' value='0' step='any')
+                progress#playbackSliderFilled(max='100' value='0')
+                progress#load_progress(max='100', value='100')
+                .remanining(data-time='') -0:00
+            audio#songPlayer(preload='' data-src='' src='')
+          .search
+            input(type='text')
+        .toolbar
+        .store
     section#contact(data-identity='victor')
       h2 Get In Touch
       .row
-        form Contact Me! Just be nice...
-          h3 Something
-          input(type='email' placeholder='Email')
-          input(type='text' placeholder='Subject')
-          input(type='textarea' placeholder='Message' contenteditable='contenteditable')
-          button.button.gradient.blue Send
+        form(form action='https://docs.google.com/forms/d/1_BViPsNvsdyEcsfkyBLkYjyH7-wi96TDPbUpzlrvcyc/formResponse' method='post' id='ss-form' target='_blank')
+          h3 Contact Me!
+          p.load But be nice...
+          input#entry_88530688.field(type='text' name='entry.88530688' placeholder='Name - Leave blank for anon')
+          input#entry_1457997342.field(type='text' name='entry.1457997342' placeholder='Contact - E-mail, Phone, Twitter')
+          textarea#entry_1446910495.field(name='entry.1446910495' placeholder='Message What do you want to say? (REQUIRED)' required='required')
+          select#entry_1579930328.field(name='entry.1579930328' placeholder='To whom? Your message will be intercepted by Victor anyways. ')
+            option(value='Victor Lourng')
+              option(value='Victor Lourng') Victor Lourng
+              option(value='Santa Claus') Santa Claus
+              option(value='The Sound Chemist') The Sound Chemist
+          input#ss-submit(type='submit' name='submit' value='Submit')
         article
-          h3 Something
+          h3 Other Methods
+          p.lead via Phone
+          .telefono
+            span.mios
+            span.caliente What does 
+            span.guacamole
+            span.dota Justin Bieber 
+            span.chipotle call a 
+            span.gustas
+              b common denominator? 
+            span.tortillas A common denominator.
+          p.lead via-email
+          .correo
+            span.louis
+            span.niall
+            span.zayn
+            span.harry
+            span.liam
     footer
       a.skyward(href='#')
         span Back to Top

@@ -59,6 +59,9 @@
 // Stickem
 @import "includes/_stickem.scss";
 
+// WebTunes
+@import "includes/_webtunesmini.scss";
+
 // Custom Variables
 $thickness: 4px;
 
@@ -674,19 +677,69 @@ section#social {
   color: white;
   form {
     @extend .col6;
-  }
-  article {
-    @extend .col6;
-  }
-  .telefono {}
-  .correo {
-    .dota {
-      visibility: hidden;
-      &:before {
-        content: '-';
-        visibility: visible;
+    select, textarea {
+      width: 100%;
+    }
+    input:not(#ss-submit) {
+      width: 50%;
+      display: table-cell;
+      float: left;
+      &:first-child {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+      &:last-child {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
       }
     }
+    textarea {
+      height: 5em;
+    }
+    input#ss-submit {
+      @include button-subtle($dark);
+      width: 100%;
+      display: block;
+    }
+
+  }
+  article {
+  }
+  .telefono {
+    .guacamole, .caliente, .chipotle, .gustas, .tortilla‎, .mios, .mexico, .frijoles, .dota, .tortillas {
+      font-size: 0;
+      visibility: hidden;
+      &:before {
+        font-size: $font-size;
+        visibility: visible;
+        display: inline;
+      }
+    }
+    .tortillas:before { content: '1778'; }
+    .dota:before { content: '- '; }
+    .guacamole:before { content: ') '; }
+    .mexico:before { content: '696'; }
+    .frijoles:before { content: '9981'; }
+    .chipotle:before { content: '969 '; }
+    .gustas:before { content: ' - '; }
+    .caliente:before { content: '571'; }
+    .mios:before { content: '('; }
+  }
+  .correo {
+    .zayn, .louis, .niall, .liam, .harry {
+      font-size: 0;
+      visibility: hidden;
+      &:before {
+        font-size: $font-size;
+        visibility: visible;
+        display: inline;
+      }
+    }
+    .louis:before { content: 'hel'; }
+    .niall:before { content: 'lo'; }
+    .zayn:before { content: '@'; }
+    .harry:before { content: 'victorlourng'; }
+    .liam:before { content: '.com'; }
   }
 }
 

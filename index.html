@@ -291,28 +291,63 @@
   </section>
   <section id="music" data-identity="victor" data-playing="none">
     <h2>Music</h2>
-    <iframe>Vinyl.app</iframe>
-    <controller>Powered by meteor.js
-      <prev>i.icon-prev</prev>
-      <play>i.icon-play</play>
-      <pause>i.icon-pause</pause>
-      <next>i.icon-next</next>
-    </controller>
-    <metadata>Song Title</metadata>
-    <seeker></seeker>
+    <div class="webtunes_container">
+      <div class="controller">
+        <div class="left">
+          <div class="prev"><i class="icon-chevron-left"></i></div>
+          <div class="play"><i class="icon-right"></i></div>
+          <div class="pause"><i class="icon-dash"></i></div>
+          <div class="next"><i class="icon-chevron-right"></i></div>
+        </div>
+        <div class="lcd">
+          <div style="display: none" class="nosong"></div>
+          <div style="display: block" class="info">
+            <div style="background-image:url()" class="artwork"></div>
+            <div class="title">title</div>
+            <div class="artist">artist</div>
+            <div class="album">album</div>
+            <div class="playback">
+              <div data-time="" class="progress">0:00</div>
+              <input type="range" min="0" max="100" value="0" step="any" class="seeker">
+              <progress id="playbackSliderFilled" max="100" value="0"></progress>
+              <progress id="load_progress" max="100" value="100"></progress>
+              <div data-time="" class="remanining">-0:00</div>
+            </div>
+          </div>
+          <audio id="songPlayer" preload="" data-src="" src=""></audio>
+        </div>
+        <div class="search">
+          <input type="text">
+        </div>
+      </div>
+      <div class="toolbar"></div>
+      <div class="store"></div>
+    </div>
   </section>
   <section id="contact" data-identity="victor">
     <h2>Get In Touch</h2>
     <div class="row">
-      <form>Contact Me! Just be nice...
-        <h3>Something</h3>
-        <input type="email" placeholder="Email">
-        <input type="text" placeholder="Subject">
-        <input type="textarea" placeholder="Message" contenteditable="contenteditable">
-        <button class="button gradient blue">Send</button>
+      <form form action="https://docs.google.com/forms/d/1_BViPsNvsdyEcsfkyBLkYjyH7-wi96TDPbUpzlrvcyc/formResponse" method="post" id="ss-form" target="_blank">
+        <h3>Contact Me!</h3>
+        <p class="load">But be nice...</p>
+        <input id="entry_88530688" type="text" name="entry.88530688" placeholder="Name - Leave blank for anon" class="field">
+        <input id="entry_1457997342" type="text" name="entry.1457997342" placeholder="Contact - E-mail, Phone, Twitter" class="field">
+        <textarea id="entry_1446910495" name="entry.1446910495" placeholder="Message What do you want to say? (REQUIRED)" required="required" class="field"></textarea>
+        <select id="entry_1579930328" name="entry.1579930328" placeholder="To whom? Your message will be intercepted by Victor anyways. " class="field">
+          <option value="Victor Lourng">
+            <option value="Victor Lourng">Victor Lourng</option>
+            <option value="Santa Claus">Santa Claus</option>
+            <option value="The Sound Chemist">The Sound Chemist</option>
+          </option>
+        </select>
+        <input id="ss-submit" type="submit" name="submit" value="Submit">
       </form>
       <article>
-        <h3>Something</h3>
+        <h3>Other Methods</h3>
+        <p class="lead">via Phone</p>
+        <div class="telefono"><span class="mios"></span><span class="caliente">What does </span><span class="guacamole"></span><span class="dota">Justin Bieber </span><span class="chipotle">call a </span><span class="gustas"><b>common denominator? </b></span><span class="tortillas">A common denominator.</span></div>
+        <p class="lead">via-email</p>
+        <div class="correo"><span class="louis"></span><span class="niall"></span><span class="zayn"></span><span class="harry"></span><span class="liam"></span></div>
       </article>
     </div>
   </section>

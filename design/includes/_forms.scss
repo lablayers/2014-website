@@ -77,14 +77,14 @@
 }
 
 // Style 4
-.squaredFour {
+.checkbox {
     input { visibility: hidden; }
     width: 20px;    
     margin: 20px auto;
     position: relative;
 }
 
-.squaredFour label {
+.checkbox label {
     cursor: pointer;
     position: absolute;
     width: 20px;
@@ -105,7 +105,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
 }
 
-.squaredFour label:after {
+.checkbox label:after {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     filter: alpha(opacity=0);
     opacity: 0;
@@ -127,14 +127,29 @@
     transform: rotate(-45deg);
 }
 
-.squaredFour label:hover::after {
+.checkbox label:hover::after {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
     filter: alpha(opacity=30);
     opacity: 0.5;
 }
 
-.squaredFour input[type=checkbox]:checked + label:after {
+.checkbox input[type=checkbox]:checked + label:after {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100);
     opacity: 1;
+}
+
+.field {
+    border: 2px solid #bdc3c7;
+    color: $dark;
+    display: block;
+    font-size: 15px;
+    padding: 8px 12px;
+    margin: 0.2em auto;
+    height: 42px;
+    border-radius: 6px;
+    box-shadow: none;
+    outline: none;
+    -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+    transition: border .25s linear, color .25s linear, background-color .25s linear;
 }
