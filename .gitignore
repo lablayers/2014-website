@@ -1,7 +1,11 @@
-# Huge Vectors #
-################
+# Huge Media Files #
+####################
 test/
 vectors/test/
+ignore/
+webtunes/
+mp3/
+demo.html
 
 # Testfiles #
 #############
