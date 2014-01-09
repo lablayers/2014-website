@@ -12,55 +12,53 @@
 @import "compass/reset";
 
 // Variables
-@import "includes/_colors.scss";
-@import "includes/_vars.scss";
+@import "global/_colors.scss";
+@import "global/_vars.scss";
 
 // Grid System
-@import "includes/_grid.scss";
+@import "global/_grid.scss";
 
 // Base
-@import "includes/_base.scss";
+@import "global/_base.scss";
 
 // Components
-@import "includes/_scrollbars.scss";
+@import "global/_scrollbars.scss";
 
 // Animations
-@import "includes/_animations.scss";
+@import "global/_animations.scss";
 
 // Forms
-@import "includes/_forms.scss";
+@import "global/_forms.scss";
 
 // Buttons
-@import "includes/_buttons.scss";
+@import "global/_buttons.scss";
 
 // Typography
-@import "includes/_type.scss";
+@import "global/_type.scss";
 @import "../fonts_cache/_fonts_cache.scss";
 @import url(http://fonts.googleapis.com/css?family=Varela+Round);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
-// @import "fonts/satisfy/font.css";
-// @import "fonts/abril/font.css";
 
 // Modals
-@import "includes/_modal.scss";
+@import "global/_modal.scss";
 
 // Browsers
-@import "includes/_browser.scss";
+@import "global/_browser.scss";
 
 // Icons
-@import "includes/_stargazer.scss";
+@import "global/_stargazer.scss";
 
 // Navigation
-@import "includes/_nav.scss";
+@import "global/_nav.scss";
 
 // Tooltips
-@import "includes/_tooltips.scss";
+@import "global/_tooltips.scss";
 
 // Stickem
-@import "includes/_stickem.scss";
+@import "global/_stickem.scss";
 
 // WebTunes
-@import "includes/_webtunesmini.scss";
+@import "global/_webtunesmini.scss";
 
 // Custom Variables
 $thickness: 4px;
