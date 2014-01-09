@@ -196,10 +196,15 @@ $(document).on('click', 'menu.expanded a[href^="#"]', function () {
 $(document).ready(function(){
     if ($('menu').height() < 470) {
         $("menu").addClass("tiny");
+        $("#top").addClass("tiny");
     }
     else {
         $("menu").removeClass("tiny");
+        $("#top").removeClass("tiny");
     }
+    w = $(window).width();
+    h = $(window).height();
+    $("#top").css({"height": h - 66 + "px"});
 });
 $(window).resize(function() {
     if ($('menu').height() < 470) {
@@ -208,6 +213,9 @@ $(window).resize(function() {
     else {
         $("menu").removeClass("tiny");
     }
+    w = $(window).width();
+    h = $(window).height();
+    $("#top").css({"height": h - 66 + "px"});
 });
 
 //    $('menu.expanded a[href^="#"]').on('click', function(){

@@ -168,6 +168,9 @@ canvas {
 
 // Header
 header#top {
+  display: table;
+  padding: 0 60px;
+  position: relative;
   color: white;
   padding: 160px 60px;
   // -> Look Ma, No Images!
@@ -180,6 +183,12 @@ header#top {
   background-size: cover;
   background-repeat: repeat;
   text-shadow: 0 0 4px rgba(0,0,0,.5);
+  .wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    top: -68px;
+  }
   p {
     @extend p.lead;
     font-size: 40px;
@@ -227,22 +236,30 @@ header#top {
       display: none;
     }
   }
-  a {
+  .scrolldown {
+    display: block;
+    bottom: 0px;
+    text-align: center;
     position: absolute;
-    bottom: 20px;
-    color: white;
-    line-height: 35px;
-    height: 50px;
-    width: 50px;
+    left: 50%;
     margin-left: -25px;
-    border-radius: 200px;
-    border: $thickness solid rgba(255,255,255,.2);
-    font-size: 30px;
-    @extend .transition;
-    &:hover {
-      line-height: 50px;
-      background: rgba(0,0,0,.5);
-      border: $thickness solid rgba(255,255,255,.5);
+    bottom: 20px;
+    a {
+      color: white;
+      line-height: 35px;
+      height: 50px;
+      width: 50px;
+      display: block;
+      margin-left: -25px;
+      border-radius: 200px;
+      border: $thickness solid rgba(255,255,255,.2);
+      font-size: 30px;
+      @extend .transition;
+      &:hover {
+        line-height: 50px;
+        background: rgba(0,0,0,.5);
+        border: $thickness solid rgba(255,255,255,.5);
+      }
     }
   }
 }
@@ -537,6 +554,34 @@ section#social {
   }
 }
 
+// Showcase
+#showcase {
+  // -@ http://lea.verou.me/css3patterns/#blueprint-grid
+  background-color:#269;
+  background-image: linear-gradient(rgba(255,255,255,.4) 2px, transparent 2px),
+  linear-gradient(90deg, rgba(255,255,255,.4) 2px, transparent 2px),
+  linear-gradient(rgba(255,255,255,.2) 1px, transparent 1px),
+  linear-gradient(90deg, rgba(255,255,255,.2) 1px, transparent 1px);
+  background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
+  color: white;
+  h2 {
+    text-shadow: 0 0 10px rgba(0,0,0,.5);
+  }
+  .wrapper {
+    background: rgba(255,255,255,.8);
+    color: black;
+    padding: 20px;
+  }
+}
+
+// ILITE Robotics
+#ilite{
+  background: #7951a1;
+  background: linear-gradient(#814ca0 50%, #210148 100%);
+  color: white;
+}
+
 // Hackerchat
 #hackerchat {
   background: url("../shutter/pattern-dark-matter.png") black;
@@ -627,13 +672,29 @@ section#social {
   a.button {
     @include button-subtle($blue);
   }
-  .icon-pilot-philly {
-      -webkit-transform: rotate(-20deg);
+  .row {
+    z-index: 5;
+    position: relative;
+    article {
+      display: table-cell;
+      @extend .col7;
+    }
+    .demo {
+      @extend .col5;
+      display: table-cell;
       position: relative;
-      transform: rotate(-20deg);
+    }
   }
   i.thing-1, i.thing-2 {
-    position: absolute;
+    article {
+      display: table-cell;
+      @extend .col7;
+    }
+    .demo {
+      @extend .col5;
+      display: table-cell;
+      position: relative;
+    }position: absolute;
     color: white;
     opacity: 0.4;
     font-size: 180px;
@@ -646,26 +707,75 @@ section#social {
   i.thing-1 {
       right: -30px;
   }
-  #cloudchat .row {
-      z-index: 5;
-      position: relative;
-  }
-  article {
-    display: table-cell;
-    @extend .col7;
-  }
-  .demo {
-    @extend .col5;
-    display: table-cell;
-    position: relative;
-  }
+
 }
+
+// School Closings
+#phlclosings {
+  background: #2980b9;
+  color: white;
+}
+
+// Drones4u
+#drones {
+  background: $spike;
+  color: white;
+}
+
+// DC Indie
+#dcindie {
+  background: $blue;
+  color: white;
+}
+
+// Event Page
 
 // Science
 #science {
+  background: $tardis;
+  color: lighten($orange, 15%);
   article {
     @extend .col4;
     @extend .tile;
+  }
+}
+
+// CAD
+#cad {
+  background: darken($red, 20%);
+  background: linear-gradient(darken($red, 20%), darken($red, 50%));
+  color: white;
+}
+
+// Art
+#art {
+  // background: #dde5d8;
+  // color: #2c3635;
+  background: $light;
+  color: $dark;
+}
+
+// Writing
+#writing {
+  box-shadow: inset 0 0 60px rgba(0,0,0,0.5);
+  color: $dark;
+  background: $ltyellow;
+}
+
+// Film
+#film {
+  box-shadow: inset 0 0 60px rgba(0,0,0,0.5);
+  background-image: linear-gradient(to bottom right, #d38312, #a83279);
+  color: white;
+}
+
+// Music
+// -> See also WebTunes partial.
+#music {
+  box-shadow: inset 0 0 60px rgba(0,0,0,0.5);
+  background-image: linear-gradient(to bottom right, #002f4b, #e0be00);
+  color: white;
+  p.lead {
   }
 }
 
@@ -743,6 +853,10 @@ section#social {
 
 // Footer
 footer {
+  // Scroll up to reveal effect
+  // position: fixed;
+  // bottom: 0;
+  // left: 0;
   background: $wet-asphalt;
   color: $clouds;
   text-align: left;
@@ -873,7 +987,8 @@ modal#credits window {
     text-align: center;
   }
   header#top {
-    padding: 50px 10px 72px 10px;
+    padding: 150px 10px 72px 10px;
+    max-height: 300px;
     h1 {
       font-size: 50px;
       line-height: 1em;

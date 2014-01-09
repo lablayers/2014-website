@@ -84,14 +84,16 @@ block content
       | Help get me to MHacks!
     header#top(data-identity='victor').visible
       canvas#snow
-      h1
-        span Victor Lourng
-        form(action='https://docs.google.com/forms/d/1XjEFRyY08p4zvQxsHIgUSKK2uNBPImrWRle1ORifOk8/formResponse' method='post' id='ss-form')
-          input#message(type='text' placeholder='Victor Lourng' title='Victor Lourng' name='entry.378740328' id='entry_378740328' onfocus='if(this.value=="Victor Lourng"){this.value="";}')
-          input#submit(type='submit' name='submit' value='Submit' id='ss-submit')
-      p Nerd. Genius. Imagineer.
-      a(href='#about')
-        i.icon-down
+      .wrapper
+        h1
+          span Victor Lourng
+          form(action='https://docs.google.com/forms/d/1XjEFRyY08p4zvQxsHIgUSKK2uNBPImrWRle1ORifOk8/formResponse' method='post' id='ss-form')
+            input#message(type='text' placeholder='Victor Lourng' title='Victor Lourng' name='entry.378740328' id='entry_378740328' onfocus='if(this.value=="Victor Lourng"){this.value="";}')
+            input#submit(type='submit' name='submit' value='Submit' id='ss-submit')
+        p Nerd. Genius. Imagineer.
+      .scrolldown
+        a(href='#about')
+          i.icon-down
     section#about
       .row
         figure
@@ -175,14 +177,15 @@ block content
         div.parallax.code
     section#showcase(data-identity='victor')
       h2 Things I Do
-      p Let's get into my portfolio, shall we?
-      div.gallery.reset
-        figure
-        figure item
-        figure item
-        figure item
-        figure item
-        figure item
+      .wrapper
+        p.lead Let's get into my portfolio, shall we?
+        div.gallery.reset
+          figure
+          figure item
+          figure item
+          figure item
+          figure item
+          figure item
     section#ilite(data-identity='victor') <!-- data-pin='please' -->
       .row
         .col6
@@ -280,10 +283,12 @@ block content
       p An initiative for bringing drones to the field civilian use...
       img
       a.button.gradient.green(href='http://drones4u.tumblr.com/') Visit Site
-    section#more(data-identity='victor')
+    section#dcindie(data-identity='victor')
       p Even more sites that zoom on hover.
     section#science(data-identity='victor')
       h2 Science Fair
+      p.lead Winning awards every single time! 
+        i.icon-emo-happy
       .row
         article
           h3 Artificial Intelligence
@@ -294,21 +299,40 @@ block content
         article
           h3 File Compression
           img
+        h2 Lab Reports
+        p.lead Experiments I do in class and in my spare time.
+        .row
+          article
+            h3 Boiling Water = Instant Snow
+            img
+          article
+            h3 Producing Counterfeit Silver and Gold
+            img
+          article
+            h3 Wavelengths
+            img
     section#cad(data-identity='victor')
       h2 CAD Renderings
+      p.lead I play with Autodesk Inventor and AutoCAD too much.
     section#art(data-identity='victor')
       h2 My Art
+      p.lead You can blame deviantART's awesome community for my art addiction.
+      a(href='http://lablayers.deviantart.com') DeviantART
+    section#writing(data-identity='victor')
+      h2 Writing
+      a(href='http://lablayers.deviantart.com/journal') Journal
     section#film(data-identity='victor')
       h2 Film!
-      p.lead I am taking documentary/film at school.
+      p.lead I am taking documentary/film at school. Learning Final Cut Pro.
       .col3
-        iframe
+        | Snow Video
       .col3
-        iframe
+        | Awesome Stuff
       .col3
-        iframe
+        | How to: Dirt Cup
     section#music(data-identity='victor' data-playing='none')
       h2 Music
+      p.lead I produce music with Ableton Live and Logic Pro.
       .webtunes_container
         .controller
           .left
