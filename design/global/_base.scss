@@ -66,3 +66,18 @@ section, header, footer {
   clip: rect(0,0,0,0);
   border: 0;
 }
+
+// Noscript
+noscript, noscript img, .oldie, .oldie img {
+  margin: 0;
+  display: block;
+  width: 100%;
+}
+
+noscript div, .oldie div {
+  // content: 'Please enable javascript to access this site.';
+  font-size: 30px;
+  padding: 18px;
+  display: block;
+  text-align: center;
+}

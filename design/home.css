@@ -331,6 +331,19 @@ section, header, footer {
   clip: rect(0, 0, 0, 0);
   border: 0; }
 
+/* line 71, global/_base.scss */
+noscript, noscript img, .oldie, .oldie img {
+  margin: 0;
+  display: block;
+  width: 100%; }
+
+/* line 77, global/_base.scss */
+noscript div, .oldie div {
+  font-size: 30px;
+  padding: 18px;
+  display: block;
+  text-align: center; }
+
 /* line 2, global/_scrollbars.scss */
 ::-webkit-scrollbar {
   height: 0;

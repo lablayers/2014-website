@@ -3,6 +3,12 @@ extends layout
 block content
   body.home(data-spy='scroll' data-target='nav[role="navigation"]')
     a.screen-reader(href='#top') Skip to Content
+    noscript
+      img(src='http://php.net/images/noscript.jpg')
+      div Please enable javascript to access this site.
+    <!--[if lt IE 10]>
+    div Please upgrade Internet Explorer to access this site.
+    <![endif]-->
     progress(data-status='empty')
     a.close-menu-bubble(data-toggle='menu')
     nav(role='navigation')
