@@ -1,3 +1,0 @@
-http://sass-lang.com/guide
-http://johnpolacek.github.io/superscrollorama/
-http://compass-style.org/reference/compass/
