@@ -157,9 +157,18 @@
           </div>
         </div>
       </div>
-      <div class="parallax stars"></div>
-      <div class="parallax code"></div>
     </div>
+    <div class="browser">
+      <div class="toolbar">
+        <div class="controls"><i class="icon-chevron-left"></i><i class="icon-chevron-right"></i><i class="icon-refresh"></i></div>
+        <!-- i.icon-lock-->
+        <input placeholder="Sublime Text" class="omnibox">
+        <div class="menu"><i class="icon-rows"></i></div>
+      </div>
+      <div class="frame mokokai">Test</div>
+    </div>
+    <div class="parallax stars"></div>
+    <div class="parallax code"></div>
   </section>
   <section id="showcase" data-identity="victor">
     <h2>Things I Do</h2>
@@ -178,17 +187,36 @@
   <section id="ilite" data-identity="victor"><!-- data-pin='please' -->
     <div class="row">
       <div class="col6">
-        <div class="slideshow">
-          <canvas>Slideshow</canvas>
-          <canvas>Site Screenshot</canvas>
-          <canvas>Team Photo</canvas>
-        </div>
-      </div>
-      <div class="col6">
         <h2>ILITE Robotics</h2>
-        <tech><i class="icon-php"></i><i class="icon-mysql"></i><i class="icon-wordpress"></i><i class="icon-bootstrap"></i></tech>
-        <p>This website was created using WordPress and many modern technologies.</p><a href="http://iliterobotics.org" class="button gradient purple">ILITE Robotics</a><a href="http://yabby.victorlourng.com" class="button gradient purple">Backend Demo</a>
+        <div class="tech">
+          <attr>
+            <tooltip>
+              <ul>
+                <li>WordPress</li>
+                <li>PHP 5.5</li>
+              </ul>
+            </tooltip><i class="icon-wordpress"></i>
+          </attr>
+          <attr>
+            <tooltip>
+              <ul>
+                <li>MySQL</li>
+              </ul>
+            </tooltip><i class="icon-mysql"></i>
+          </attr>
+          <attr>
+            <tooltip>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Bootstrap 2.3</li>
+              </ul>
+            </tooltip><i class="icon-html5"> </i><i class="icon-css3"> </i><i class="icon-bootstrap"></i>
+          </attr>
+        </div>
+        <p>This website was created using WordPress and many modern technologies for <i class="icon-first"></i>FRC team 1885.</p><a href="http://iliterobotics.org" class="button">ILITE Robotics</a><a href="http://yabby.victorlourng.com/wp-admin" class="button">Backend Demo</a>
       </div>
+      <div class="col6">CSS3 Demo</div>
     </div>
   </section>
   <section id="hackerchat" data-identity="victor">

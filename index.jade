@@ -173,8 +173,20 @@ block content
                     strong My Cart
                     | Lorem ipsum sat and donated blood to the Red Cross. 
                     a(href='http://www.redcross.org/') You should too!
-        div.parallax.stars
-        div.parallax.code
+      div.browser
+        .toolbar
+          .controls
+            i.icon-chevron-left
+            i.icon-chevron-right
+            i.icon-refresh
+          // i.icon-lock
+          input.omnibox(placeholder='Sublime Text')
+          .menu
+            i.icon-rows
+        .frame.mokokai
+          | Test
+      div.parallax.stars
+      div.parallax.code
     section#showcase(data-identity='victor')
       h2 Things I Do
       .wrapper
@@ -189,20 +201,35 @@ block content
     section#ilite(data-identity='victor') <!-- data-pin='please' -->
       .row
         .col6
-          .slideshow
-            canvas Slideshow
-            canvas Site Screenshot
-            canvas Team Photo
+          h2 ILITE Robotics
+          .tech
+            attr
+              tooltip
+                ul
+                  li WordPress
+                  li PHP 5.5
+              i.icon-wordpress
+            attr
+              tooltip
+                ul
+                  li MySQL
+              i.icon-mysql
+            attr
+              tooltip
+                ul
+                  li HTML5
+                  li CSS3
+                  li Bootstrap 2.3
+              i.icon-html5 
+              i.icon-css3 
+              i.icon-bootstrap
+          p This website was created using WordPress and many modern technologies for 
+            i.icon-first
+            | FRC team 1885.
+          a.button(href='http://iliterobotics.org') ILITE Robotics
+          a.button(href='http://yabby.victorlourng.com/wp-admin') Backend Demo
         .col6
-           h2 ILITE Robotics
-           tech
-             i.icon-php
-             i.icon-mysql
-             i.icon-wordpress
-             i.icon-bootstrap
-           p This website was created using WordPress and many modern technologies.
-           a.button.gradient.purple(href='http://iliterobotics.org') ILITE Robotics
-           a.button.gradient.purple(href='http://yabby.victorlourng.com') Backend Demo
+          | CSS3 Demo
     section#hackerchat(data-identity='victor')
       .row
         .heightfix

@@ -580,6 +580,23 @@ section#social {
   background: #7951a1;
   background: linear-gradient(#814ca0 50%, #210148 100%);
   color: white;
+  i.icon-bootstrap:before {
+    content: 'B';
+    color: purple;
+    position: static;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background: white;
+    border-radius: 4px;
+    font-family: Arial;
+    font-weight: bold;
+    margin-top: -2px;
+  }
+  .button {
+    @include button-gradient($green);
+    @extend .button-jumbo;
+  }
 }
 
 // Hackerchat

@@ -1437,7 +1437,7 @@ e(1.6) translateX(-20px);opacity:0}100%{transform:scale(1) translateX(0px);opaci
   transition: border .25s linear, color .25s linear, background-color .25s linear; }
 
 /* line 9, global/_buttons.scss */
-.button, section#about figure a, #unicorn .frame article a, #hackerchat article a:not(.pilot), #cloudchat a.button, #contact form input#ss-submit, footer .skyward span, #iesucks {
+.button, section#about figure a, #unicorn .frame article a, #ilite .button, #hackerchat article a:not(.pilot), #cloudchat a.button, #contact form input#ss-submit, footer .skyward span, #iesucks {
   color: inherit;
   padding: 6px 8px;
   font-size: 14px;
@@ -1454,7 +1454,7 @@ e(1.6) translateX(-20px);opacity:0}100%{transform:scale(1) translateX(0px);opaci
   display: block; }
 
 /* line 153, global/_buttons.scss */
-.button-rounded, .button, section#about figure a, #unicorn .frame article a, #hackerchat article a:not(.pilot), #cloudchat a.button, #contact form input#ss-submit, footer .skyward span, #iesucks {
+.button-rounded, .button, section#about figure a, #unicorn .frame article a, #ilite .button, #hackerchat article a:not(.pilot), #cloudchat a.button, #contact form input#ss-submit, footer .skyward span, #iesucks {
   border-radius: 6px; }
 
 /* line 157, global/_buttons.scss */
@@ -1462,12 +1462,12 @@ e(1.6) translateX(-20px);opacity:0}100%{transform:scale(1) translateX(0px);opaci
   border-radius: 300px; }
 
 /* line 161, global/_buttons.scss */
-.button-large, .button, section#about figure a, #unicorn .frame article a, #hackerchat article a:not(.pilot), #cloudchat a.button, #contact form input#ss-submit, footer .skyward span, #iesucks {
+.button-large, .button, section#about figure a, #unicorn .frame article a, #ilite .button, #hackerchat article a:not(.pilot), #cloudchat a.button, #contact form input#ss-submit, footer .skyward span, #iesucks {
   font-size: 18px;
   line-height: 1.2em; }
 
 /* line 166, global/_buttons.scss */
-.button-jumbo, #hackerchat article a:not(.pilot) {
+.button-jumbo, #ilite section#about figure a, section#about figure #ilite a, #ilite #unicorn .frame article a, #unicorn .frame article #ilite a, #ilite .button, #ilite #cloudchat a.button, #cloudchat #ilite a.button, #ilite #contact form input#ss-submit, #contact form #ilite input#ss-submit, #ilite footer .skyward span, footer .skyward #ilite span, #ilite #iesucks, #hackerchat article a:not(.pilot) {
   font-size: 24px;
   line-height: 2.6em;
   padding: 0 16px; }
@@ -2908,7 +2908,7 @@ header, section, footer {
   -webkit-transition: all .25s ease; }
 
 /* line 91, home.scss */
-.button, section#about figure a, #unicorn .frame article a, #hackerchat article a:not(.pilot), #cloudchat a.button, #contact form input#ss-submit, footer .skyward span, #iesucks {
+.button, section#about figure a, #unicorn .frame article a, #ilite .button, #hackerchat article a:not(.pilot), #cloudchat a.button, #contact form input#ss-submit, footer .skyward span, #iesucks {
   background: #4f4e4c;
   color: white;
   border: 1px solid #1b1b1a;
@@ -2916,10 +2916,10 @@ header, section, footer {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   margin-right: 0.2em; }
   /* line 140, global/_buttons.scss */
-  .button:hover, section#about figure a:hover, #unicorn .frame article a:hover, #hackerchat article a:hover:not(.pilot), #cloudchat a.button:hover, #contact form input#ss-submit:hover, footer .skyward span:hover, #iesucks:hover {
+  .button:hover, section#about figure a:hover, #unicorn .frame article a:hover, #ilite .button:hover, #hackerchat article a:hover:not(.pilot), #cloudchat a.button:hover, #contact form input#ss-submit:hover, footer .skyward span:hover, #iesucks:hover {
     background-color: #646360; }
   /* line 143, global/_buttons.scss */
-  .button:active, section#about figure a:active, #unicorn .frame article a:active, #hackerchat article a:active:not(.pilot), #cloudchat a.button:active, #contact form input#ss-submit:active, footer .skyward span:active, #iesucks:active, .button:focus, section#about figure a:focus, #unicorn .frame article a:focus, #hackerchat article a:focus:not(.pilot), #cloudchat a.button:focus, #contact form input#ss-submit:focus, footer .skyward span:focus, #iesucks:focus {
+  .button:active, section#about figure a:active, #unicorn .frame article a:active, #ilite .button:active, #hackerchat article a:active:not(.pilot), #cloudchat a.button:active, #contact form input#ss-submit:active, footer .skyward span:active, #iesucks:active, .button:focus, section#about figure a:focus, #unicorn .frame article a:focus, #ilite .button:focus, #hackerchat article a:focus:not(.pilot), #cloudchat a.button:focus, #contact form input#ss-submit:focus, footer .skyward span:focus, #iesucks:focus {
     background-color: #3a3938; }
 
 /* line 98, home.scss */
@@ -3391,38 +3391,63 @@ section#social {
   background: #7951a1;
   background: linear-gradient(#814ca0 50%, #210148 100%);
   color: white; }
+  /* line 583, home.scss */
+  #ilite i.icon-bootstrap:before {
+    content: 'B';
+    color: purple;
+    position: static;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background: white;
+    border-radius: 4px;
+    font-family: Arial;
+    font-weight: bold;
+    margin-top: -2px; }
+  /* line 596, home.scss */
+  #ilite section#about figure a, section#about figure #ilite a, #ilite #unicorn .frame article a, #unicorn .frame article #ilite a, #ilite .button, #ilite #hackerchat article a:not(.pilot), #hackerchat article #ilite a:not(.pilot), #ilite #cloudchat a.button, #cloudchat #ilite a.button, #ilite #contact form input#ss-submit, #contact form #ilite input#ss-submit, #ilite footer .skyward span, footer .skyward #ilite span, #ilite #iesucks {
+    color: white;
+    background: linear-gradient(#62bc4d, #3b762d);
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+    transition: box-shadow .05s ease; }
+    /* line 75, global/_buttons.scss */
+    #ilite section#about figure a:hover, section#about figure #ilite a:hover, #ilite #unicorn .frame article a:hover, #unicorn .frame article #ilite a:hover, #ilite .button:hover, #ilite #hackerchat article a:hover:not(.pilot), #hackerchat article #ilite a:hover:not(.pilot), #ilite #contact form input#ss-submit:hover, #contact form #ilite input#ss-submit:hover, #ilite footer .skyward span:hover, footer .skyward #ilite span:hover, #ilite #iesucks:hover {
+      box-shadow: inset 0 0 500px rgba(255, 255, 255, 0.25); }
+    /* line 78, global/_buttons.scss */
+    #ilite section#about figure a:active, section#about figure #ilite a:active, #ilite #unicorn .frame article a:active, #unicorn .frame article #ilite a:active, #ilite .button:active, #ilite #hackerchat article a:active:not(.pilot), #hackerchat article #ilite a:active:not(.pilot), #ilite #contact form input#ss-submit:active, #contact form #ilite input#ss-submit:active, #ilite footer .skyward span:active, footer .skyward #ilite span:active, #ilite #iesucks:active, #ilite section#about figure a:focus, section#about figure #ilite a:focus, #ilite #unicorn .frame article a:focus, #unicorn .frame article #ilite a:focus, #ilite .button:focus, #ilite #hackerchat article a:focus:not(.pilot), #hackerchat article #ilite a:focus:not(.pilot), #ilite #contact form input#ss-submit:focus, #contact form #ilite input#ss-submit:focus, #ilite footer .skyward span:focus, footer .skyward #ilite span:focus, #ilite #iesucks:focus {
+      box-shadow: inset 0 0 500px rgba(50, 50, 50, 0.2); }
 
-/* line 586, home.scss */
+/* line 603, home.scss */
 #hackerchat {
   background: url("../shutter/pattern-dark-matter.png") black;
   background-repeat: repeat;
   color: #C8C8C8; }
-  /* line 590, home.scss */
+  /* line 607, home.scss */
   #hackerchat .heightfix {
     display: table-cell;
     position: relative; }
-    /* line 594, home.scss */
+    /* line 611, home.scss */
     #hackerchat .heightfix .browser {
       position: absolute;
       width: 100%;
       height: 100%;
       position: absolute;
       display: table; }
-      /* line 600, home.scss */
+      /* line 617, home.scss */
       #hackerchat .heightfix .browser .frame {
         position: relative;
         position: absolute;
         display: table;
         width: 100%;
         height: 90%; }
-      /* line 607, home.scss */
+      /* line 624, home.scss */
       #hackerchat .heightfix .browser iframe {
         width: 100%;
         height: 100%; }
-  /* line 613, home.scss */
+  /* line 630, home.scss */
   #hackerchat article {
     display: table-cell; }
-    /* line 616, home.scss */
+    /* line 633, home.scss */
     #hackerchat article a:not(.pilot) {
       color: white;
       background: linear-gradient(#62bc4d, #3b762d);
@@ -3434,14 +3459,14 @@ section#social {
       /* line 78, global/_buttons.scss */
       #hackerchat article a:not(.pilot):active, #hackerchat article a:not(.pilot):focus {
         box-shadow: inset 0 0 500px rgba(50, 50, 50, 0.2); }
-  /* line 621, home.scss */
+  /* line 638, home.scss */
   #hackerchat a.pilot {
     margin-top: 30px;
     color: inherit;
     position: relative;
     display: block;
     border-radius: 4px; }
-    /* line 631, home.scss */
+    /* line 648, home.scss */
     #hackerchat a.pilot span {
       margin-top: 1em;
       opacity: 0;
@@ -3450,7 +3475,7 @@ section#social {
       display: inline-block;
       padding-right: 20px;
       text-align: right; }
-    /* line 642, home.scss */
+    /* line 659, home.scss */
     #hackerchat a.pilot i.icon-pilotphilly {
       float: right;
       display: inline;
@@ -3460,22 +3485,22 @@ section#social {
       opacity: 0.5;
       transform: rotate(-20deg);
       -webkit-transform: rotate(-20deg); }
-    /* line 654, home.scss */
+    /* line 671, home.scss */
     #hackerchat a.pilot:hover span {
       opacity: 1;
       -webkit-transform: translate(0, 0);
       transform: translate(0, 0); }
-    /* line 659, home.scss */
+    /* line 676, home.scss */
     #hackerchat a.pilot:hover i.icon-pilotphilly {
       opacity: 1;
       transform: rotate(0deg);
       -webkit-transform: rotate(0deg); }
 
-/* line 669, home.scss */
+/* line 686, home.scss */
 #cloudchat {
   background: #ceedfc;
   color: black; }
-  /* line 672, home.scss */
+  /* line 689, home.scss */
   #cloudchat section#about figure a, section#about figure #cloudchat a, #cloudchat #unicorn .frame article a, #unicorn .frame article #cloudchat a, #cloudchat #hackerchat article a:not(.pilot), #hackerchat article #cloudchat a:not(.pilot), #cloudchat a.button, #cloudchat a#iesucks {
     background: #1e98d3;
     color: white;
@@ -3488,18 +3513,18 @@ section#social {
     /* line 143, global/_buttons.scss */
     #cloudchat section#about figure a:active, section#about figure #cloudchat a:active, #cloudchat #unicorn .frame article a:active, #unicorn .frame article #cloudchat a:active, #cloudchat #hackerchat article a:active:not(.pilot), #hackerchat article #cloudchat a:active:not(.pilot), #cloudchat a.button:active, #cloudchat a#iesucks:active, #cloudchat section#about figure a:focus, section#about figure #cloudchat a:focus, #cloudchat #unicorn .frame article a:focus, #unicorn .frame article #cloudchat a:focus, #cloudchat #hackerchat article a:focus:not(.pilot), #hackerchat article #cloudchat a:focus:not(.pilot), #cloudchat a.button:focus, #cloudchat a#iesucks:focus {
       background-color: #197eaf; }
-  /* line 675, home.scss */
+  /* line 692, home.scss */
   #cloudchat .row {
     z-index: 5;
     position: relative; }
-    /* line 678, home.scss */
+    /* line 695, home.scss */
     #cloudchat .row article {
       display: table-cell; }
-    /* line 682, home.scss */
+    /* line 699, home.scss */
     #cloudchat .row .demo {
       display: table-cell;
       position: relative; }
-  /* line 688, home.scss */
+  /* line 705, home.scss */
   #cloudchat i.thing-1, #cloudchat i.thing-2 {
     position: absolute;
     color: white;
@@ -3507,93 +3532,93 @@ section#social {
     font-size: 180px;
     bottom: 0px;
     z-index: 0px; }
-    /* line 689, home.scss */
+    /* line 706, home.scss */
     #cloudchat i.thing-1 article, #cloudchat i.thing-2 article {
       display: table-cell; }
-    /* line 693, home.scss */
+    /* line 710, home.scss */
     #cloudchat i.thing-1 .demo, #cloudchat i.thing-2 .demo {
       display: table-cell;
       position: relative; }
-  /* line 704, home.scss */
+  /* line 721, home.scss */
   #cloudchat i.thing-2 {
     left: -30px; }
-  /* line 707, home.scss */
+  /* line 724, home.scss */
   #cloudchat i.thing-1 {
     right: -30px; }
 
-/* line 714, home.scss */
+/* line 731, home.scss */
 #phlclosings {
   background: #2980b9;
   color: white; }
 
-/* line 720, home.scss */
+/* line 737, home.scss */
 #drones {
   background: #5ba525;
   color: white; }
 
-/* line 726, home.scss */
+/* line 743, home.scss */
 #dcindie {
   background: #1e98d3;
   color: white; }
 
-/* line 734, home.scss */
+/* line 751, home.scss */
 #science {
   background: #003865;
   color: #f7ba5b; }
 
-/* line 744, home.scss */
+/* line 761, home.scss */
 #cad {
   background: #b81113;
   background: linear-gradient(#b81113, #2c0405);
   color: white; }
 
-/* line 751, home.scss */
+/* line 768, home.scss */
 #art {
   background: #edece3;
   color: #4f4e4c; }
 
-/* line 759, home.scss */
+/* line 776, home.scss */
 #writing {
   box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.5);
   color: #4f4e4c;
   background: #fdf9d7; }
 
-/* line 766, home.scss */
+/* line 783, home.scss */
 #film {
   box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.5);
   background-image: linear-gradient(to bottom right, #d38312, #a83279);
   color: white; }
 
-/* line 774, home.scss */
+/* line 791, home.scss */
 #music {
   box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.5);
   background-image: linear-gradient(to bottom right, #002f4b, #e0be00);
   color: white; }
 
-/* line 783, home.scss */
+/* line 800, home.scss */
 #contact {
   background: #672f89;
   color: white; }
-  /* line 788, home.scss */
+  /* line 805, home.scss */
   #contact form select, #contact form textarea {
     width: 100%; }
-  /* line 791, home.scss */
+  /* line 808, home.scss */
   #contact form input:not(#ss-submit) {
     width: 50%;
     display: table-cell;
     float: left; }
-    /* line 795, home.scss */
+    /* line 812, home.scss */
     #contact form input:not(#ss-submit):first-child {
       border-top-right-radius: 0px;
       border-bottom-right-radius: 0px; }
-    /* line 799, home.scss */
+    /* line 816, home.scss */
     #contact form input:not(#ss-submit):last-child {
       border-top-left-radius: 0px;
       border-bottom-left-radius: 0px; }
-  /* line 804, home.scss */
+  /* line 821, home.scss */
   #contact form textarea {
     height: 5em; }
-  /* line 807, home.scss */
+  /* line 824, home.scss */
   #contact form input#ss-submit {
     background: #4f4e4c;
     color: white;
@@ -3608,89 +3633,89 @@ section#social {
     /* line 143, global/_buttons.scss */
     #contact form input#ss-submit:active, #contact form input#ss-submit:focus {
       background-color: #3a3938; }
-  /* line 817, home.scss */
+  /* line 834, home.scss */
   #contact .telefono .guacamole, #contact .telefono .caliente, #contact .telefono .chipotle, #contact .telefono .gustas, #contact .telefono .tortilla‎, #contact .telefono .mios, #contact .telefono .mexico, #contact .telefono .frijoles, #contact .telefono .dota, #contact .telefono .tortillas {
     font-size: 0;
     visibility: hidden; }
-    /* line 820, home.scss */
+    /* line 837, home.scss */
     #contact .telefono .guacamole:before, #contact .telefono .caliente:before, #contact .telefono .chipotle:before, #contact .telefono .gustas:before, #contact .telefono .tortilla‎:before, #contact .telefono .mios:before, #contact .telefono .mexico:before, #contact .telefono .frijoles:before, #contact .telefono .dota:before, #contact .telefono .tortillas:before {
       font-size: 18px;
       visibility: visible;
       display: inline; }
-  /* line 826, home.scss */
+  /* line 843, home.scss */
   #contact .telefono .tortillas:before {
     content: '1778'; }
-  /* line 827, home.scss */
+  /* line 844, home.scss */
   #contact .telefono .dota:before {
     content: '- '; }
-  /* line 828, home.scss */
+  /* line 845, home.scss */
   #contact .telefono .guacamole:before {
     content: ') '; }
-  /* line 829, home.scss */
+  /* line 846, home.scss */
   #contact .telefono .mexico:before {
     content: '696'; }
-  /* line 830, home.scss */
+  /* line 847, home.scss */
   #contact .telefono .frijoles:before {
     content: '9981'; }
-  /* line 831, home.scss */
+  /* line 848, home.scss */
   #contact .telefono .chipotle:before {
     content: '969 '; }
-  /* line 832, home.scss */
+  /* line 849, home.scss */
   #contact .telefono .gustas:before {
     content: ' - '; }
-  /* line 833, home.scss */
+  /* line 850, home.scss */
   #contact .telefono .caliente:before {
     content: '571'; }
-  /* line 834, home.scss */
+  /* line 851, home.scss */
   #contact .telefono .mios:before {
     content: '('; }
-  /* line 837, home.scss */
+  /* line 854, home.scss */
   #contact .correo .zayn, #contact .correo .louis, #contact .correo .niall, #contact .correo .liam, #contact .correo .harry {
     font-size: 0;
     visibility: hidden; }
-    /* line 840, home.scss */
+    /* line 857, home.scss */
     #contact .correo .zayn:before, #contact .correo .louis:before, #contact .correo .niall:before, #contact .correo .liam:before, #contact .correo .harry:before {
       font-size: 18px;
       visibility: visible;
       display: inline; }
-  /* line 846, home.scss */
+  /* line 863, home.scss */
   #contact .correo .louis:before {
     content: 'hel'; }
-  /* line 847, home.scss */
+  /* line 864, home.scss */
   #contact .correo .niall:before {
     content: 'lo'; }
-  /* line 848, home.scss */
+  /* line 865, home.scss */
   #contact .correo .zayn:before {
     content: '@'; }
-  /* line 849, home.scss */
+  /* line 866, home.scss */
   #contact .correo .harry:before {
     content: 'victorlourng'; }
-  /* line 850, home.scss */
+  /* line 867, home.scss */
   #contact .correo .liam:before {
     content: '.com'; }
 
-/* line 855, home.scss */
+/* line 872, home.scss */
 footer {
   background: #34495e;
   color: #ecf0f1;
   text-align: left;
   overflow: hidden;
   position: static; }
-  /* line 867, home.scss */
+  /* line 884, home.scss */
   footer a {
     color: #ecf0f1; }
-    /* line 869, home.scss */
+    /* line 886, home.scss */
     footer a:hover {
       color: #16a085; }
-  /* line 873, home.scss */
+  /* line 890, home.scss */
   footer .skyward {
     float: right;
     color: #ecf0f1;
     position: relative; }
-    /* line 877, home.scss */
+    /* line 894, home.scss */
     footer .skyward i.icon-tardis {
       position: absolute; }
-    /* line 880, home.scss */
+    /* line 897, home.scss */
     footer .skyward i.icon-tardis:before {
       position: absolute;
       font-size: 300px;
@@ -3702,7 +3727,7 @@ footer {
       transition: all 0.25s;
       -webkit-transform: rotate(-15deg);
       -webkit-transition: all 0.25s; }
-    /* line 892, home.scss */
+    /* line 909, home.scss */
     footer .skyward:hover i.icon-tardis:before {
       -webkit-transform: rotate(0deg);
       transform: rotate(0deg);
@@ -3710,7 +3735,7 @@ footer {
       color: #003865;
       text-shadow: 0 0 50px white;
       background: radial-gradient(#ffffff 0%, rgba(255, 255, 255, 0) 80%); }
-    /* line 900, home.scss */
+    /* line 917, home.scss */
     footer .skyward span {
       margin-right: 140px;
       background: #4f4e4c;
@@ -3724,11 +3749,11 @@ footer {
       /* line 143, global/_buttons.scss */
       footer .skyward span:active, footer .skyward span:focus {
         background-color: #3a3938; }
-  /* line 908, home.scss */
+  /* line 925, home.scss */
   footer aside a {
     position: relative;
     z-index: 5; }
-  /* line 912, home.scss */
+  /* line 929, home.scss */
   footer aside i.icon-network {
     position: relative;
     z-index: 1;
@@ -3742,12 +3767,12 @@ footer {
     width: 30px;
     margin-right: 20px;
     z-index: 0; }
-    /* line 926, home.scss */
+    /* line 943, home.scss */
     footer aside i.icon-network i.icon-heart:before {
       animation: heartbeat 1s infinite;
       -webkit-animation: heartbeat 1s infinite;
       position: absolute; }
-    /* line 932, home.scss */
+    /* line 949, home.scss */
     footer aside i.icon-network:before {
       position: absolute;
       z-index: -1;
@@ -3761,7 +3786,7 @@ footer {
       opacity: 0.3;
       color: #ecf0f1; }
 
-/* line 952, home.scss */
+/* line 969, home.scss */
 modal#likemystatus window {
   top: 10%;
   vertical-align: 80%;
@@ -3769,31 +3794,31 @@ modal#likemystatus window {
   overflow-x: hidden;
   bottom: 10%; }
 
-/* line 961, home.scss */
+/* line 978, home.scss */
 modal#credits window {
   background: #2c3e50;
   color: white; }
-  /* line 964, home.scss */
+  /* line 981, home.scss */
   modal#credits window .content a {
     color: white;
     transition: padding 0.2s;
     -webkit-transition: padding 0.2s;
     line-height: 1.8em; }
-    /* line 969, home.scss */
+    /* line 986, home.scss */
     modal#credits window .content a:hover {
       color: #16a085;
       padding-left: 20px; }
 
 @media only screen and (max-width: 780px) {
-  /* line 978, home.scss */
+  /* line 995, home.scss */
   body {
     padding-left: 0px; }
 
-  /* line 981, home.scss */
+  /* line 998, home.scss */
   .hidden-mobile, #mhacks, #hackerchat a.pilot, canvas, iframe, .browser, #about figure, .stickem-container {
     display: none !important; }
 
-  /* line 984, home.scss */
+  /* line 1001, home.scss */
   header, section, footer {
     position: relatve;
     width: 100%;
@@ -3801,53 +3826,53 @@ modal#credits window {
     padding: 20px 5px;
     text-align: center; }
 
-  /* line 989, home.scss */
+  /* line 1006, home.scss */
   header#top {
     padding: 150px 10px 72px 10px;
     max-height: 300px; }
-    /* line 992, home.scss */
+    /* line 1009, home.scss */
     header#top h1 {
       font-size: 50px;
       line-height: 1em; }
-      /* line 995, home.scss */
+      /* line 1012, home.scss */
       header#top h1 span {
         opacity: 1 !important;
         text-shadow: 0 0 4px rgba(0, 0, 0, 0.5) !important; }
-    /* line 1000, home.scss */
+    /* line 1017, home.scss */
     header#top form {
       display: none !important; }
-    /* line 1003, home.scss */
+    /* line 1020, home.scss */
     header#top p {
       font-size: 20px; }
 
-  /* line 1007, home.scss */
+  /* line 1024, home.scss */
   #social a {
     display: block !important;
     width: 100% !important;
     text-shadow: none !important; }
 
-  /* line 1012, home.scss */
+  /* line 1029, home.scss */
   .skyward {
     float: none;
     display: block;
     width: 100%;
     z-index: 5;
     margin-bottom: 1em; }
-    /* line 1018, home.scss */
+    /* line 1035, home.scss */
     .skyward i.icon-tardis {
       display: none; }
-    /* line 1021, home.scss */
+    /* line 1038, home.scss */
     .skyward span {
       margin-right: 0px !important;
       display: block;
       width: 100%;
       padding: 12px !important;
       font-size: 30px; } }
-/* line 1032, home.scss */
+/* line 1049, home.scss */
 body.inthetardis {
   background: #4f4e4c;
   background: linear-gradient(#81375c, #624c73, #1f2643, #16223c, #27324e, #1a344b); }
-  /* line 1037, home.scss */
+  /* line 1054, home.scss */
   body.inthetardis header, body.inthetardis section {
     animation: inthetardis 4s ease;
     -webkit-animation: inthetardis 4s ease;
@@ -3855,7 +3880,7 @@ body.inthetardis {
     background: #edece3;
     transition: box-shadow 0.5s ease;
     -webkit-transition: box-shadow 0.5s ease; }
-  /* line 1045, home.scss */
+  /* line 1062, home.scss */
   body.inthetardis i.icon-tardis {
     position: fixed !important;
     bottom: 120px !important;
@@ -3866,23 +3891,23 @@ body.inthetardis {
     animation: shimmydown 4s linear;
     -webkit-animation: shimmydown 4s linear; }
 
-/* line 1058, home.scss */
+/* line 1075, home.scss */
 html.mobile, body.mobile {
   background-color: #34495e;
   max-width: 500px;
   margin: auto;
   box-shadow: 0 0 20px black; }
 
-/* line 1066, home.scss */
+/* line 1083, home.scss */
 #iesucks {
   background: #1e98d3;
   border-radius: 0px;
   background: none; }
 
-/* line 1073, home.scss */
+/* line 1090, home.scss */
 body.reset {
   background: white !important; }
-  /* line 1075, home.scss */
+  /* line 1092, home.scss */
   body.reset *, body.reset *:before, body.reset *:after {
     background: white !important;
     margin: 0 !important;
@@ -3914,10 +3939,10 @@ body.reset {
     -webkit-animation: none !important;
     -webkit-transition: none !important;
     -webkit-transform: none !important; }
-  /* line 1107, home.scss */
+  /* line 1124, home.scss */
   body.reset a, body.reset a * {
     color: blue !important;
     text-decoration: underline !important; }
-  /* line 1111, home.scss */
+  /* line 1128, home.scss */
   body.reset window, body.reset modal, body.reset canvas, body.reset iframe, body.reset li.bottom {
     display: none !important; }
