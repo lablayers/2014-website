@@ -332,13 +332,13 @@ section, header, footer {
   border: 0; }
 
 /* line 71, global/_base.scss */
-noscript, noscript img, .oldie, .oldie img {
+noscript, noscript img {
   margin: 0;
   display: block;
   width: 100%; }
 
 /* line 77, global/_base.scss */
-noscript div, .oldie div {
+noscript div, .oldie {
   font-size: 30px;
   padding: 18px;
   display: block;

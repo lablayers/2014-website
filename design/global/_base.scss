@@ -68,13 +68,13 @@ section, header, footer {
 }
 
 // Noscript
-noscript, noscript img, .oldie, .oldie img {
+noscript, noscript img {
   margin: 0;
   display: block;
   width: 100%;
 }
 
-noscript div, .oldie div {
+noscript div, .oldie {
   // content: 'Please enable javascript to access this site.';
   font-size: 30px;
   padding: 18px;
