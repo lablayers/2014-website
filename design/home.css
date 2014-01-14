@@ -66,7 +66,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   clear: both; }
 
 /* line 8, global/_grid.scss */
-.col1, .col2, .col3, .col4, section#about figure, #science article, .col5, #hackerchat .heightfix, #cloudchat .row .demo, #cloudchat i.thing-1 .demo, #cloudchat i.thing-2 .demo, .col6, #ilite article, #ilite .demo, #contact form, .col7, #hackerchat article, #cloudchat .row article, #cloudchat i.thing-1 article, #cloudchat i.thing-2 article, .col8, .col9, .col10, .col11, .col12 {
+.col1, .col2, .col3, .col4, section#about figure, #science article, .col5, #hackerchat .heightfix, #cloudchat .row .demo, .col6, #ilite article, #ilite .demo, #contact form, .col7, #hackerchat article, #cloudchat .row article, .col8, .col9, .col10, .col11, .col12 {
   float: left;
   box-sizing: border-box; }
 
@@ -95,7 +95,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 32.3333333333%; }
 
 /* line 11, global/_grid.scss */
-.col5, #hackerchat .heightfix, #cloudchat .row .demo, #cloudchat i.thing-1 .demo, #cloudchat i.thing-2 .demo {
+.col5, #hackerchat .heightfix, #cloudchat .row .demo {
   width: 40.7916666667%; }
 
 /* line 11, global/_grid.scss */
@@ -103,7 +103,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 49.25%; }
 
 /* line 11, global/_grid.scss */
-.col7, #hackerchat article, #cloudchat .row article, #cloudchat i.thing-1 article, #cloudchat i.thing-2 article {
+.col7, #hackerchat article, #cloudchat .row article {
   width: 57.7083333333%; }
 
 /* line 11, global/_grid.scss */
@@ -141,16 +141,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   min-width: 30px; }
 
 /* line 13, global/_grid.scss */
-.col4, section#about figure, #science article, .col5, #hackerchat .heightfix, #cloudchat .row .demo, #cloudchat i.thing-1 .demo, #cloudchat i.thing-2 .demo {
+.col4, section#about figure, #science article, .col5, #hackerchat .heightfix, #cloudchat .row .demo {
   min-width: 50px; }
 
 /* line 14, global/_grid.scss */
-.col6, #ilite article, #ilite .demo, #contact form, .col7, #hackerchat article, #cloudchat .row article, #cloudchat i.thing-1 article, #cloudchat i.thing-2 article, .col8, .col9, .col10, .col11, .col12 {
+.col6, #ilite article, #ilite .demo, #contact form, .col7, #hackerchat article, #cloudchat .row article, .col8, .col9, .col10, .col11, .col12 {
   min-width: 100px; }
 
 @media only screen and (max-width: 780px) {
   /* line 17, global/_grid.scss */
-  .col1, .col2, .col3, .col4, section#about figure, #science article, .col5, #hackerchat .heightfix, #cloudchat .row .demo, #cloudchat i.thing-1 .demo, #cloudchat i.thing-2 .demo, .col6, #ilite article, #ilite .demo, #contact form, .col7, #hackerchat article, #cloudchat .row article, #cloudchat i.thing-1 article, #cloudchat i.thing-2 article, .col8, .col9, .col10, .col11, .col12 {
+  .col1, .col2, .col3, .col4, section#about figure, #science article, .col5, #hackerchat .heightfix, #cloudchat .row .demo, .col6, #ilite article, #ilite .demo, #contact form, .col7, #hackerchat article, #cloudchat .row article, .col8, .col9, .col10, .col11, .col12 {
     display: block;
     width: 100%; } }
 /* line 21, global/_grid.scss */
@@ -1450,7 +1450,7 @@ e(1.6) translateX(-20px);opacity:0}100%{transform:scale(1) translateX(0px);opaci
   transition: border .25s linear, color .25s linear, background-color .25s linear; }
 
 /* line 9, global/_buttons.scss */
-.button, section#about figure a, #unicorn .frame article a, #ilite article a, #hackerchat article a:not(.pilot), #cloudchat a.button, #contact form input#ss-submit, footer .skyward span, #iesucks {
+.button, section#about figure a, #unicorn .frame article a, #ilite article a, #hackerchat article a:not(.pilot), #hackerchat a.pilot .button, #cloudchat a.button, #contact form input#ss-submit, footer .skyward span, #iesucks {
   color: inherit;
   padding: 6px 8px;
   font-size: 14px;
@@ -1475,7 +1475,7 @@ e(1.6) translateX(-20px);opacity:0}100%{transform:scale(1) translateX(0px);opaci
   border-radius: 300px; }
 
 /* line 161, global/_buttons.scss */
-.button-large, .button, section#about figure a, #unicorn .frame article a, #ilite article a, #hackerchat article a:not(.pilot), #cloudchat a.button, #contact form input#ss-submit, footer .skyward span, #iesucks {
+.button-large, .button, section#about figure a, #unicorn .frame article a, #ilite article a, #hackerchat article a:not(.pilot), #hackerchat a.pilot .button, #cloudchat a.button, #contact form input#ss-submit, footer .skyward span, #iesucks {
   font-size: 18px;
   line-height: 1.2em; }
 
@@ -3009,7 +3009,7 @@ header, section, footer {
   -webkit-transition: all .25s ease; }
 
 /* line 94, home.scss */
-.button, section#about figure a, #unicorn .frame article a, #ilite article a, #hackerchat article a:not(.pilot), #cloudchat a.button, #contact form input#ss-submit, footer .skyward span, #iesucks {
+.button, section#about figure a, #unicorn .frame article a, #ilite article a, #hackerchat article a:not(.pilot), #hackerchat a.pilot .button, #cloudchat a.button, #contact form input#ss-submit, footer .skyward span, #iesucks {
   border-radius: 6px;
   margin-right: 0.2em; }
 
@@ -3197,7 +3197,7 @@ section#about {
       transition: all 0.2s;
       position: absolute;
       left: 0;
-      bottom: 12px;
+      top: 12px;
       opacity: 0;
       animation: colors 20s infinite;
       -webkit-animation: colors 20s infinite; }
@@ -3522,28 +3522,31 @@ section#social {
     font-family: Arial;
     font-weight: bold;
     margin-top: -2px; }
-  /* line 627, home.scss */
-  #ilite article a {
-    background: #62bc4d;
-    color: white;
-    transition: background-color .2s, box-shadow .1s;
-    box-shadow: 0px -2px rgba(0, 0, 0, 0.1) inset, 0px 2px rgba(0, 0, 0, 0.2);
-    text-shadow: 0px 2px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px -8px rgba(0, 0, 0, 0.2) inset, 0px 4px rgba(0, 0, 0, 0.2);
-    padding-bottom: 8px; }
-    /* line 106, global/_buttons.scss */
-    #ilite article a:hover {
-      box-shadow: 0px -2px rgba(0, 0, 0, 0.1) inset, 0px 3px rgba(0, 0, 0, 0.2);
-      background-color: #89cd79; }
-    /* line 110, global/_buttons.scss */
-    #ilite article a:active, #ilite article a:focus {
-      box-shadow: 0px -3px rgba(0, 0, 0, 0.1) inset, 0px 0px rgba(0, 0, 0, 0.2);
-      background-color: #51a33d; }
-  /* line 636, home.scss */
+  /* line 625, home.scss */
+  #ilite article {
+    padding: 0px 18px; }
+    /* line 628, home.scss */
+    #ilite article a {
+      background: #62bc4d;
+      color: white;
+      transition: background-color .2s, box-shadow .1s;
+      box-shadow: 0px -2px rgba(0, 0, 0, 0.1) inset, 0px 2px rgba(0, 0, 0, 0.2);
+      text-shadow: 0px 2px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px -8px rgba(0, 0, 0, 0.2) inset, 0px 4px rgba(0, 0, 0, 0.2);
+      padding-bottom: 8px; }
+      /* line 106, global/_buttons.scss */
+      #ilite article a:hover {
+        box-shadow: 0px -2px rgba(0, 0, 0, 0.1) inset, 0px 3px rgba(0, 0, 0, 0.2);
+        background-color: #89cd79; }
+      /* line 110, global/_buttons.scss */
+      #ilite article a:active, #ilite article a:focus {
+        box-shadow: 0px -3px rgba(0, 0, 0, 0.1) inset, 0px 0px rgba(0, 0, 0, 0.2);
+        background-color: #51a33d; }
+  /* line 637, home.scss */
   #ilite .demo a {
     color: inherit;
     border-radius: 0px; }
-  /* line 640, home.scss */
+  /* line 641, home.scss */
   #ilite .demo .nones-emulator {
     background: linear-gradient(#814ca0, #210148);
     display: block;
@@ -3551,35 +3554,35 @@ section#social {
     padding: 0px 8px;
     font-size: 10px;
     line-height: 20px; }
-    /* line 647, home.scss */
+    /* line 648, home.scss */
     #ilite .demo .nones-emulator ::selection {
       background: #77B900;
       color: white;
       text-shadow: 0px 0px 2px white; }
-    /* line 652, home.scss */
+    /* line 653, home.scss */
     #ilite .demo .nones-emulator .navbar-top {
       background: rgba(0, 0, 0, 0.5);
       height: 20px;
       text-align: right;
       padding: 0px 8px;
       overflow: hidden; }
-      /* line 658, home.scss */
+      /* line 659, home.scss */
       #ilite .demo .nones-emulator .navbar-top .block {
         padding: 0px 4px;
         transition: background 0.15s;
         -webkit-transition: background 0.15s;
         line-height: 20px;
         display: inline-block; }
-        /* line 664, home.scss */
+        /* line 665, home.scss */
         #ilite .demo .nones-emulator .navbar-top .block:hover {
           background: black; }
-    /* line 669, home.scss */
+    /* line 670, home.scss */
     #ilite .demo .nones-emulator i {
       font-size: 30px;
       color: black;
       text-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px white;
       line-height: 1.2em; }
-    /* line 675, home.scss */
+    /* line 676, home.scss */
     #ilite .demo .nones-emulator .navbar-menu {
       background: #62bc4d;
       background: linear-gradient(#7ac143 0%, #64a831 55%, #579626 75%, #4a871b 100%);
@@ -3587,7 +3590,7 @@ section#social {
       text-align: left;
       padding: 0px 8px;
       text-shadow: 0 0 8px black; }
-      /* line 682, home.scss */
+      /* line 683, home.scss */
       #ilite .demo .nones-emulator .navbar-menu .block {
         padding: 0px 4px;
         transition: text-shadow 0.15s;
@@ -3596,32 +3599,32 @@ section#social {
         display: inline-block;
         color: white;
         font-size: inherit; }
-        /* line 690, home.scss */
+        /* line 691, home.scss */
         #ilite .demo .nones-emulator .navbar-menu .block:hover {
           text-shadow: 0 0 8px white; }
-        /* line 693, home.scss */
+        /* line 694, home.scss */
         #ilite .demo .nones-emulator .navbar-menu .block i {
           text-shadow: 0 0 8px black;
           transition: text-shadow 0.15s;
           -webkit-transition: text-shadow 0.15s;
           color: white;
           font-size: inherit; }
-          /* line 699, home.scss */
+          /* line 700, home.scss */
           #ilite .demo .nones-emulator .navbar-menu .block i:hover {
             text-shadow: 0 0 8px white; }
-    /* line 705, home.scss */
+    /* line 706, home.scss */
     #ilite .demo .nones-emulator .content {
       background: white;
       color: black;
       height: auto;
       margin: 0px 8px;
       padding: 0px 8px; }
-      /* line 711, home.scss */
+      /* line 712, home.scss */
       #ilite .demo .nones-emulator .content .slidez {
         height: 100px;
         background: gray;
         position: relative; }
-        /* line 715, home.scss */
+        /* line 716, home.scss */
         #ilite .demo .nones-emulator .content .slidez .caption {
           background: rgba(0, 0, 0, 0.5);
           color: white;
@@ -3631,7 +3634,7 @@ section#social {
           height: 100px;
           width: 150px;
           padding: 4px; }
-      /* line 727, home.scss */
+      /* line 728, home.scss */
       #ilite .demo .nones-emulator .content .row .span4 {
         margin-top: 6px;
         background: #a86bcc;
@@ -3645,75 +3648,75 @@ section#social {
         -webkit-transform: scale(1, 1) rotateY(1deg);
         transition: all 0.5s linear;
         -webkit-transition: all 0.5s linear; }
-        /* line 740, home.scss */
+        /* line 741, home.scss */
         #ilite .demo .nones-emulator .content .row .span4:hover {
           transform: scale(1.2, 1.2) rotateY(360deg);
           -webkit-transform: scale(1.2, 1.2) rotateY(360deg);
           box-shadow: 0 0 4px black; }
-      /* line 746, home.scss */
+      /* line 747, home.scss */
       #ilite .demo .nones-emulator .content .row .span3 {
         height: 75px; }
-        /* line 748, home.scss */
+        /* line 749, home.scss */
         #ilite .demo .nones-emulator .content .row .span3 .item {
           border: 1px solid gray;
           height: 36px;
           margin-bottom: 3px; }
-        /* line 753, home.scss */
+        /* line 754, home.scss */
         #ilite .demo .nones-emulator .content .row .span3 .twitter {
           background: #9edbf9;
           border: none; }
-        /* line 757, home.scss */
+        /* line 758, home.scss */
         #ilite .demo .nones-emulator .content .row .span3 .photos {
           background: #c590c9;
           border: none; }
-      /* line 762, home.scss */
+      /* line 763, home.scss */
       #ilite .demo .nones-emulator .content .row .span6 {
         background: gray;
         background: radial-gradient(#ffffff 0%, #d3d3d3 90%);
         box-shadow: inset 0px -30px 10px white;
         height: 75px; }
-    /* line 770, home.scss */
+    /* line 771, home.scss */
     #ilite .demo .nones-emulator .footer {
       background: #221e1f;
       color: #787878;
       margin: 0px 8px;
       padding: 12px 12px;
       line-height: 1.5em; }
-      /* line 777, home.scss */
+      /* line 778, home.scss */
       #ilite .demo .nones-emulator .footer p {
         color: #7951A1;
         margin-top: 0.2em; }
 
-/* line 788, home.scss */
+/* line 789, home.scss */
 #hackerchat {
   background: #333333;
   color: #C8C8C8; }
-  /* line 793, home.scss */
+  /* line 794, home.scss */
   #hackerchat .heightfix {
     display: table-cell;
     position: relative; }
-    /* line 797, home.scss */
+    /* line 798, home.scss */
     #hackerchat .heightfix .browser {
       position: absolute;
       width: 100%;
       height: 100%;
       position: absolute;
       display: table; }
-      /* line 803, home.scss */
+      /* line 804, home.scss */
       #hackerchat .heightfix .browser .frame {
         position: relative;
         position: absolute;
         display: table;
         width: 100%;
         height: 90%; }
-      /* line 810, home.scss */
+      /* line 811, home.scss */
       #hackerchat .heightfix .browser iframe {
         width: 100%;
         height: 100%; }
-  /* line 816, home.scss */
+  /* line 817, home.scss */
   #hackerchat article {
     display: table-cell; }
-    /* line 819, home.scss */
+    /* line 820, home.scss */
     #hackerchat article a:not(.pilot) {
       color: white;
       background: linear-gradient(#62bc4d, #3b762d);
@@ -3725,14 +3728,27 @@ section#social {
       /* line 78, global/_buttons.scss */
       #hackerchat article a:not(.pilot):active, #hackerchat article a:not(.pilot):focus {
         box-shadow: inset 0 0 500px rgba(50, 50, 50, 0.2); }
-  /* line 824, home.scss */
+  /* line 825, home.scss */
   #hackerchat a.pilot {
-    margin-top: 30px;
+    margin-top: 20px;
     color: inherit;
     position: relative;
     display: block;
     border-radius: 4px; }
-    /* line 834, home.scss */
+    /* line 826, home.scss */
+    #hackerchat a.pilot section#about figure a, section#about figure #hackerchat a.pilot a, #hackerchat a.pilot #unicorn .frame article a, #unicorn .frame article #hackerchat a.pilot a, #hackerchat a.pilot #ilite article a, #ilite article #hackerchat a.pilot a, #hackerchat a.pilot article a:not(.pilot), #hackerchat article a.pilot a:not(.pilot), #hackerchat a.pilot .button, #hackerchat a.pilot #contact form input#ss-submit, #contact form #hackerchat a.pilot input#ss-submit, #hackerchat a.pilot footer .skyward span, footer .skyward #hackerchat a.pilot span, #hackerchat a.pilot #iesucks {
+      background: #4f4e4c;
+      color: white;
+      border: 1px solid #1b1b1a;
+      transition: background-color .15s;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
+      /* line 140, global/_buttons.scss */
+      #hackerchat a.pilot section#about figure a:hover, section#about figure #hackerchat a.pilot a:hover, #hackerchat a.pilot #unicorn .frame article a:hover, #unicorn .frame article #hackerchat a.pilot a:hover, #hackerchat a.pilot #ilite article a:hover, #ilite article #hackerchat a.pilot a:hover, #hackerchat a.pilot article a:hover:not(.pilot), #hackerchat article a.pilot a:hover:not(.pilot), #hackerchat a.pilot .button:hover, #hackerchat a.pilot #contact form input#ss-submit:hover, #contact form #hackerchat a.pilot input#ss-submit:hover, #hackerchat a.pilot footer .skyward span:hover, footer .skyward #hackerchat a.pilot span:hover, #hackerchat a.pilot #iesucks:hover {
+        background-color: #646360; }
+      /* line 143, global/_buttons.scss */
+      #hackerchat a.pilot section#about figure a:active, section#about figure #hackerchat a.pilot a:active, #hackerchat a.pilot #unicorn .frame article a:active, #unicorn .frame article #hackerchat a.pilot a:active, #hackerchat a.pilot #ilite article a:active, #ilite article #hackerchat a.pilot a:active, #hackerchat a.pilot article a:active:not(.pilot), #hackerchat article a.pilot a:active:not(.pilot), #hackerchat a.pilot .button:active, #hackerchat a.pilot #contact form input#ss-submit:active, #contact form #hackerchat a.pilot input#ss-submit:active, #hackerchat a.pilot footer .skyward span:active, footer .skyward #hackerchat a.pilot span:active, #hackerchat a.pilot #iesucks:active, #hackerchat a.pilot section#about figure a:focus, section#about figure #hackerchat a.pilot a:focus, #hackerchat a.pilot #unicorn .frame article a:focus, #unicorn .frame article #hackerchat a.pilot a:focus, #hackerchat a.pilot #ilite article a:focus, #ilite article #hackerchat a.pilot a:focus, #hackerchat a.pilot article a:focus:not(.pilot), #hackerchat article a.pilot a:focus:not(.pilot), #hackerchat a.pilot .button:focus, #hackerchat a.pilot #contact form input#ss-submit:focus, #contact form #hackerchat a.pilot input#ss-submit:focus, #hackerchat a.pilot footer .skyward span:focus, footer .skyward #hackerchat a.pilot span:focus, #hackerchat a.pilot #iesucks:focus {
+        background-color: #3a3938; }
+    /* line 838, home.scss */
     #hackerchat a.pilot span {
       margin-top: 1em;
       opacity: 0;
@@ -3741,7 +3757,7 @@ section#social {
       display: inline-block;
       padding-right: 20px;
       text-align: right; }
-    /* line 845, home.scss */
+    /* line 849, home.scss */
     #hackerchat a.pilot i.icon-pilotphilly {
       float: right;
       display: inline;
@@ -3751,23 +3767,23 @@ section#social {
       opacity: 0.5;
       transform: rotate(-20deg);
       -webkit-transform: rotate(-20deg); }
-    /* line 857, home.scss */
+    /* line 861, home.scss */
     #hackerchat a.pilot:hover span {
       opacity: 1;
       -webkit-transform: translate(0, 0);
       transform: translate(0, 0); }
-    /* line 862, home.scss */
+    /* line 866, home.scss */
     #hackerchat a.pilot:hover i.icon-pilotphilly {
       opacity: 1;
       transform: rotate(0deg);
       -webkit-transform: rotate(0deg); }
 
-/* line 872, home.scss */
+/* line 876, home.scss */
 #cloudchat {
   background: #ceedfc;
   color: black; }
-  /* line 875, home.scss */
-  #cloudchat section#about figure a, section#about figure #cloudchat a, #cloudchat #unicorn .frame article a, #unicorn .frame article #cloudchat a, #cloudchat #ilite article a, #ilite article #cloudchat a, #cloudchat #hackerchat article a:not(.pilot), #hackerchat article #cloudchat a:not(.pilot), #cloudchat a.button, #cloudchat a#iesucks {
+  /* line 879, home.scss */
+  #cloudchat section#about figure a, section#about figure #cloudchat a, #cloudchat #unicorn .frame article a, #unicorn .frame article #cloudchat a, #cloudchat #ilite article a, #ilite article #cloudchat a, #cloudchat #hackerchat article a:not(.pilot), #hackerchat article #cloudchat a:not(.pilot), #cloudchat #hackerchat a.pilot a.button, #hackerchat a.pilot #cloudchat a.button, #cloudchat a.button, #cloudchat a#iesucks {
     background: #1e98d3;
     color: white;
     border: 1px solid #11587a;
@@ -3779,18 +3795,18 @@ section#social {
     /* line 143, global/_buttons.scss */
     #cloudchat section#about figure a:active, section#about figure #cloudchat a:active, #cloudchat #unicorn .frame article a:active, #unicorn .frame article #cloudchat a:active, #cloudchat #ilite article a:active, #ilite article #cloudchat a:active, #cloudchat #hackerchat article a:active:not(.pilot), #hackerchat article #cloudchat a:active:not(.pilot), #cloudchat a.button:active, #cloudchat a#iesucks:active, #cloudchat section#about figure a:focus, section#about figure #cloudchat a:focus, #cloudchat #unicorn .frame article a:focus, #unicorn .frame article #cloudchat a:focus, #cloudchat #ilite article a:focus, #ilite article #cloudchat a:focus, #cloudchat #hackerchat article a:focus:not(.pilot), #hackerchat article #cloudchat a:focus:not(.pilot), #cloudchat a.button:focus, #cloudchat a#iesucks:focus {
       background-color: #197eaf; }
-  /* line 878, home.scss */
+  /* line 882, home.scss */
   #cloudchat .row {
     z-index: 5;
     position: relative; }
-    /* line 881, home.scss */
+    /* line 885, home.scss */
     #cloudchat .row article {
       display: table-cell; }
-    /* line 885, home.scss */
+    /* line 889, home.scss */
     #cloudchat .row .demo {
       display: table-cell;
       position: relative; }
-  /* line 891, home.scss */
+  /* line 895, home.scss */
   #cloudchat i.thing-1, #cloudchat i.thing-2 {
     position: absolute;
     color: white;
@@ -3798,93 +3814,103 @@ section#social {
     font-size: 180px;
     bottom: 0px;
     z-index: 0px; }
-    /* line 892, home.scss */
-    #cloudchat i.thing-1 article, #cloudchat i.thing-2 article {
-      display: table-cell; }
-    /* line 896, home.scss */
-    #cloudchat i.thing-1 .demo, #cloudchat i.thing-2 .demo {
-      display: table-cell;
-      position: relative; }
-  /* line 907, home.scss */
+  /* line 903, home.scss */
   #cloudchat i.thing-2 {
     left: -30px; }
-  /* line 910, home.scss */
+  /* line 906, home.scss */
   #cloudchat i.thing-1 {
     right: -30px; }
 
-/* line 917, home.scss */
+/* line 912, home.scss */
 #phlclosings {
   background: #2980b9;
   color: white; }
 
-/* line 923, home.scss */
+/* line 918, home.scss */
 #drones {
   background: #5ba525;
   color: white; }
 
-/* line 929, home.scss */
+/* line 924, home.scss */
 #dcindie {
   background: #1e98d3;
   color: white; }
 
-/* line 937, home.scss */
+/* line 932, home.scss */
 #science {
   background: #003865;
   color: #f7ba5b; }
+  /* line 935, home.scss */
+  #science article {
+    padding: 6px; }
+    /* line 939, home.scss */
+    #science article .slide {
+      max-width: 20em;
+      margin: auto;
+      display: block;
+      height: 12em;
+      width: 100%;
+      overflow: hidden;
+      background: white;
+      color: black;
+      padding: 6px;
+      border-radius: 0px;
+      text-align: right;
+      padding-top: 3em; }
 
-/* line 947, home.scss */
+/* line 957, home.scss */
 #cad {
   background: #b81113;
   background: linear-gradient(#b81113, #2c0405);
   color: white; }
 
-/* line 954, home.scss */
+/* line 964, home.scss */
 #art {
   background: #edece3;
   color: #4f4e4c; }
 
-/* line 962, home.scss */
+/* line 972, home.scss */
 #writing {
   box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.5);
   color: #4f4e4c;
   background: #fdf9d7; }
 
-/* line 969, home.scss */
+/* line 979, home.scss */
 #film {
   box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.5);
   background-image: linear-gradient(to bottom right, #d38312, #a83279);
   color: white; }
 
-/* line 977, home.scss */
+/* line 987, home.scss */
 #music {
   box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.5);
   background-image: linear-gradient(to bottom right, #002f4b, #e0be00);
   color: white; }
 
-/* line 986, home.scss */
+/* line 996, home.scss */
 #contact {
   background: #672f89;
   color: white; }
-  /* line 991, home.scss */
+  /* line 1001, home.scss */
   #contact form select, #contact form textarea {
     width: 100%; }
-  /* line 994, home.scss */
+  /* line 1004, home.scss */
   #contact form input:not(#ss-submit) {
     width: 50%;
     display: table-cell;
     float: left; }
-    /* line 998, home.scss */
+    /* line 1008, home.scss */
     #contact form input:not(#ss-submit):first-child {
       border-top-right-radius: 0px;
       border-bottom-right-radius: 0px; }
-    /* line 1002, home.scss */
+    /* line 1012, home.scss */
     #contact form input:not(#ss-submit):last-child {
       border-top-left-radius: 0px;
       border-bottom-left-radius: 0px; }
-  /* line 1007, home.scss */
+  /* line 1017, home.scss */
   #contact form textarea {
     height: 5em; }
-  /* line 1010, home.scss */
+  /* line 1020, home.scss */
   #contact form input#ss-submit {
     background: #4f4e4c;
     color: white;
@@ -3899,89 +3925,89 @@ section#social {
     /* line 143, global/_buttons.scss */
     #contact form input#ss-submit:active, #contact form input#ss-submit:focus {
       background-color: #3a3938; }
-  /* line 1020, home.scss */
+  /* line 1030, home.scss */
   #contact .telefono .guacamole, #contact .telefono .caliente, #contact .telefono .chipotle, #contact .telefono .gustas, #contact .telefono .tortilla‎, #contact .telefono .mios, #contact .telefono .mexico, #contact .telefono .frijoles, #contact .telefono .dota, #contact .telefono .tortillas {
     font-size: 0;
     visibility: hidden; }
-    /* line 1023, home.scss */
+    /* line 1033, home.scss */
     #contact .telefono .guacamole:before, #contact .telefono .caliente:before, #contact .telefono .chipotle:before, #contact .telefono .gustas:before, #contact .telefono .tortilla‎:before, #contact .telefono .mios:before, #contact .telefono .mexico:before, #contact .telefono .frijoles:before, #contact .telefono .dota:before, #contact .telefono .tortillas:before {
       font-size: 18px;
       visibility: visible;
       display: inline; }
-  /* line 1029, home.scss */
+  /* line 1039, home.scss */
   #contact .telefono .tortillas:before {
     content: '1778'; }
-  /* line 1030, home.scss */
+  /* line 1040, home.scss */
   #contact .telefono .dota:before {
     content: '- '; }
-  /* line 1031, home.scss */
+  /* line 1041, home.scss */
   #contact .telefono .guacamole:before {
     content: ') '; }
-  /* line 1032, home.scss */
+  /* line 1042, home.scss */
   #contact .telefono .mexico:before {
     content: '696'; }
-  /* line 1033, home.scss */
+  /* line 1043, home.scss */
   #contact .telefono .frijoles:before {
     content: '9981'; }
-  /* line 1034, home.scss */
+  /* line 1044, home.scss */
   #contact .telefono .chipotle:before {
     content: '969 '; }
-  /* line 1035, home.scss */
+  /* line 1045, home.scss */
   #contact .telefono .gustas:before {
     content: ' - '; }
-  /* line 1036, home.scss */
+  /* line 1046, home.scss */
   #contact .telefono .caliente:before {
     content: '571'; }
-  /* line 1037, home.scss */
+  /* line 1047, home.scss */
   #contact .telefono .mios:before {
     content: '('; }
-  /* line 1040, home.scss */
+  /* line 1050, home.scss */
   #contact .correo .zayn, #contact .correo .louis, #contact .correo .niall, #contact .correo .liam, #contact .correo .harry {
     font-size: 0;
     visibility: hidden; }
-    /* line 1043, home.scss */
+    /* line 1053, home.scss */
     #contact .correo .zayn:before, #contact .correo .louis:before, #contact .correo .niall:before, #contact .correo .liam:before, #contact .correo .harry:before {
       font-size: 18px;
       visibility: visible;
       display: inline; }
-  /* line 1049, home.scss */
+  /* line 1059, home.scss */
   #contact .correo .louis:before {
     content: 'hel'; }
-  /* line 1050, home.scss */
+  /* line 1060, home.scss */
   #contact .correo .niall:before {
     content: 'lo'; }
-  /* line 1051, home.scss */
+  /* line 1061, home.scss */
   #contact .correo .zayn:before {
     content: '@'; }
-  /* line 1052, home.scss */
+  /* line 1062, home.scss */
   #contact .correo .harry:before {
     content: 'victorlourng'; }
-  /* line 1053, home.scss */
+  /* line 1063, home.scss */
   #contact .correo .liam:before {
     content: '.com'; }
 
-/* line 1058, home.scss */
+/* line 1068, home.scss */
 footer {
   background: #34495e;
   color: #ecf0f1;
   text-align: left;
   overflow: hidden;
   position: static; }
-  /* line 1070, home.scss */
+  /* line 1080, home.scss */
   footer a {
     color: #ecf0f1; }
-    /* line 1072, home.scss */
+    /* line 1082, home.scss */
     footer a:hover {
       color: #16a085; }
-  /* line 1076, home.scss */
+  /* line 1086, home.scss */
   footer .skyward {
     float: right;
     color: #ecf0f1;
     position: relative; }
-    /* line 1080, home.scss */
+    /* line 1090, home.scss */
     footer .skyward i.icon-tardis {
       position: absolute; }
-    /* line 1083, home.scss */
+    /* line 1093, home.scss */
     footer .skyward i.icon-tardis:before {
       position: absolute;
       font-size: 300px;
@@ -3993,7 +4019,7 @@ footer {
       transition: all 0.25s;
       -webkit-transform: rotate(-15deg);
       -webkit-transition: all 0.25s; }
-    /* line 1095, home.scss */
+    /* line 1105, home.scss */
     footer .skyward:hover i.icon-tardis:before {
       -webkit-transform: rotate(0deg);
       transform: rotate(0deg);
@@ -4001,7 +4027,7 @@ footer {
       color: #003865;
       text-shadow: 0 0 50px white;
       background: radial-gradient(#ffffff 0%, rgba(255, 255, 255, 0) 80%); }
-    /* line 1103, home.scss */
+    /* line 1113, home.scss */
     footer .skyward span {
       margin-right: 140px;
       background: #4f4e4c;
@@ -4015,11 +4041,11 @@ footer {
       /* line 143, global/_buttons.scss */
       footer .skyward span:active, footer .skyward span:focus {
         background-color: #3a3938; }
-  /* line 1111, home.scss */
+  /* line 1121, home.scss */
   footer aside a {
     position: relative;
     z-index: 5; }
-  /* line 1115, home.scss */
+  /* line 1125, home.scss */
   footer aside i.icon-network {
     position: relative;
     z-index: 1;
@@ -4033,12 +4059,12 @@ footer {
     width: 30px;
     margin-right: 20px;
     z-index: 0; }
-    /* line 1129, home.scss */
+    /* line 1139, home.scss */
     footer aside i.icon-network i.icon-heart:before {
       animation: heartbeat 1s infinite;
       -webkit-animation: heartbeat 1s infinite;
       position: absolute; }
-    /* line 1135, home.scss */
+    /* line 1145, home.scss */
     footer aside i.icon-network:before {
       position: absolute;
       z-index: -1;
@@ -4052,7 +4078,7 @@ footer {
       opacity: 0.3;
       color: #ecf0f1; }
 
-/* line 1155, home.scss */
+/* line 1165, home.scss */
 modal#likemystatus window {
   top: 10%;
   vertical-align: 80%;
@@ -4060,31 +4086,39 @@ modal#likemystatus window {
   overflow-x: hidden;
   bottom: 10%; }
 
-/* line 1164, home.scss */
+/* line 1174, home.scss */
 modal#credits window {
   background: #2c3e50;
   color: white; }
-  /* line 1167, home.scss */
+  /* line 1178, home.scss */
   modal#credits window .content a {
     color: white;
     transition: padding 0.2s;
     -webkit-transition: padding 0.2s;
     line-height: 1.8em; }
-    /* line 1172, home.scss */
+    /* line 1183, home.scss */
     modal#credits window .content a:hover {
       color: #16a085;
       padding-left: 20px; }
+  /* line 1188, home.scss */
+  modal#credits window .content h4 {
+    margin-top: 1em; }
+  /* line 1191, home.scss */
+  modal#credits window .content p {
+    line-height: 1.5em;
+    margin-bottom: 1em;
+    margin-top: .5em; }
 
 @media only screen and (max-width: 780px) {
-  /* line 1181, home.scss */
+  /* line 1201, home.scss */
   body {
     padding-left: 0px; }
 
-  /* line 1184, home.scss */
+  /* line 1204, home.scss */
   .hidden-mobile, #mhacks, #hackerchat a.pilot, canvas, iframe, .browser, #about figure, .stickem-container {
     display: none !important; }
 
-  /* line 1187, home.scss */
+  /* line 1207, home.scss */
   header, section, footer {
     position: relatve;
     width: 100%;
@@ -4092,53 +4126,53 @@ modal#credits window {
     padding: 20px 5px;
     text-align: center; }
 
-  /* line 1192, home.scss */
+  /* line 1212, home.scss */
   header#top {
     padding: 150px 10px 72px 10px;
     max-height: 300px; }
-    /* line 1195, home.scss */
+    /* line 1215, home.scss */
     header#top h1 {
       font-size: 50px;
       line-height: 1em; }
-      /* line 1198, home.scss */
+      /* line 1218, home.scss */
       header#top h1 span {
         opacity: 1 !important;
         text-shadow: 0 0 4px rgba(0, 0, 0, 0.5) !important; }
-    /* line 1203, home.scss */
+    /* line 1223, home.scss */
     header#top form {
       display: none !important; }
-    /* line 1206, home.scss */
+    /* line 1226, home.scss */
     header#top p {
       font-size: 20px; }
 
-  /* line 1210, home.scss */
+  /* line 1230, home.scss */
   #social a {
     display: block !important;
     width: 100% !important;
     text-shadow: none !important; }
 
-  /* line 1215, home.scss */
+  /* line 1235, home.scss */
   .skyward {
     float: none;
     display: block;
     width: 100%;
     z-index: 5;
     margin-bottom: 1em; }
-    /* line 1221, home.scss */
+    /* line 1241, home.scss */
     .skyward i.icon-tardis {
       display: none; }
-    /* line 1224, home.scss */
+    /* line 1244, home.scss */
     .skyward span {
       margin-right: 0px !important;
       display: block;
       width: 100%;
       padding: 12px !important;
       font-size: 30px; } }
-/* line 1235, home.scss */
+/* line 1255, home.scss */
 body.inthetardis {
   background: #4f4e4c;
   background: linear-gradient(#81375c, #624c73, #1f2643, #16223c, #27324e, #1a344b); }
-  /* line 1240, home.scss */
+  /* line 1260, home.scss */
   body.inthetardis header, body.inthetardis section {
     animation: inthetardis 4s ease;
     -webkit-animation: inthetardis 4s ease;
@@ -4146,7 +4180,7 @@ body.inthetardis {
     background: #edece3;
     transition: box-shadow 0.5s ease;
     -webkit-transition: box-shadow 0.5s ease; }
-  /* line 1248, home.scss */
+  /* line 1268, home.scss */
   body.inthetardis i.icon-tardis {
     position: fixed !important;
     bottom: 120px !important;
@@ -4157,23 +4191,23 @@ body.inthetardis {
     animation: shimmydown 4s linear;
     -webkit-animation: shimmydown 4s linear; }
 
-/* line 1261, home.scss */
+/* line 1281, home.scss */
 html.mobile, body.mobile {
   background-color: #34495e;
   max-width: 500px;
   margin: auto;
   box-shadow: 0 0 20px black; }
 
-/* line 1269, home.scss */
+/* line 1289, home.scss */
 #iesucks {
   background: #1e98d3;
   border-radius: 0px;
   background: none; }
 
-/* line 1276, home.scss */
+/* line 1296, home.scss */
 body.reset {
   background: white !important; }
-  /* line 1278, home.scss */
+  /* line 1298, home.scss */
   body.reset *, body.reset *:before, body.reset *:after {
     background: white !important;
     margin: 0 !important;
@@ -4205,10 +4239,10 @@ body.reset {
     -webkit-animation: none !important;
     -webkit-transition: none !important;
     -webkit-transform: none !important; }
-  /* line 1310, home.scss */
+  /* line 1330, home.scss */
   body.reset a, body.reset a * {
     color: blue !important;
     text-decoration: underline !important; }
-  /* line 1314, home.scss */
+  /* line 1334, home.scss */
   body.reset window, body.reset modal, body.reset canvas, body.reset iframe, body.reset li.bottom {
     display: none !important; }

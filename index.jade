@@ -204,7 +204,13 @@ block content
     section#ilite(data-identity='victor') <!-- data-pin='please' -->
       .row
         article
-          h2 ILITE Robotics
+          h2
+            i.icon-ilite
+            |  + 
+            i.icon-first
+            br
+            | ILITE Robotics
+          <!-- h2 ILITE Robotics -->
           .tech
             attr
               tooltip
@@ -226,12 +232,13 @@ block content
               i.icon-html5 
               i.icon-css3 
               i.icon-bootstrap
+          br
           p This website was created using WordPress and many modern technologies for 
             i.icon-first
             | FRC team 1885.
           br
-          a(href='http://iliterobotics.org') ILITE Robotics
-          a(href='http://yabby.victorlourng.com/wp-admin') Backend Demo
+          a(href='http://iliterobotics.org') ILITERobotics.org
+          a(href='http://iliterobotics.org/about/website/') About the Site
         .demo
           .nones-emulator
             .navbar-top
@@ -313,8 +320,13 @@ block content
                   li MongoDB
               i.icon-mongodb
           ul.details
-            li Winner of the PilotPhilly Hackathon
-            li An instant messaging client with many cool features.
+            li A real-time hackable collaboration platform for developers
+            li 1st place winner of the PilotPhilly 2013 hackathon
+            li Next-gen hybrid between IRC, IM, Google Docs, and BaseCamp
+          a(href='http://fav.me/d6ttmo3')
+            i.icon-news.button-jumbo-prefix
+            | Blog Post: How I Won + More
+          br
           a.main(href='http://hackerchat.im')
             i.icon-right-hand.button-jumbo-prefix
             | Hackerchat.im
@@ -322,9 +334,6 @@ block content
             i.icon-octocat.button-jumbo-prefix
             i.icon-github
             |  Repo
-          a(href='http://fav.me/d6ttmo3')
-            i.icon-news.button-jumbo-prefix
-            | Blog Post
           br
           a.pilot(href='http:///gopilot.org/')
             span Pilot brings hackathons
@@ -366,26 +375,28 @@ block content
         i.icon-emo-happy
       .row
         article
-          h3 Artificial Intelligence
-          img
+          a.slide.ai Artificial Intelligence
+          p Description
         article
-          h3 Passwords
-          img
+          a.slide.passwords Passwords Cracking &amp; Security
+          p Description
         article
-          h3 File Compression
-          img
-        h2 Lab Reports
-        p.lead Experiments I do in class and in my spare time.
-        .row
-          article
-            h3 Boiling Water = Instant Snow
-            img
-          article
-            h3 Producing Counterfeit Silver and Gold
-            img
-          article
-            h3 Wavelengths
-            img
+          a.slide.files File Compression
+          p Description
+      h2 Lab Reports
+      p.lead Experiments I do in class and in my spare time.
+      .row
+        article
+          a.slide.boil Boiling Water = Instant Snow
+          p Description
+        article
+          a.slide.gold Producing Counterfeit
+            br
+            | Silver and Gold
+          p Description
+        article
+          a.slide.wavelengths Wavelengths
+          p Description
     section#cad(data-identity='victor')
       h2 CAD Renderings
       p.lead I play with Autodesk Inventor and AutoCAD too much.
@@ -517,7 +528,9 @@ block content
           a.right(onclick='blast("credits");mixpanel.track("Looked at Credits");')
             i.icon-close
         div.content
-          h4 Stuff
+          .rockets
+            .moon
+            .solar
           h4 Icons
           a(href='http://abonive.deviantart.com/art/Free-SVG-IconSet-389441971')
             i.icon-cc 
@@ -544,6 +557,11 @@ block content
             i.icon-cc-by 
             | Google Glass designed by Alessandro Suraci from the Noun Project
           br
+          a(href='http://salesforce.com')
+            i.icon-cc(style='opacity:0') 
+            i.icon-cc-by(style='opacity:0') 
+            | SalesForce1 Icons by salesforce.com, inc.
+          br
           a(href='#')
             i.icon-cc(style='opacity:0') 
             i.icon-cc-pd(style='opacity:0') 
@@ -552,6 +570,12 @@ block content
           a(href='https://mixpanel.com/f/partner') Mobile Analytics provided by Mixpanel
           br
           a(href='http://www.ghostery.com/') You can opt-out by installing Ghostery.
+          h4 Brutally Honest Privacy Policy
+          p I'm not a snitch. However, with the recent NSA scandals going around, you can no longer trust anyone to keep your data private anymore, nor should you expect privacy from anyone. Since this website is hosted on United States soil where In-N-Out burger refuses ever open a venue in the east "Mid-Atlantic" coast, you are subject to traffic monitoring from entities of the United States Government on this website. You may decrease your chances of such traffic monitoring by using HTTPS. As citizens of the United Sates, We The People have the right to control this with the promised freedom of petition and peaceful protest. 
+          p If you disagree to such terms, then you will be asked to leave the internet come back when you 100% certain that you claim to have a "trustworthy" proxy. If you believe that Obama is responsible for this, then you are more than welcome to blame him by shouting out loud on top of your lungs "THANKS OBAMA" after all the great things he has done for us as the 44th president of the United States of America, including the enactment of Obamacare AKA The Affordable Care Act (assuming that you live in the United States of America and qualify through Bootstrap-powered www.HealthCare.gov.)
+          p Seriously, every website should have this type of privacy policy. You have my full permission to fork this without my consent.
+          h4 E.U. Cookie Notice
+          p My site does not yet store cookies because there are no settings that need to be saved (for now.) However, third-party javascript libraries may store cookies without my consent. Beware.
   modal.hidden#likemystatus(style='display:none')
     window
       h1 Like This Status!

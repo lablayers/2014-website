@@ -289,7 +289,7 @@ section#about {
       position: absolute;
       // width: 100%;
       left: 0;
-      bottom: 12px;
+      top: 12px;
       opacity: 0;
       @extend .fade-in-top-transition;
       animation: colors 20s infinite;
@@ -624,6 +624,7 @@ section#social {
   }
   article { 
     @extend .col6;
+    padding: 0px 18px;
     a {
       @include button-lift($green);
       @extend .button-jumbo;
@@ -822,7 +823,10 @@ section#social {
     }
   }
   a.pilot {
-    margin-top: 30px;
+    .button {
+      @include button-subtle($dark);
+    }
+    margin-top: 20px;
     @extend .hidden-mobile;
     color: inherit;
     position: relative;
@@ -889,15 +893,7 @@ section#social {
     }
   }
   i.thing-1, i.thing-2 {
-    article {
-      display: table-cell;
-      @extend .col7;
-    }
-    .demo {
-      @extend .col5;
-      display: table-cell;
-      position: relative;
-    }position: absolute;
+    position: absolute;
     color: white;
     opacity: 0.4;
     font-size: 180px;
@@ -910,7 +906,6 @@ section#social {
   i.thing-1 {
       right: -30px;
   }
-
 }
 
 // School Closings
@@ -940,6 +935,21 @@ section#social {
   article {
     @extend .col4;
     @extend .tile;
+    padding: 6px;
+    .slide {
+      max-width: 20em;
+      margin: auto;
+      display: block;
+      height: 12em;
+      width: 100%;
+      overflow: hidden;
+      background: white;
+      color: black;
+      padding: 6px;
+      border-radius: 0px;
+      text-align: right;
+      padding-top: 3em;
+    }
   }
 }
 
@@ -1164,14 +1174,24 @@ modal#likemystatus window {
 modal#credits window {
   background: $midnight-blue;
   color: $white;
-  .content a {
-    color: $white;
-    transition: padding 0.2s;
-    -webkit-transition: padding 0.2s;
-    line-height: 1.8em;
-    &:hover {
-      color: $green-sea;
-      padding-left: 20px;
+  .content {
+    a {
+      color: $white;
+      transition: padding 0.2s;
+      -webkit-transition: padding 0.2s;
+      line-height: 1.8em;
+      &:hover {
+        color: $green-sea;
+        padding-left: 20px;
+      }
+    }
+    h4 {
+      margin-top: 1em;
+    }
+    p {
+      line-height: 1.5em;
+      margin-bottom: 1em;
+      margin-top: .5em;
     }
   }
 }
