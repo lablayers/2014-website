@@ -431,7 +431,7 @@ section#social {
       vertical-align: middle;
      a {
         color: white;
-        padding: 0 16px;
+        padding: 0;
         line-height: 48px;
         font-size: 18px;
         &.brand {
@@ -962,12 +962,32 @@ section#social {
 #phlclosings {
   background: #2980b9;
   color: white;
+  .demo {
+    @extend .col6;
+  }
+  article {
+    @extend .col6;
+    a {
+      @include button-subtle(darken($red, 20%));
+      @extend .button-jumbo;
+    }
+  }
 }
 
 // Drones4u
 #drones {
   background: $spike;
   color: white;
+  article {
+    @extend .col6;
+    a {
+      @include button-subtle($blue);
+      @extend .button-jumbo;
+    }
+  }
+  .slides {
+    @extend .col6;
+  }
 }
 
 // DC Indie
