@@ -50,6 +50,19 @@
 
 // Icons
 @import "global/_stargazer.scss";
+i.icon-bootstrap:before {
+  content: 'B';
+  position: relative;
+  display: inline-block;
+  width: 1.1em;
+  height: 1.1em;
+  background: black;
+  color: white;
+  border-radius: 4px;
+  font-family: Arial;
+  font-weight: bold;
+  line-height: 1.2em;
+}
 
 // Navigation
 @import "global/_nav.scss";
@@ -404,6 +417,7 @@ section#social {
   }
   .frame {
   font-family: Arial;
+  overflow: hidden;
     nav.navbar {
       display: block;
       background: linear-gradient(rgb(80,80,80),rgb(0,0,0));
@@ -461,8 +475,8 @@ section#social {
         padding: 8px;
         border-radius: 4px;
         box-shadow: 0 0 2px gray;
-        transition: all 0.4s 2s ease-out;
-        -webkit-transition: all 0.4s 2s ease-out;
+        transition: all 0.4s 2s ease;
+        -webkit-transition: all 0.4s 2s ease;
         transform: translate(0,20%);
         -webkit-transform: translate(0,20%);
         opacity: 0;
@@ -526,6 +540,8 @@ section#social {
         width: 100%;
         display: block;
         margin-top: 1em;
+        animation: fade-in-bottom 0.5s ease-in;
+        -webkit-animation: fade-in-bottom 0.5s ease-in;
         &:last-of-type {
           margin-bottom: 1.5em;
         }
@@ -631,17 +647,8 @@ section#social {
   background: linear-gradient(#814ca0 50%, #210148 100%);
   color: white;
   i.icon-bootstrap:before {
-    content: 'B';
-    color: purple;
-    position: static;
-    display: inline-block;
-    width: 1em;
-    height: 1em;
+    color: #814ca0;
     background: white;
-    border-radius: 4px;
-    font-family: Arial;
-    font-weight: bold;
-    margin-top: -2px;
   }
   article { 
     @extend .col6;
@@ -812,6 +819,10 @@ section#social {
   // background-repeat: repeat;
   background: lighten(#000, 20%);
   color: #C8C8C8;
+  i.icon-bootstrap:before {
+    color: lighten(#000, 20%);
+    background: #C8C8C8;
+  }
   .heightfix {
     @extend .col5;
     display: table-cell;
@@ -897,8 +908,13 @@ section#social {
 #cloudchat {
   background: lighten($ltblue, 10%);
   color: black;
+  i.icon-bootstrap:before {
+    content: ':)';
+    color: lighten($ltblue, 10%);
+  }
   a.button {
     @include button-subtle($blue);
+    @extend .button-jumbo;
   }
   .row {
     z-index: 5;
@@ -920,12 +936,25 @@ section#social {
     font-size: 180px;
     bottom: 0px;
     z-index: 0px;
+    transition: left 0.8s 1s ease-in-out, right 0.8s 1s ease-in-out, opacity 0.5s 1s ease-in-out;
+    -webkit-transition: left 0.8s 1s ease-in-out, right 0.8s 1s ease-in-out, opacity 0.5s 1s ease-in-out;
   }
   i.thing-2 {
-      left: -30px;
+    left: -220px;
   }
   i.thing-1 {
-      right: -30px;
+    right: -220px;
+  }
+  &.visible {
+    i.thing-1, i.thing-2 {
+      opacity: 1;
+    }
+    i.thing-2 {
+      left: -20px;
+    }
+    i.thing-1 {
+      right: -20px;
+    }
   }
 }
 

@@ -338,14 +338,22 @@ block content
                   li Express
                   li Socket.io
                   li Coffeescript
-                  li LESS
-                  li Bootstrap
               i.icon-nodejs
             attr
               tooltip
                 ul
                   li MongoDB
               i.icon-mongodb
+            attr
+              tooltip
+                ul
+                  li HTML5
+                  li CSS3
+                  li LESS
+                  li Bootstrap 3
+              i.icon-html5 
+              i.icon-css3 
+              i.icon-bootstrap
           ul.details
             li A real-time hackable collaboration platform for developers
             li 1st place winner of the PilotPhilly 2013 hackathon
@@ -375,16 +383,47 @@ block content
           h2
             i.icon-cloudapp  
             | CloudChat
-          p Connect with your friends in Realtime via WebRTC.
+          .tech
+            attr
+              tooltip
+                ul
+                  li WebRTC
+              i.icon-webrtc
+              small   WebRTC
+            attr
+              tooltip
+                ul
+                  li jQuery 2.10
+                  li Javascript
+              i.icon-jquery
+            attr
+              tooltip
+                ul
+                  li HTML5
+                  li CSS3
+                  li LESS
+                  li DIY CSS Framework
+              i.icon-html5 
+              i.icon-css3 
+              i.icon-bootstrap.not
+          ul.details
+            li Connect with your friends in Realtime via WebRTC
+            li The connections are peer-to-peer, no plugin needed
+            li Video chat, screen sharing*, and more!
           a.button(href='http://babbleplz-sugarplums.rhcloud.com/') Cloudchat
         .demo
-          div.demoplz Demo!
+          .note Note: Peer-to-peer connections are disabled in this demo.
+          .getusermedia
+          .messages
+            .date Just Now
+            .them Welcome. Type something below
+            .me This is awesome!
+          input(type='text' placeholder='Message...')
       .background
         i.icon-cloud.thing-1
         i.icon-cloud.thing-2
     section#phlclosings(data-identity='victor') <!-- data-pin='please' -->
       h2 Philly School Closings
-
       p.lead An API for school closings.
       h5 ANIMATE THIS
       img slideshow
