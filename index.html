@@ -83,10 +83,10 @@
       </li>
       <li><a href="#top" class="top"><i class="icon-home"></i><span>Home</span><!-- .tooltip Back to Top --></a></li>
       <li><a href="#about" class="about"><i class="icon-user"></i><span>About</span></a></li>
-      <li><a href="#creative" class="creative"><i class="icon-brush"></i><span>Creative</span></a></li>
-      <li><a href="#design" class="design"><i class="icon-suitcase"></i><span>Ventures</span></a></li>
+      <li><a href="#portfolio" class="portfolio"><i class="icon-suitcase"></i><span>Portfolio</span></a></li>
       <li><a href="#science" class="science"><i class="icon-rocket"></i><span>Science</span></a></li>
-      <li><a href="#howdy" class="howdy"><i class="icon-email"></i><span>Contact</span></a></li>
+      <li><a href="#creative" class="creative"><i class="icon-brush"></i><span>Creative</span></a></li>
+      <li><a href="#contact" class="contact"><i class="icon-email"></i><span>Contact</span></a></li>
       <li class="bottom"><a href="#" for="test" title="Test" class="test"><i class="icon-flightdeck"></i><span>Easter Eggs</span></a></li>
       <!-- li.bottom-->
       <!--   a(href='http://twitter.com/lablayers')-->
@@ -164,30 +164,53 @@
         </div>
       </div>
     </div>
+    <p>(a list of skills go here)</p>
     <div class="browser">
       <div class="toolbar"><i class="icon-idea"></i>
         <div class="titlebar">Sublime Text</div>
         <div class="menu"><i class="icon-rows"></i></div>
       </div>
-      <div class="frame monokai">Test</div>
+      <div class="frame code">
+        <pre>bot.on('httpRequest', function (req, res) {
+  var method = req.method;
+  var url    = req.url;
+  switch (url) {
+    case '/version/':
+      if (method == 'GET') {
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+      res.end('{"version":"'+myScriptVersion+'"}');
+      } else {
+        res.writeHead(500);
+        res.end();
+      }
+      break;
+    default:
+      res.writeHead(500);
+      res.end();
+      break;
+  }
+});</pre>
+      </div>
     </div>
     <div class="parallax stars"></div>
     <div class="parallax code"></div>
   </section>
   <section id="showcase" data-identity="victor">
-    <h2>Things I Do</h2>
-    <div class="wrapper">
-      <p class="lead">Let's get into my portfolio, shall we?</p>
-      <div class="gallery reset">
-        <figure></figure>
-        <figure>item</figure>
-        <figure>item</figure>
-        <figure>item</figure>
-        <figure>item</figure>
-        <figure>item</figure>
+    <h2>MHacks Hackathon Project</h2>
+    <div class="row">
+      <div class="col4"><i class="icon-mhacks"></i></div>
+      <div class="col8">
+        <div class="wrapper">
+          <p class="lead">What can it be? Only time will tell...</p><b>So here's my hackathon idea:</b>
+          <p>I want to do something related to the web and art!</p>
+          <p>It's a product that will be used by beginners and professional artists alike.</p>
+          <p>If you want to be on my team, please be in touch!</p><br><b>Looking for a team member?</b>
+          <p>If you're looking for someone to join your team, I'm the perfect guy for awesome frontend work. Please be in touch!</p><br><a href="#contact">Contact Me!</a>
+        </div>
       </div>
     </div>
   </section>
+  <section id="portfolio" data-identity="victor"></section>
   <section id="ilite" data-identity="victor"><!-- data-pin='please' -->
     <div class="row">
       <article>
@@ -358,6 +381,7 @@
     <h2>CAD Renderings</h2>
     <p class="lead">I play with Autodesk Inventor and AutoCAD too much.</p>
   </section>
+  <section id="creative" data-identity="victor"></section>
   <section id="art" data-identity="victor">
     <h2>My Art</h2>
     <p class="lead">You can blame deviantART's awesome community for my art addiction.</p><a href="http://lablayers.deviantart.com">DeviantART</a>

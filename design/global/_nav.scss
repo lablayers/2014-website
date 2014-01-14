@@ -53,7 +53,19 @@ nav[role="navigation"] menu {
             background: #2F7E89;
         }
         &.active .about, .about:hover {
-            background: $purple;
+            background: darken($orange, 5%);
+        }
+        &.active .portfolio, .portfolio:hover {
+            background: $spike;
+        }
+        &.active .science, .science:hover {
+            background: $blue;
+        }
+        &.active .creative, .creative:hover {
+            background: #a83279;
+        }
+        &.active .contact, .contact:hover {
+            background: lighten($purple, 10%);
         }
         &.bottom {
             position: fixed!important;

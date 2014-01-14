@@ -134,6 +134,13 @@ canvas {
   z-index: 0;
 }
 
+// Nav Helpers
+#portfolio, #sites, #creative {
+  height: 0px!important;
+  padding: 0px!important;
+  overflow: hidden!important;
+}
+
 // Slider
 #billboard {
   // Moon
@@ -571,12 +578,14 @@ section#social {
         transform: scale(1) translate(0,0%);
         -webkit-transform: scale(1) translate(0,0%);
       }
-      &.monokai {
-        background: #272822;
+      &.code {
+        background: none;
+        box-shadow: none;
+        border: none;
         color: white;
         font-family: $monospace;
-        padding: 4px;
-        font-size: 10px;
+        padding: 0px;
+        font-size: 12px;
         line-height: 1.1em;
       }
     }
@@ -586,7 +595,7 @@ section#social {
 // Showcase
 #showcase {
   // -@ http://lea.verou.me/css3patterns/#blueprint-grid
-  background-color:#269;
+  background-color: $orange;
   background-image: linear-gradient(rgba(255,255,255,.4) 2px, transparent 2px),
   linear-gradient(90deg, rgba(255,255,255,.4) 2px, transparent 2px),
   linear-gradient(rgba(255,255,255,.2) 1px, transparent 1px),
@@ -594,6 +603,14 @@ section#social {
   background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
   background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
   color: white;
+  b {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  i.icon-mhacks {
+    font-size: 300px;
+    text-shadow: 0 0 10px rgba(0,0,0,.5);
+  }
   h2 {
     text-shadow: 0 0 10px rgba(0,0,0,.5);
   }
@@ -601,6 +618,10 @@ section#social {
     background: rgba(255,255,255,.8);
     color: black;
     padding: 20px;
+    a {
+      @include button-subtle($dark);
+      @extend .button-jumbo;
+    }
   }
 }
 

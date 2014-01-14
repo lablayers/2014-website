@@ -1450,7 +1450,7 @@ e(1.6) translateX(-20px);opacity:0}100%{transform:scale(1) translateX(0px);opaci
   transition: border .25s linear, color .25s linear, background-color .25s linear; }
 
 /* line 9, global/_buttons.scss */
-.button, section#about figure a, #unicorn .frame article a, #ilite article a, #hackerchat article a:not(.pilot), #hackerchat a.pilot .button, #cloudchat a.button, #contact form input#ss-submit, footer .skyward span, #iesucks {
+.button, section#about figure a, #unicorn .frame article a, #showcase .wrapper a, #ilite article a, #hackerchat article a:not(.pilot), #hackerchat a.pilot .button, #cloudchat a.button, #contact form input#ss-submit, footer .skyward span, #iesucks {
   color: inherit;
   padding: 6px 8px;
   font-size: 14px;
@@ -1475,12 +1475,12 @@ e(1.6) translateX(-20px);opacity:0}100%{transform:scale(1) translateX(0px);opaci
   border-radius: 300px; }
 
 /* line 161, global/_buttons.scss */
-.button-large, .button, section#about figure a, #unicorn .frame article a, #ilite article a, #hackerchat article a:not(.pilot), #hackerchat a.pilot .button, #cloudchat a.button, #contact form input#ss-submit, footer .skyward span, #iesucks {
+.button-large, .button, section#about figure a, #unicorn .frame article a, #showcase .wrapper a, #ilite article a, #hackerchat article a:not(.pilot), #hackerchat a.pilot .button, #cloudchat a.button, #contact form input#ss-submit, footer .skyward span, #iesucks {
   font-size: 18px;
   line-height: 1.2em; }
 
 /* line 166, global/_buttons.scss */
-.button-jumbo, #ilite article a, #hackerchat article a:not(.pilot) {
+.button-jumbo, #showcase .wrapper a, #ilite article a, #hackerchat article a:not(.pilot) {
   font-size: 24px;
   line-height: 2.6em;
   padding: 0 16px; }
@@ -2633,8 +2633,20 @@ nav[role="navigation"] menu {
       background: #2F7E89; }
     /* line 55, global/_nav.scss */
     nav[role="navigation"] menu li.active .about, nav[role="navigation"] menu li .about:hover {
-      background: #672f89; }
+      background: #e08e0b; }
     /* line 58, global/_nav.scss */
+    nav[role="navigation"] menu li.active .portfolio, nav[role="navigation"] menu li .portfolio:hover {
+      background: #5ba525; }
+    /* line 61, global/_nav.scss */
+    nav[role="navigation"] menu li.active .science, nav[role="navigation"] menu li .science:hover {
+      background: #1e98d3; }
+    /* line 64, global/_nav.scss */
+    nav[role="navigation"] menu li.active .creative, nav[role="navigation"] menu li .creative:hover {
+      background: #a83279; }
+    /* line 67, global/_nav.scss */
+    nav[role="navigation"] menu li.active .contact, nav[role="navigation"] menu li .contact:hover {
+      background: #843caf; }
+    /* line 70, global/_nav.scss */
     nav[role="navigation"] menu li.bottom {
       position: fixed !important;
       bottom: 0 !important;
@@ -2643,11 +2655,11 @@ nav[role="navigation"] menu {
       width: 66px;
       background: #4f4e4c;
       box-shadow: 0 0 50px #4f4e4c; }
-  /* line 69, global/_nav.scss */
+  /* line 81, global/_nav.scss */
   nav[role="navigation"] menu.collapsed a {
     float: left;
     width: 100%; }
-    /* line 72, global/_nav.scss */
+    /* line 84, global/_nav.scss */
     nav[role="navigation"] menu.collapsed a span {
       visibility: hidden;
       opacity: 0;
@@ -2667,13 +2679,13 @@ nav[role="navigation"] menu {
       -webkit-transition: 0.1s all;
       transform: translateX(6px);
       -webkit-transform: translateX(6px); }
-    /* line 92, global/_nav.scss */
+    /* line 104, global/_nav.scss */
     nav[role="navigation"] menu.collapsed a:hover span {
       visibility: visible;
       opacity: 1;
       transform: translateX(0);
       -webkit-transform: translateX(0); }
-    /* line 98, global/_nav.scss */
+    /* line 110, global/_nav.scss */
     nav[role="navigation"] menu.collapsed a:hover span:after {
       content: "";
       position: absolute;
@@ -2684,17 +2696,17 @@ nav[role="navigation"] menu {
       border-color: transparent rgba(0, 0, 0, 0.6) transparent transparent;
       top: 6px;
       left: -20px; }
-  /* line 110, global/_nav.scss */
+  /* line 122, global/_nav.scss */
   nav[role="navigation"] menu.collapsed .toolbar {
     height: 0px;
     visibility: none;
     display: none;
     overflow: hidden; }
-  /* line 117, global/_nav.scss */
+  /* line 129, global/_nav.scss */
   nav[role="navigation"] menu.expanded {
     width: 300px;
     box-shadow: 0 0 50px black; }
-    /* line 120, global/_nav.scss */
+    /* line 132, global/_nav.scss */
     nav[role="navigation"] menu.expanded .toolbar {
       position: absolute;
       background: #edece3;
@@ -2704,19 +2716,19 @@ nav[role="navigation"] menu {
       height: 66px;
       overflow: hidden;
       transition: none; }
-      /* line 129, global/_nav.scss */
+      /* line 141, global/_nav.scss */
       nav[role="navigation"] menu.expanded .toolbar a {
         display: inline-block;
         color: #4f4e4c; }
-        /* line 132, global/_nav.scss */
+        /* line 144, global/_nav.scss */
         nav[role="navigation"] menu.expanded .toolbar a.close {
           float: right; }
-      /* line 142, global/_nav.scss */
+      /* line 154, global/_nav.scss */
       nav[role="navigation"] menu.expanded .toolbar i {
         float: none;
         display: inline-block;
         width: 66px; }
-    /* line 150, global/_nav.scss */
+    /* line 162, global/_nav.scss */
     nav[role="navigation"] menu.expanded li a span {
       transition: none;
       -webkit-transition: none;
@@ -2724,55 +2736,55 @@ nav[role="navigation"] menu {
       opacity: 1;
       animation: fade-in-left 0.5s ease-out;
       -webkit-animation: fade-in-left 0.5s ease-out; }
-    /* line 158, global/_nav.scss */
+    /* line 170, global/_nav.scss */
     nav[role="navigation"] menu.expanded li a.menu span {
       display: none; }
-    /* line 168, global/_nav.scss */
+    /* line 180, global/_nav.scss */
     nav[role="navigation"] menu.expanded li:first-child a span, nav[role="navigation"] menu.expanded li:nth-child(1) a span {
       animation-duration: 0s;
       -webkit-animation-duration: 0s; }
-    /* line 172, global/_nav.scss */
+    /* line 184, global/_nav.scss */
     nav[role="navigation"] menu.expanded li:nth-child(2) a span {
       animation-duration: 0.2s;
       -webkit-animation-duration: 0.2s; }
-    /* line 176, global/_nav.scss */
+    /* line 188, global/_nav.scss */
     nav[role="navigation"] menu.expanded li:nth-child(3) a span {
       animation-duration: 0.3s;
       -webkit-animation-duration: 0.3s; }
-    /* line 180, global/_nav.scss */
+    /* line 192, global/_nav.scss */
     nav[role="navigation"] menu.expanded li:nth-child(4) a span {
       animation-duration: 0.4s;
       -webkit-animation-duration: 0.4s; }
-    /* line 184, global/_nav.scss */
+    /* line 196, global/_nav.scss */
     nav[role="navigation"] menu.expanded li:nth-child(5) a span {
       animation-duration: 0.5s;
       -webkit-animation-duration: 0.5s; }
-    /* line 188, global/_nav.scss */
+    /* line 200, global/_nav.scss */
     nav[role="navigation"] menu.expanded li:nth-child(6) a span {
       animation-duration: 0.6s;
       -webkit-animation-duration: 0.6s; }
-    /* line 192, global/_nav.scss */
+    /* line 204, global/_nav.scss */
     nav[role="navigation"] menu.expanded li:nth-child(7) a span {
       animation-duration: 0.7s;
       -webkit-animation-duration: 0.7s; }
-    /* line 196, global/_nav.scss */
+    /* line 208, global/_nav.scss */
     nav[role="navigation"] menu.expanded li:nth-child(8) a span {
       animation-duration: 0.8s;
       -webkit-animation-duration: 0.8s; }
-    /* line 200, global/_nav.scss */
+    /* line 212, global/_nav.scss */
     nav[role="navigation"] menu.expanded li:nth-child(9) a span {
       animation-duration: 0.9s;
       -webkit-animation-duration: 0.9s; }
-    /* line 204, global/_nav.scss */
+    /* line 216, global/_nav.scss */
     nav[role="navigation"] menu.expanded li.bottom {
       width: 300px;
       transition: width 0.5s;
       -webkit-transition: width 0.5s; }
-  /* line 211, global/_nav.scss */
+  /* line 223, global/_nav.scss */
   nav[role="navigation"] menu.tiny {
     overflow-y: scroll;
     overflow-x: hidden; }
-  /* line 230, global/_nav.scss */
+  /* line 242, global/_nav.scss */
   nav[role="navigation"] menu menu#assist {
     top: 66px;
     left: 0px;
@@ -2783,32 +2795,32 @@ nav[role="navigation"] menu {
     height: auto;
     width: auto;
     padding: 0px; }
-    /* line 240, global/_nav.scss */
+    /* line 252, global/_nav.scss */
     nav[role="navigation"] menu menu#assist li {
       background: white;
       color: black;
       padding: 0px 20px;
       margin: 0; }
-      /* line 245, global/_nav.scss */
+      /* line 257, global/_nav.scss */
       nav[role="navigation"] menu menu#assist li i {
         width: auto; }
-      /* line 248, global/_nav.scss */
+      /* line 260, global/_nav.scss */
       nav[role="navigation"] menu menu#assist li #search {
         border: none;
         border-bottom: 1px dotted;
         font-family: "Proxima", "Proxima Nova", Arial;
         font-size: 16px;
         margin-top: 20px; }
-    /* line 256, global/_nav.scss */
+    /* line 268, global/_nav.scss */
     nav[role="navigation"] menu menu#assist div.onoff {
       display: inline-block;
       margin-right: 12px; }
 
-/* line 264, global/_nav.scss */
+/* line 276, global/_nav.scss */
 .close-menu-bubble {
   display: none; }
 
-/* line 269, global/_nav.scss */
+/* line 281, global/_nav.scss */
 body.menu-expanded .close-menu-bubble {
   display: block !important;
   position: fixed;
@@ -2829,20 +2841,20 @@ body.menu-expanded .close-menu-bubble {
   box-shadow: inset 0 0 50px black; }
 
 @media only screen and (max-width: 780px) {
-  /* line 292, global/_nav.scss */
+  /* line 304, global/_nav.scss */
   menu.collapsed {
     height: 66px !important;
     width: 66px !important;
     overflow: hidden !important; }
 
-  /* line 297, global/_nav.scss */
+  /* line 309, global/_nav.scss */
   menu.expanded {
     width: 100% !important; }
-    /* line 299, global/_nav.scss */
+    /* line 311, global/_nav.scss */
     menu.expanded a span {
       font-size: 24px; }
 
-  /* line 303, global/_nav.scss */
+  /* line 315, global/_nav.scss */
   a.assist, menu#assist {
     display: none !important; } }
 /* line 3, global/_tooltips.scss */
@@ -3009,7 +3021,7 @@ header, section, footer {
   -webkit-transition: all .25s ease; }
 
 /* line 94, home.scss */
-.button, section#about figure a, #unicorn .frame article a, #ilite article a, #hackerchat article a:not(.pilot), #hackerchat a.pilot .button, #cloudchat a.button, #contact form input#ss-submit, footer .skyward span, #iesucks {
+.button, section#about figure a, #unicorn .frame article a, #showcase .wrapper a, #ilite article a, #hackerchat article a:not(.pilot), #hackerchat a.pilot .button, #cloudchat a.button, #contact form input#ss-submit, footer .skyward span, #iesucks {
   border-radius: 6px;
   margin-right: 0.2em; }
 
@@ -3056,7 +3068,13 @@ canvas {
   width: 100%;
   z-index: 0; }
 
-/* line 140, home.scss */
+/* line 138, home.scss */
+#portfolio, #sites, #creative {
+  height: 0px !important;
+  padding: 0px !important;
+  overflow: hidden !important; }
+
+/* line 147, home.scss */
 #billboard .halfCircle {
   height: 45px;
   width: 90px;
@@ -3065,7 +3083,7 @@ canvas {
   -webkit-border-radius: 90px 90px 0 0;
   background: green; }
 
-/* line 151, home.scss */
+/* line 158, home.scss */
 #mhacks {
   color: #FEC00F;
   background: #646464;
@@ -3075,15 +3093,15 @@ canvas {
   cursor: pointer;
   transition: background 0.25s ease-in;
   -webkit-transition: background 0.25s ease-in; }
-  /* line 161, home.scss */
+  /* line 168, home.scss */
   #mhacks:hover {
     background: #242424; }
-  /* line 164, home.scss */
+  /* line 171, home.scss */
   #mhacks i {
     font-size: 30px;
     padding-right: 20px; }
 
-/* line 172, home.scss */
+/* line 179, home.scss */
 header#top {
   display: table;
   padding: 0 60px;
@@ -3095,30 +3113,30 @@ header#top {
   background-size: cover;
   background-repeat: repeat;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.5); }
-  /* line 188, home.scss */
+  /* line 195, home.scss */
   header#top .wrapper {
     display: table-cell;
     vertical-align: middle;
     position: relative;
     top: -68px; }
-  /* line 194, home.scss */
+  /* line 201, home.scss */
   header#top p {
     font-size: 40px;
     position: relative; }
-  /* line 199, home.scss */
+  /* line 206, home.scss */
   header#top h1 {
     font-weight: bold;
     font-size: 80px;
     position: relative; }
-    /* line 203, home.scss */
+    /* line 210, home.scss */
     header#top h1 span {
       opacity: 0.2;
       text-shadow: none; }
-    /* line 207, home.scss */
+    /* line 214, home.scss */
     header#top h1 form {
       opacity: 1;
       display: block; }
-    /* line 211, home.scss */
+    /* line 218, home.scss */
     header#top h1 input {
       background: none;
       text-shadow: inherit;
@@ -3132,22 +3150,22 @@ header#top {
       width: 100%;
       position: relative;
       margin-top: -1.2em; }
-      /* line 224, home.scss */
+      /* line 231, home.scss */
       header#top h1 input::-webkit-input-placeholder {
         color: white;
         opacity: 1; }
-      /* line 228, home.scss */
+      /* line 235, home.scss */
       header#top h1 input:-moz-input-placeholder {
         color: white;
         opacity: 1; }
-      /* line 232, home.scss */
+      /* line 239, home.scss */
       header#top h1 input:-ms-input-placeholder {
         color: white;
         opacity: 1; }
-    /* line 237, home.scss */
+    /* line 244, home.scss */
     header#top h1 input[type="submit"] {
       display: none; }
-  /* line 241, home.scss */
+  /* line 248, home.scss */
   header#top .scrolldown {
     display: block;
     bottom: 0px;
@@ -3156,7 +3174,7 @@ header#top {
     left: 50%;
     margin-left: -25px;
     bottom: 20px; }
-    /* line 249, home.scss */
+    /* line 256, home.scss */
     header#top .scrolldown a {
       color: white;
       line-height: 35px;
@@ -3167,26 +3185,26 @@ header#top {
       border-radius: 200px;
       border: 4px solid rgba(255, 255, 255, 0.2);
       font-size: 30px; }
-      /* line 260, home.scss */
+      /* line 267, home.scss */
       header#top .scrolldown a:hover {
         line-height: 50px;
         background: rgba(0, 0, 0, 0.5);
         border: 4px solid rgba(255, 255, 255, 0.5); }
 
-/* line 270, home.scss */
+/* line 277, home.scss */
 section#about {
   color: white;
   background: #672f89;
   animation: colors 20s infinite;
   -webkit-animation: colors 20s infinite; }
-  /* line 276, home.scss */
+  /* line 283, home.scss */
   section#about figure {
     animation: fade-in-bottom 0.5s;
     -webkit-amimation: fade-in-bottom 0.5s;
     position: relative;
     height: 100%;
     display: table-cell; }
-    /* line 283, home.scss */
+    /* line 290, home.scss */
     section#about figure a {
       background: #672f89;
       color: white;
@@ -3207,10 +3225,10 @@ section#about {
       /* line 143, global/_buttons.scss */
       section#about figure a:active, section#about figure a:focus {
         background-color: #50256b; }
-    /* line 298, home.scss */
+    /* line 305, home.scss */
     section#about figure:hover a {
       opacity: 1; }
-    /* line 302, home.scss */
+    /* line 309, home.scss */
     section#about figure img {
       position: absolute;
       left: 0px;
@@ -3224,17 +3242,17 @@ section#about {
       margin: -45px 0px 0px 0px !important;
       padding-top: 300px;
       transition: opacity 0.7s 0.25s, margin 0.8s 0.25s, padding 0.8s 0.25s; }
-  /* line 318, home.scss */
+  /* line 325, home.scss */
   section#about.visible img {
     opacity: 1;
     margin: 0px 0px 0px 0px;
     padding-top: 0px; }
 
-/* line 327, home.scss */
+/* line 334, home.scss */
 section#social {
   background: black;
   padding: 0; }
-  /* line 330, home.scss */
+  /* line 337, home.scss */
   section#social a {
     border-radius: 0px;
     display: inline-block;
@@ -3242,47 +3260,47 @@ section#social {
     color: white;
     padding: 20px 0px;
     transition: all 0.2s; }
-    /* line 337, home.scss */
+    /* line 344, home.scss */
     section#social a i {
       float: left;
       font-size: 60px;
       line-height: 60px;
       margin-left: 20%; }
-    /* line 344, home.scss */
+    /* line 351, home.scss */
     section#social a span {
       display: block; }
-    /* line 350, home.scss */
+    /* line 357, home.scss */
     section#social a.twitter {
       background: #00acee;
       text-shadow: #0094CD 1px 1px, #0094CD 2px 2px, #0094CD 3px 3px, #0094CD 4px 4px, #0094CD 5px 5px, #0094CD 6px 6px, #0094CD 7px 7px, #0094CD 8px 8px, #0094CD 9px 9px, #0094CD 10px 10px, #0094CD 11px 11px, #0094CD 12px 12px, #0094CD 13px 13px, #0094CD 14px 14px, #0094CD 15px 15px, #0094CD 16px 16px, #0094CD 17px 17px, #0094CD 18px 18px, #0094CD 19px 19px, #0094CD 20px 20px, #0094CD 21px 21px, #0094CD 22px 22px, #0094CD 23px 23px, #0094CD 24px 24px, #0094CD 25px 25px, #0094CD 26px 26px, #0094CD 27px 27px, #0094CD 28px 28px, #0094CD 29px 29px, #0094CD 30px 30px, #0094CD 31px 31px, #0094CD 32px 32px, #0094CD 33px 33px, #0094CD 34px 34px, #0094CD 35px 35px, #0094CD 36px 36px, #0094CD 37px 37px, #0094CD 38px 38px, #0094CD 39px 39px, #0094CD 40px 40px, #0094CD 41px 41px, #0094CD 42px 42px, #0094CD 43px 43px, #0094CD 44px 44px, #0094CD 45px 45px, #0094CD 46px 46px, #0094CD 47px 47px, #0094CD 48px 48px, #0094CD 49px 49px, #0094CD 50px 50px, #0094CD 51px 51px, #0094CD 52px 52px, #0095CE 53px 53px, #0095CF 54px 54px, #0096D0 55px 55px, #0097D1 56px 56px, #0097D2 57px 57px, #0098D2 58px 58px, #0098D3 59px 59px, #0099D4 60px 60px, #009AD5 61px 61px, #009AD6 62px 62px, #009BD7 63px 63px, #009CD8 64px 64px, #009CD8 65px 65px, #009DD9 66px 66px, #009DDA 67px 67px, #009EDB 68px 68px, #009FDC 69px 69px, #009FDD 70px 70px, #00A0DD 71px 71px, #00A0DE 72px 72px, #00A1DF 73px 73px, #00A2E0 74px 74px, #00A2E1 75px 75px, #00A3E2 76px 76px, #00A4E3 77px 77px, #00A4E3 78px 78px, #00A5E4 79px 79px, #00A5E5 80px 80px, #00A6E6 81px 81px, #00A7E7 82px 82px, #00A7E8 83px 83px, #00A8E8 84px 84px, #00A8E9 85px 85px, #00A9EA 86px 86px, #00AAEB 87px 87px, #00AAEC 88px 88px, #00ABED 89px 89px, #00ACEE 90px 90px; }
-      /* line 352, home.scss */
+      /* line 359, home.scss */
       section#social a.twitter:hover {
         background: #22c2ff; }
-    /* line 354, home.scss */
+    /* line 361, home.scss */
     section#social a.gplus {
       background: #dd1812;
       text-shadow: #BE150F 1px 1px, #BE150F 2px 2px, #BE150F 3px 3px, #BE150F 4px 4px, #BE150F 5px 5px, #BE150F 6px 6px, #BE150F 7px 7px, #BE150F 8px 8px, #BE150F 9px 9px, #BE150F 10px 10px, #BE150F 11px 11px, #BE150F 12px 12px, #BE150F 13px 13px, #BE150F 14px 14px, #BE150F 15px 15px, #BE150F 16px 16px, #BE150F 17px 17px, #BE150F 18px 18px, #BE150F 19px 19px, #BE150F 20px 20px, #BE150F 21px 21px, #BE150F 22px 22px, #BE150F 23px 23px, #BE150F 24px 24px, #BE150F 25px 25px, #BE150F 26px 26px, #BE150F 27px 27px, #BE150F 28px 28px, #BE150F 29px 29px, #BE150F 30px 30px, #BE150F 31px 31px, #BE150F 32px 32px, #BE150F 33px 33px, #BE150F 34px 34px, #BE150F 35px 35px, #BE150F 36px 36px, #BE150F 37px 37px, #BE150F 38px 38px, #BE150F 39px 39px, #BE150F 40px 40px, #BE150F 41px 41px, #BE150F 42px 42px, #BE150F 43px 43px, #BE150F 44px 44px, #BE150F 45px 45px, #BE150F 46px 46px, #BE150F 47px 47px, #BE150F 48px 48px, #BE150F 49px 49px, #BE150F 50px 50px, #BE150F 51px 51px, #BE150F 52px 52px, #BF150F 53px 53px, #C0150F 54px 54px, #C1150F 55px 55px, #C1150F 56px 56px, #C2150F 57px 57px, #C3150F 58px 58px, #C4150F 59px 59px, #C5150F 60px 60px, #C5150F 61px 61px, #C6150F 62px 62px, #C7150F 63px 63px, #C81610 64px 64px, #C91610 65px 65px, #C91610 66px 66px, #CA1610 67px 67px, #CB1610 68px 68px, #CC1610 69px 69px, #CD1610 70px 70px, #CD1610 71px 71px, #CE1610 72px 72px, #CF1610 73px 73px, #D01610 74px 74px, #D11610 75px 75px, #D11610 76px 76px, #D21711 77px 77px, #D31711 78px 78px, #D41711 79px 79px, #D51711 80px 80px, #D51711 81px 81px, #D61711 82px 82px, #D71711 83px 83px, #D81711 84px 84px, #D91711 85px 85px, #D91711 86px 86px, #DA1711 87px 87px, #DB1711 88px 88px, #DC1711 89px 89px, #DD1812 90px 90px; }
-      /* line 356, home.scss */
+      /* line 363, home.scss */
       section#social a.gplus:hover {
         background: #ee3934; }
-    /* line 358, home.scss */
+    /* line 365, home.scss */
     section#social a.devart {
       background: #4e6252;
       text-shadow: #435447 1px 1px, #435447 2px 2px, #435447 3px 3px, #435447 4px 4px, #435447 5px 5px, #435447 6px 6px, #435447 7px 7px, #435447 8px 8px, #435447 9px 9px, #435447 10px 10px, #435447 11px 11px, #435447 12px 12px, #435447 13px 13px, #435447 14px 14px, #435447 15px 15px, #435447 16px 16px, #435447 17px 17px, #435447 18px 18px, #435447 19px 19px, #435447 20px 20px, #435447 21px 21px, #435447 22px 22px, #435447 23px 23px, #435447 24px 24px, #435447 25px 25px, #435447 26px 26px, #435447 27px 27px, #435447 28px 28px, #435447 29px 29px, #435447 30px 30px, #435447 31px 31px, #435447 32px 32px, #435447 33px 33px, #435447 34px 34px, #435447 35px 35px, #435447 36px 36px, #435447 37px 37px, #435447 38px 38px, #435447 39px 39px, #435447 40px 40px, #435447 41px 41px, #435447 42px 42px, #435447 43px 43px, #435447 44px 44px, #435447 45px 45px, #435447 46px 46px, #435447 47px 47px, #435447 48px 48px, #435447 49px 49px, #435447 50px 50px, #435447 51px 51px, #435447 52px 52px, #435447 53px 53px, #435547 54px 54px, #445548 55px 55px, #445548 56px 56px, #445648 57px 57px, #445648 58px 58px, #455649 59px 59px, #455749 60px 60px, #455749 61px 61px, #46574A 62px 62px, #46584A 63px 63px, #46584A 64px 64px, #46594A 65px 65px, #47594B 66px 66px, #47594B 67px 67px, #475A4B 68px 68px, #485A4C 69px 69px, #485A4C 70px 70px, #485B4C 71px 71px, #485B4C 72px 72px, #495B4D 73px 73px, #495C4D 74px 74px, #495C4D 75px 75px, #4A5C4E 76px 76px, #4A5D4E 77px 77px, #4A5D4E 78px 78px, #4A5E4E 79px 79px, #4B5E4F 80px 80px, #4B5E4F 81px 81px, #4B5F4F 82px 82px, #4C5F50 83px 83px, #4C5F50 84px 84px, #4C6050 85px 85px, #4C6050 86px 86px, #4D6051 87px 87px, #4D6151 88px 88px, #4D6151 89px 89px, #4E6252 90px 90px; }
-      /* line 360, home.scss */
+      /* line 367, home.scss */
       section#social a.devart:hover {
         background: #657e6a; }
-    /* line 362, home.scss */
+    /* line 369, home.scss */
     section#social a:hover i, section#social a:hover span {
       transform: translate(0px, -2px);
       -webkit-transform: translate(0px, -2px); }
 
-/* line 372, home.scss */
+/* line 379, home.scss */
 #unicorn {
   background: #5E4FA2;
   background: linear-gradient(#5e4fa2, #362e5d);
   color: white; }
-  /* line 377, home.scss */
+  /* line 384, home.scss */
   #unicorn i.icon-colt-horn {
     position: relative;
     display: inline-block;
@@ -3290,23 +3308,23 @@ section#social {
     -webkit-transition: all 0.5s ease;
     transform: rotate(0) scale(1) translate(0, 0);
     -webkit-transform: rotate(0) scale(1) translate(0, 0); }
-  /* line 385, home.scss */
+  /* line 392, home.scss */
   #unicorn .stickem-container {
     height: 800px;
     display: block; }
-  /* line 389, home.scss */
+  /* line 396, home.scss */
   #unicorn .browser {
     text-shadow: none;
     max-width: 850px;
     margin: auto;
     margin-top: 20px; }
-    /* line 394, home.scss */
+    /* line 401, home.scss */
     #unicorn .browser b {
       font-weight: bold; }
-  /* line 398, home.scss */
+  /* line 405, home.scss */
   #unicorn .frame {
     font-family: Arial; }
-    /* line 400, home.scss */
+    /* line 407, home.scss */
     #unicorn .frame nav.navbar {
       display: block;
       background: linear-gradient(#505050, #000000);
@@ -3318,17 +3336,17 @@ section#social {
       overflow: hidden;
       height: 48px;
       vertical-align: middle; }
-      /* line 411, home.scss */
+      /* line 418, home.scss */
       #unicorn .frame nav.navbar a {
         color: white;
         padding: 0 16px;
         line-height: 48px;
         font-size: 18px; }
-        /* line 416, home.scss */
+        /* line 423, home.scss */
         #unicorn .frame nav.navbar a.brand {
           font-size: 24px;
           padding-left: 20px; }
-    /* line 422, home.scss */
+    /* line 429, home.scss */
     #unicorn .frame .notice {
       margin: 0px 20px 0px 20px;
       background: #005a78;
@@ -3344,7 +3362,7 @@ section#social {
       -webkit-filter: blur(1px);
       transition: all .3s 3.3s ease;
       -webkit-transition: all .3s 3.3s ease; }
-    /* line 438, home.scss */
+    /* line 445, home.scss */
     #unicorn .frame article {
       margin: 0px 20px 5px 20px;
       padding: 0px;
@@ -3352,7 +3370,7 @@ section#social {
       font-size: 12px;
       line-height: 1.8em;
       color: black; }
-      /* line 445, home.scss */
+      /* line 452, home.scss */
       #unicorn .frame article p {
         padding: 22px 10px;
         transition: all 0.5s 1.3s ease;
@@ -3360,7 +3378,7 @@ section#social {
         transform: rotate(0) scale(1) translate(0, 20%);
         -webkit-transform: rotate(0) scale(1) translate(0, 20%);
         opacity: 0; }
-      /* line 453, home.scss */
+      /* line 460, home.scss */
       #unicorn .frame article .span4 {
         padding: 8px;
         border-radius: 4px;
@@ -3370,21 +3388,21 @@ section#social {
         transform: translate(0, 20%);
         -webkit-transform: translate(0, 20%);
         opacity: 0; }
-        /* line 462, home.scss */
+        /* line 469, home.scss */
         #unicorn .frame article .span4:nth-child(2) {
           transition-delay: 2.3s;
           -webkit-transition-delay: 2.3s; }
-        /* line 466, home.scss */
+        /* line 473, home.scss */
         #unicorn .frame article .span4:nth-child(3) {
           transition-delay: 2.6s;
           -webkit-transition-delay: 2.6s; }
-        /* line 470, home.scss */
+        /* line 477, home.scss */
         #unicorn .frame article .span4 .thumbnail {
           display: block;
           height: 150px;
           margin-bottom: 0.5em;
           background: lightGray; }
-      /* line 477, home.scss */
+      /* line 484, home.scss */
       #unicorn .frame article a {
         border-radius: 0px;
         color: #005a78;
@@ -3395,7 +3413,7 @@ section#social {
         #unicorn .frame article a:hover {
           background: #005a78;
           color: white; }
-    /* line 485, home.scss */
+    /* line 492, home.scss */
     #unicorn .frame aside {
       margin: 20px;
       background: white;
@@ -3410,7 +3428,7 @@ section#social {
       -webkit-transition: all 0.5s 2.9s ease;
       transform: translate(-50%, 100%) scale(0.8);
       -webkit-transform: translate(-50%, 100%) scale(0.8); }
-      /* line 499, home.scss */
+      /* line 506, home.scss */
       #unicorn .frame aside strong {
         color: black;
         font-weight: bold;
@@ -3419,14 +3437,14 @@ section#social {
         margin-bottom: 1em;
         border-bottom: 1px solid lightGray;
         display: block; }
-      /* line 508, home.scss */
+      /* line 515, home.scss */
       #unicorn .frame aside a {
         color: #ee4144;
         cursor: pointer; }
-        /* line 511, home.scss */
+        /* line 518, home.scss */
         #unicorn .frame aside a:hover {
           text-decoration: underline; }
-      /* line 515, home.scss */
+      /* line 522, home.scss */
       #unicorn .frame aside .span4 {
         padding: 8px;
         border-radius: 4px;
@@ -3434,28 +3452,28 @@ section#social {
         width: 100%;
         display: block;
         margin-top: 1em; }
-        /* line 522, home.scss */
+        /* line 529, home.scss */
         #unicorn .frame aside .span4:last-of-type {
           margin-bottom: 1.5em; }
-        /* line 525, home.scss */
+        /* line 532, home.scss */
         #unicorn .frame aside .span4 .thumbnail {
           float: left;
           height: 3.5em;
           width: 3.5em;
           margin-right: 8px;
           background: lightGray; }
-  /* line 536, home.scss */
+  /* line 543, home.scss */
   #unicorn.visible i.icon-colt-horn {
     animation: radiance 8s ease infinite;
     -webkit-animation: radiance 8s ease infinite;
     transform: rotate(-30deg) scale(2) translate(-45px, 5px);
     -webkit-transform: rotate(-30deg) scale(2) translate(-45px, 5px); }
-  /* line 543, home.scss */
+  /* line 550, home.scss */
   #unicorn.visible .frame nav.navbar {
     opacity: 1;
     transform: scale(1) translate(0, 0%);
     -webkit-transform: scale(1) translate(0, 0%); }
-  /* line 548, home.scss */
+  /* line 555, home.scss */
   #unicorn.visible .frame .notice {
     margin: 20px 20px 0px 20px;
     line-height: 1.8em;
@@ -3464,52 +3482,75 @@ section#social {
     -webkit-transform: translate(0, 0) scale(1);
     filter: blur(0px);
     -webkit-filter: blur(0px); }
-  /* line 558, home.scss */
+  /* line 565, home.scss */
   #unicorn.visible .frame article p {
     opacity: 1;
     transform: scale(1) translate(0, 0%);
     -webkit-transform: scale(1) translate(0, 0%); }
-  /* line 563, home.scss */
+  /* line 570, home.scss */
   #unicorn.visible .frame article .span4 {
     opacity: 1;
     transform: translate(0, 0%);
     -webkit-transform: translate(0, 0%); }
-  /* line 569, home.scss */
+  /* line 576, home.scss */
   #unicorn.visible .frame aside {
     opacity: 1;
     transform: scale(1) translate(0, 0%);
     -webkit-transform: scale(1) translate(0, 0%); }
-  /* line 574, home.scss */
-  #unicorn.visible .frame.monokai {
-    background: #272822;
+  /* line 581, home.scss */
+  #unicorn.visible .frame.code {
+    background: none;
+    box-shadow: none;
+    border: none;
     color: white;
     font-family: "Menlo", "Consolas", "Courier New", "Ubuntu Mono", monospace;
-    padding: 4px;
-    font-size: 10px;
+    padding: 0px;
+    font-size: 12px;
     line-height: 1.1em; }
 
-/* line 587, home.scss */
+/* line 596, home.scss */
 #showcase {
-  background-color: #269;
+  background-color: #f39c12;
   background-image: linear-gradient(rgba(255, 255, 255, 0.4) 2px, transparent 2px), linear-gradient(90deg, rgba(255, 255, 255, 0.4) 2px, transparent 2px), linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
   background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
   background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
   color: white; }
-  /* line 597, home.scss */
+  /* line 606, home.scss */
+  #showcase b {
+    text-decoration: underline;
+    font-weight: bold; }
+  /* line 610, home.scss */
+  #showcase i.icon-mhacks {
+    font-size: 300px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+  /* line 614, home.scss */
   #showcase h2 {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
-  /* line 600, home.scss */
+  /* line 617, home.scss */
   #showcase .wrapper {
     background: rgba(255, 255, 255, 0.8);
     color: black;
     padding: 20px; }
+    /* line 621, home.scss */
+    #showcase .wrapper a {
+      background: #4f4e4c;
+      color: white;
+      border: 1px solid #1b1b1a;
+      transition: background-color .15s;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
+      /* line 140, global/_buttons.scss */
+      #showcase .wrapper a:hover {
+        background-color: #646360; }
+      /* line 143, global/_buttons.scss */
+      #showcase .wrapper a:active, #showcase .wrapper a:focus {
+        background-color: #3a3938; }
 
-/* line 608, home.scss */
+/* line 629, home.scss */
 #ilite {
   background: #7951a1;
   background: linear-gradient(#814ca0 50%, #210148 100%);
   color: white; }
-  /* line 612, home.scss */
+  /* line 633, home.scss */
   #ilite i.icon-bootstrap:before {
     content: 'B';
     color: purple;
@@ -3522,10 +3563,10 @@ section#social {
     font-family: Arial;
     font-weight: bold;
     margin-top: -2px; }
-  /* line 625, home.scss */
+  /* line 646, home.scss */
   #ilite article {
     padding: 0px 18px; }
-    /* line 628, home.scss */
+    /* line 649, home.scss */
     #ilite article a {
       background: #62bc4d;
       color: white;
@@ -3542,11 +3583,11 @@ section#social {
       #ilite article a:active, #ilite article a:focus {
         box-shadow: 0px -3px rgba(0, 0, 0, 0.1) inset, 0px 0px rgba(0, 0, 0, 0.2);
         background-color: #51a33d; }
-  /* line 637, home.scss */
+  /* line 658, home.scss */
   #ilite .demo a {
     color: inherit;
     border-radius: 0px; }
-  /* line 641, home.scss */
+  /* line 662, home.scss */
   #ilite .demo .nones-emulator {
     background: linear-gradient(#814ca0, #210148);
     display: block;
@@ -3554,35 +3595,35 @@ section#social {
     padding: 0px 8px;
     font-size: 10px;
     line-height: 20px; }
-    /* line 648, home.scss */
+    /* line 669, home.scss */
     #ilite .demo .nones-emulator ::selection {
       background: #77B900;
       color: white;
       text-shadow: 0px 0px 2px white; }
-    /* line 653, home.scss */
+    /* line 674, home.scss */
     #ilite .demo .nones-emulator .navbar-top {
       background: rgba(0, 0, 0, 0.5);
       height: 20px;
       text-align: right;
       padding: 0px 8px;
       overflow: hidden; }
-      /* line 659, home.scss */
+      /* line 680, home.scss */
       #ilite .demo .nones-emulator .navbar-top .block {
         padding: 0px 4px;
         transition: background 0.15s;
         -webkit-transition: background 0.15s;
         line-height: 20px;
         display: inline-block; }
-        /* line 665, home.scss */
+        /* line 686, home.scss */
         #ilite .demo .nones-emulator .navbar-top .block:hover {
           background: black; }
-    /* line 670, home.scss */
+    /* line 691, home.scss */
     #ilite .demo .nones-emulator i {
       font-size: 30px;
       color: black;
       text-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px white;
       line-height: 1.2em; }
-    /* line 676, home.scss */
+    /* line 697, home.scss */
     #ilite .demo .nones-emulator .navbar-menu {
       background: #62bc4d;
       background: linear-gradient(#7ac143 0%, #64a831 55%, #579626 75%, #4a871b 100%);
@@ -3590,7 +3631,7 @@ section#social {
       text-align: left;
       padding: 0px 8px;
       text-shadow: 0 0 8px black; }
-      /* line 683, home.scss */
+      /* line 704, home.scss */
       #ilite .demo .nones-emulator .navbar-menu .block {
         padding: 0px 4px;
         transition: text-shadow 0.15s;
@@ -3599,32 +3640,32 @@ section#social {
         display: inline-block;
         color: white;
         font-size: inherit; }
-        /* line 691, home.scss */
+        /* line 712, home.scss */
         #ilite .demo .nones-emulator .navbar-menu .block:hover {
           text-shadow: 0 0 8px white; }
-        /* line 694, home.scss */
+        /* line 715, home.scss */
         #ilite .demo .nones-emulator .navbar-menu .block i {
           text-shadow: 0 0 8px black;
           transition: text-shadow 0.15s;
           -webkit-transition: text-shadow 0.15s;
           color: white;
           font-size: inherit; }
-          /* line 700, home.scss */
+          /* line 721, home.scss */
           #ilite .demo .nones-emulator .navbar-menu .block i:hover {
             text-shadow: 0 0 8px white; }
-    /* line 706, home.scss */
+    /* line 727, home.scss */
     #ilite .demo .nones-emulator .content {
       background: white;
       color: black;
       height: auto;
       margin: 0px 8px;
       padding: 0px 8px; }
-      /* line 712, home.scss */
+      /* line 733, home.scss */
       #ilite .demo .nones-emulator .content .slidez {
         height: 100px;
         background: gray;
         position: relative; }
-        /* line 716, home.scss */
+        /* line 737, home.scss */
         #ilite .demo .nones-emulator .content .slidez .caption {
           background: rgba(0, 0, 0, 0.5);
           color: white;
@@ -3634,7 +3675,7 @@ section#social {
           height: 100px;
           width: 150px;
           padding: 4px; }
-      /* line 728, home.scss */
+      /* line 749, home.scss */
       #ilite .demo .nones-emulator .content .row .span4 {
         margin-top: 6px;
         background: #a86bcc;
@@ -3648,75 +3689,75 @@ section#social {
         -webkit-transform: scale(1, 1) rotateY(1deg);
         transition: all 0.5s linear;
         -webkit-transition: all 0.5s linear; }
-        /* line 741, home.scss */
+        /* line 762, home.scss */
         #ilite .demo .nones-emulator .content .row .span4:hover {
           transform: scale(1.2, 1.2) rotateY(360deg);
           -webkit-transform: scale(1.2, 1.2) rotateY(360deg);
           box-shadow: 0 0 4px black; }
-      /* line 747, home.scss */
+      /* line 768, home.scss */
       #ilite .demo .nones-emulator .content .row .span3 {
         height: 75px; }
-        /* line 749, home.scss */
+        /* line 770, home.scss */
         #ilite .demo .nones-emulator .content .row .span3 .item {
           border: 1px solid gray;
           height: 36px;
           margin-bottom: 3px; }
-        /* line 754, home.scss */
+        /* line 775, home.scss */
         #ilite .demo .nones-emulator .content .row .span3 .twitter {
           background: #9edbf9;
           border: none; }
-        /* line 758, home.scss */
+        /* line 779, home.scss */
         #ilite .demo .nones-emulator .content .row .span3 .photos {
           background: #c590c9;
           border: none; }
-      /* line 763, home.scss */
+      /* line 784, home.scss */
       #ilite .demo .nones-emulator .content .row .span6 {
         background: gray;
         background: radial-gradient(#ffffff 0%, #d3d3d3 90%);
         box-shadow: inset 0px -30px 10px white;
         height: 75px; }
-    /* line 771, home.scss */
+    /* line 792, home.scss */
     #ilite .demo .nones-emulator .footer {
       background: #221e1f;
       color: #787878;
       margin: 0px 8px;
       padding: 12px 12px;
       line-height: 1.5em; }
-      /* line 778, home.scss */
+      /* line 799, home.scss */
       #ilite .demo .nones-emulator .footer p {
         color: #7951A1;
         margin-top: 0.2em; }
 
-/* line 789, home.scss */
+/* line 810, home.scss */
 #hackerchat {
   background: #333333;
   color: #C8C8C8; }
-  /* line 794, home.scss */
+  /* line 815, home.scss */
   #hackerchat .heightfix {
     display: table-cell;
     position: relative; }
-    /* line 798, home.scss */
+    /* line 819, home.scss */
     #hackerchat .heightfix .browser {
       position: absolute;
       width: 100%;
       height: 100%;
       position: absolute;
       display: table; }
-      /* line 804, home.scss */
+      /* line 825, home.scss */
       #hackerchat .heightfix .browser .frame {
         position: relative;
         position: absolute;
         display: table;
         width: 100%;
         height: 90%; }
-      /* line 811, home.scss */
+      /* line 832, home.scss */
       #hackerchat .heightfix .browser iframe {
         width: 100%;
         height: 100%; }
-  /* line 817, home.scss */
+  /* line 838, home.scss */
   #hackerchat article {
     display: table-cell; }
-    /* line 820, home.scss */
+    /* line 841, home.scss */
     #hackerchat article a:not(.pilot) {
       color: white;
       background: linear-gradient(#62bc4d, #3b762d);
@@ -3728,27 +3769,27 @@ section#social {
       /* line 78, global/_buttons.scss */
       #hackerchat article a:not(.pilot):active, #hackerchat article a:not(.pilot):focus {
         box-shadow: inset 0 0 500px rgba(50, 50, 50, 0.2); }
-  /* line 825, home.scss */
+  /* line 846, home.scss */
   #hackerchat a.pilot {
     margin-top: 20px;
     color: inherit;
     position: relative;
     display: block;
     border-radius: 4px; }
-    /* line 826, home.scss */
-    #hackerchat a.pilot section#about figure a, section#about figure #hackerchat a.pilot a, #hackerchat a.pilot #unicorn .frame article a, #unicorn .frame article #hackerchat a.pilot a, #hackerchat a.pilot #ilite article a, #ilite article #hackerchat a.pilot a, #hackerchat a.pilot article a:not(.pilot), #hackerchat article a.pilot a:not(.pilot), #hackerchat a.pilot .button, #hackerchat a.pilot #contact form input#ss-submit, #contact form #hackerchat a.pilot input#ss-submit, #hackerchat a.pilot footer .skyward span, footer .skyward #hackerchat a.pilot span, #hackerchat a.pilot #iesucks {
+    /* line 847, home.scss */
+    #hackerchat a.pilot section#about figure a, section#about figure #hackerchat a.pilot a, #hackerchat a.pilot #unicorn .frame article a, #unicorn .frame article #hackerchat a.pilot a, #hackerchat a.pilot #showcase .wrapper a, #showcase .wrapper #hackerchat a.pilot a, #hackerchat a.pilot #ilite article a, #ilite article #hackerchat a.pilot a, #hackerchat a.pilot article a:not(.pilot), #hackerchat article a.pilot a:not(.pilot), #hackerchat a.pilot .button, #hackerchat a.pilot #contact form input#ss-submit, #contact form #hackerchat a.pilot input#ss-submit, #hackerchat a.pilot footer .skyward span, footer .skyward #hackerchat a.pilot span, #hackerchat a.pilot #iesucks {
       background: #4f4e4c;
       color: white;
       border: 1px solid #1b1b1a;
       transition: background-color .15s;
       box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
       /* line 140, global/_buttons.scss */
-      #hackerchat a.pilot section#about figure a:hover, section#about figure #hackerchat a.pilot a:hover, #hackerchat a.pilot #unicorn .frame article a:hover, #unicorn .frame article #hackerchat a.pilot a:hover, #hackerchat a.pilot #ilite article a:hover, #ilite article #hackerchat a.pilot a:hover, #hackerchat a.pilot article a:hover:not(.pilot), #hackerchat article a.pilot a:hover:not(.pilot), #hackerchat a.pilot .button:hover, #hackerchat a.pilot #contact form input#ss-submit:hover, #contact form #hackerchat a.pilot input#ss-submit:hover, #hackerchat a.pilot footer .skyward span:hover, footer .skyward #hackerchat a.pilot span:hover, #hackerchat a.pilot #iesucks:hover {
+      #hackerchat a.pilot section#about figure a:hover, section#about figure #hackerchat a.pilot a:hover, #hackerchat a.pilot #unicorn .frame article a:hover, #unicorn .frame article #hackerchat a.pilot a:hover, #hackerchat a.pilot #showcase .wrapper a:hover, #showcase .wrapper #hackerchat a.pilot a:hover, #hackerchat a.pilot #ilite article a:hover, #ilite article #hackerchat a.pilot a:hover, #hackerchat a.pilot article a:hover:not(.pilot), #hackerchat article a.pilot a:hover:not(.pilot), #hackerchat a.pilot .button:hover, #hackerchat a.pilot #contact form input#ss-submit:hover, #contact form #hackerchat a.pilot input#ss-submit:hover, #hackerchat a.pilot footer .skyward span:hover, footer .skyward #hackerchat a.pilot span:hover, #hackerchat a.pilot #iesucks:hover {
         background-color: #646360; }
       /* line 143, global/_buttons.scss */
-      #hackerchat a.pilot section#about figure a:active, section#about figure #hackerchat a.pilot a:active, #hackerchat a.pilot #unicorn .frame article a:active, #unicorn .frame article #hackerchat a.pilot a:active, #hackerchat a.pilot #ilite article a:active, #ilite article #hackerchat a.pilot a:active, #hackerchat a.pilot article a:active:not(.pilot), #hackerchat article a.pilot a:active:not(.pilot), #hackerchat a.pilot .button:active, #hackerchat a.pilot #contact form input#ss-submit:active, #contact form #hackerchat a.pilot input#ss-submit:active, #hackerchat a.pilot footer .skyward span:active, footer .skyward #hackerchat a.pilot span:active, #hackerchat a.pilot #iesucks:active, #hackerchat a.pilot section#about figure a:focus, section#about figure #hackerchat a.pilot a:focus, #hackerchat a.pilot #unicorn .frame article a:focus, #unicorn .frame article #hackerchat a.pilot a:focus, #hackerchat a.pilot #ilite article a:focus, #ilite article #hackerchat a.pilot a:focus, #hackerchat a.pilot article a:focus:not(.pilot), #hackerchat article a.pilot a:focus:not(.pilot), #hackerchat a.pilot .button:focus, #hackerchat a.pilot #contact form input#ss-submit:focus, #contact form #hackerchat a.pilot input#ss-submit:focus, #hackerchat a.pilot footer .skyward span:focus, footer .skyward #hackerchat a.pilot span:focus, #hackerchat a.pilot #iesucks:focus {
+      #hackerchat a.pilot section#about figure a:active, section#about figure #hackerchat a.pilot a:active, #hackerchat a.pilot #unicorn .frame article a:active, #unicorn .frame article #hackerchat a.pilot a:active, #hackerchat a.pilot #showcase .wrapper a:active, #showcase .wrapper #hackerchat a.pilot a:active, #hackerchat a.pilot #ilite article a:active, #ilite article #hackerchat a.pilot a:active, #hackerchat a.pilot article a:active:not(.pilot), #hackerchat article a.pilot a:active:not(.pilot), #hackerchat a.pilot .button:active, #hackerchat a.pilot #contact form input#ss-submit:active, #contact form #hackerchat a.pilot input#ss-submit:active, #hackerchat a.pilot footer .skyward span:active, footer .skyward #hackerchat a.pilot span:active, #hackerchat a.pilot #iesucks:active, #hackerchat a.pilot section#about figure a:focus, section#about figure #hackerchat a.pilot a:focus, #hackerchat a.pilot #unicorn .frame article a:focus, #unicorn .frame article #hackerchat a.pilot a:focus, #hackerchat a.pilot #showcase .wrapper a:focus, #showcase .wrapper #hackerchat a.pilot a:focus, #hackerchat a.pilot #ilite article a:focus, #ilite article #hackerchat a.pilot a:focus, #hackerchat a.pilot article a:focus:not(.pilot), #hackerchat article a.pilot a:focus:not(.pilot), #hackerchat a.pilot .button:focus, #hackerchat a.pilot #contact form input#ss-submit:focus, #contact form #hackerchat a.pilot input#ss-submit:focus, #hackerchat a.pilot footer .skyward span:focus, footer .skyward #hackerchat a.pilot span:focus, #hackerchat a.pilot #iesucks:focus {
         background-color: #3a3938; }
-    /* line 838, home.scss */
+    /* line 859, home.scss */
     #hackerchat a.pilot span {
       margin-top: 1em;
       opacity: 0;
@@ -3757,7 +3798,7 @@ section#social {
       display: inline-block;
       padding-right: 20px;
       text-align: right; }
-    /* line 849, home.scss */
+    /* line 870, home.scss */
     #hackerchat a.pilot i.icon-pilotphilly {
       float: right;
       display: inline;
@@ -3767,46 +3808,46 @@ section#social {
       opacity: 0.5;
       transform: rotate(-20deg);
       -webkit-transform: rotate(-20deg); }
-    /* line 861, home.scss */
+    /* line 882, home.scss */
     #hackerchat a.pilot:hover span {
       opacity: 1;
       -webkit-transform: translate(0, 0);
       transform: translate(0, 0); }
-    /* line 866, home.scss */
+    /* line 887, home.scss */
     #hackerchat a.pilot:hover i.icon-pilotphilly {
       opacity: 1;
       transform: rotate(0deg);
       -webkit-transform: rotate(0deg); }
 
-/* line 876, home.scss */
+/* line 897, home.scss */
 #cloudchat {
   background: #ceedfc;
   color: black; }
-  /* line 879, home.scss */
-  #cloudchat section#about figure a, section#about figure #cloudchat a, #cloudchat #unicorn .frame article a, #unicorn .frame article #cloudchat a, #cloudchat #ilite article a, #ilite article #cloudchat a, #cloudchat #hackerchat article a:not(.pilot), #hackerchat article #cloudchat a:not(.pilot), #cloudchat #hackerchat a.pilot a.button, #hackerchat a.pilot #cloudchat a.button, #cloudchat a.button, #cloudchat a#iesucks {
+  /* line 900, home.scss */
+  #cloudchat section#about figure a, section#about figure #cloudchat a, #cloudchat #unicorn .frame article a, #unicorn .frame article #cloudchat a, #cloudchat #showcase .wrapper a, #showcase .wrapper #cloudchat a, #cloudchat #ilite article a, #ilite article #cloudchat a, #cloudchat #hackerchat article a:not(.pilot), #hackerchat article #cloudchat a:not(.pilot), #cloudchat #hackerchat a.pilot a.button, #hackerchat a.pilot #cloudchat a.button, #cloudchat a.button, #cloudchat a#iesucks {
     background: #1e98d3;
     color: white;
     border: 1px solid #11587a;
     transition: background-color .15s;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
     /* line 140, global/_buttons.scss */
-    #cloudchat section#about figure a:hover, section#about figure #cloudchat a:hover, #cloudchat #unicorn .frame article a:hover, #unicorn .frame article #cloudchat a:hover, #cloudchat #ilite article a:hover, #ilite article #cloudchat a:hover, #cloudchat #hackerchat article a:hover:not(.pilot), #hackerchat article #cloudchat a:hover:not(.pilot), #cloudchat a.button:hover, #cloudchat a#iesucks:hover {
+    #cloudchat section#about figure a:hover, section#about figure #cloudchat a:hover, #cloudchat #unicorn .frame article a:hover, #unicorn .frame article #cloudchat a:hover, #cloudchat #showcase .wrapper a:hover, #showcase .wrapper #cloudchat a:hover, #cloudchat #ilite article a:hover, #ilite article #cloudchat a:hover, #cloudchat #hackerchat article a:hover:not(.pilot), #hackerchat article #cloudchat a:hover:not(.pilot), #cloudchat a.button:hover, #cloudchat a#iesucks:hover {
       background-color: #37abe3; }
     /* line 143, global/_buttons.scss */
-    #cloudchat section#about figure a:active, section#about figure #cloudchat a:active, #cloudchat #unicorn .frame article a:active, #unicorn .frame article #cloudchat a:active, #cloudchat #ilite article a:active, #ilite article #cloudchat a:active, #cloudchat #hackerchat article a:active:not(.pilot), #hackerchat article #cloudchat a:active:not(.pilot), #cloudchat a.button:active, #cloudchat a#iesucks:active, #cloudchat section#about figure a:focus, section#about figure #cloudchat a:focus, #cloudchat #unicorn .frame article a:focus, #unicorn .frame article #cloudchat a:focus, #cloudchat #ilite article a:focus, #ilite article #cloudchat a:focus, #cloudchat #hackerchat article a:focus:not(.pilot), #hackerchat article #cloudchat a:focus:not(.pilot), #cloudchat a.button:focus, #cloudchat a#iesucks:focus {
+    #cloudchat section#about figure a:active, section#about figure #cloudchat a:active, #cloudchat #unicorn .frame article a:active, #unicorn .frame article #cloudchat a:active, #cloudchat #showcase .wrapper a:active, #showcase .wrapper #cloudchat a:active, #cloudchat #ilite article a:active, #ilite article #cloudchat a:active, #cloudchat #hackerchat article a:active:not(.pilot), #hackerchat article #cloudchat a:active:not(.pilot), #cloudchat a.button:active, #cloudchat a#iesucks:active, #cloudchat section#about figure a:focus, section#about figure #cloudchat a:focus, #cloudchat #unicorn .frame article a:focus, #unicorn .frame article #cloudchat a:focus, #cloudchat #showcase .wrapper a:focus, #showcase .wrapper #cloudchat a:focus, #cloudchat #ilite article a:focus, #ilite article #cloudchat a:focus, #cloudchat #hackerchat article a:focus:not(.pilot), #hackerchat article #cloudchat a:focus:not(.pilot), #cloudchat a.button:focus, #cloudchat a#iesucks:focus {
       background-color: #197eaf; }
-  /* line 882, home.scss */
+  /* line 903, home.scss */
   #cloudchat .row {
     z-index: 5;
     position: relative; }
-    /* line 885, home.scss */
+    /* line 906, home.scss */
     #cloudchat .row article {
       display: table-cell; }
-    /* line 889, home.scss */
+    /* line 910, home.scss */
     #cloudchat .row .demo {
       display: table-cell;
       position: relative; }
-  /* line 895, home.scss */
+  /* line 916, home.scss */
   #cloudchat i.thing-1, #cloudchat i.thing-2 {
     position: absolute;
     color: white;
@@ -3814,36 +3855,36 @@ section#social {
     font-size: 180px;
     bottom: 0px;
     z-index: 0px; }
-  /* line 903, home.scss */
+  /* line 924, home.scss */
   #cloudchat i.thing-2 {
     left: -30px; }
-  /* line 906, home.scss */
+  /* line 927, home.scss */
   #cloudchat i.thing-1 {
     right: -30px; }
 
-/* line 912, home.scss */
+/* line 933, home.scss */
 #phlclosings {
   background: #2980b9;
   color: white; }
 
-/* line 918, home.scss */
+/* line 939, home.scss */
 #drones {
   background: #5ba525;
   color: white; }
 
-/* line 924, home.scss */
+/* line 945, home.scss */
 #dcindie {
   background: #1e98d3;
   color: white; }
 
-/* line 932, home.scss */
+/* line 953, home.scss */
 #science {
   background: #003865;
   color: #f7ba5b; }
-  /* line 935, home.scss */
+  /* line 956, home.scss */
   #science article {
     padding: 6px; }
-    /* line 939, home.scss */
+    /* line 960, home.scss */
     #science article .slide {
       max-width: 20em;
       margin: auto;
@@ -3858,59 +3899,59 @@ section#social {
       text-align: right;
       padding-top: 3em; }
 
-/* line 957, home.scss */
+/* line 978, home.scss */
 #cad {
   background: #b81113;
   background: linear-gradient(#b81113, #2c0405);
   color: white; }
 
-/* line 964, home.scss */
+/* line 985, home.scss */
 #art {
   background: #edece3;
   color: #4f4e4c; }
 
-/* line 972, home.scss */
+/* line 993, home.scss */
 #writing {
   box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.5);
   color: #4f4e4c;
   background: #fdf9d7; }
 
-/* line 979, home.scss */
+/* line 1000, home.scss */
 #film {
   box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.5);
   background-image: linear-gradient(to bottom right, #d38312, #a83279);
   color: white; }
 
-/* line 987, home.scss */
+/* line 1008, home.scss */
 #music {
   box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.5);
   background-image: linear-gradient(to bottom right, #002f4b, #e0be00);
   color: white; }
 
-/* line 996, home.scss */
+/* line 1017, home.scss */
 #contact {
   background: #672f89;
   color: white; }
-  /* line 1001, home.scss */
+  /* line 1022, home.scss */
   #contact form select, #contact form textarea {
     width: 100%; }
-  /* line 1004, home.scss */
+  /* line 1025, home.scss */
   #contact form input:not(#ss-submit) {
     width: 50%;
     display: table-cell;
     float: left; }
-    /* line 1008, home.scss */
+    /* line 1029, home.scss */
     #contact form input:not(#ss-submit):first-child {
       border-top-right-radius: 0px;
       border-bottom-right-radius: 0px; }
-    /* line 1012, home.scss */
+    /* line 1033, home.scss */
     #contact form input:not(#ss-submit):last-child {
       border-top-left-radius: 0px;
       border-bottom-left-radius: 0px; }
-  /* line 1017, home.scss */
+  /* line 1038, home.scss */
   #contact form textarea {
     height: 5em; }
-  /* line 1020, home.scss */
+  /* line 1041, home.scss */
   #contact form input#ss-submit {
     background: #4f4e4c;
     color: white;
@@ -3925,89 +3966,89 @@ section#social {
     /* line 143, global/_buttons.scss */
     #contact form input#ss-submit:active, #contact form input#ss-submit:focus {
       background-color: #3a3938; }
-  /* line 1030, home.scss */
+  /* line 1051, home.scss */
   #contact .telefono .guacamole, #contact .telefono .caliente, #contact .telefono .chipotle, #contact .telefono .gustas, #contact .telefono .tortilla‎, #contact .telefono .mios, #contact .telefono .mexico, #contact .telefono .frijoles, #contact .telefono .dota, #contact .telefono .tortillas {
     font-size: 0;
     visibility: hidden; }
-    /* line 1033, home.scss */
+    /* line 1054, home.scss */
     #contact .telefono .guacamole:before, #contact .telefono .caliente:before, #contact .telefono .chipotle:before, #contact .telefono .gustas:before, #contact .telefono .tortilla‎:before, #contact .telefono .mios:before, #contact .telefono .mexico:before, #contact .telefono .frijoles:before, #contact .telefono .dota:before, #contact .telefono .tortillas:before {
       font-size: 18px;
       visibility: visible;
       display: inline; }
-  /* line 1039, home.scss */
+  /* line 1060, home.scss */
   #contact .telefono .tortillas:before {
     content: '1778'; }
-  /* line 1040, home.scss */
+  /* line 1061, home.scss */
   #contact .telefono .dota:before {
     content: '- '; }
-  /* line 1041, home.scss */
+  /* line 1062, home.scss */
   #contact .telefono .guacamole:before {
     content: ') '; }
-  /* line 1042, home.scss */
+  /* line 1063, home.scss */
   #contact .telefono .mexico:before {
     content: '696'; }
-  /* line 1043, home.scss */
+  /* line 1064, home.scss */
   #contact .telefono .frijoles:before {
     content: '9981'; }
-  /* line 1044, home.scss */
+  /* line 1065, home.scss */
   #contact .telefono .chipotle:before {
     content: '969 '; }
-  /* line 1045, home.scss */
+  /* line 1066, home.scss */
   #contact .telefono .gustas:before {
     content: ' - '; }
-  /* line 1046, home.scss */
+  /* line 1067, home.scss */
   #contact .telefono .caliente:before {
     content: '571'; }
-  /* line 1047, home.scss */
+  /* line 1068, home.scss */
   #contact .telefono .mios:before {
     content: '('; }
-  /* line 1050, home.scss */
+  /* line 1071, home.scss */
   #contact .correo .zayn, #contact .correo .louis, #contact .correo .niall, #contact .correo .liam, #contact .correo .harry {
     font-size: 0;
     visibility: hidden; }
-    /* line 1053, home.scss */
+    /* line 1074, home.scss */
     #contact .correo .zayn:before, #contact .correo .louis:before, #contact .correo .niall:before, #contact .correo .liam:before, #contact .correo .harry:before {
       font-size: 18px;
       visibility: visible;
       display: inline; }
-  /* line 1059, home.scss */
+  /* line 1080, home.scss */
   #contact .correo .louis:before {
     content: 'hel'; }
-  /* line 1060, home.scss */
+  /* line 1081, home.scss */
   #contact .correo .niall:before {
     content: 'lo'; }
-  /* line 1061, home.scss */
+  /* line 1082, home.scss */
   #contact .correo .zayn:before {
     content: '@'; }
-  /* line 1062, home.scss */
+  /* line 1083, home.scss */
   #contact .correo .harry:before {
     content: 'victorlourng'; }
-  /* line 1063, home.scss */
+  /* line 1084, home.scss */
   #contact .correo .liam:before {
     content: '.com'; }
 
-/* line 1068, home.scss */
+/* line 1089, home.scss */
 footer {
   background: #34495e;
   color: #ecf0f1;
   text-align: left;
   overflow: hidden;
   position: static; }
-  /* line 1080, home.scss */
+  /* line 1101, home.scss */
   footer a {
     color: #ecf0f1; }
-    /* line 1082, home.scss */
+    /* line 1103, home.scss */
     footer a:hover {
       color: #16a085; }
-  /* line 1086, home.scss */
+  /* line 1107, home.scss */
   footer .skyward {
     float: right;
     color: #ecf0f1;
     position: relative; }
-    /* line 1090, home.scss */
+    /* line 1111, home.scss */
     footer .skyward i.icon-tardis {
       position: absolute; }
-    /* line 1093, home.scss */
+    /* line 1114, home.scss */
     footer .skyward i.icon-tardis:before {
       position: absolute;
       font-size: 300px;
@@ -4019,7 +4060,7 @@ footer {
       transition: all 0.25s;
       -webkit-transform: rotate(-15deg);
       -webkit-transition: all 0.25s; }
-    /* line 1105, home.scss */
+    /* line 1126, home.scss */
     footer .skyward:hover i.icon-tardis:before {
       -webkit-transform: rotate(0deg);
       transform: rotate(0deg);
@@ -4027,7 +4068,7 @@ footer {
       color: #003865;
       text-shadow: 0 0 50px white;
       background: radial-gradient(#ffffff 0%, rgba(255, 255, 255, 0) 80%); }
-    /* line 1113, home.scss */
+    /* line 1134, home.scss */
     footer .skyward span {
       margin-right: 140px;
       background: #4f4e4c;
@@ -4041,11 +4082,11 @@ footer {
       /* line 143, global/_buttons.scss */
       footer .skyward span:active, footer .skyward span:focus {
         background-color: #3a3938; }
-  /* line 1121, home.scss */
+  /* line 1142, home.scss */
   footer aside a {
     position: relative;
     z-index: 5; }
-  /* line 1125, home.scss */
+  /* line 1146, home.scss */
   footer aside i.icon-network {
     position: relative;
     z-index: 1;
@@ -4059,12 +4100,12 @@ footer {
     width: 30px;
     margin-right: 20px;
     z-index: 0; }
-    /* line 1139, home.scss */
+    /* line 1160, home.scss */
     footer aside i.icon-network i.icon-heart:before {
       animation: heartbeat 1s infinite;
       -webkit-animation: heartbeat 1s infinite;
       position: absolute; }
-    /* line 1145, home.scss */
+    /* line 1166, home.scss */
     footer aside i.icon-network:before {
       position: absolute;
       z-index: -1;
@@ -4078,7 +4119,7 @@ footer {
       opacity: 0.3;
       color: #ecf0f1; }
 
-/* line 1165, home.scss */
+/* line 1186, home.scss */
 modal#likemystatus window {
   top: 10%;
   vertical-align: 80%;
@@ -4086,39 +4127,39 @@ modal#likemystatus window {
   overflow-x: hidden;
   bottom: 10%; }
 
-/* line 1174, home.scss */
+/* line 1195, home.scss */
 modal#credits window {
   background: #2c3e50;
   color: white; }
-  /* line 1178, home.scss */
+  /* line 1199, home.scss */
   modal#credits window .content a {
     color: white;
     transition: padding 0.2s;
     -webkit-transition: padding 0.2s;
     line-height: 1.8em; }
-    /* line 1183, home.scss */
+    /* line 1204, home.scss */
     modal#credits window .content a:hover {
       color: #16a085;
       padding-left: 20px; }
-  /* line 1188, home.scss */
+  /* line 1209, home.scss */
   modal#credits window .content h4 {
     margin-top: 1em; }
-  /* line 1191, home.scss */
+  /* line 1212, home.scss */
   modal#credits window .content p {
     line-height: 1.5em;
     margin-bottom: 1em;
     margin-top: .5em; }
 
 @media only screen and (max-width: 780px) {
-  /* line 1201, home.scss */
+  /* line 1222, home.scss */
   body {
     padding-left: 0px; }
 
-  /* line 1204, home.scss */
+  /* line 1225, home.scss */
   .hidden-mobile, #mhacks, #hackerchat a.pilot, canvas, iframe, .browser, #about figure, .stickem-container {
     display: none !important; }
 
-  /* line 1207, home.scss */
+  /* line 1228, home.scss */
   header, section, footer {
     position: relatve;
     width: 100%;
@@ -4126,53 +4167,53 @@ modal#credits window {
     padding: 20px 5px;
     text-align: center; }
 
-  /* line 1212, home.scss */
+  /* line 1233, home.scss */
   header#top {
     padding: 150px 10px 72px 10px;
     max-height: 300px; }
-    /* line 1215, home.scss */
+    /* line 1236, home.scss */
     header#top h1 {
       font-size: 50px;
       line-height: 1em; }
-      /* line 1218, home.scss */
+      /* line 1239, home.scss */
       header#top h1 span {
         opacity: 1 !important;
         text-shadow: 0 0 4px rgba(0, 0, 0, 0.5) !important; }
-    /* line 1223, home.scss */
+    /* line 1244, home.scss */
     header#top form {
       display: none !important; }
-    /* line 1226, home.scss */
+    /* line 1247, home.scss */
     header#top p {
       font-size: 20px; }
 
-  /* line 1230, home.scss */
+  /* line 1251, home.scss */
   #social a {
     display: block !important;
     width: 100% !important;
     text-shadow: none !important; }
 
-  /* line 1235, home.scss */
+  /* line 1256, home.scss */
   .skyward {
     float: none;
     display: block;
     width: 100%;
     z-index: 5;
     margin-bottom: 1em; }
-    /* line 1241, home.scss */
+    /* line 1262, home.scss */
     .skyward i.icon-tardis {
       display: none; }
-    /* line 1244, home.scss */
+    /* line 1265, home.scss */
     .skyward span {
       margin-right: 0px !important;
       display: block;
       width: 100%;
       padding: 12px !important;
       font-size: 30px; } }
-/* line 1255, home.scss */
+/* line 1276, home.scss */
 body.inthetardis {
   background: #4f4e4c;
   background: linear-gradient(#81375c, #624c73, #1f2643, #16223c, #27324e, #1a344b); }
-  /* line 1260, home.scss */
+  /* line 1281, home.scss */
   body.inthetardis header, body.inthetardis section {
     animation: inthetardis 4s ease;
     -webkit-animation: inthetardis 4s ease;
@@ -4180,7 +4221,7 @@ body.inthetardis {
     background: #edece3;
     transition: box-shadow 0.5s ease;
     -webkit-transition: box-shadow 0.5s ease; }
-  /* line 1268, home.scss */
+  /* line 1289, home.scss */
   body.inthetardis i.icon-tardis {
     position: fixed !important;
     bottom: 120px !important;
@@ -4191,23 +4232,23 @@ body.inthetardis {
     animation: shimmydown 4s linear;
     -webkit-animation: shimmydown 4s linear; }
 
-/* line 1281, home.scss */
+/* line 1302, home.scss */
 html.mobile, body.mobile {
   background-color: #34495e;
   max-width: 500px;
   margin: auto;
   box-shadow: 0 0 20px black; }
 
-/* line 1289, home.scss */
+/* line 1310, home.scss */
 #iesucks {
   background: #1e98d3;
   border-radius: 0px;
   background: none; }
 
-/* line 1296, home.scss */
+/* line 1317, home.scss */
 body.reset {
   background: white !important; }
-  /* line 1298, home.scss */
+  /* line 1319, home.scss */
   body.reset *, body.reset *:before, body.reset *:after {
     background: white !important;
     margin: 0 !important;
@@ -4239,10 +4280,10 @@ body.reset {
     -webkit-animation: none !important;
     -webkit-transition: none !important;
     -webkit-transform: none !important; }
-  /* line 1330, home.scss */
+  /* line 1351, home.scss */
   body.reset a, body.reset a * {
     color: blue !important;
     text-decoration: underline !important; }
-  /* line 1334, home.scss */
+  /* line 1355, home.scss */
   body.reset window, body.reset modal, body.reset canvas, body.reset iframe, body.reset li.bottom {
     display: none !important; }
