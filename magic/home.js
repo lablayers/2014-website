@@ -262,7 +262,7 @@ $(document).ready(function(){
                    'Professional Cartographer', 'Hardware Store', 'Bitcoin Convention'];
     var businessName = businessArray[Math.floor(Math.random() * businessArray.length)];
     document.querySelector("a.brand").textContent = businessName;
-    // mixpanel.track("Brand Selected:" + businessName);
+    mixpanel.track("Brand Selected:" + businessName);
 });
 
 // Random Color Picker
@@ -274,7 +274,7 @@ $(document).ready(function(){
                       'Chartreuse', 'Chestnut'];
     var colorName = colorArray[Math.floor(Math.random() * colorArray.length)];
     document.querySelector("span.firstname").textContent = colorName;
-    // mixpanel.track("Color Selected:" + colorName);
+    mixpanel.track("Color Selected:" + colorName);
 });
 
 // Random Uncommon Animal (and occasional fruit) Picker
@@ -284,9 +284,20 @@ $(document).ready(function(){
                        'Civet', 'Aoudad'];
     var animalName = animalArray[Math.floor(Math.random() * animalArray.length)];
     document.querySelector("span.lastname").textContent = animalName;
-    // mixpanel.track("Animal Selected:" + animalName);
+    document.getElementById("google").setAttribute("href", "http://lmgtfy.com/?q=" + animalName);
+    mixpanel.track("Animal Selected:" + animalName);
 });
 
+// Fake Cart
+$(document).on('click', '.shop .span4 a', function () {
+    $(this).parent().appendTo(".cart");
+    $(this).text("Remove");
+});
+
+$(document).on('click', '#unicorn .cart .span4 a', function () {
+    $(this).parent().appendTo(".shop");
+    $(this).text("Add to Cart");
+});
 // Smooth Scrolling
 // -> It's pretty awesome.
 $(document).ready(function(){

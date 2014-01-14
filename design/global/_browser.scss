@@ -53,6 +53,13 @@
         content: 'Visit Site'
       }
     }
+    .titlebar {
+      overflow: hidden;
+      position: relative;
+      display: table-cell;
+      width: 100%;
+      text-align: center;
+    }
     .menu {
       width: 36px;
       display: table-cell;

@@ -39,6 +39,9 @@
 @import url(http://fonts.googleapis.com/css?family=Varela+Round);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
+// Prettyprint Code
+@import "global/_prettyprint-monokai.scss";
+
 // Modals
 @import "global/_modal.scss";
 
@@ -89,9 +92,8 @@ header, section, footer {
 }
 
 .button {
-  @include button-subtle($dark);
   @extend .button-large;
-  @extend .button-rounded;
+  border-radius: 6px;
   margin-right: 0.2em;
 }
 
@@ -505,8 +507,27 @@ section#social {
       }
       a {
         color: $red;
+        cursor: pointer;
         &:hover {
           text-decoration: underline;
+        }
+      }
+      .span4 {
+        padding: 8px;
+        border-radius: 4px;
+        box-shadow: 0 0 2px gray;
+        width: 100%;
+        display: block;
+        margin-top: 1em;
+        &:last-of-type {
+          margin-bottom: 1.5em;
+        }
+        .thumbnail {
+          float: left;
+          height: 3.5em;
+          width: 3.5em;
+          margin-right: 8px;
+          background: lightGray;
         }
       }
     }
@@ -549,6 +570,14 @@ section#social {
         opacity: 1;
         transform: scale(1) translate(0,0%);
         -webkit-transform: scale(1) translate(0,0%);
+      }
+      &.monokai {
+        background: #272822;
+        color: white;
+        font-family: $monospace;
+        padding: 4px;
+        font-size: 10px;
+        line-height: 1.1em;
       }
     }
   }
@@ -593,16 +622,173 @@ section#social {
     font-weight: bold;
     margin-top: -2px;
   }
-  .button {
-    @include button-gradient($green);
-    @extend .button-jumbo;
+  article { 
+    @extend .col6;
+    a {
+      @include button-lift($green);
+      @extend .button-jumbo;
+      box-shadow: 0px -8px rgba(0, 0, 0, 0.2) inset, 0px 4px rgba(0, 0, 0, 0.2);
+      padding-bottom: 8px;
+    }
   }
+  .demo {
+    @extend .col6;
+    a {
+      color: inherit;
+      border-radius: 0px;
+    }
+    .nones-emulator {
+      background: linear-gradient(#814ca0,#210148);
+      display: block;
+      box-shadow: 0 0 12px black;
+      padding: 0px 8px;
+      font-size: 10px;
+      line-height: 20px;
+      ::selection {
+        background: #77B900;
+        color: white;
+        text-shadow: 0px 0px 2px white;
+      }
+      .navbar-top {
+        background: rgba(0,0,0,.5);
+        height: 20px;
+        text-align: right;
+        padding: 0px 8px;
+        overflow: hidden;
+        .block {
+          padding: 0px 4px;
+          transition: background 0.15s;
+          -webkit-transition: background 0.15s;
+          line-height: 20px;
+          display: inline-block;
+          &:hover {
+            background: black;
+          }
+        }
+      }
+      i {
+        font-size: 30px;
+        color: black;
+        text-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px white;
+        line-height: 1.2em;
+      }
+      .navbar-menu {
+        background: $green;
+        background: linear-gradient(#7ac143 0%,#64a831 55%,#579626 75%,#4a871b 100%);
+        height: 20px;
+        text-align: left;
+        padding: 0px 8px;
+        text-shadow: 0 0 8px black;
+        .block {
+          padding: 0px 4px;
+          transition: text-shadow 0.15s;
+          -webkit-transition: text-shadow 0.15s;
+          line-height: 20px;
+          display: inline-block;
+          color: white;
+          font-size: inherit;
+          &:hover {
+            text-shadow: 0 0 8px white;
+          }
+          i {
+            text-shadow: 0 0 8px black;
+            transition: text-shadow 0.15s;
+            -webkit-transition: text-shadow 0.15s;
+            color: white;
+            font-size: inherit;
+            &:hover {
+              text-shadow: 0 0 8px white;
+            }
+          }
+        }
+      }
+      .content {
+        background: white;
+        color: black;
+        height: auto;
+        margin: 0px 8px;
+        padding: 0px 8px;
+        .slidez {
+          height: 100px;
+          background: gray;
+          position: relative;
+          .caption {
+            background: rgba(0,0,0,.5);
+            color: white;
+            line-height: 1.2em;
+            position: absolute;
+            right: 20px;
+            height: 100px;
+            width: 150px;
+            padding: 4px;
+          }
+        }
+        .row {
+          .span4 {
+            margin-top: 6px;
+            background: lighten($purple, 25%);
+            height: 50px;
+            text-align: center;
+            color: white;
+            line-height: 50px;
+            text-shadow: 0 1px 1px rgba(0,0,0,0.7);
+            font-size: 18px;
+            transform: scale(1,1) rotateY(1deg);
+            -webkit-transform: scale(1,1) rotateY(1deg);
+            transition: all 0.5s linear;
+            -webkit-transition: all 0.5s linear;
+            &:hover {
+              transform: scale(1.2, 1.2) rotateY(360deg);
+              -webkit-transform: scale(1.2, 1.2) rotateY(360deg);
+              box-shadow: 0 0 4px black;
+            }
+          }
+          .span3 {
+            height: 75px;
+            .item {
+              border: 1px solid gray;
+              height: 36px;
+              margin-bottom: 3px;
+            }
+            .twitter {
+              background: $ltblue;
+              border: none;
+            }
+            .photos {
+              background: $ltpurple;
+              border: none;
+            }
+          }
+          .span6 {
+            background: gray;
+            background: radial-gradient(white 0%, lightGray 90%);
+            box-shadow: inset 0px -30px 10px white;
+            height: 75px;
+          }
+        }
+      }
+      .footer {
+        background: #221e1f;
+        color: #787878;
+        margin: 0px 8px;
+        padding: 12px 12px;
+        // height: 50px;
+        line-height: 1.5em;
+        p {
+          color: #7951A1;
+          margin-top: 0.2em;
+        }
+      }
+    }
+  }
+
 }
 
 // Hackerchat
 #hackerchat {
-  background: url("../shutter/pattern-dark-matter.png") black;
-  background-repeat: repeat;
+  // background: url("../shutter/pattern-dark-matter.png") black;
+  // background-repeat: repeat;
+  background: lighten(#000, 20%);
   color: #C8C8C8;
   .heightfix {
     @extend .col5;

@@ -147,7 +147,7 @@ block content
                 a.item Home
                 a.item About
                 a.item Products
-                a.item.right
+                a.item.right(id='google' href="http://google.com/?q=smith")
                   i.icon-emo-happy  
                   span.firstname Jake
                   |  
@@ -161,7 +161,7 @@ block content
                     | all items are on sale for the next 24 hours. 
                   article
                     p Welcome! Please click an item to add it to your cart!
-                    .row
+                    .row.shop
                       .span4
                         .thumbnail
                         .caption Item 1
@@ -179,17 +179,14 @@ block content
                     strong My Cart
                     | Lorem ipsum sat and donated blood to the Red Cross. 
                     a(href='http://www.redcross.org/') You should too!
+                    .cart
       div.browser
         .toolbar
-          .controls
-            i.icon-chevron-left
-            i.icon-chevron-right
-            i.icon-refresh
-          // i.icon-lock
-          input.omnibox(placeholder='Sublime Text')
+          i.icon-idea
+          .titlebar Sublime Text
           .menu
             i.icon-rows
-        .frame.mokokai
+        .frame.monokai
           | Test
       div.parallax.stars
       div.parallax.code
@@ -206,7 +203,7 @@ block content
           figure item
     section#ilite(data-identity='victor') <!-- data-pin='please' -->
       .row
-        .col6
+        article
           h2 ILITE Robotics
           .tech
             attr
@@ -232,10 +229,55 @@ block content
           p This website was created using WordPress and many modern technologies for 
             i.icon-first
             | FRC team 1885.
-          a.button(href='http://iliterobotics.org') ILITE Robotics
-          a.button(href='http://yabby.victorlourng.com/wp-admin') Backend Demo
-        .col6
-          | CSS3 Demo
+          br
+          a(href='http://iliterobotics.org') ILITE Robotics
+          a(href='http://yabby.victorlourng.com/wp-admin') Backend Demo
+        .demo
+          .nones-emulator
+            .navbar-top
+              a.block(href='http://iroc.iliterobotics.org/') IROC
+              a.block(href='http://fll.iliterobotics.org/') FLL
+              a.block(href='http://ftc.iliterobotics.org/') FTC NoVA
+              a.block(href='http://usfirst.org/') US FIRST
+              a.block(href='http://usstem.org/') US STEM
+              a.block(href='http://thebluealliance.com/') TBA
+            i.icon-ilite
+            .navbar-menu
+              a.block(href='http://iliterobotics.org/') HOME
+              a.block(href='http://iliterobotics.org/about/mission-vision/') ABOUT
+              a.block(href='http://iliterobotics.org/first/what-is-first/') FIRST
+              a.block(href='http://iliterobotics.org/community/us-stem-foundation/') COMMUNITY
+              a.block(href='http://iliterobotics.org/get-involved/join/') GET INVOLVED
+              a.block(href='http://iliterobotics.org/members/') MEMBERS 
+              a.block(href='http://iliterobotics.org/contact-us/') MEDIA 
+              .right
+                a.block(href="http://twitter.com/Team1885FRC")
+                  i.icon-twitter
+            .content
+              .slidez
+                .caption We have served as a stand out team with the primary goal of instilling young persons with the skills and passion to pursue careers in science, technology, engineering, and math… 
+              .row
+                .span4 Students
+                .span4 Parents
+                .span4 Community
+              .row
+                .span3
+                  .item
+                  .item
+                .span6 Recent News
+                .span3
+                  .item.twitter
+                  .item.photos
+            .navbar-menu
+            .footer
+              p DOWNLOAD THIS APP
+              a.block(href='http://tiny.cc/ilitewebapp')   Chrome Web Store  
+              | -
+              a.block(href='https://marketplace.firefox.com/app/ilite/')   Amazon App Store  
+              br
+              a.block(href='https://marketplace.firefox.com/app/ilite/')   Firefox Marketplace  
+              | -
+              a.block(href='http://iliterobotics.org/glass.json?ver=1')   Send to Glass  
     section#hackerchat(data-identity='victor')
       .row
         .heightfix
