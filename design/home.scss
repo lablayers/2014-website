@@ -538,6 +538,16 @@ section#social {
         }
       }
     }
+    &.code {
+      background: none;
+      box-shadow: none;
+      border: none;
+      color: white;
+      font-family: $monospace;
+      padding: 0px;
+      font-size: 12px;
+      line-height: 1.1em;
+    }
   }
   &.visible {
     i.icon-colt-horn {
@@ -577,16 +587,6 @@ section#social {
         opacity: 1;
         transform: scale(1) translate(0,0%);
         -webkit-transform: scale(1) translate(0,0%);
-      }
-      &.code {
-        background: none;
-        box-shadow: none;
-        border: none;
-        color: white;
-        font-family: $monospace;
-        padding: 0px;
-        font-size: 12px;
-        line-height: 1.1em;
       }
     }
   }

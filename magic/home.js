@@ -202,9 +202,9 @@ $(document).ready(function(){
         $("menu").removeClass("tiny");
         $("#top").removeClass("tiny");
     }
-    w = $(window).width();
-    h = $(window).height();
-    $("#top").css({"height": h - 66 + "px"});
+    // w = $(window).width();
+    // h = $(window).height();
+    // $("#top").css({"height": h - 66 + "px"});
 });
 $(window).resize(function() {
     if ($('menu').height() < 470) {
@@ -213,9 +213,9 @@ $(window).resize(function() {
     else {
         $("menu").removeClass("tiny");
     }
-    w = $(window).width();
-    h = $(window).height();
-    $("#top").css({"height": h - 66 + "px"});
+    // w = $(window).width();
+    // h = $(window).height();
+    // $("#top").css({"height": h - 66 + "px"});
 });
 
 //    $('menu.expanded a[href^="#"]').on('click', function(){

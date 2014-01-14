@@ -3462,18 +3462,28 @@ section#social {
           width: 3.5em;
           margin-right: 8px;
           background: lightGray; }
-  /* line 543, home.scss */
+    /* line 541, home.scss */
+    #unicorn .frame.code {
+      background: none;
+      box-shadow: none;
+      border: none;
+      color: white;
+      font-family: "Menlo", "Consolas", "Courier New", "Ubuntu Mono", monospace;
+      padding: 0px;
+      font-size: 12px;
+      line-height: 1.1em; }
+  /* line 553, home.scss */
   #unicorn.visible i.icon-colt-horn {
     animation: radiance 8s ease infinite;
     -webkit-animation: radiance 8s ease infinite;
     transform: rotate(-30deg) scale(2) translate(-45px, 5px);
     -webkit-transform: rotate(-30deg) scale(2) translate(-45px, 5px); }
-  /* line 550, home.scss */
+  /* line 560, home.scss */
   #unicorn.visible .frame nav.navbar {
     opacity: 1;
     transform: scale(1) translate(0, 0%);
     -webkit-transform: scale(1) translate(0, 0%); }
-  /* line 555, home.scss */
+  /* line 565, home.scss */
   #unicorn.visible .frame .notice {
     margin: 20px 20px 0px 20px;
     line-height: 1.8em;
@@ -3482,31 +3492,21 @@ section#social {
     -webkit-transform: translate(0, 0) scale(1);
     filter: blur(0px);
     -webkit-filter: blur(0px); }
-  /* line 565, home.scss */
+  /* line 575, home.scss */
   #unicorn.visible .frame article p {
     opacity: 1;
     transform: scale(1) translate(0, 0%);
     -webkit-transform: scale(1) translate(0, 0%); }
-  /* line 570, home.scss */
+  /* line 580, home.scss */
   #unicorn.visible .frame article .span4 {
     opacity: 1;
     transform: translate(0, 0%);
     -webkit-transform: translate(0, 0%); }
-  /* line 576, home.scss */
+  /* line 586, home.scss */
   #unicorn.visible .frame aside {
     opacity: 1;
     transform: scale(1) translate(0, 0%);
     -webkit-transform: scale(1) translate(0, 0%); }
-  /* line 581, home.scss */
-  #unicorn.visible .frame.code {
-    background: none;
-    box-shadow: none;
-    border: none;
-    color: white;
-    font-family: "Menlo", "Consolas", "Courier New", "Ubuntu Mono", monospace;
-    padding: 0px;
-    font-size: 12px;
-    line-height: 1.1em; }
 
 /* line 596, home.scss */
 #showcase {
