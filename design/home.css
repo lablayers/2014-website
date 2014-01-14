@@ -289,17 +289,17 @@ small {
 
 /* line 23, global/_base.scss */
 ::-moz-selection {
-  background: #553387;
+  background: #1e98d3;
   color: #fff;
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.2); }
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.7); }
 
-/* line 29, global/_base.scss */
+/* line 30, global/_base.scss */
 ::selection {
-  background: #553387;
+  background: #1e98d3;
   color: #fff;
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.2); }
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.7); }
 
-/* line 36, global/_base.scss */
+/* line 38, global/_base.scss */
 body {
   background: #edece3;
   color: #4f4e4c;
@@ -309,18 +309,18 @@ body {
   font-weight: normal;
   vertical-align: middle; }
 
-/* line 46, global/_base.scss */
+/* line 48, global/_base.scss */
 a {
   color: #553387;
   text-decoration: none;
   border-radius: 4px; }
 
-/* line 53, global/_base.scss */
+/* line 55, global/_base.scss */
 section, header, footer {
   min-height: 100%;
   position: relative; }
 
-/* line 59, global/_base.scss */
+/* line 61, global/_base.scss */
 .screen-reader {
   position: absolute;
   width: 1px;
@@ -331,13 +331,13 @@ section, header, footer {
   clip: rect(0, 0, 0, 0);
   border: 0; }
 
-/* line 71, global/_base.scss */
+/* line 73, global/_base.scss */
 noscript, noscript img {
   margin: 0;
   display: block;
   width: 100%; }
 
-/* line 77, global/_base.scss */
+/* line 79, global/_base.scss */
 noscript div, .oldie {
   font-size: 30px;
   padding: 18px;
