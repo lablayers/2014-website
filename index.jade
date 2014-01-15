@@ -85,9 +85,9 @@ block content
         //   a(href='http://twitter.com/lablayers')
         //     i.icon-twitter
         //     span Twitter
-    banner#mhacks(onclick='launch("likemystatus");')
+    a.banner#mhacks(href='#showcase')
       i.icon-mhacks
-      | Help get me to MHacks!
+      | I'm coming to MHacks! Click here to learn more.
     header#top(data-identity='victor').visible
       canvas#snow
       .wrapper
@@ -123,6 +123,48 @@ block content
         i.icon-deviantart
         | LabLayers*
         span 116 Watchers
+    section#showcase(data-identity='victor')
+      h2 I'm Coming to MHacks!
+      .row
+        .col4
+          i.icon-mhacks
+        .col8
+          .wrapper
+            b Remember this?
+            p After months of back-and-forth chattering between me, my family, and the organizers of MHacks, my parents have finally decided to let me come to MHacks (at the last possible minute!) How awesome is that?
+            br
+            .fb-root
+              script (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));
+              div.fb-post(data-href="https://www.facebook.com/photo.php?fbid=247016672125437&amp;set=a.124621211031651.25621.124349814392124&amp;type=1" data-width="440")
+                .fb-xfbml-parse-ignore
+                  .content
+                    p Erm, nevermind. Facebook appears to be blocked. 
+                      i.icon-emo-p
+                    hr
+                    a(href="https://www.facebook.com/photo.php?fbid=247016672125437&amp;set=a.124621211031651.25621.124349814392124&amp;type=1") Post
+                    by
+                    a(href="https://www.facebook.com/MHacksHackathon") MHacks
+            br
+            b So here's my hackathon idea:
+            p I want to do something related to the web and art!
+            p It's a product that will be used by beginners and professional artists alike.
+            p If you want to be on my team, please be in touch!
+            br
+            b Looking for a team member?
+            p If you're looking for someone to join your team, I'm the perfect guy for extensive frontend work and quite a bit of backend work.
+              a(href='http://fav.me/d6ttmo3') I've also won 1st place at PilotPhilly for building a hackable collaboration tool. 
+              | Scroll down to see  my awesomeness site and please be in touch!
+            br
+            b Coming to MHacks?
+            p Please be in touch with me - we can definitely meet up at the event! 
+              i.icon-emo-like
+            br
+            a.button(href='http://twitter.com/LabLayers') 
+              i.icon-twitter 
+              | Tweet @LabLayers
+            a.button(href='#contact')
+              i.icon-email 
+              | Contact Me!
     section#unicorn(data-identity='victor' data-abtesting='3' data-stickem='please')
       p They call me a
       h2
@@ -186,11 +228,17 @@ block content
                     a.checkout(href='https://coinbase.com/checkouts/d0b44027fb95a7920a2aae61ae646b29')
                       i.icon-bitcoin 
                       |  Checkout
+      br
       p (a list of skills go here)
+      p PHP, Node.JS, CSS3, LESS, Sass, and more!
+      br
       div.browser
         .toolbar
           i.icon-idea
-          .titlebar Sublime Text
+          .titlebar
+            | Random 
+            i.icon-npm
+            | Bot - Sublime Text
           .menu
             i.icon-rows
         .frame.code
@@ -216,23 +264,6 @@ block content
             | });
       div.parallax.stars
       div.parallax.code
-    section#showcase(data-identity='victor')
-      h2 MHacks Hackathon Project
-      .row
-        .col4
-          i.icon-mhacks
-        .col8
-          .wrapper
-            p.lead What can it be? Only time will tell...
-            b So here's my hackathon idea:
-            p I want to do something related to the web and art!
-            p It's a product that will be used by beginners and professional artists alike.
-            p If you want to be on my team, please be in touch!
-            br
-            b Looking for a team member?
-            p If you're looking for someone to join your team, I'm the perfect guy for awesome frontend work. Please be in touch!
-            br
-            a(href='#contact') Contact Me!
     section#portfolio(data-identity='victor')
     section#ilite(data-identity='victor') <!-- data-pin='please' -->
       .row
@@ -481,10 +512,85 @@ block content
         p Our first product, a drone and ground station leverages the use of high resolution cameras so farmers can use high quality maps to decide which treatments and procedures are applied to plants.
         a.button.gradient.green(href='http://drones4u.tumblr.com/') Visit Site
         a.button.gradient.green(href='https://venture-lab.stanford.edu/venture13/team_ideas/7451/') Business Model
-      .slides
+      .slides.heightfix
         iframe(src='https://www.slideshare.net/slideshow/embed_code/22420879' height='350' width='350')
-    section#dcindie(data-identity='victor')
+    section#event(data-identity='victor')
       h2 Event Pages
+      p In addition, I've also built sites for some really cool events. Without further ado...
+      .row
+        article
+          .wrapper
+            h5
+              i.icon-social-media 
+              | DC.INDIE
+            hr
+            p Monthly indie gaming developer meetup taking place at George Mason University.
+            hr
+            .bottom
+              a(href='http://dc-indie.org/') DCIndie.org
+        article
+          .wrapper
+            h5
+              i.icon-first 
+              | NoVA FTC Qualifier
+            hr
+            p A fun technical robotics challenge for middle and high school students.
+            hr
+            .bottom
+              a(href='http://ftc.iliterobotics.org/') FTC.ILITErobotics.org
+              a(href='https://github.com/iliterobotics/ftc.iliterobotics.org')
+                i.icon-github
+        article
+          .wrapper
+            h5
+              i.icon-first 
+              | Haymarket FLL
+            hr
+            p A LEGO MindStorms competition for kids in elementary school. The site was built in under 3 hours!
+            hr
+            .bottom
+              a(href='http://fll.iliterobotics.org/') FLL.ILITErobotics.org
+    <!-- section#charity(data-identity='victor') -->
+    <!--  h2 Charity -->
+    <!--  p.lead I'm highly involved in THON and (RED). -->
+    section#tfmonster
+      i.icon-warning
+      | Anything below this point is under construction. You have been warned.
+    section#more(data-identity='victor')
+      h2 Even More Things
+      p Don't worry, I have three things I will add to my portfolio by the end of Janurary!
+      .row
+        article
+          .wrapper
+            h5 Sleep Well Turntable.fm
+            hr
+            p You will be missed.
+              i.icon-emo-like
+            hr
+            .bottom
+              a(href='http://ttdevelopers.github.io/') ttDevelopers.GitHub.io
+          .wrapper
+            h5 Turntable.fm Bots
+            p Highly function room management bots written in Node.js. Support for queue, web scraping, chat moderation, deck timers, and lots of cool things.
+        article
+          .wrapper
+            h5 Harlem Shake the Web
+            hr
+            p A Chrome extension.
+          .wrapper
+            h5 Sta.sh Windows 8 App
+            hr
+            p Upload your drawings to deviantART Sta.sh via their REST API.
+        article
+          .wrapper
+            h5 PaintSwipe
+            hr
+            p A high extensive drawing app. Android, created in App Inventor.
+          .wrapper
+            h5 Draw something blah
+            hr
+            p Possible hackathon idea?
+              i.icon-emo-wink
     section#science(data-identity='victor')
       h2 Science Fair
       p.lead Winning awards every single time! 
@@ -513,6 +619,11 @@ block content
         article
           a.slide.wavelengths Wavelengths
           p Description
+    section#robotics(data-identity='victor')
+      h2
+        i.icon-first
+        | Robotics
+      p.lead I'm a pro at engineering, too.
     section#cad(data-identity='victor')
       h2 CAD Renderings
       p.lead I play with Autodesk Inventor and AutoCAD too much.
@@ -582,7 +693,7 @@ block content
           input#ss-submit(type='submit' name='submit' value='Submit')
         article
           h3 Other Methods
-          p.lead via Phone
+          p.lead via Google Voice
           .telefono
             span.mios
             span.caliente What does 
@@ -592,6 +703,7 @@ block content
             span.gustas
               b common denominator? 
             span.tortillas A common denominator.
+          br
           p.lead via-email
           .correo
             span.louis
@@ -698,14 +810,5 @@ block content
       h1 Like This Status!
         a.right(onclick='blast("likemystatus"); mixpanel.track("Liked MHacks Status");')
           i.icon-close
-      .fb-root
-        script (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));
-        div.fb-post(data-href="https://www.facebook.com/photo.php?fbid=247016672125437&amp;set=a.124621211031651.25621.124349814392124&amp;type=1" data-width="440")
-          .fb-xfbml-parse-ignore
-            .content
-              p Erm, nevermind. Facebook appears to be blocked. 
-                i.icon-emo-p
-              hr
-              a(href="https://www.facebook.com/photo.php?fbid=247016672125437&amp;set=a.124621211031651.25621.124349814392124&amp;type=1") Post
-              by
-              a(href="https://www.facebook.com/MHacksHackathon") MHacks
+      .content
+        p Oh cool, you triggered this awesome modal. 

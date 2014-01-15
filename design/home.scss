@@ -157,21 +157,9 @@ canvas {
   overflow: hidden!important;
 }
 
-// Slider
-#billboard {
-  // Moon
-  .halfCircle{
-    height:45px;
-    width:90px;
-    border-radius: 90px 90px 0 0;
-    -moz-border-radius: 90px 90px 0 0;
-    -webkit-border-radius: 90px 90px 0 0;
-    background: green;
-  }
-}
-
 // Banner
 #mhacks {
+  border-radius: 0px;
   color: #FEC00F;
   background: #646464;
   display: block;
@@ -409,7 +397,8 @@ section#social {
     -webkit-transform: rotate(0) scale(1) translate(0,0);
   }
   .stickem-container {
-    height: 800px;
+    // -> Temporary turned off due to performance issues.
+    // height: 800px;
     display: block;
   }
   .browser {
@@ -674,7 +663,7 @@ section#social {
     background: rgba(255,255,255,.8);
     color: black;
     padding: 20px;
-    a {
+    a.button {
       @include button-subtle($dark);
       @extend .button-jumbo;
     }
@@ -1002,6 +991,7 @@ section#social {
 #phlclosings {
   background: #2980b9;
   color: white;
+  @extend .dark-text-shadow;
   .demo {
     @extend .col6;
     .frame {
@@ -1023,10 +1013,14 @@ section#social {
 #drones {
   background: $spike;
   color: white;
+  @extend .dark-text-shadow;
   article {
     @extend .col6;
     p {
       margin: 1em 2em;
+      &:first-of-type {
+        @extend p.lead;
+      }
     }
     a {
       @include button-subtle($blue);
@@ -1043,12 +1037,60 @@ section#social {
 }
 
 // DC Indie
-#dcindie {
+// Event Pages
+#event, #more {
   background: $blue;
   color: white;
+  @extend .dark-text-shadow;
+  article {
+    @extend .col4;
+    padding: 6px;
+    text-shadow: none;
+    .wrapper {
+      margin: 1em auto;
+      @extend .browser;
+      background: $light;
+      color: $dark;
+      hr {
+        border: none;
+        border-bottom: 1px solid darken($light, 30%)!important;
+        margin: 0.5em auto;
+      }
+      .bottom {
+        a {
+          @include button-subtle($dark);
+        }
+      }
+    }
+  }
 }
 
-// Event Page
+// Dat Bumblebee
+#tfmonster {
+  color: $white;
+  background: $red;
+  display: block;
+  line-height: 66px;
+  text-align: center;
+  padding: 0px 30px;
+  overflow: hidden;
+  position: relative;
+  i {
+    position: absolute;
+    left: 30px;
+    font-size: 75px;
+    opacity: 0.5;
+    transition: all 0.5s 1s ease;
+    -webkit-transition: all 0.5s 1s ease;
+    transform: rotate(0deg) scale(1);
+    -webkit-transform: rotate(0deg) scale(1);
+  }
+  &.visible i {
+    transform: rotate(30deg) scale(1.5);
+    -webkit-transform: rotate(30deg) scale(1.5);
+    opacity: 0.7
+  }
+}
 
 // Science
 #science {
@@ -1314,6 +1356,21 @@ modal#credits window {
       line-height: 1.5em;
       margin-bottom: 1em;
       margin-top: .5em;
+    }
+  }
+  // Eclipse Animation
+  #eclipse {
+    // Moon
+    .moon {
+      background: white;
+      .halfCircle{
+        height:45px;
+        width:90px;
+        border-radius: 90px 90px 0 0;
+        -moz-border-radius: 90px 90px 0 0;
+        -webkit-border-radius: 90px 90px 0 0;
+        background: gray;
+      }
     }
   }
 }
