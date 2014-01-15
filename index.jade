@@ -163,16 +163,19 @@ block content
                     p Welcome! Please click an item to add it to your cart!
                     .row.shop
                       .span4
-                        .thumbnail
-                        .caption Item 1
+                        .thumbnail.news
+                          i.icon-news
+                        .caption Newspaper
                         a Add to Cart
                       .span4
-                        .thumbnail
-                        .caption Item 2
+                        .thumbnail.food
+                          i.icon-food
+                        .caption Cheese Fries
                         a Add to Cart
                       .span4
-                        .thumbnail
-                        .caption Item 3
+                        .thumbnail.choco
+                          i.icon-emo-laugh
+                        .caption Free Smiles
                         a Add to Cart
                 .col3
                   aside
@@ -180,6 +183,9 @@ block content
                     | Lorem ipsum sat and donated blood to the Red Cross. 
                     a(href='http://www.redcross.org/') You should too!
                     .cart
+                    a.checkout(href='https://coinbase.com/checkouts/d0b44027fb95a7920a2aae61ae646b29')
+                      i.icon-bitcoin 
+                      |  Checkout
       p (a list of skills go here)
       div.browser
         .toolbar
@@ -410,7 +416,7 @@ block content
             li Connect with your friends in Realtime via WebRTC
             li The connections are peer-to-peer, no plugin needed
             li Video chat, screen sharing*, and more!
-          a.button(href='http://babbleplz-sugarplums.rhcloud.com/') Cloudchat
+          a.button(href='http://ruffles-sugarplums.rhcloud.com/') Try Cloudchat
         .demo
           .note Note: Peer-to-peer connections are disabled in this demo.
           .getusermedia
@@ -425,9 +431,20 @@ block content
     section#phlclosings(data-identity='victor') <!-- data-pin='please' -->
       .row
         .demo
-          | Filter Search Demo
+          div.browser
+            .toolbar
+              input.omnibox(placeholder='http://closings.victorlourng.com/ - Philly School Closings')
+              div.menu
+                a(href='http://closings.victorlourng.com/' target='_blank')
+                  i.icon-share
+            .frame
+              iframe(src='about:blank' data-src='http://closings.victorlourng.com/' sandbox='allow-scripts allow-forms' height='350')
         article
-          h2 Philly School Closings
+          h2
+            i.icon-liberty-bell
+            |    Philly
+            br
+            | School Closings
           .tech
             attr
               tooltip
@@ -450,16 +467,22 @@ block content
               i.icon-yeti
           br
           p.lead An API for school closings.
-          a(href='http://closings.victorlourng.com') Closings.VictorLourng.com
-          a(href='http://closings.victorlourng.com/API') API Docs
+          a(href='http://closings.victorlourng.com') Visit Site
+          a(href='http://closings.victorlourng.com/#API') API Docs
+          a(href='http://twitter.com/PHLClosings')
+            i.icon-twitter
+            |  @PHLClosings
     section#drones(data-identity='victor')
       article
-        h2 drones4u
-        p An initiative for bringing drones to the farm for civilian use...
-        br
+        h2
+          i.icon-drone-farming
+          |   drones4u
+        p An international initiative for bringing drones to the farm for civilian use.
+        p Our first product, a drone and ground station leverages the use of high resolution cameras so farmers can use high quality maps to decide which treatments and procedures are applied to plants.
         a.button.gradient.green(href='http://drones4u.tumblr.com/') Visit Site
+        a.button.gradient.green(href='https://venture-lab.stanford.edu/venture13/team_ideas/7451/') Business Model
       .slides
-        Slideshare Embed
+        iframe(src='https://www.slideshare.net/slideshow/embed_code/22420879' height='350' width='350')
     section#dcindie(data-identity='victor')
       h2 Event Pages
     section#science(data-identity='victor')
