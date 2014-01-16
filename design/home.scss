@@ -1115,6 +1115,10 @@ section#social {
     @extend .col4;
     @extend .tile;
     padding: 6px;
+    text-align: left;
+    p {
+      text-align: center;
+    }
     .slide {
       max-width: 20em;
       margin: auto;
@@ -1173,7 +1177,7 @@ section#social {
 
 // Contact
 #contact {
-  background: $purple;
+  background: lighten($purple, 10%);
   color: white;
   form {
     @extend .col6;

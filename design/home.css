@@ -2694,36 +2694,61 @@ nav[role="navigation"] menu {
         line-height: 66px;
         width: 66px;
         text-align: center; }
-      /* line 40, global/_nav.scss */
+        /* line 39, global/_nav.scss */
+        nav[role="navigation"] menu li a i .flame, nav[role="navigation"] menu li a i .fire, nav[role="navigation"] menu li a i .fuel {
+          position: absolute;
+          margin-top: -26px;
+          margin-left: 20px;
+          height: 5px;
+          width: 5px;
+          border-radius: 5px;
+          background: red;
+          opacity: 0;
+          transition: opacity 0.2s linear;
+          -webkit-transition: opacity 0.2s linear; }
+        /* line 51, global/_nav.scss */
+        nav[role="navigation"] menu li a i .fire {
+          margin-top: -24px;
+          margin-left: 18px;
+          background: orange; }
+        /* line 56, global/_nav.scss */
+        nav[role="navigation"] menu li a i .fuel {
+          margin-top: -22px;
+          margin-left: 16px;
+          background: orange; }
+      /* line 62, global/_nav.scss */
       nav[role="navigation"] menu li a span {
         opacity: 0; }
-      /* line 43, global/_nav.scss */
+      /* line 65, global/_nav.scss */
       nav[role="navigation"] menu li a.test {
         display: none; }
-        /* line 45, global/_nav.scss */
+        /* line 67, global/_nav.scss */
         nav[role="navigation"] menu li a.test.visible {
           display: block;
           animation: fade-in-bottom 0.5s ease-in;
           -webkit-animation: fade-in-bottom 0.5s ease-in; }
-    /* line 52, global/_nav.scss */
+    /* line 74, global/_nav.scss */
     nav[role="navigation"] menu li.active .top, nav[role="navigation"] menu li .top:hover {
       background: #2F7E89; }
-    /* line 55, global/_nav.scss */
+    /* line 77, global/_nav.scss */
     nav[role="navigation"] menu li.active .about, nav[role="navigation"] menu li .about:hover {
       background: #e08e0b; }
-    /* line 58, global/_nav.scss */
+    /* line 80, global/_nav.scss */
     nav[role="navigation"] menu li.active .portfolio, nav[role="navigation"] menu li .portfolio:hover {
       background: #5ba525; }
-    /* line 61, global/_nav.scss */
+    /* line 83, global/_nav.scss */
     nav[role="navigation"] menu li.active .science, nav[role="navigation"] menu li .science:hover {
       background: #1e98d3; }
-    /* line 64, global/_nav.scss */
+      /* line 85, global/_nav.scss */
+      nav[role="navigation"] menu li.active .science .flame, nav[role="navigation"] menu li.active .science .fire, nav[role="navigation"] menu li.active .science .fuel, nav[role="navigation"] menu li .science:hover .flame, nav[role="navigation"] menu li .science:hover .fire, nav[role="navigation"] menu li .science:hover .fuel {
+        opacity: 1; }
+    /* line 89, global/_nav.scss */
     nav[role="navigation"] menu li.active .creative, nav[role="navigation"] menu li .creative:hover {
       background: #a83279; }
-    /* line 67, global/_nav.scss */
+    /* line 92, global/_nav.scss */
     nav[role="navigation"] menu li.active .contact, nav[role="navigation"] menu li .contact:hover {
       background: #843caf; }
-    /* line 70, global/_nav.scss */
+    /* line 95, global/_nav.scss */
     nav[role="navigation"] menu li.bottom {
       position: fixed !important;
       bottom: 0 !important;
@@ -2732,11 +2757,11 @@ nav[role="navigation"] menu {
       width: 66px;
       background: #4f4e4c;
       box-shadow: 0 0 50px #4f4e4c; }
-  /* line 81, global/_nav.scss */
+  /* line 106, global/_nav.scss */
   nav[role="navigation"] menu.collapsed a {
     float: left;
     width: 100%; }
-    /* line 84, global/_nav.scss */
+    /* line 109, global/_nav.scss */
     nav[role="navigation"] menu.collapsed a span {
       visibility: hidden;
       opacity: 0;
@@ -2756,13 +2781,13 @@ nav[role="navigation"] menu {
       -webkit-transition: 0.1s all;
       transform: translateX(6px);
       -webkit-transform: translateX(6px); }
-    /* line 104, global/_nav.scss */
+    /* line 129, global/_nav.scss */
     nav[role="navigation"] menu.collapsed a:hover span {
       visibility: visible;
       opacity: 1;
       transform: translateX(0);
       -webkit-transform: translateX(0); }
-    /* line 110, global/_nav.scss */
+    /* line 135, global/_nav.scss */
     nav[role="navigation"] menu.collapsed a:hover span:after {
       content: "";
       position: absolute;
@@ -2773,17 +2798,17 @@ nav[role="navigation"] menu {
       border-color: transparent rgba(0, 0, 0, 0.6) transparent transparent;
       top: 6px;
       left: -20px; }
-  /* line 122, global/_nav.scss */
+  /* line 147, global/_nav.scss */
   nav[role="navigation"] menu.collapsed .toolbar {
     height: 0px;
     visibility: none;
     display: none;
     overflow: hidden; }
-  /* line 129, global/_nav.scss */
+  /* line 154, global/_nav.scss */
   nav[role="navigation"] menu.expanded {
     width: 300px;
     box-shadow: 0 0 50px black; }
-    /* line 132, global/_nav.scss */
+    /* line 157, global/_nav.scss */
     nav[role="navigation"] menu.expanded .toolbar {
       position: absolute;
       background: #edece3;
@@ -2793,19 +2818,19 @@ nav[role="navigation"] menu {
       height: 66px;
       overflow: hidden;
       transition: none; }
-      /* line 141, global/_nav.scss */
+      /* line 166, global/_nav.scss */
       nav[role="navigation"] menu.expanded .toolbar a {
         display: inline-block;
         color: #4f4e4c; }
-        /* line 144, global/_nav.scss */
+        /* line 169, global/_nav.scss */
         nav[role="navigation"] menu.expanded .toolbar a.close {
           float: right; }
-      /* line 154, global/_nav.scss */
+      /* line 179, global/_nav.scss */
       nav[role="navigation"] menu.expanded .toolbar i {
         float: none;
         display: inline-block;
         width: 66px; }
-    /* line 162, global/_nav.scss */
+    /* line 187, global/_nav.scss */
     nav[role="navigation"] menu.expanded li a span {
       transition: none;
       -webkit-transition: none;
@@ -2813,55 +2838,55 @@ nav[role="navigation"] menu {
       opacity: 1;
       animation: fade-in-left 0.5s ease-out;
       -webkit-animation: fade-in-left 0.5s ease-out; }
-    /* line 170, global/_nav.scss */
+    /* line 195, global/_nav.scss */
     nav[role="navigation"] menu.expanded li a.menu span {
       display: none; }
-    /* line 180, global/_nav.scss */
+    /* line 205, global/_nav.scss */
     nav[role="navigation"] menu.expanded li:first-child a span, nav[role="navigation"] menu.expanded li:nth-child(1) a span {
       animation-duration: 0s;
       -webkit-animation-duration: 0s; }
-    /* line 184, global/_nav.scss */
+    /* line 209, global/_nav.scss */
     nav[role="navigation"] menu.expanded li:nth-child(2) a span {
       animation-duration: 0.2s;
       -webkit-animation-duration: 0.2s; }
-    /* line 188, global/_nav.scss */
+    /* line 213, global/_nav.scss */
     nav[role="navigation"] menu.expanded li:nth-child(3) a span {
       animation-duration: 0.3s;
       -webkit-animation-duration: 0.3s; }
-    /* line 192, global/_nav.scss */
+    /* line 217, global/_nav.scss */
     nav[role="navigation"] menu.expanded li:nth-child(4) a span {
       animation-duration: 0.4s;
       -webkit-animation-duration: 0.4s; }
-    /* line 196, global/_nav.scss */
+    /* line 221, global/_nav.scss */
     nav[role="navigation"] menu.expanded li:nth-child(5) a span {
       animation-duration: 0.5s;
       -webkit-animation-duration: 0.5s; }
-    /* line 200, global/_nav.scss */
+    /* line 225, global/_nav.scss */
     nav[role="navigation"] menu.expanded li:nth-child(6) a span {
       animation-duration: 0.6s;
       -webkit-animation-duration: 0.6s; }
-    /* line 204, global/_nav.scss */
+    /* line 229, global/_nav.scss */
     nav[role="navigation"] menu.expanded li:nth-child(7) a span {
       animation-duration: 0.7s;
       -webkit-animation-duration: 0.7s; }
-    /* line 208, global/_nav.scss */
+    /* line 233, global/_nav.scss */
     nav[role="navigation"] menu.expanded li:nth-child(8) a span {
       animation-duration: 0.8s;
       -webkit-animation-duration: 0.8s; }
-    /* line 212, global/_nav.scss */
+    /* line 237, global/_nav.scss */
     nav[role="navigation"] menu.expanded li:nth-child(9) a span {
       animation-duration: 0.9s;
       -webkit-animation-duration: 0.9s; }
-    /* line 216, global/_nav.scss */
+    /* line 241, global/_nav.scss */
     nav[role="navigation"] menu.expanded li.bottom {
       width: 300px;
       transition: width 0.5s;
       -webkit-transition: width 0.5s; }
-  /* line 223, global/_nav.scss */
+  /* line 248, global/_nav.scss */
   nav[role="navigation"] menu.tiny {
     overflow-y: scroll;
     overflow-x: hidden; }
-  /* line 242, global/_nav.scss */
+  /* line 267, global/_nav.scss */
   nav[role="navigation"] menu menu#assist {
     top: 66px;
     left: 0px;
@@ -2872,32 +2897,32 @@ nav[role="navigation"] menu {
     height: auto;
     width: auto;
     padding: 0px; }
-    /* line 252, global/_nav.scss */
+    /* line 277, global/_nav.scss */
     nav[role="navigation"] menu menu#assist li {
       background: white;
       color: black;
       padding: 0px 20px;
       margin: 0; }
-      /* line 257, global/_nav.scss */
+      /* line 282, global/_nav.scss */
       nav[role="navigation"] menu menu#assist li i {
         width: auto; }
-      /* line 260, global/_nav.scss */
+      /* line 285, global/_nav.scss */
       nav[role="navigation"] menu menu#assist li #search {
         border: none;
         border-bottom: 1px dotted;
         font-family: "Proxima", "Proxima Nova", Arial;
         font-size: 16px;
         margin-top: 20px; }
-    /* line 268, global/_nav.scss */
+    /* line 293, global/_nav.scss */
     nav[role="navigation"] menu menu#assist div.onoff {
       display: inline-block;
       margin-right: 12px; }
 
-/* line 276, global/_nav.scss */
+/* line 301, global/_nav.scss */
 .close-menu-bubble {
   display: none; }
 
-/* line 281, global/_nav.scss */
+/* line 306, global/_nav.scss */
 body.menu-expanded .close-menu-bubble {
   display: block !important;
   position: fixed;
@@ -2918,20 +2943,20 @@ body.menu-expanded .close-menu-bubble {
   box-shadow: inset 0 0 50px black; }
 
 @media only screen and (max-width: 780px) {
-  /* line 304, global/_nav.scss */
+  /* line 329, global/_nav.scss */
   menu.collapsed {
     height: 66px !important;
     width: 66px !important;
     overflow: hidden !important; }
 
-  /* line 309, global/_nav.scss */
+  /* line 334, global/_nav.scss */
   menu.expanded {
     width: 100% !important; }
-    /* line 311, global/_nav.scss */
+    /* line 336, global/_nav.scss */
     menu.expanded a span {
       font-size: 24px; }
 
-  /* line 315, global/_nav.scss */
+  /* line 340, global/_nav.scss */
   a.assist, menu#assist {
     display: none !important; } }
 /* line 3, global/_tooltips.scss */
@@ -3036,24 +3061,36 @@ attr {
     border-bottom: 1px solid #b9b9b9;
     width: 100%;
     position: relative;
-    padding: 2px 0px; }
-    /* line 21, global/_webtunesmini.scss */
+    padding: 2px 0px;
+    user-select: none;
+    -webkit-user-select: none;
+    display: table;
+    width: 100%; }
+    /* line 25, global/_webtunesmini.scss */
     .webtunes_container .controller .left {
       float: left;
       display: table-cell;
-      width: 30%; }
-      /* line 25, global/_webtunesmini.scss */
+      width: 30%;
+      font-size: 30px;
+      text-align: left;
+      padding-left: 40px;
+      padding-top: 15px;
+      padding-bottom: 10px; }
+      /* line 34, global/_webtunesmini.scss */
       .webtunes_container .controller .left .prev, .webtunes_container .controller .left .play, .webtunes_container .controller .left .pause, .webtunes_container .controller .left .next {
-        display: inline-block; }
-        /* line 27, global/_webtunesmini.scss */
-        .webtunes_container .controller .left .prev i:before, .webtunes_container .controller .left .play i:before, .webtunes_container .controller .left .pause i:before, .webtunes_container .controller .left .next i:before {
-          background: -webkit-linear-gradient(#3a3a3a, #949494);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          text-shadow: none;
-          -webkit-filter: drop-shadow(0px 1px rgba(255, 255, 255, 0.5));
-          -webkit-backface-visibility: hidden; }
-    /* line 37, global/_webtunesmini.scss */
+        display: inline-block;
+        line-height: 1em;
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: black;
+        background: -webkit-linear-gradient(#949494, #3a3a3a);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: none;
+        -webkit-filter: drop-shadow(0px 1px rgba(255, 255, 255, 0.5));
+        -webkit-backface-visibility: hidden; }
+    /* line 51, global/_webtunesmini.scss */
     .webtunes_container .controller .lcd {
       position: relative;
       width: 40%;
@@ -3066,13 +3103,140 @@ attr {
       box-shadow: inset 0 1px 0 0 rgba(100, 100, 100, 0.3), inset 0 -2px 0 0 #c4cacf, inset 0 0 4px 0 rgba(100, 100, 100, 0.36), 0 1px 0 0 #d0d0d0;
       border-radius: 4px;
       text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1); }
-      /* line 49, global/_webtunesmini.scss */
+      /* line 63, global/_webtunesmini.scss */
+      .webtunes_container .controller .lcd .info {
+        position: absolute;
+        display: block;
+        width: 100%;
+        top: 0;
+        padding: 4px; }
+      /* line 70, global/_webtunesmini.scss */
       .webtunes_container .controller .lcd .title {
-        color: #222222; }
-    /* line 53, global/_webtunesmini.scss */
+        color: #222222;
+        font-weight: bold; }
+      /* line 74, global/_webtunesmini.scss */
+      .webtunes_container .controller .lcd .artist {
+        display: inline-block; }
+        /* line 77, global/_webtunesmini.scss */
+        .webtunes_container .controller .lcd .artist:after {
+          content: "   -   "; }
+      /* line 81, global/_webtunesmini.scss */
+      .webtunes_container .controller .lcd .album {
+        display: inline-block; }
+      /* line 85, global/_webtunesmini.scss */
+      .webtunes_container .controller .lcd .playback {
+        display: table;
+        width: 100%;
+        margin-bottom: 4px; }
+        /* line 89, global/_webtunesmini.scss */
+        .webtunes_container .controller .lcd .playback .progress, .webtunes_container .controller .lcd .playback .remanining {
+          display: table-cell;
+          text-align: center;
+          width: 25px;
+          font-size: 10px;
+          font-weight: bold;
+          color: #3b3b3b;
+          text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+          padding: 0px 10px;
+          line-height: 20px;
+          vertical-align: top; }
+        /* line 102, global/_webtunesmini.scss */
+        .webtunes_container .controller .lcd .playback .seeker, .webtunes_container .controller .lcd .playback #playbackSliderFilled, .webtunes_container .controller .lcd .playback #load_progress {
+          display: table-cell;
+          width: 100%;
+          height: 20px; }
+    /* line 110, global/_webtunesmini.scss */
     .webtunes_container .controller .search {
       display: table-cell;
-      width: 30%; }
+      width: 30%;
+      text-align: right;
+      padding-right: 40px;
+      vertical-align: middle; }
+      /* line 116, global/_webtunesmini.scss */
+      .webtunes_container .controller .search input {
+        border-radius: 30px;
+        border: none;
+        box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.8), 0 0 1px rgba(0, 0, 0, 0.8);
+        font-size: 12px;
+        line-height: 20px;
+        height: 20px;
+        left: 20px;
+        padding: 0px 10px; }
+        /* line 125, global/_webtunesmini.scss */
+        .webtunes_container .controller .search input:focus {
+          outline: none;
+          box-shadow: inset 0 0 2px #001eff, 0 0 4px #001eff; }
+    /* line 131, global/_webtunesmini.scss */
+    .webtunes_container .controller .controller[data-playing="none"] .lcd progress {
+      display: none; }
+  /* line 135, global/_webtunesmini.scss */
+  .webtunes_container .toolbar {
+    text-align: left;
+    padding: 4px 20px;
+    background: #686868;
+    background: linear-gradient(#686868, #484848, #3a3a3a);
+    border-bottom: #242424;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3); }
+    /* line 142, global/_webtunesmini.scss */
+    .webtunes_container .toolbar a {
+      background: black;
+      background: linear-gradient(#949494 0%, #828282 8%, #6b6b6b 41%, #454545 100%);
+      color: #f7f7f7;
+      border: 1px solid #1e1e1e;
+      padding: 4px 8px;
+      line-height: 1.25em;
+      display: inline-block;
+      border-radius: 4px;
+      font-weight: bold;
+      text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.7);
+      cursor: pointer;
+      -webkit-user-select: none;
+      transition: none;
+      -webkit-transition: none; }
+      /* line 157, global/_webtunesmini.scss */
+      .webtunes_container .toolbar a:active {
+        box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.75);
+        background: #3c3c3c;
+        border: 1px solid #0f0f0f;
+        text-shadow: 0px -1px rgba(0, 0, 0, 0.5); }
+  /* line 165, global/_webtunesmini.scss */
+  .webtunes_container .store {
+    background: white;
+    padding: 20px;
+    text-align: left;
+    font-size: 12px;
+    line-height: 1.2em; }
+    /* line 171, global/_webtunesmini.scss */
+    .webtunes_container .store .album {
+      color: #343434;
+      display: inline-block;
+      margin: 0px 20px 20px 0px;
+      width: 150px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis; }
+      /* line 179, global/_webtunesmini.scss */
+      .webtunes_container .store .album .thumbnail {
+        display: block;
+        width: 150px;
+        height: 150px;
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+        background-size: cover;
+        background-repeat: no-repeat;
+        outline: solid rgba(0, 0, 0, 0.3) 1px;
+        outline-offset: -1px;
+        position: relative;
+        background: linear-gradient(#f3f5f7, #d6e1e9);
+        margin-bottom: 0.7em; }
+      /* line 192, global/_webtunesmini.scss */
+      .webtunes_container .store .album .title {
+        font-weight: bold; }
+      /* line 195, global/_webtunesmini.scss */
+      .webtunes_container .store .album .artist {
+        color: #989898; }
+      /* line 198, global/_webtunesmini.scss */
+      .webtunes_container .store .album .album {
+        color: #989898; }
 
 /* line 85, home.scss */
 body {
@@ -4107,8 +4271,12 @@ section#social {
   color: #f7ba5b; }
   /* line 1114, home.scss */
   #science article {
-    padding: 6px; }
-    /* line 1118, home.scss */
+    padding: 6px;
+    text-align: left; }
+    /* line 1119, home.scss */
+    #science article p {
+      text-align: center; }
+    /* line 1122, home.scss */
     #science article .slide {
       max-width: 20em;
       margin: auto;
@@ -4123,59 +4291,59 @@ section#social {
       text-align: right;
       padding-top: 3em; }
 
-/* line 1136, home.scss */
+/* line 1140, home.scss */
 #cad {
   background: #b81113;
   background: linear-gradient(#b81113, #2c0405);
   color: white; }
 
-/* line 1143, home.scss */
+/* line 1147, home.scss */
 #art {
   background: #edece3;
   color: #4f4e4c; }
 
-/* line 1151, home.scss */
+/* line 1155, home.scss */
 #writing {
   box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.5);
   color: #4f4e4c;
   background: #fdf9d7; }
 
-/* line 1158, home.scss */
+/* line 1162, home.scss */
 #film {
   box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.5);
   background-image: linear-gradient(to bottom right, #d38312, #a83279);
   color: white; }
 
-/* line 1166, home.scss */
+/* line 1170, home.scss */
 #music {
   box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.5);
   background-image: linear-gradient(to bottom right, #002f4b, #e0be00);
   color: white; }
 
-/* line 1175, home.scss */
+/* line 1179, home.scss */
 #contact {
-  background: #672f89;
+  background: #843caf;
   color: white; }
-  /* line 1180, home.scss */
+  /* line 1184, home.scss */
   #contact form select, #contact form textarea {
     width: 100%; }
-  /* line 1183, home.scss */
+  /* line 1187, home.scss */
   #contact form input:not(#ss-submit) {
     width: 50%;
     display: table-cell;
     float: left; }
-    /* line 1187, home.scss */
+    /* line 1191, home.scss */
     #contact form input:not(#ss-submit):first-child {
       border-top-right-radius: 0px;
       border-bottom-right-radius: 0px; }
-    /* line 1191, home.scss */
+    /* line 1195, home.scss */
     #contact form input:not(#ss-submit):last-child {
       border-top-left-radius: 0px;
       border-bottom-left-radius: 0px; }
-  /* line 1196, home.scss */
+  /* line 1200, home.scss */
   #contact form textarea {
     height: 5em; }
-  /* line 1199, home.scss */
+  /* line 1203, home.scss */
   #contact form input#ss-submit {
     background: #4f4e4c;
     color: white;
@@ -4190,89 +4358,89 @@ section#social {
     /* line 143, global/_buttons.scss */
     #contact form input#ss-submit:active, #contact form input#ss-submit:focus {
       background-color: #3a3938; }
-  /* line 1209, home.scss */
+  /* line 1213, home.scss */
   #contact .telefono .guacamole, #contact .telefono .caliente, #contact .telefono .chipotle, #contact .telefono .gustas, #contact .telefono .tortilla‎, #contact .telefono .mios, #contact .telefono .mexico, #contact .telefono .frijoles, #contact .telefono .dota, #contact .telefono .tortillas {
     font-size: 0;
     visibility: hidden; }
-    /* line 1212, home.scss */
+    /* line 1216, home.scss */
     #contact .telefono .guacamole:before, #contact .telefono .caliente:before, #contact .telefono .chipotle:before, #contact .telefono .gustas:before, #contact .telefono .tortilla‎:before, #contact .telefono .mios:before, #contact .telefono .mexico:before, #contact .telefono .frijoles:before, #contact .telefono .dota:before, #contact .telefono .tortillas:before {
       font-size: 18px;
       visibility: visible;
       display: inline; }
-  /* line 1218, home.scss */
+  /* line 1222, home.scss */
   #contact .telefono .tortillas:before {
     content: '1778'; }
-  /* line 1219, home.scss */
+  /* line 1223, home.scss */
   #contact .telefono .dota:before {
     content: '- '; }
-  /* line 1220, home.scss */
+  /* line 1224, home.scss */
   #contact .telefono .guacamole:before {
     content: ') '; }
-  /* line 1221, home.scss */
+  /* line 1225, home.scss */
   #contact .telefono .mexico:before {
     content: '696'; }
-  /* line 1222, home.scss */
+  /* line 1226, home.scss */
   #contact .telefono .frijoles:before {
     content: '9981'; }
-  /* line 1223, home.scss */
+  /* line 1227, home.scss */
   #contact .telefono .chipotle:before {
     content: '969 '; }
-  /* line 1224, home.scss */
+  /* line 1228, home.scss */
   #contact .telefono .gustas:before {
     content: ' - '; }
-  /* line 1225, home.scss */
+  /* line 1229, home.scss */
   #contact .telefono .caliente:before {
     content: '571'; }
-  /* line 1226, home.scss */
+  /* line 1230, home.scss */
   #contact .telefono .mios:before {
     content: '('; }
-  /* line 1229, home.scss */
+  /* line 1233, home.scss */
   #contact .correo .zayn, #contact .correo .louis, #contact .correo .niall, #contact .correo .liam, #contact .correo .harry {
     font-size: 0;
     visibility: hidden; }
-    /* line 1232, home.scss */
+    /* line 1236, home.scss */
     #contact .correo .zayn:before, #contact .correo .louis:before, #contact .correo .niall:before, #contact .correo .liam:before, #contact .correo .harry:before {
       font-size: 18px;
       visibility: visible;
       display: inline; }
-  /* line 1238, home.scss */
+  /* line 1242, home.scss */
   #contact .correo .louis:before {
     content: 'hel'; }
-  /* line 1239, home.scss */
+  /* line 1243, home.scss */
   #contact .correo .niall:before {
     content: 'lo'; }
-  /* line 1240, home.scss */
+  /* line 1244, home.scss */
   #contact .correo .zayn:before {
     content: '@'; }
-  /* line 1241, home.scss */
+  /* line 1245, home.scss */
   #contact .correo .harry:before {
     content: 'victorlourng'; }
-  /* line 1242, home.scss */
+  /* line 1246, home.scss */
   #contact .correo .liam:before {
     content: '.com'; }
 
-/* line 1247, home.scss */
+/* line 1251, home.scss */
 footer {
   background: #34495e;
   color: #ecf0f1;
   text-align: left;
   overflow: hidden;
   position: static; }
-  /* line 1259, home.scss */
+  /* line 1263, home.scss */
   footer a {
     color: #ecf0f1; }
-    /* line 1261, home.scss */
+    /* line 1265, home.scss */
     footer a:hover {
       color: #16a085; }
-  /* line 1265, home.scss */
+  /* line 1269, home.scss */
   footer .skyward {
     float: right;
     color: #ecf0f1;
     position: relative; }
-    /* line 1269, home.scss */
+    /* line 1273, home.scss */
     footer .skyward i.icon-tardis {
       position: absolute; }
-    /* line 1272, home.scss */
+    /* line 1276, home.scss */
     footer .skyward i.icon-tardis:before {
       position: absolute;
       font-size: 300px;
@@ -4284,7 +4452,7 @@ footer {
       transition: all 0.25s;
       -webkit-transform: rotate(-15deg);
       -webkit-transition: all 0.25s; }
-    /* line 1284, home.scss */
+    /* line 1288, home.scss */
     footer .skyward:hover i.icon-tardis:before {
       -webkit-transform: rotate(0deg);
       transform: rotate(0deg);
@@ -4292,7 +4460,7 @@ footer {
       color: #003865;
       text-shadow: 0 0 50px white;
       background: radial-gradient(#ffffff 0%, rgba(255, 255, 255, 0) 80%); }
-    /* line 1292, home.scss */
+    /* line 1296, home.scss */
     footer .skyward span {
       margin-right: 140px;
       background: #4f4e4c;
@@ -4306,11 +4474,11 @@ footer {
       /* line 143, global/_buttons.scss */
       footer .skyward span:active, footer .skyward span:focus {
         background-color: #3a3938; }
-  /* line 1300, home.scss */
+  /* line 1304, home.scss */
   footer aside a {
     position: relative;
     z-index: 5; }
-  /* line 1304, home.scss */
+  /* line 1308, home.scss */
   footer aside i.icon-network {
     position: relative;
     z-index: 1;
@@ -4324,12 +4492,12 @@ footer {
     width: 30px;
     margin-right: 20px;
     z-index: 0; }
-    /* line 1318, home.scss */
+    /* line 1322, home.scss */
     footer aside i.icon-network i.icon-heart:before {
       animation: heartbeat 1s infinite;
       -webkit-animation: heartbeat 1s infinite;
       position: absolute; }
-    /* line 1324, home.scss */
+    /* line 1328, home.scss */
     footer aside i.icon-network:before {
       position: absolute;
       z-index: -1;
@@ -4343,7 +4511,7 @@ footer {
       opacity: 0.3;
       color: #ecf0f1; }
 
-/* line 1344, home.scss */
+/* line 1348, home.scss */
 modal#likemystatus window {
   top: 10%;
   vertical-align: 80%;
@@ -4351,32 +4519,32 @@ modal#likemystatus window {
   overflow-x: hidden;
   bottom: 10%; }
 
-/* line 1353, home.scss */
+/* line 1357, home.scss */
 modal#credits window {
   background: #2c3e50;
   color: white; }
-  /* line 1357, home.scss */
+  /* line 1361, home.scss */
   modal#credits window .content a {
     color: white;
     transition: padding 0.2s;
     -webkit-transition: padding 0.2s;
     line-height: 1.8em; }
-    /* line 1362, home.scss */
+    /* line 1366, home.scss */
     modal#credits window .content a:hover {
       color: #16a085;
       padding-left: 20px; }
-  /* line 1367, home.scss */
+  /* line 1371, home.scss */
   modal#credits window .content h4 {
     margin-top: 1em; }
-  /* line 1370, home.scss */
+  /* line 1374, home.scss */
   modal#credits window .content p {
     line-height: 1.5em;
     margin-bottom: 1em;
     margin-top: .5em; }
-  /* line 1379, home.scss */
+  /* line 1383, home.scss */
   modal#credits window #eclipse .moon {
     background: white; }
-    /* line 1381, home.scss */
+    /* line 1385, home.scss */
     modal#credits window #eclipse .moon .halfCircle {
       height: 45px;
       width: 90px;
@@ -4386,15 +4554,15 @@ modal#credits window {
       background: gray; }
 
 @media only screen and (max-width: 780px) {
-  /* line 1395, home.scss */
+  /* line 1399, home.scss */
   body {
     padding-left: 0px; }
 
-  /* line 1398, home.scss */
+  /* line 1402, home.scss */
   .hidden-mobile, #mhacks, #hackerchat a.pilot, canvas, iframe, .browser, #event article .wrapper, #more article .wrapper, #about figure, .stickem-container {
     display: none !important; }
 
-  /* line 1401, home.scss */
+  /* line 1405, home.scss */
   header, section, footer {
     position: relatve;
     width: 100%;
@@ -4402,53 +4570,53 @@ modal#credits window {
     padding: 20px 5px;
     text-align: center; }
 
-  /* line 1406, home.scss */
+  /* line 1410, home.scss */
   header#top {
     padding: 150px 10px 72px 10px;
     max-height: 300px; }
-    /* line 1409, home.scss */
+    /* line 1413, home.scss */
     header#top h1 {
       font-size: 50px;
       line-height: 1em; }
-      /* line 1412, home.scss */
+      /* line 1416, home.scss */
       header#top h1 span {
         opacity: 1 !important;
         text-shadow: 0 0 4px rgba(0, 0, 0, 0.5) !important; }
-    /* line 1417, home.scss */
+    /* line 1421, home.scss */
     header#top form {
       display: none !important; }
-    /* line 1420, home.scss */
+    /* line 1424, home.scss */
     header#top p {
       font-size: 20px; }
 
-  /* line 1424, home.scss */
+  /* line 1428, home.scss */
   #social a {
     display: block !important;
     width: 100% !important;
     text-shadow: none !important; }
 
-  /* line 1429, home.scss */
+  /* line 1433, home.scss */
   .skyward {
     float: none;
     display: block;
     width: 100%;
     z-index: 5;
     margin-bottom: 1em; }
-    /* line 1435, home.scss */
+    /* line 1439, home.scss */
     .skyward i.icon-tardis {
       display: none; }
-    /* line 1438, home.scss */
+    /* line 1442, home.scss */
     .skyward span {
       margin-right: 0px !important;
       display: block;
       width: 100%;
       padding: 12px !important;
       font-size: 30px; } }
-/* line 1449, home.scss */
+/* line 1453, home.scss */
 body.inthetardis {
   background: #4f4e4c;
   background: linear-gradient(#81375c, #624c73, #1f2643, #16223c, #27324e, #1a344b); }
-  /* line 1454, home.scss */
+  /* line 1458, home.scss */
   body.inthetardis header, body.inthetardis section {
     animation: inthetardis 4s ease;
     -webkit-animation: inthetardis 4s ease;
@@ -4456,7 +4624,7 @@ body.inthetardis {
     background: #edece3;
     transition: box-shadow 0.5s ease;
     -webkit-transition: box-shadow 0.5s ease; }
-  /* line 1462, home.scss */
+  /* line 1466, home.scss */
   body.inthetardis i.icon-tardis {
     position: fixed !important;
     bottom: 120px !important;
@@ -4467,23 +4635,23 @@ body.inthetardis {
     animation: shimmydown 4s linear;
     -webkit-animation: shimmydown 4s linear; }
 
-/* line 1475, home.scss */
+/* line 1479, home.scss */
 html.mobile, body.mobile {
   background-color: #34495e;
   max-width: 500px;
   margin: auto;
   box-shadow: 0 0 20px black; }
 
-/* line 1483, home.scss */
+/* line 1487, home.scss */
 #iesucks {
   background: #1e98d3;
   border-radius: 0px;
   background: none; }
 
-/* line 1490, home.scss */
+/* line 1494, home.scss */
 body.reset {
   background: white !important; }
-  /* line 1492, home.scss */
+  /* line 1496, home.scss */
   body.reset *, body.reset *:before, body.reset *:after {
     background: white !important;
     margin: 0 !important;
@@ -4515,10 +4683,10 @@ body.reset {
     -webkit-animation: none !important;
     -webkit-transition: none !important;
     -webkit-transform: none !important; }
-  /* line 1524, home.scss */
+  /* line 1528, home.scss */
   body.reset a, body.reset a * {
     color: blue !important;
     text-decoration: underline !important; }
-  /* line 1528, home.scss */
+  /* line 1532, home.scss */
   body.reset window, body.reset modal, body.reset canvas, body.reset iframe, body.reset li.bottom {
     display: none !important; }

@@ -36,6 +36,28 @@ nav[role="navigation"] menu {
                 line-height: 66px;
                 width: 66px;
                 text-align: center;
+                .flame, .fire, .fuel {
+                    position: absolute;
+                    margin-top: -26px;
+                    margin-left: 20px;
+                    height: 5px;
+                    width: 5px;
+                    border-radius: 5px;
+                    background: red;
+                    opacity: 0;
+                    transition: opacity 0.2s linear;
+                    -webkit-transition: opacity 0.2s linear;
+                }
+                .fire {
+                    margin-top: -24px;
+                    margin-left: 18px;
+                    background: orange;
+                }
+                .fuel {
+                    margin-top: -22px;
+                    margin-left: 16px;
+                    background: orange;
+                }
             }
             span {
                 opacity: 0;
@@ -60,6 +82,9 @@ nav[role="navigation"] menu {
         }
         &.active .science, .science:hover {
             background: $blue;
+            .flame, .fire, .fuel {
+                opacity: 1;
+            }
         }
         &.active .creative, .creative:hover {
             background: #a83279;
@@ -240,15 +265,15 @@ nav[role="navigation"] menu {
         // }
     }
     menu#assist {
-    top: 66px;
-    left: 0px;
-    max-width: 75%;
-    display: block;
-    position: fixed;
-    z-index: 65540;
-    height: auto;
-    width: auto;
-    padding: 0px;
+        top: 66px;
+        left: 0px;
+        max-width: 75%;
+        display: block;
+        position: fixed;
+        z-index: 65540;
+        height: auto;
+        width: auto;
+        padding: 0px;
     li {
         background: white;
         color: black;

@@ -81,10 +81,14 @@
           </li>
         </menu><a data-toggle="menu" title="Close Menu" class="close"><i class="icon-close"></i></a>
       </li>
-      <li><a href="#top" class="top"><i class="icon-home"></i><span>Home</span><!-- .tooltip Back to Top --></a></li>
+      <li><a href="#top" class="top"><i class="icon-home"></i><span>Home</span>
+          <!-- .tooltip Back to Top--></a></li>
       <li><a href="#about" class="about"><i class="icon-user"></i><span>About</span></a></li>
       <li><a href="#portfolio" class="portfolio"><i class="icon-suitcase"></i><span>Portfolio</span></a></li>
-      <li><a href="#science" class="science"><i class="icon-rocket"></i><span>Science</span></a></li>
+      <li><a href="#science" class="science"><i class="icon-rocket">
+            <div class="fire"></div>
+            <div class="fuel"></div>
+            <div class="flame"></div></i><span>Science</span></a></li>
       <li><a href="#creative" class="creative"><i class="icon-brush"></i><span>Creative</span></a></li>
       <li><a href="#contact" class="contact"><i class="icon-email"></i><span>Contact</span></a></li>
       <li class="bottom"><a href="#" for="test" title="Test" class="test"><i class="icon-flightdeck"></i><span>Easter Eggs</span></a></li>
@@ -227,7 +231,8 @@
   <section id="ilite" data-identity="victor"><!-- data-pin='please' -->
     <div class="row">
       <article>
-        <h2><i class="icon-ilite"></i> + <i class="icon-first"></i><br>ILITE Robotics</h2><!-- h2 ILITE Robotics -->
+        <h2><i class="icon-ilite"></i> + <i class="icon-first"></i><br>ILITE Robotics</h2>
+        <!-- h2 ILITE Robotics-->
         <div class="tech">
           <attr>
             <tooltip>
@@ -482,7 +487,8 @@
         </div>
       </article>
     </div>
-  </section><!-- section#charity(data-identity='victor') -->
+  </section>
+  <!-- section#charity(data-identity='victor') -->
   <!--  h2 Charity -->
   <!--  p.lead I'm highly involved in THON and (RED). -->
   <section id="tfmonster"><i class="icon-warning"></i>Anything below this point is under construction. You have been warned.</section>
@@ -598,16 +604,19 @@
     <div class="col3">Awesome Stuff</div>
     <div class="col3">How to: Dirt Cup</div>
   </section>
-  <section id="music" data-identity="victor" data-playing="none">
+  <section id="music" data-identity="victor">
     <h2>Music</h2>
     <p class="lead">I produce music with Ableton Live and Logic Pro.</p>
     <div class="webtunes_container">
-      <div class="controller">
+      <div data-playing="none" class="controller">
         <div class="left">
-          <div class="prev"><i class="icon-chevron-left"></i></div>
-          <div class="play"><i class="icon-right"></i></div>
-          <div class="pause"><i class="icon-dash"></i></div>
-          <div class="next"><i class="icon-chevron-right"></i></div>
+          <!-- .prev <i class="icon-chevron-left"> </i>
+          -->
+          <div value="&amp;#9654;" class="play">&#9654;</div>
+          <!-- .pause <i class="icon-dash"> </i>
+          -->
+          <!-- .next <i class="icon-chevron-right"> </i>
+          -->
         </div>
         <div class="lcd">
           <div style="display: none" class="nosong"></div>
@@ -619,20 +628,36 @@
             <div class="playback">
               <div data-time="" class="progress">0:00</div>
               <input type="range" min="0" max="100" value="0" step="any" class="seeker">
-              <progress id="playbackSliderFilled" max="100" value="0"></progress>
-              <progress id="load_progress" max="100" value="100"></progress>
+              <progress id="playbackSliderFilled" max="100" value="0" style="display: none"></progress>
+              <progress id="load_progress" max="100" value="100" style="display: none"></progress>
               <div data-time="" class="remanining">-0:00</div>
             </div>
           </div>
           <audio id="songPlayer" preload="" data-src="" src=""></audio>
         </div>
         <div class="search">
-          <input type="text">
+          <input type="text" placeholder="Search">
         </div>
       </div>
-      <div class="toolbar"></div>
-      <div class="store"></div>
+      <div class="toolbar"><a class="sort">All Music</a></div>
+      <div class="store"><a href="#music!chiptune" data-music="https://trumpet-sugarplums.rhcloud.com/webtunes/embed/song.php?id=012" class="album">
+          <div class="thumbnail"></div>
+          <div class="title">Chiptune</div>
+          <div class="artist">Victor Lourng</div>
+          <div class="album">Demo Reels</div></a><a href="#music!electro" data-music="https://trumpet-sugarplums.rhcloud.com/webtunes/embed/song.php?id=014" class="album">
+          <div class="thumbnail"></div>
+          <div class="title">Electro</div>
+          <div class="artist">Victor Lourng</div>
+          <div class="album">Demo Reels</div></a><a href="#music!jazz" data-music="https://trumpet-sugarplums.rhcloud.com/webtunes/embed/song.php?id=015" class="album">
+          <div class="thumbnail"></div>
+          <div class="title">Jazz</div>
+          <div class="artist">Victor Lourng</div>
+          <div class="album">Demo Reels</div></a></div>
     </div>
+  </section>
+  <section id="yolo">
+    <h2>Easter Eggs!</h2>
+    <p>How cool is that?</p>
   </section>
   <section id="contact" data-identity="victor">
     <h2>Get In Touch</h2>

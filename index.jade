@@ -56,7 +56,7 @@ block content
           a.top(href='#top')
             i.icon-home
             span Home
-            <!-- .tooltip Back to Top -->
+            // .tooltip Back to Top
         li
           a.about(href='#about')
             i.icon-user
@@ -68,6 +68,9 @@ block content
         li
           a.science(href='#science')
             i.icon-rocket
+              .fire
+              .fuel
+              .flame
             span Science
         li
           a.creative(href='#creative')
@@ -275,7 +278,7 @@ block content
             i.icon-first
             br
             | ILITE Robotics
-          <!-- h2 ILITE Robotics -->
+          // h2 ILITE Robotics
           .tech
             attr
               tooltip
@@ -551,9 +554,9 @@ block content
             hr
             .bottom
               a(href='http://fll.iliterobotics.org/') FLL.ILITErobotics.org
-    <!-- section#charity(data-identity='victor') -->
-    <!--  h2 Charity -->
-    <!--  p.lead I'm highly involved in THON and (RED). -->
+    // section#charity(data-identity='victor') 
+    //  h2 Charity 
+    //  p.lead I'm highly involved in THON and (RED). 
     section#tfmonster
       i.icon-warning
       | Anything below this point is under construction. You have been warned.
@@ -660,20 +663,20 @@ block content
         | Awesome Stuff
       .col3
         | How to: Dirt Cup
-    section#music(data-identity='victor' data-playing='none')
+    section#music(data-identity='victor')
       h2 Music
       p.lead I produce music with Ableton Live and Logic Pro.
       .webtunes_container
-        .controller
+        .controller(data-playing='none')
           .left
-            .prev
-              i.icon-chevron-left
-            .play
-              i.icon-right
-            .pause
-              i.icon-dash
-            .next
-              i.icon-chevron-right
+            // .prev 
+              i.icon-chevron-left 
+            .play(value='&#9654;')
+              &#9654;
+            // .pause 
+              i.icon-dash 
+            // .next 
+              i.icon-chevron-right 
           .lcd
             .nosong(style='display: none')
             .info(style='display: block')
@@ -684,14 +687,33 @@ block content
               .playback
                 .progress(data-time='') 0:00
                 input.seeker(type='range' min='0' max='100' value='0' step='any')
-                progress#playbackSliderFilled(max='100' value='0')
-                progress#load_progress(max='100', value='100')
+                progress#playbackSliderFilled(max='100' value='0' style='display: none')
+                progress#load_progress(max='100', value='100' style='display: none')
                 .remanining(data-time='') -0:00
             audio#songPlayer(preload='' data-src='' src='')
           .search
-            input(type='text')
+            input(type='text' placeholder='Search')
         .toolbar
+          a.sort All Music
         .store
+          a.album(href='#music!chiptune' data-music='https://trumpet-sugarplums.rhcloud.com/webtunes/embed/song.php?id=012')
+            .thumbnail
+            .title Chiptune
+            .artist Victor Lourng
+            .album Demo Reels
+          a.album(href='#music!electro' data-music='https://trumpet-sugarplums.rhcloud.com/webtunes/embed/song.php?id=014')
+            .thumbnail
+            .title Electro
+            .artist Victor Lourng
+            .album Demo Reels
+          a.album(href='#music!jazz' data-music='https://trumpet-sugarplums.rhcloud.com/webtunes/embed/song.php?id=015')
+            .thumbnail
+            .title Jazz
+            .artist Victor Lourng
+            .album Demo Reels
+    section#yolo
+      h2 Easter Eggs!
+      p How cool is that?
     section#contact(data-identity='victor')
       h2 Get In Touch
       .row
