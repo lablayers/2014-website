@@ -35,9 +35,8 @@
 
 // Typography
 @import "global/_type.scss";
-@import "../fonts_cache/_fonts_cache.scss";
-@import url(http://fonts.googleapis.com/css?family=Varela+Round);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+// @import "../fonts_cache/_fonts_cache.scss";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700|Varela+Round);
 
 // Prettyprint Code
 @import "global/_prettyprint-monokai.scss";
@@ -94,6 +93,7 @@ body {
 
 h1, h2, h3, h4, h5, .btn, .nav {
   font-family: "Varela Round", "Proxima Nova Soft", ProximaSoft, Montserrat, Arial;
+  font-weight: bold;
 }
 
 header, section, footer {
@@ -281,8 +281,8 @@ header#top {
 section#about {
   color: white;
   background: $purple; //#0099B5;
-  animation: colors 20s infinite;
-  -webkit-animation: colors 20s infinite;
+  // animation: colors 40s infinite;
+  // -webkit-animation: colors 40s infinite;
   @extend .dark-text-shadow;
   figure {
     @extend .col4;
@@ -956,6 +956,21 @@ section#social {
       @extend .col5;
       display: table-cell;
       position: relative;
+      background: $light;
+      padding: 4px;
+      font-size: 12px;
+      box-shadow: 0 0 10px gray;
+      .note {
+        background: darken($red, 25%);
+        color: white;
+      }
+      input {
+        display: block;
+        width: 100%;
+        padding: 8px;
+        border-radius: 4px;
+        border: 1px solid gray;
+      }
     }
   }
   i.thing-1, i.thing-2 {

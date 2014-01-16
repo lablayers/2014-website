@@ -1,6 +1,5 @@
 @charset "UTF-8";
-@import url(http://fonts.googleapis.com/css?family=Varela+Round);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700|Varela+Round);
 /* line 17, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -1647,18 +1646,6 @@ p.hero {
   /* line 70, global/_type.scss */
   p.lead, header#top p, #drones article p:first-of-type {
     font-size: 24px; } }
-@font-face {
-  font-family: 'Open Sans';
-  src: url("/fonts_cache/OpenSans.woff") format("woff");
-  font-weight: 300;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Varela Round';
-  src: url("/fonts_cache/Varela.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
 /* line 1, global/_prettyprint-monokai.scss */
 .str, pre .str, sub .str {
   color: #e6db5a; }
@@ -2651,7 +2638,7 @@ modal.visible window {
 .icon-lastfm:before {
   content: "\e635"; }
 
-/* line 56, home.scss */
+/* line 55, home.scss */
 i.icon-bootstrap:before {
   content: 'B';
   position: relative;
@@ -3087,15 +3074,16 @@ attr {
       display: table-cell;
       width: 30%; }
 
-/* line 86, home.scss */
+/* line 85, home.scss */
 body {
   box-shadow: 0 0 20px black;
   padding-left: 66px;
   font-family: "Open Sans", "Proxima", "Proxima Nova", Arial; }
 
-/* line 95, home.scss */
+/* line 94, home.scss */
 h1, h2, h3, h4, h5, .btn, .nav {
-  font-family: "Varela Round", "Proxima Nova Soft", ProximaSoft, Montserrat, Arial; }
+  font-family: "Varela Round", "Proxima Nova Soft", ProximaSoft, Montserrat, Arial;
+  font-weight: bold; }
 
 /* line 99, home.scss */
 header, section, footer {
@@ -3276,9 +3264,7 @@ header#top {
 /* line 281, home.scss */
 section#about {
   color: white;
-  background: #672f89;
-  animation: colors 20s infinite;
-  -webkit-animation: colors 20s infinite; }
+  background: #672f89; }
   /* line 287, home.scss */
   section#about figure {
     animation: fade-in-bottom 0.5s;
@@ -3969,8 +3955,23 @@ section#social {
     /* line 955, home.scss */
     #cloudchat .row .demo {
       display: table-cell;
-      position: relative; }
-  /* line 961, home.scss */
+      position: relative;
+      background: #edece3;
+      padding: 4px;
+      font-size: 12px;
+      box-shadow: 0 0 10px gray; }
+      /* line 963, home.scss */
+      #cloudchat .row .demo .note {
+        background: #a10e11;
+        color: white; }
+      /* line 967, home.scss */
+      #cloudchat .row .demo input {
+        display: block;
+        width: 100%;
+        padding: 8px;
+        border-radius: 4px;
+        border: 1px solid gray; }
+  /* line 976, home.scss */
   #cloudchat i.thing-1, #cloudchat i.thing-2 {
     position: absolute;
     color: white;
@@ -3980,30 +3981,30 @@ section#social {
     z-index: 0px;
     transition: left 0.8s 1s ease-in-out, right 0.8s 1s ease-in-out, opacity 0.5s 1s ease-in-out;
     -webkit-transition: left 0.8s 1s ease-in-out, right 0.8s 1s ease-in-out, opacity 0.5s 1s ease-in-out; }
-  /* line 971, home.scss */
+  /* line 986, home.scss */
   #cloudchat i.thing-2 {
     left: -220px; }
-  /* line 974, home.scss */
+  /* line 989, home.scss */
   #cloudchat i.thing-1 {
     right: -220px; }
-  /* line 978, home.scss */
+  /* line 993, home.scss */
   #cloudchat.visible i.thing-1, #cloudchat.visible i.thing-2 {
     opacity: 1; }
-  /* line 981, home.scss */
+  /* line 996, home.scss */
   #cloudchat.visible i.thing-2 {
     left: -20px; }
-  /* line 984, home.scss */
+  /* line 999, home.scss */
   #cloudchat.visible i.thing-1 {
     right: -20px; }
 
-/* line 991, home.scss */
+/* line 1006, home.scss */
 #phlclosings {
   background: #2980b9;
   color: white; }
-  /* line 998, home.scss */
+  /* line 1013, home.scss */
   #phlclosings .demo .frame iframe {
     width: 100%; }
-  /* line 1005, home.scss */
+  /* line 1020, home.scss */
   #phlclosings article a {
     background: #b81113;
     color: white;
@@ -4017,14 +4018,14 @@ section#social {
     #phlclosings article a:active, #phlclosings article a:focus {
       background-color: #930d0f; }
 
-/* line 1013, home.scss */
+/* line 1028, home.scss */
 #drones {
   background: #5ba525;
   color: white; }
-  /* line 1019, home.scss */
+  /* line 1034, home.scss */
   #drones article p {
     margin: 1em 2em; }
-  /* line 1025, home.scss */
+  /* line 1040, home.scss */
   #drones article a {
     background: #1e98d3;
     color: white;
@@ -4037,30 +4038,30 @@ section#social {
     /* line 143, global/_buttons.scss */
     #drones article a:active, #drones article a:focus {
       background-color: #197eaf; }
-  /* line 1032, home.scss */
+  /* line 1047, home.scss */
   #drones .slides iframe {
     width: 100%;
     height: 350px; }
 
-/* line 1041, home.scss */
+/* line 1056, home.scss */
 #event, #more {
   background: #1e98d3;
   color: white; }
-  /* line 1045, home.scss */
+  /* line 1060, home.scss */
   #event article, #more article {
     padding: 6px;
     text-shadow: none; }
-    /* line 1049, home.scss */
+    /* line 1064, home.scss */
     #event article .wrapper, #more article .wrapper {
       margin: 1em auto;
       background: #edece3;
       color: #4f4e4c; }
-      /* line 1054, home.scss */
+      /* line 1069, home.scss */
       #event article .wrapper hr, #more article .wrapper hr {
         border: none;
         border-bottom: 1px solid #b1ad86 !important;
         margin: 0.5em auto; }
-      /* line 1060, home.scss */
+      /* line 1075, home.scss */
       #event article .wrapper .bottom a, #more article .wrapper .bottom a {
         background: #4f4e4c;
         color: white;
@@ -4074,7 +4075,7 @@ section#social {
         #event article .wrapper .bottom a:active, #event article .wrapper .bottom a:focus, #more article .wrapper .bottom a:active, #more article .wrapper .bottom a:focus {
           background-color: #3a3938; }
 
-/* line 1069, home.scss */
+/* line 1084, home.scss */
 #tfmonster {
   color: white;
   background: #ee4144;
@@ -4084,7 +4085,7 @@ section#social {
   padding: 0px 30px;
   overflow: hidden;
   position: relative; }
-  /* line 1078, home.scss */
+  /* line 1093, home.scss */
   #tfmonster i {
     position: absolute;
     left: 30px;
@@ -4094,20 +4095,20 @@ section#social {
     -webkit-transition: all 0.5s 1s ease;
     transform: rotate(0deg) scale(1);
     -webkit-transform: rotate(0deg) scale(1); }
-  /* line 1088, home.scss */
+  /* line 1103, home.scss */
   #tfmonster.visible i {
     transform: rotate(30deg) scale(1.5);
     -webkit-transform: rotate(30deg) scale(1.5);
     opacity: 0.7; }
 
-/* line 1096, home.scss */
+/* line 1111, home.scss */
 #science {
   background: #003865;
   color: #f7ba5b; }
-  /* line 1099, home.scss */
+  /* line 1114, home.scss */
   #science article {
     padding: 6px; }
-    /* line 1103, home.scss */
+    /* line 1118, home.scss */
     #science article .slide {
       max-width: 20em;
       margin: auto;
@@ -4122,59 +4123,59 @@ section#social {
       text-align: right;
       padding-top: 3em; }
 
-/* line 1121, home.scss */
+/* line 1136, home.scss */
 #cad {
   background: #b81113;
   background: linear-gradient(#b81113, #2c0405);
   color: white; }
 
-/* line 1128, home.scss */
+/* line 1143, home.scss */
 #art {
   background: #edece3;
   color: #4f4e4c; }
 
-/* line 1136, home.scss */
+/* line 1151, home.scss */
 #writing {
   box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.5);
   color: #4f4e4c;
   background: #fdf9d7; }
 
-/* line 1143, home.scss */
+/* line 1158, home.scss */
 #film {
   box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.5);
   background-image: linear-gradient(to bottom right, #d38312, #a83279);
   color: white; }
 
-/* line 1151, home.scss */
+/* line 1166, home.scss */
 #music {
   box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.5);
   background-image: linear-gradient(to bottom right, #002f4b, #e0be00);
   color: white; }
 
-/* line 1160, home.scss */
+/* line 1175, home.scss */
 #contact {
   background: #672f89;
   color: white; }
-  /* line 1165, home.scss */
+  /* line 1180, home.scss */
   #contact form select, #contact form textarea {
     width: 100%; }
-  /* line 1168, home.scss */
+  /* line 1183, home.scss */
   #contact form input:not(#ss-submit) {
     width: 50%;
     display: table-cell;
     float: left; }
-    /* line 1172, home.scss */
+    /* line 1187, home.scss */
     #contact form input:not(#ss-submit):first-child {
       border-top-right-radius: 0px;
       border-bottom-right-radius: 0px; }
-    /* line 1176, home.scss */
+    /* line 1191, home.scss */
     #contact form input:not(#ss-submit):last-child {
       border-top-left-radius: 0px;
       border-bottom-left-radius: 0px; }
-  /* line 1181, home.scss */
+  /* line 1196, home.scss */
   #contact form textarea {
     height: 5em; }
-  /* line 1184, home.scss */
+  /* line 1199, home.scss */
   #contact form input#ss-submit {
     background: #4f4e4c;
     color: white;
@@ -4189,89 +4190,89 @@ section#social {
     /* line 143, global/_buttons.scss */
     #contact form input#ss-submit:active, #contact form input#ss-submit:focus {
       background-color: #3a3938; }
-  /* line 1194, home.scss */
+  /* line 1209, home.scss */
   #contact .telefono .guacamole, #contact .telefono .caliente, #contact .telefono .chipotle, #contact .telefono .gustas, #contact .telefono .tortilla‎, #contact .telefono .mios, #contact .telefono .mexico, #contact .telefono .frijoles, #contact .telefono .dota, #contact .telefono .tortillas {
     font-size: 0;
     visibility: hidden; }
-    /* line 1197, home.scss */
+    /* line 1212, home.scss */
     #contact .telefono .guacamole:before, #contact .telefono .caliente:before, #contact .telefono .chipotle:before, #contact .telefono .gustas:before, #contact .telefono .tortilla‎:before, #contact .telefono .mios:before, #contact .telefono .mexico:before, #contact .telefono .frijoles:before, #contact .telefono .dota:before, #contact .telefono .tortillas:before {
       font-size: 18px;
       visibility: visible;
       display: inline; }
-  /* line 1203, home.scss */
+  /* line 1218, home.scss */
   #contact .telefono .tortillas:before {
     content: '1778'; }
-  /* line 1204, home.scss */
+  /* line 1219, home.scss */
   #contact .telefono .dota:before {
     content: '- '; }
-  /* line 1205, home.scss */
+  /* line 1220, home.scss */
   #contact .telefono .guacamole:before {
     content: ') '; }
-  /* line 1206, home.scss */
+  /* line 1221, home.scss */
   #contact .telefono .mexico:before {
     content: '696'; }
-  /* line 1207, home.scss */
+  /* line 1222, home.scss */
   #contact .telefono .frijoles:before {
     content: '9981'; }
-  /* line 1208, home.scss */
+  /* line 1223, home.scss */
   #contact .telefono .chipotle:before {
     content: '969 '; }
-  /* line 1209, home.scss */
+  /* line 1224, home.scss */
   #contact .telefono .gustas:before {
     content: ' - '; }
-  /* line 1210, home.scss */
+  /* line 1225, home.scss */
   #contact .telefono .caliente:before {
     content: '571'; }
-  /* line 1211, home.scss */
+  /* line 1226, home.scss */
   #contact .telefono .mios:before {
     content: '('; }
-  /* line 1214, home.scss */
+  /* line 1229, home.scss */
   #contact .correo .zayn, #contact .correo .louis, #contact .correo .niall, #contact .correo .liam, #contact .correo .harry {
     font-size: 0;
     visibility: hidden; }
-    /* line 1217, home.scss */
+    /* line 1232, home.scss */
     #contact .correo .zayn:before, #contact .correo .louis:before, #contact .correo .niall:before, #contact .correo .liam:before, #contact .correo .harry:before {
       font-size: 18px;
       visibility: visible;
       display: inline; }
-  /* line 1223, home.scss */
+  /* line 1238, home.scss */
   #contact .correo .louis:before {
     content: 'hel'; }
-  /* line 1224, home.scss */
+  /* line 1239, home.scss */
   #contact .correo .niall:before {
     content: 'lo'; }
-  /* line 1225, home.scss */
+  /* line 1240, home.scss */
   #contact .correo .zayn:before {
     content: '@'; }
-  /* line 1226, home.scss */
+  /* line 1241, home.scss */
   #contact .correo .harry:before {
     content: 'victorlourng'; }
-  /* line 1227, home.scss */
+  /* line 1242, home.scss */
   #contact .correo .liam:before {
     content: '.com'; }
 
-/* line 1232, home.scss */
+/* line 1247, home.scss */
 footer {
   background: #34495e;
   color: #ecf0f1;
   text-align: left;
   overflow: hidden;
   position: static; }
-  /* line 1244, home.scss */
+  /* line 1259, home.scss */
   footer a {
     color: #ecf0f1; }
-    /* line 1246, home.scss */
+    /* line 1261, home.scss */
     footer a:hover {
       color: #16a085; }
-  /* line 1250, home.scss */
+  /* line 1265, home.scss */
   footer .skyward {
     float: right;
     color: #ecf0f1;
     position: relative; }
-    /* line 1254, home.scss */
+    /* line 1269, home.scss */
     footer .skyward i.icon-tardis {
       position: absolute; }
-    /* line 1257, home.scss */
+    /* line 1272, home.scss */
     footer .skyward i.icon-tardis:before {
       position: absolute;
       font-size: 300px;
@@ -4283,7 +4284,7 @@ footer {
       transition: all 0.25s;
       -webkit-transform: rotate(-15deg);
       -webkit-transition: all 0.25s; }
-    /* line 1269, home.scss */
+    /* line 1284, home.scss */
     footer .skyward:hover i.icon-tardis:before {
       -webkit-transform: rotate(0deg);
       transform: rotate(0deg);
@@ -4291,7 +4292,7 @@ footer {
       color: #003865;
       text-shadow: 0 0 50px white;
       background: radial-gradient(#ffffff 0%, rgba(255, 255, 255, 0) 80%); }
-    /* line 1277, home.scss */
+    /* line 1292, home.scss */
     footer .skyward span {
       margin-right: 140px;
       background: #4f4e4c;
@@ -4305,11 +4306,11 @@ footer {
       /* line 143, global/_buttons.scss */
       footer .skyward span:active, footer .skyward span:focus {
         background-color: #3a3938; }
-  /* line 1285, home.scss */
+  /* line 1300, home.scss */
   footer aside a {
     position: relative;
     z-index: 5; }
-  /* line 1289, home.scss */
+  /* line 1304, home.scss */
   footer aside i.icon-network {
     position: relative;
     z-index: 1;
@@ -4323,12 +4324,12 @@ footer {
     width: 30px;
     margin-right: 20px;
     z-index: 0; }
-    /* line 1303, home.scss */
+    /* line 1318, home.scss */
     footer aside i.icon-network i.icon-heart:before {
       animation: heartbeat 1s infinite;
       -webkit-animation: heartbeat 1s infinite;
       position: absolute; }
-    /* line 1309, home.scss */
+    /* line 1324, home.scss */
     footer aside i.icon-network:before {
       position: absolute;
       z-index: -1;
@@ -4342,7 +4343,7 @@ footer {
       opacity: 0.3;
       color: #ecf0f1; }
 
-/* line 1329, home.scss */
+/* line 1344, home.scss */
 modal#likemystatus window {
   top: 10%;
   vertical-align: 80%;
@@ -4350,32 +4351,32 @@ modal#likemystatus window {
   overflow-x: hidden;
   bottom: 10%; }
 
-/* line 1338, home.scss */
+/* line 1353, home.scss */
 modal#credits window {
   background: #2c3e50;
   color: white; }
-  /* line 1342, home.scss */
+  /* line 1357, home.scss */
   modal#credits window .content a {
     color: white;
     transition: padding 0.2s;
     -webkit-transition: padding 0.2s;
     line-height: 1.8em; }
-    /* line 1347, home.scss */
+    /* line 1362, home.scss */
     modal#credits window .content a:hover {
       color: #16a085;
       padding-left: 20px; }
-  /* line 1352, home.scss */
+  /* line 1367, home.scss */
   modal#credits window .content h4 {
     margin-top: 1em; }
-  /* line 1355, home.scss */
+  /* line 1370, home.scss */
   modal#credits window .content p {
     line-height: 1.5em;
     margin-bottom: 1em;
     margin-top: .5em; }
-  /* line 1364, home.scss */
+  /* line 1379, home.scss */
   modal#credits window #eclipse .moon {
     background: white; }
-    /* line 1366, home.scss */
+    /* line 1381, home.scss */
     modal#credits window #eclipse .moon .halfCircle {
       height: 45px;
       width: 90px;
@@ -4385,15 +4386,15 @@ modal#credits window {
       background: gray; }
 
 @media only screen and (max-width: 780px) {
-  /* line 1380, home.scss */
+  /* line 1395, home.scss */
   body {
     padding-left: 0px; }
 
-  /* line 1383, home.scss */
+  /* line 1398, home.scss */
   .hidden-mobile, #mhacks, #hackerchat a.pilot, canvas, iframe, .browser, #event article .wrapper, #more article .wrapper, #about figure, .stickem-container {
     display: none !important; }
 
-  /* line 1386, home.scss */
+  /* line 1401, home.scss */
   header, section, footer {
     position: relatve;
     width: 100%;
@@ -4401,53 +4402,53 @@ modal#credits window {
     padding: 20px 5px;
     text-align: center; }
 
-  /* line 1391, home.scss */
+  /* line 1406, home.scss */
   header#top {
     padding: 150px 10px 72px 10px;
     max-height: 300px; }
-    /* line 1394, home.scss */
+    /* line 1409, home.scss */
     header#top h1 {
       font-size: 50px;
       line-height: 1em; }
-      /* line 1397, home.scss */
+      /* line 1412, home.scss */
       header#top h1 span {
         opacity: 1 !important;
         text-shadow: 0 0 4px rgba(0, 0, 0, 0.5) !important; }
-    /* line 1402, home.scss */
+    /* line 1417, home.scss */
     header#top form {
       display: none !important; }
-    /* line 1405, home.scss */
+    /* line 1420, home.scss */
     header#top p {
       font-size: 20px; }
 
-  /* line 1409, home.scss */
+  /* line 1424, home.scss */
   #social a {
     display: block !important;
     width: 100% !important;
     text-shadow: none !important; }
 
-  /* line 1414, home.scss */
+  /* line 1429, home.scss */
   .skyward {
     float: none;
     display: block;
     width: 100%;
     z-index: 5;
     margin-bottom: 1em; }
-    /* line 1420, home.scss */
+    /* line 1435, home.scss */
     .skyward i.icon-tardis {
       display: none; }
-    /* line 1423, home.scss */
+    /* line 1438, home.scss */
     .skyward span {
       margin-right: 0px !important;
       display: block;
       width: 100%;
       padding: 12px !important;
       font-size: 30px; } }
-/* line 1434, home.scss */
+/* line 1449, home.scss */
 body.inthetardis {
   background: #4f4e4c;
   background: linear-gradient(#81375c, #624c73, #1f2643, #16223c, #27324e, #1a344b); }
-  /* line 1439, home.scss */
+  /* line 1454, home.scss */
   body.inthetardis header, body.inthetardis section {
     animation: inthetardis 4s ease;
     -webkit-animation: inthetardis 4s ease;
@@ -4455,7 +4456,7 @@ body.inthetardis {
     background: #edece3;
     transition: box-shadow 0.5s ease;
     -webkit-transition: box-shadow 0.5s ease; }
-  /* line 1447, home.scss */
+  /* line 1462, home.scss */
   body.inthetardis i.icon-tardis {
     position: fixed !important;
     bottom: 120px !important;
@@ -4466,23 +4467,23 @@ body.inthetardis {
     animation: shimmydown 4s linear;
     -webkit-animation: shimmydown 4s linear; }
 
-/* line 1460, home.scss */
+/* line 1475, home.scss */
 html.mobile, body.mobile {
   background-color: #34495e;
   max-width: 500px;
   margin: auto;
   box-shadow: 0 0 20px black; }
 
-/* line 1468, home.scss */
+/* line 1483, home.scss */
 #iesucks {
   background: #1e98d3;
   border-radius: 0px;
   background: none; }
 
-/* line 1475, home.scss */
+/* line 1490, home.scss */
 body.reset {
   background: white !important; }
-  /* line 1477, home.scss */
+  /* line 1492, home.scss */
   body.reset *, body.reset *:before, body.reset *:after {
     background: white !important;
     margin: 0 !important;
@@ -4514,10 +4515,10 @@ body.reset {
     -webkit-animation: none !important;
     -webkit-transition: none !important;
     -webkit-transform: none !important; }
-  /* line 1509, home.scss */
+  /* line 1524, home.scss */
   body.reset a, body.reset a * {
     color: blue !important;
     text-decoration: underline !important; }
-  /* line 1513, home.scss */
+  /* line 1528, home.scss */
   body.reset window, body.reset modal, body.reset canvas, body.reset iframe, body.reset li.bottom {
     display: none !important; }
