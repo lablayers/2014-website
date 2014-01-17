@@ -1,9 +1,9 @@
 /*
 Syntax error: Invalid CSS after "  @include ": expected identifier, was ".dark-text-shadow;"
-        on line 1433 of /Users/Bro/Developer/lablayers.github.io/design/home.scss
+        on line 1437 of /Users/Bro/Developer/lablayers.github.io/design/home.scss
 
 Backtrace:
-/Users/Bro/Developer/lablayers.github.io/design/home.scss:1433
+/Users/Bro/Developer/lablayers.github.io/design/home.scss:1437
 /Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:1146:in `expected'
 /Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:1084:in `expected'
 /Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:1079:in `tok!'
@@ -44,4 +44,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"  @include \": expected identifier, was \".dark-text-shadow;\"\A         on line 1433 of /Users/Bro/Developer/lablayers.github.io/design/home.scss"; }
+  content: "Syntax error: Invalid CSS after \"  @include \": expected identifier, was \".dark-text-shadow;\"\A         on line 1437 of /Users/Bro/Developer/lablayers.github.io/design/home.scss"; }

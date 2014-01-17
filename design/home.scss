@@ -134,6 +134,10 @@ ul.details {
   margin: 0 0.5em;
 }
 
+.fb-header-file, .fb-header-file * , .fb-header-file img {
+  display: none!important;
+}
+
 // Loading
 progress[data-status='empty'] { display: none; }
 progress[data-status='loading'] { display: block; }
