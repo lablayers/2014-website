@@ -520,7 +520,7 @@ block content
         iframe(src='https://www.slideshare.net/slideshow/embed_code/22420879' height='350' width='350')
     section#event(data-identity='victor')
       h2 Event Pages
-      p In addition, I've also built sites for some really cool events. Without further ado...
+      p.lead In addition , I've also built sites for some really cool events.
       .row
         article
           .wrapper
@@ -549,6 +549,7 @@ block content
             h5
               i.icon-first 
               | Haymarket FLL
+            br
             hr
             p A LEGO MindStorms competition for kids in elementary school. The site was built in under 3 hours!
             hr
@@ -562,7 +563,7 @@ block content
       | Anything below this point is under construction. You have been warned.
     section#more(data-identity='victor')
       h2 Even More Things
-      p Don't worry, I have three things I will add to my portfolio by the end of Janurary!
+      p.lead Don't worry, I have three things I will add to my portfolio by the end of Janurary!
       .row
         article
           .wrapper
@@ -840,19 +841,23 @@ block content
       .row
         form(form action='https://docs.google.com/forms/d/1_BViPsNvsdyEcsfkyBLkYjyH7-wi96TDPbUpzlrvcyc/formResponse' method='post' id='ss-form' target='_blank')
           h3 Contact Me!
-          p.load But be nice...
+          p.lead Please say hello to me.
           input#entry_88530688.field(type='text' name='entry.88530688' placeholder='Name - Leave blank for anon')
           input#entry_1457997342.field(type='text' name='entry.1457997342' placeholder='Contact - E-mail, Phone, Twitter')
           textarea#entry_1446910495.field(name='entry.1446910495' placeholder='Message What do you want to say? (REQUIRED)' required='required')
-          select#entry_1579930328.field(name='entry.1579930328' placeholder='To whom? Your message will be intercepted by Victor anyways. ')
-            option(value='Victor Lourng')
+          select#entry_1579930328.field(name='entry.1579930328' hint='To whom? Your message will be intercepted by Victor anyways. ')
               option(value='Victor Lourng') Victor Lourng
               option(value='Santa Claus') Santa Claus
               option(value='The Sound Chemist') The Sound Chemist
-          input#ss-submit(type='submit' name='submit' value='Submit')
+              option(value='Blue Prints') Blue Prints
+          input#ss-submit(type='submit' name='submit' value='Send Message')
         article
           h3 Other Methods
-          p.lead via Google Voice
+          p.lead If there's a will, there's a way:
+          p
+            i.icon-tablet 
+            | Google Voice
+          br
           .telefono
             span.mios
             span.caliente What does 
@@ -863,7 +868,10 @@ block content
               b common denominator? 
             span.tortillas A common denominator.
           br
-          p.lead via-email
+          p
+            i.icon-email 
+            | Direct E-Mail
+          br
           .correo
             span.louis Once upon a time
             span.niall I met a dog.
@@ -923,8 +931,19 @@ block content
             i.icon-close
         div.content
           .rockets
+            i.icon-solar
             .moon
-            .solar
+              .halfCircle
+            p Really cool animated CSS3 love story coming soon!
+            br
+            hr
+          h4 Code
+          p The code is open source under the MIT license on 
+            a.no(href='https://github.com/LabLayers/lablayers.github.io/')
+              i.icon-github
+            | ! I created the entire CSS framework from scratch. Feel free to file an 
+            a.no(href='https://github.com/LabLayers/lablayers.github.io/issues') issue
+            |  if you run into any problems.
           h4 Icons
           a(href='http://abonive.deviantart.com/art/Free-SVG-IconSet-389441971')
             i.icon-cc 

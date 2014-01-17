@@ -140,7 +140,8 @@
 }
 
 .field {
-    border: 2px solid #bdc3c7;
+    border: 2px solid black;
+    box-shadow: 0 0 4px black;
     color: $dark;
     display: block;
     font-size: 15px;
@@ -150,6 +151,11 @@
     border-radius: 6px;
     box-shadow: none;
     outline: none;
-    -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
-    transition: border .25s linear, color .25s linear, background-color .25s linear;
+    -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear, box-shadow .25s linear;
+    transition: border .25s linear, color .25s linear, background-color .25s linear, box-shadow .25s linear;
+}
+
+.field:active, .field:focus {
+    border-color: $green;
+    box-shadow: 0 0 12px black;
 }

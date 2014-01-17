@@ -200,7 +200,7 @@ header#top {
     display: table-cell;
     vertical-align: middle;
     position: relative;
-    top: -68px;
+    top: -10px;
   }
   p {
     @extend p.lead;
@@ -667,6 +667,11 @@ section#social {
       @include button-subtle($dark);
       @extend .button-jumbo;
     }
+  }
+  .fb-root {
+    position: relative;
+    min-height: 500px;
+    display: block;
   }
 }
 
@@ -1253,7 +1258,7 @@ section#social {
   box-shadow: inset 0 0 60px rgba(0,0,0,0.5);
   background-image: linear-gradient(to bottom right, #d38312, #a83279);
   color: white;
-  text-align: center;
+  text-align: center; 
   article {
     @extend .col4;
     text-align: center;
@@ -1347,10 +1352,24 @@ section#social {
     textarea {
       height: 5em;
     }
+    #entry_88530688 {
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+    #entry_1457997342 {
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+    }
+    input, textarea, select {
+      margin-bottom: 0.2em;
+    }
     input#ss-submit {
-      @include button-subtle($dark);
+      @include button-subtle($spike);
       width: 100%;
       display: block;
+      line-height: 42px;
+      margin-top: 0.5em;
+      outline: none;
     }
   }
   .telefono {
@@ -1358,7 +1377,7 @@ section#social {
       font-size: 0;
       visibility: hidden;
       &:before {
-        font-size: $font-size;
+        font-size: 30px;
         visibility: visible;
         display: inline;
       }
@@ -1378,7 +1397,7 @@ section#social {
       font-size: 0;
       visibility: hidden;
       &:before {
-        font-size: $font-size;
+        font-size: 30px;
         visibility: visible;
         display: inline;
       }
@@ -1411,6 +1430,7 @@ footer {
   // Background Effect
   // -@ http://stackoverflow.com/questions/3032856/z-index-of-before-or-after-to-be-below-the-element-is-that-possible
   position: static;
+  @include .dark-text-shadow;
   a {
     color: $clouds;
     &:hover {
@@ -1518,6 +1538,14 @@ modal#credits window {
         color: $green-sea;
         padding-left: 20px;
       }
+      &.no {
+        border-bottom: 1px dotted white;
+      }
+      &.no:hover {
+        color: white;
+        border-bottom: 1px solid white;
+        padding-left: 0px;
+      }
     }
     h4 {
       margin-top: 1em;
@@ -1529,10 +1557,31 @@ modal#credits window {
     }
   }
   // Eclipse Animation
-  #eclipse {
+  .rockets {
+    position: relative;
+    @extend .hidden-mobile;
+    i.icon-solar {
+      position: absolute;
+      left: 75px;
+      top: -5px;
+      font-size: 120px;
+      // transform: rotate(120deg);
+      // -webkit-transform: rotate(120deg);
+      color: gold;
+      z-index: 1;
+    }
     // Moon
     .moon {
+      z-index: 5;
+      position: relative;
       background: white;
+      padding: 10px;
+      height: 110px;
+      width: 110px;
+      border-radius: 200px;
+      display: inline-block;
+      transform: rotate(120deg);
+      -webkit-transform: rotate(120deg);
       .halfCircle{
         height:45px;
         width:90px;
@@ -1550,7 +1599,7 @@ modal#credits window {
   body {
     padding-left: 0px;
   }
-  .hidden-mobile, canvas, iframe, .browser, #about figure, .stickem-container {
+  .hidden-mobile, canvas, iframe, .browser, #about figure, .stickem-container, #hackerchat .heightfix {
     display: none!important;
   }
   header, section, footer {
