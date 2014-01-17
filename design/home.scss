@@ -1434,7 +1434,7 @@ footer {
   // Background Effect
   // -@ http://stackoverflow.com/questions/3032856/z-index-of-before-or-after-to-be-below-the-element-is-that-possible
   position: static;
-  @include .dark-text-shadow;
+  @extend .dark-text-shadow;
   a {
     color: $clouds;
     &:hover {
