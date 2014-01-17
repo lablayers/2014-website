@@ -1080,6 +1080,10 @@ section#social {
   }
 }
 
+#more {
+  background: $ltpink;
+}
+
 // Dat Bumblebee
 #tfmonster {
   color: $white;
@@ -1108,17 +1112,14 @@ section#social {
 }
 
 // Science
-#science {
-  background: $tardis;
-  color: lighten($orange, 15%);
+#science, #lab {
+  background: rgb(0, 47, 75);
+  color: white;
   article {
     @extend .col4;
     @extend .tile;
     padding: 6px;
     text-align: left;
-    p {
-      text-align: center;
-    }
     .slide {
       max-width: 20em;
       margin: auto;
@@ -1132,7 +1133,85 @@ section#social {
       border-radius: 0px;
       text-align: right;
       padding-top: 3em;
+      position: relative;
+      span {
+        background: black;
+        background: rgba(0,0,0,.5);
+        color: white;
+        padding: 6px;
+      }
+      &.ai {
+        background: $pink;
+      }
+      &.passwords {
+        background: $orange;
+        code {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 100%;
+          font-size: 60px;
+        }
+        span {
+          background: $red;
+          color: white;
+          padding: 6px;
+          position: relative;
+          display: inline-block;
+        }
+      }
+      &.files {
+        background: $ltpink;
+      }
+      &.boil {
+        background: $red;
+      }
+      &.gold {
+        text-shadow: 1px 1px rgb(141, 91, 51), 2px 2px rgb(143, 143, 143), 0px 0 1px rgb(143, 143, 143);
+        background: rgb(224, 196, 11);
+        color: rgb(255, 255, 240);
+        font-weight: bold;
+      }
+      &.wavelengths {
+        background: $mango;
+      }
     }
+    ul, .info {
+      background: lightGray;
+      padding: 6px;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+      color: black;
+      li {
+        padding-left: 2em;
+        border-top: 1px solid gray;
+        &:first-child {
+          border-top: none;
+        }
+        &:before {
+          content: "";
+          color: black;
+           font-family: "Stargazer";
+          margin-left: -30px;
+          padding-right: 12px;
+        }
+      }
+    }
+    p {
+      background: white;
+      padding: 6px;
+      color: black;
+    }
+  }
+}
+
+// Robotics
+#robotics {
+  background: rgb(0, 47, 75);
+  color: white;
+  a {
+    @include button-subtle($spike);
+    @extend .button-jumbo;
   }
 }
 
@@ -1147,8 +1226,16 @@ section#social {
 #art {
   // background: #dde5d8;
   // color: #2c3635;
-  background: $light;
+  background: #ccd9c8;
   color: $dark;
+  iframe {
+    width: 100%;
+    height: 300px;
+  }
+  a {
+    @include button-subtle(#4e6252);
+    @extend .button-jumbo;
+  }
 }
 
 // Writing
@@ -1156,6 +1243,9 @@ section#social {
   box-shadow: inset 0 0 60px rgba(0,0,0,0.5);
   color: $dark;
   background: $ltyellow;
+  a {
+    @include button-subtle($dark);
+  }
 }
 
 // Film
@@ -1163,6 +1253,18 @@ section#social {
   box-shadow: inset 0 0 60px rgba(0,0,0,0.5);
   background-image: linear-gradient(to bottom right, #d38312, #a83279);
   color: white;
+  text-align: center;
+  article {
+    @extend .col4;
+    text-align: center;
+    padding: 6px;
+    .video {
+      display: block;
+      background: black;
+      width: 100%;
+      height: 200px;
+    }
+  }
 }
 
 // Music
@@ -1171,7 +1273,52 @@ section#social {
   box-shadow: inset 0 0 60px rgba(0,0,0,0.5);
   background-image: linear-gradient(to bottom right, #002f4b, #e0be00);
   color: white;
-  p.lead {
+  .wrapper {
+    .album {
+      line-height: 1.1em;
+      color: $dark;
+      @extend .browser;
+      width: 210px;
+      display: inline-block;
+      margin: 6px;
+      padding: 6px 6px;
+      .thumbnail {
+        background: white;
+        display: inline-block;
+        float: left;
+        width: 2.2em;
+        height: 2.2em;
+        box-shadow: 0 0 2px 1px rgba(0,0,0,.3);
+        margin-right: 6px;
+        text-decoration: none;
+        &:after {
+          display: block;
+          content: "▶";
+          width: 2em;
+          line-height: 2em;
+          text-align: center;
+          vertical-align: middle;
+          background: rgba(0,0,0,.5);
+          color: white;
+          padding: 2px;
+          opacity: 0;
+          transition: opacity 0.2s ease;
+          -webkit-transition: opacity 0.2s ease;
+        }
+      }
+      .artist {
+        font-size: 12px;
+      }
+      &:hover .thumbnail:after {
+        opacity: 1;
+      }
+    }
+  }
+  a.lastfm {
+    @include button-subtle($red);
+    @extend .button-jumbo;
+    @extend .transition;
+    margin-bottom: -1em;
   }
 }
 
@@ -1205,9 +1352,6 @@ section#social {
       width: 100%;
       display: block;
     }
-
-  }
-  article {
   }
   .telefono {
     .guacamole, .caliente, .chipotle, .gustas, .tortilla‎, .mios, .mexico, .frijoles, .dota, .tortillas {
@@ -1244,6 +1388,13 @@ section#social {
     .zayn:before { content: '@'; }
     .harry:before { content: 'victorlourng'; }
     .liam:before { content: '.com'; }
+  }
+  p.note {
+    padding: 30px;
+    margin-top: 60px;
+    background: black;
+    background: rgba(0,0,0,.5);
+    border-radius: 4px;
   }
 }
 
