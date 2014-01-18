@@ -47,6 +47,19 @@
                 -webkit-filter: drop-shadow(0px 1px rgba(255, 255, 255, 0.5));
                 -webkit-backface-visibility: hidden;
             }
+            div.pause {
+                text-indent: -50px;
+            }
+            div.pause:after {
+                postion: absolute;
+                margin-left: 20px;
+                left: 0px;
+                content: '■';
+                display: inline;
+                opacity: 1;
+                font-size: 30px;
+                visibility: visible;
+            }
         }
         .lcd {
             position: relative;
@@ -86,7 +99,7 @@
                 display: table;
                 width: 100%;
                 margin-bottom: 4px;
-                .progress, .remanining {
+                .progress, .remaining {
                     display: table-cell;
                     // float: right;
                     text-align: center;
@@ -188,6 +201,14 @@
                 position: relative;
                 background: linear-gradient(rgb(243, 245, 247),rgb(214, 225, 233));
                 margin-bottom: 0.7em;
+                i {
+                  color: rgb(205, 213, 216);
+                  display: block;
+                  font-size: 90px;
+                  text-align: center;
+                  line-height: 150px;
+                  text-shadow: 0 1px rgba(255,255,255,.5), 0 -1px rgba(80,80,80,.3);
+                }
             }
             .title {
                 font-weight: bold;

@@ -3097,7 +3097,20 @@ attr {
         text-shadow: none;
         -webkit-filter: drop-shadow(0px 1px rgba(255, 255, 255, 0.5));
         -webkit-backface-visibility: hidden; }
-    /* line 51, global/_webtunesmini.scss */
+      /* line 50, global/_webtunesmini.scss */
+      .webtunes_container .controller .left div.pause {
+        text-indent: -50px; }
+      /* line 53, global/_webtunesmini.scss */
+      .webtunes_container .controller .left div.pause:after {
+        postion: absolute;
+        margin-left: 20px;
+        left: 0px;
+        content: '■';
+        display: inline;
+        opacity: 1;
+        font-size: 30px;
+        visibility: visible; }
+    /* line 64, global/_webtunesmini.scss */
     .webtunes_container .controller .lcd {
       position: relative;
       width: 40%;
@@ -3110,33 +3123,33 @@ attr {
       box-shadow: inset 0 1px 0 0 rgba(100, 100, 100, 0.3), inset 0 -2px 0 0 #c4cacf, inset 0 0 4px 0 rgba(100, 100, 100, 0.36), 0 1px 0 0 #d0d0d0;
       border-radius: 4px;
       text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1); }
-      /* line 63, global/_webtunesmini.scss */
+      /* line 76, global/_webtunesmini.scss */
       .webtunes_container .controller .lcd .info {
         position: absolute;
         display: block;
         width: 100%;
         top: 0;
         padding: 4px; }
-      /* line 70, global/_webtunesmini.scss */
+      /* line 83, global/_webtunesmini.scss */
       .webtunes_container .controller .lcd .title {
         color: #222222;
         font-weight: bold; }
-      /* line 74, global/_webtunesmini.scss */
+      /* line 87, global/_webtunesmini.scss */
       .webtunes_container .controller .lcd .artist {
         display: inline-block; }
-        /* line 77, global/_webtunesmini.scss */
+        /* line 90, global/_webtunesmini.scss */
         .webtunes_container .controller .lcd .artist:after {
           content: "   -   "; }
-      /* line 81, global/_webtunesmini.scss */
+      /* line 94, global/_webtunesmini.scss */
       .webtunes_container .controller .lcd .album {
         display: inline-block; }
-      /* line 85, global/_webtunesmini.scss */
+      /* line 98, global/_webtunesmini.scss */
       .webtunes_container .controller .lcd .playback {
         display: table;
         width: 100%;
         margin-bottom: 4px; }
-        /* line 89, global/_webtunesmini.scss */
-        .webtunes_container .controller .lcd .playback .progress, .webtunes_container .controller .lcd .playback .remanining {
+        /* line 102, global/_webtunesmini.scss */
+        .webtunes_container .controller .lcd .playback .progress, .webtunes_container .controller .lcd .playback .remaining {
           display: table-cell;
           text-align: center;
           width: 25px;
@@ -3147,19 +3160,19 @@ attr {
           padding: 0px 10px;
           line-height: 20px;
           vertical-align: top; }
-        /* line 102, global/_webtunesmini.scss */
+        /* line 115, global/_webtunesmini.scss */
         .webtunes_container .controller .lcd .playback .seeker, .webtunes_container .controller .lcd .playback #playbackSliderFilled, .webtunes_container .controller .lcd .playback #load_progress {
           display: table-cell;
           width: 100%;
           height: 20px; }
-    /* line 110, global/_webtunesmini.scss */
+    /* line 123, global/_webtunesmini.scss */
     .webtunes_container .controller .search {
       display: table-cell;
       width: 30%;
       text-align: right;
       padding-right: 40px;
       vertical-align: middle; }
-      /* line 116, global/_webtunesmini.scss */
+      /* line 129, global/_webtunesmini.scss */
       .webtunes_container .controller .search input {
         border-radius: 30px;
         border: none;
@@ -3169,14 +3182,14 @@ attr {
         height: 20px;
         left: 20px;
         padding: 0px 10px; }
-        /* line 125, global/_webtunesmini.scss */
+        /* line 138, global/_webtunesmini.scss */
         .webtunes_container .controller .search input:focus {
           outline: none;
           box-shadow: inset 0 0 2px #001eff, 0 0 4px #001eff; }
-    /* line 131, global/_webtunesmini.scss */
+    /* line 144, global/_webtunesmini.scss */
     .webtunes_container .controller .controller[data-playing="none"] .lcd progress {
       display: none; }
-  /* line 135, global/_webtunesmini.scss */
+  /* line 148, global/_webtunesmini.scss */
   .webtunes_container .toolbar {
     text-align: left;
     padding: 4px 20px;
@@ -3184,7 +3197,7 @@ attr {
     background: linear-gradient(#686868, #484848, #3a3a3a);
     border-bottom: #242424;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3); }
-    /* line 142, global/_webtunesmini.scss */
+    /* line 155, global/_webtunesmini.scss */
     .webtunes_container .toolbar a {
       background: black;
       background: linear-gradient(#949494 0%, #828282 8%, #6b6b6b 41%, #454545 100%);
@@ -3200,20 +3213,20 @@ attr {
       -webkit-user-select: none;
       transition: none;
       -webkit-transition: none; }
-      /* line 157, global/_webtunesmini.scss */
+      /* line 170, global/_webtunesmini.scss */
       .webtunes_container .toolbar a:active {
         box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.75);
         background: #3c3c3c;
         border: 1px solid #0f0f0f;
         text-shadow: 0px -1px rgba(0, 0, 0, 0.5); }
-  /* line 165, global/_webtunesmini.scss */
+  /* line 178, global/_webtunesmini.scss */
   .webtunes_container .store {
     background: white;
     padding: 20px;
     text-align: left;
     font-size: 12px;
     line-height: 1.2em; }
-    /* line 171, global/_webtunesmini.scss */
+    /* line 184, global/_webtunesmini.scss */
     .webtunes_container .store .album {
       color: #343434;
       display: inline-block;
@@ -3222,7 +3235,7 @@ attr {
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis; }
-      /* line 179, global/_webtunesmini.scss */
+      /* line 192, global/_webtunesmini.scss */
       .webtunes_container .store .album .thumbnail {
         display: block;
         width: 150px;
@@ -3235,13 +3248,21 @@ attr {
         position: relative;
         background: linear-gradient(#f3f5f7, #d6e1e9);
         margin-bottom: 0.7em; }
-      /* line 192, global/_webtunesmini.scss */
+        /* line 204, global/_webtunesmini.scss */
+        .webtunes_container .store .album .thumbnail i {
+          color: #cdd5d8;
+          display: block;
+          font-size: 90px;
+          text-align: center;
+          line-height: 150px;
+          text-shadow: 0 1px rgba(255, 255, 255, 0.5), 0 -1px rgba(80, 80, 80, 0.3); }
+      /* line 213, global/_webtunesmini.scss */
       .webtunes_container .store .album .title {
         font-weight: bold; }
-      /* line 195, global/_webtunesmini.scss */
+      /* line 216, global/_webtunesmini.scss */
       .webtunes_container .store .album .artist {
         color: #989898; }
-      /* line 198, global/_webtunesmini.scss */
+      /* line 219, global/_webtunesmini.scss */
       .webtunes_container .store .album .album {
         color: #989898; }
 
@@ -4463,45 +4484,55 @@ section#social {
   box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.5);
   background-image: linear-gradient(to bottom right, #002f4b, #e0be00);
   color: white; }
-  /* line 1286, home.scss */
-  #music .wrapper .album {
-    line-height: 1.1em;
-    color: #4f4e4c;
-    width: 210px;
-    display: inline-block;
-    margin: 6px;
-    padding: 6px 6px; }
-    /* line 1294, home.scss */
-    #music .wrapper .album .thumbnail {
-      background: white;
+  /* line 1285, home.scss */
+  #music .wrapper {
+    transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    transition: all 1.25s;
+    -webkit-transition: all 1.25s;
+    opacity: 0.1; }
+    /* line 1291, home.scss */
+    #music .wrapper .album {
+      line-height: 1.1em;
+      color: #4f4e4c;
+      width: 210px;
       display: inline-block;
-      float: left;
-      width: 2.2em;
-      height: 2.2em;
-      box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3);
-      margin-right: 6px;
-      text-decoration: none; }
-      /* line 1303, home.scss */
-      #music .wrapper .album .thumbnail:after {
-        display: block;
-        content: "▶";
-        width: 2em;
-        line-height: 2em;
-        text-align: center;
-        vertical-align: middle;
-        background: rgba(0, 0, 0, 0.5);
-        color: white;
-        padding: 2px;
-        opacity: 0;
-        transition: opacity 0.2s ease;
-        -webkit-transition: opacity 0.2s ease; }
-    /* line 1318, home.scss */
-    #music .wrapper .album .artist {
-      font-size: 12px; }
-    /* line 1321, home.scss */
-    #music .wrapper .album:hover .thumbnail:after {
-      opacity: 1; }
-  /* line 1326, home.scss */
+      margin: 6px;
+      padding: 6px 6px; }
+      /* line 1299, home.scss */
+      #music .wrapper .album .thumbnail {
+        background: white;
+        display: inline-block;
+        float: left;
+        width: 2.2em;
+        height: 2.2em;
+        box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3);
+        margin-right: 6px;
+        text-decoration: none; }
+        /* line 1308, home.scss */
+        #music .wrapper .album .thumbnail:after {
+          display: block;
+          content: "▶";
+          width: 2em;
+          line-height: 2em;
+          text-align: center;
+          vertical-align: middle;
+          background: rgba(0, 0, 0, 0.5);
+          color: white;
+          padding: 2px;
+          opacity: 0;
+          transition: opacity 0.2s ease;
+          -webkit-transition: opacity 0.2s ease; }
+        /* line 1322, home.scss */
+        #music .wrapper .album .thumbnail.playing:after {
+          content: "◼"; }
+      /* line 1326, home.scss */
+      #music .wrapper .album .artist {
+        font-size: 12px; }
+      /* line 1329, home.scss */
+      #music .wrapper .album:hover .thumbnail:after {
+        opacity: 1; }
+  /* line 1334, home.scss */
   #music a.lastfm {
     background: #ee4144;
     color: white;
@@ -4515,42 +4546,47 @@ section#social {
     /* line 143, global/_buttons.scss */
     #music a.lastfm:active, #music a.lastfm:focus {
       background-color: #eb1c1f; }
+  /* line 1340, home.scss */
+  #music.visible .wrapper {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    opacity: 1; }
 
-/* line 1335, home.scss */
+/* line 1348, home.scss */
 #contact {
   background: #843caf;
   color: white; }
-  /* line 1340, home.scss */
+  /* line 1353, home.scss */
   #contact form select, #contact form textarea {
     width: 100%; }
-  /* line 1343, home.scss */
+  /* line 1356, home.scss */
   #contact form input:not(#ss-submit) {
     width: 50%;
     display: table-cell;
     float: left; }
-    /* line 1347, home.scss */
+    /* line 1360, home.scss */
     #contact form input:not(#ss-submit):first-child {
       border-top-right-radius: 0px;
       border-bottom-right-radius: 0px; }
-    /* line 1351, home.scss */
+    /* line 1364, home.scss */
     #contact form input:not(#ss-submit):last-child {
       border-top-left-radius: 0px;
       border-bottom-left-radius: 0px; }
-  /* line 1356, home.scss */
+  /* line 1369, home.scss */
   #contact form textarea {
     height: 5em; }
-  /* line 1359, home.scss */
+  /* line 1372, home.scss */
   #contact form #entry_88530688 {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px; }
-  /* line 1363, home.scss */
+  /* line 1376, home.scss */
   #contact form #entry_1457997342 {
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px; }
-  /* line 1367, home.scss */
+  /* line 1380, home.scss */
   #contact form input, #contact form textarea, #contact form select {
     margin-bottom: 0.2em; }
-  /* line 1370, home.scss */
+  /* line 1383, home.scss */
   #contact form input#ss-submit {
     background: #5ba525;
     color: white;
@@ -4568,67 +4604,67 @@ section#social {
     /* line 143, global/_buttons.scss */
     #contact form input#ss-submit:active, #contact form input#ss-submit:focus {
       background-color: #49841e; }
-  /* line 1380, home.scss */
+  /* line 1393, home.scss */
   #contact .telefono .guacamole, #contact .telefono .caliente, #contact .telefono .chipotle, #contact .telefono .gustas, #contact .telefono .tortilla‎, #contact .telefono .mios, #contact .telefono .mexico, #contact .telefono .frijoles, #contact .telefono .dota, #contact .telefono .tortillas {
     font-size: 0;
     visibility: hidden; }
-    /* line 1383, home.scss */
+    /* line 1396, home.scss */
     #contact .telefono .guacamole:before, #contact .telefono .caliente:before, #contact .telefono .chipotle:before, #contact .telefono .gustas:before, #contact .telefono .tortilla‎:before, #contact .telefono .mios:before, #contact .telefono .mexico:before, #contact .telefono .frijoles:before, #contact .telefono .dota:before, #contact .telefono .tortillas:before {
       font-size: 30px;
       visibility: visible;
       display: inline; }
-  /* line 1389, home.scss */
+  /* line 1402, home.scss */
   #contact .telefono .tortillas:before {
     content: '1778'; }
-  /* line 1390, home.scss */
+  /* line 1403, home.scss */
   #contact .telefono .dota:before {
     content: '- '; }
-  /* line 1391, home.scss */
+  /* line 1404, home.scss */
   #contact .telefono .guacamole:before {
     content: ') '; }
-  /* line 1392, home.scss */
+  /* line 1405, home.scss */
   #contact .telefono .mexico:before {
     content: '696'; }
-  /* line 1393, home.scss */
+  /* line 1406, home.scss */
   #contact .telefono .frijoles:before {
     content: '9981'; }
-  /* line 1394, home.scss */
+  /* line 1407, home.scss */
   #contact .telefono .chipotle:before {
     content: '969 '; }
-  /* line 1395, home.scss */
+  /* line 1408, home.scss */
   #contact .telefono .gustas:before {
     content: ' - '; }
-  /* line 1396, home.scss */
+  /* line 1409, home.scss */
   #contact .telefono .caliente:before {
     content: '571'; }
-  /* line 1397, home.scss */
+  /* line 1410, home.scss */
   #contact .telefono .mios:before {
     content: '('; }
-  /* line 1400, home.scss */
+  /* line 1413, home.scss */
   #contact .correo .zayn, #contact .correo .louis, #contact .correo .niall, #contact .correo .liam, #contact .correo .harry {
     font-size: 0;
     visibility: hidden; }
-    /* line 1403, home.scss */
+    /* line 1416, home.scss */
     #contact .correo .zayn:before, #contact .correo .louis:before, #contact .correo .niall:before, #contact .correo .liam:before, #contact .correo .harry:before {
       font-size: 30px;
       visibility: visible;
       display: inline; }
-  /* line 1409, home.scss */
+  /* line 1422, home.scss */
   #contact .correo .louis:before {
     content: 'hel'; }
-  /* line 1410, home.scss */
+  /* line 1423, home.scss */
   #contact .correo .niall:before {
     content: 'lo'; }
-  /* line 1411, home.scss */
+  /* line 1424, home.scss */
   #contact .correo .zayn:before {
     content: '@'; }
-  /* line 1412, home.scss */
+  /* line 1425, home.scss */
   #contact .correo .harry:before {
     content: 'victorlourng'; }
-  /* line 1413, home.scss */
+  /* line 1426, home.scss */
   #contact .correo .liam:before {
     content: '.com'; }
-  /* line 1415, home.scss */
+  /* line 1428, home.scss */
   #contact p.note {
     padding: 30px;
     margin-top: 60px;
@@ -4636,28 +4672,28 @@ section#social {
     background: rgba(0, 0, 0, 0.5);
     border-radius: 4px; }
 
-/* line 1425, home.scss */
+/* line 1438, home.scss */
 footer {
   background: #34495e;
   color: #ecf0f1;
   text-align: left;
   overflow: hidden;
   position: static; }
-  /* line 1438, home.scss */
+  /* line 1451, home.scss */
   footer a {
     color: #ecf0f1; }
-    /* line 1440, home.scss */
+    /* line 1453, home.scss */
     footer a:hover {
       color: #16a085; }
-  /* line 1444, home.scss */
+  /* line 1457, home.scss */
   footer .skyward {
     float: right;
     color: #ecf0f1;
     position: relative; }
-    /* line 1448, home.scss */
+    /* line 1461, home.scss */
     footer .skyward i.icon-tardis {
       position: absolute; }
-    /* line 1451, home.scss */
+    /* line 1464, home.scss */
     footer .skyward i.icon-tardis:before {
       position: absolute;
       font-size: 300px;
@@ -4669,7 +4705,7 @@ footer {
       transition: all 0.25s;
       -webkit-transform: rotate(-15deg);
       -webkit-transition: all 0.25s; }
-    /* line 1463, home.scss */
+    /* line 1476, home.scss */
     footer .skyward:hover i.icon-tardis:before {
       -webkit-transform: rotate(0deg);
       transform: rotate(0deg);
@@ -4677,7 +4713,7 @@ footer {
       color: #003865;
       text-shadow: 0 0 50px white;
       background: radial-gradient(#ffffff 0%, rgba(255, 255, 255, 0) 80%); }
-    /* line 1471, home.scss */
+    /* line 1484, home.scss */
     footer .skyward span {
       margin-right: 140px;
       background: #4f4e4c;
@@ -4691,11 +4727,11 @@ footer {
       /* line 143, global/_buttons.scss */
       footer .skyward span:active, footer .skyward span:focus {
         background-color: #3a3938; }
-  /* line 1479, home.scss */
+  /* line 1492, home.scss */
   footer aside a {
     position: relative;
     z-index: 5; }
-  /* line 1483, home.scss */
+  /* line 1496, home.scss */
   footer aside i.icon-network {
     position: relative;
     z-index: 1;
@@ -4709,12 +4745,12 @@ footer {
     width: 30px;
     margin-right: 20px;
     z-index: 0; }
-    /* line 1497, home.scss */
+    /* line 1510, home.scss */
     footer aside i.icon-network i.icon-heart:before {
       animation: heartbeat 1s infinite;
       -webkit-animation: heartbeat 1s infinite;
       position: absolute; }
-    /* line 1503, home.scss */
+    /* line 1516, home.scss */
     footer aside i.icon-network:before {
       position: absolute;
       z-index: -1;
@@ -4728,7 +4764,7 @@ footer {
       opacity: 0.3;
       color: #ecf0f1; }
 
-/* line 1523, home.scss */
+/* line 1536, home.scss */
 modal#likemystatus window {
   top: 10%;
   vertical-align: 80%;
@@ -4736,40 +4772,40 @@ modal#likemystatus window {
   overflow-x: hidden;
   bottom: 10%; }
 
-/* line 1532, home.scss */
+/* line 1545, home.scss */
 modal#credits window {
   background: #2c3e50;
   color: white; }
-  /* line 1536, home.scss */
+  /* line 1549, home.scss */
   modal#credits window .content a {
     color: white;
     transition: padding 0.2s;
     -webkit-transition: padding 0.2s;
     line-height: 1.8em; }
-    /* line 1541, home.scss */
+    /* line 1554, home.scss */
     modal#credits window .content a:hover {
       color: #16a085;
       padding-left: 20px; }
-    /* line 1545, home.scss */
+    /* line 1558, home.scss */
     modal#credits window .content a.no {
       border-bottom: 1px dotted white; }
-    /* line 1548, home.scss */
+    /* line 1561, home.scss */
     modal#credits window .content a.no:hover {
       color: white;
       border-bottom: 1px solid white;
       padding-left: 0px; }
-  /* line 1554, home.scss */
+  /* line 1567, home.scss */
   modal#credits window .content h4 {
     margin-top: 1em; }
-  /* line 1557, home.scss */
+  /* line 1570, home.scss */
   modal#credits window .content p {
     line-height: 1.5em;
     margin-bottom: 1em;
     margin-top: .5em; }
-  /* line 1564, home.scss */
+  /* line 1577, home.scss */
   modal#credits window .rockets {
     position: relative; }
-    /* line 1567, home.scss */
+    /* line 1580, home.scss */
     modal#credits window .rockets i.icon-solar {
       position: absolute;
       left: 75px;
@@ -4777,7 +4813,7 @@ modal#credits window {
       font-size: 120px;
       color: gold;
       z-index: 1; }
-    /* line 1578, home.scss */
+    /* line 1591, home.scss */
     modal#credits window .rockets .moon {
       z-index: 5;
       position: relative;
@@ -4789,7 +4825,7 @@ modal#credits window {
       display: inline-block;
       transform: rotate(120deg);
       -webkit-transform: rotate(120deg); }
-      /* line 1589, home.scss */
+      /* line 1602, home.scss */
       modal#credits window .rockets .moon .halfCircle {
         height: 45px;
         width: 90px;
@@ -4799,15 +4835,15 @@ modal#credits window {
         background: gray; }
 
 @media only screen and (max-width: 780px) {
-  /* line 1603, home.scss */
+  /* line 1616, home.scss */
   body {
     padding-left: 0px; }
 
-  /* line 1606, home.scss */
+  /* line 1619, home.scss */
   .hidden-mobile, #mhacks, #hackerchat a.pilot, modal#credits window .rockets, canvas, iframe, .browser, #event article .wrapper, #more article .wrapper, #music .wrapper .album, #about figure, .stickem-container, #hackerchat .heightfix {
     display: none !important; }
 
-  /* line 1609, home.scss */
+  /* line 1622, home.scss */
   header, section, footer {
     position: relatve;
     width: 100%;
@@ -4815,53 +4851,53 @@ modal#credits window {
     padding: 20px 5px;
     text-align: center; }
 
-  /* line 1614, home.scss */
+  /* line 1627, home.scss */
   header#top {
     padding: 150px 10px 72px 10px;
     max-height: 300px; }
-    /* line 1617, home.scss */
+    /* line 1630, home.scss */
     header#top h1 {
       font-size: 50px;
       line-height: 1em; }
-      /* line 1620, home.scss */
+      /* line 1633, home.scss */
       header#top h1 span {
         opacity: 1 !important;
         text-shadow: 0 0 4px rgba(0, 0, 0, 0.5) !important; }
-    /* line 1625, home.scss */
+    /* line 1638, home.scss */
     header#top form {
       display: none !important; }
-    /* line 1628, home.scss */
+    /* line 1641, home.scss */
     header#top p {
       font-size: 20px; }
 
-  /* line 1632, home.scss */
+  /* line 1645, home.scss */
   #social a {
     display: block !important;
     width: 100% !important;
     text-shadow: none !important; }
 
-  /* line 1637, home.scss */
+  /* line 1650, home.scss */
   .skyward {
     float: none;
     display: block;
     width: 100%;
     z-index: 5;
     margin-bottom: 1em; }
-    /* line 1643, home.scss */
+    /* line 1656, home.scss */
     .skyward i.icon-tardis {
       display: none; }
-    /* line 1646, home.scss */
+    /* line 1659, home.scss */
     .skyward span {
       margin-right: 0px !important;
       display: block;
       width: 100%;
       padding: 12px !important;
       font-size: 30px; } }
-/* line 1657, home.scss */
+/* line 1670, home.scss */
 body.inthetardis {
   background: #4f4e4c;
   background: linear-gradient(#81375c, #624c73, #1f2643, #16223c, #27324e, #1a344b); }
-  /* line 1662, home.scss */
+  /* line 1675, home.scss */
   body.inthetardis header, body.inthetardis section {
     animation: inthetardis 4s ease;
     -webkit-animation: inthetardis 4s ease;
@@ -4869,7 +4905,7 @@ body.inthetardis {
     background: #edece3;
     transition: box-shadow 0.5s ease;
     -webkit-transition: box-shadow 0.5s ease; }
-  /* line 1670, home.scss */
+  /* line 1683, home.scss */
   body.inthetardis i.icon-tardis {
     position: fixed !important;
     bottom: 120px !important;
@@ -4880,23 +4916,23 @@ body.inthetardis {
     animation: shimmydown 4s linear;
     -webkit-animation: shimmydown 4s linear; }
 
-/* line 1683, home.scss */
+/* line 1696, home.scss */
 html.mobile, body.mobile {
   background-color: #34495e;
   max-width: 500px;
   margin: auto;
   box-shadow: 0 0 20px black; }
 
-/* line 1691, home.scss */
+/* line 1704, home.scss */
 #iesucks {
   background: #1e98d3;
   border-radius: 0px;
   background: none; }
 
-/* line 1698, home.scss */
+/* line 1711, home.scss */
 body.reset {
   background: white !important; }
-  /* line 1700, home.scss */
+  /* line 1713, home.scss */
   body.reset *, body.reset *:before, body.reset *:after {
     background: white !important;
     margin: 0 !important;
@@ -4928,10 +4964,10 @@ body.reset {
     -webkit-animation: none !important;
     -webkit-transition: none !important;
     -webkit-transform: none !important; }
-  /* line 1732, home.scss */
+  /* line 1745, home.scss */
   body.reset a, body.reset a * {
     color: blue !important;
     text-decoration: underline !important; }
-  /* line 1736, home.scss */
+  /* line 1749, home.scss */
   body.reset window, body.reset modal, body.reset canvas, body.reset iframe, body.reset li.bottom {
     display: none !important; }

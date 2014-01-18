@@ -781,7 +781,7 @@ block content
                 input.seeker(type='range' min='0' max='100' value='0' step='any')
                 progress#playbackSliderFilled(max='100' value='0' style='display: none')
                 progress#load_progress(max='100', value='100' style='display: none')
-                .remanining(data-time='') -0:00
+                .remaining(data-time='') -0:00
             audio#songPlayer(preload='' data-src='' src='')
           .search
             input(type='text' placeholder='Search')
@@ -789,17 +789,20 @@ block content
           a.sort All Music
         .store
           a.album(href='#music!chiptune' data-music='https://trumpet-sugarplums.rhcloud.com/webtunes/embed/song.php?id=012')
-            .thumbnail.chiptune CHIPTUNE
+            .thumbnail.chiptune
+              i.icon-frozen
             .title Chiptune
             .artist Victor Lourng
             .album Demo Reels
           a.album(href='#music!electro' data-music='https://trumpet-sugarplums.rhcloud.com/webtunes/embed/song.php?id=014')
-            .thumbnail.electro ELECTRO
+            .thumbnail.electro
+              i.icon-thunder
             .title Electro
             .artist Victor Lourng
             .album Demo Reels
           a.album(href='#music!jazz' data-music='https://trumpet-sugarplums.rhcloud.com/webtunes/embed/song.php?id=015')
-            .thumbnail.jazz JAZZ
+            .thumbnail.jazz
+              i.icon-water
             .title Jazz
             .artist Victor Lourng
             .album Demo Reels

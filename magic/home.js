@@ -249,6 +249,40 @@ function blast(obj) {
         setTimeout( function() { el.style.display='none' }, 500);
 }
 
+// WebTunes
+$(document).on('click', '.play', function () {
+    $(".controller .left div").toggleClass("play");
+    $(".controller .left div").toggleClass("pause");
+});
+$(document).on('click', '.pause', function () {
+    $(".controller .left div").toggleClass("play");
+    $(".controller .left div").toggleClass("pause");
+});
+$(document).on('click', 'a[href="#music!chiptune"]', function () {
+    $(".controller .left div").removeClass("play");
+    $(".controller .left div").addClass("pause");
+    document.querySelector(".lcd .title").textContent = "Chiptune Reel";
+    document.querySelector(".lcd .artist").textContent = "Victor Lourng";
+    document.querySelector(".lcd .album").textContent = "Chiptune";
+    document.querySelector(".lcd .remaining").textContent = "-5:35";
+});
+$(document).on('click', 'a[href="#music!electro"]', function () {
+    $(".controller .left div").removeClass("play");
+    $(".controller .left div").addClass("pause");
+    document.querySelector(".lcd .title").textContent = "Electro Beats";
+    document.querySelector(".lcd .artist").textContent = "Victor Lourng";
+    document.querySelector(".lcd .album").textContent = "Electro";
+    document.querySelector(".lcd .remaining").textContent = "-3:28";
+});
+$(document).on('click', 'a[href="#music!jazz"]', function () {
+    $(".controller .left div").removeClass("play");
+    $(".controller .left div").addClass("pause");
+    document.querySelector(".lcd .title").textContent = "Jazz Reel";
+    document.querySelector(".lcd .artist").textContent = "Victor Lourng";
+    document.querySelector(".lcd .album").textContent = "Jazz";
+    document.querySelector(".lcd .remaining").textContent = "-2:16";
+});
+
 // Temporary Workaround for Hash
 // -> NEED TO FIX THIS!
 $(document).ready(function(){

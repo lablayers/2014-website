@@ -1283,6 +1283,11 @@ section#social {
   background-image: linear-gradient(to bottom right, #002f4b, #e0be00);
   color: white;
   .wrapper {
+    transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    transition: all 1.25s;
+    -webkit-transition: all 1.25s;
+    opacity: 0.1;
     .album {
       line-height: 1.1em;
       color: $dark;
@@ -1314,6 +1319,9 @@ section#social {
           transition: opacity 0.2s ease;
           -webkit-transition: opacity 0.2s ease;
         }
+        &.playing:after {
+          content: "◼";
+        }
       }
       .artist {
         font-size: 12px;
@@ -1328,6 +1336,11 @@ section#social {
     @extend .button-jumbo;
     @extend .transition;
     margin-bottom: -1em;
+  }
+  &.visible .wrapper {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    opacity: 1;
   }
 }
 
