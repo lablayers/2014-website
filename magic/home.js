@@ -298,30 +298,26 @@ $(document).ready(function(){
                    'Professional Cartographer', 'Hardware Store', 'Bitcoin Convention'];
     var businessName = businessArray[Math.floor(Math.random() * businessArray.length)];
     document.querySelector("a.brand").textContent = businessName;
-    mixpanel.track("Brand Selected:" + businessName);
-});
+    // mixpanel.track("Brand Selected:" + businessName);
 
 // Random Color Picker
 // -> Whatever you do, please don't use this as an OC name generator.
 //    I'm sure that you can come up with better ideas than these!
-$(document).ready(function(){
     var colorArray = ['Almond', 'Apricot', 'Aquamarine', 'Asparagus',
                       'Bittersweet', 'Blizzard', 'Cadet', 'Carnation',
                       'Chartreuse', 'Chestnut'];
     var colorName = colorArray[Math.floor(Math.random() * colorArray.length)];
     document.querySelector("span.firstname").textContent = colorName;
-    mixpanel.track("Color Selected:" + colorName);
-});
+    // mixpanel.track("Color Selected:" + colorName);
 
 // Random Uncommon Animal (and occasional fruit) Picker
-$(document).ready(function(){
     var animalArray = ['Aardvark', 'Alpaca', 'Apple', 'Dromedary',
                        'Coati', 'Argali', 'Dormouse', 'Filly',
                        'Civet', 'Aoudad'];
     var animalName = animalArray[Math.floor(Math.random() * animalArray.length)];
     document.querySelector("span.lastname").textContent = animalName;
     document.getElementById("google").setAttribute("href", "http://lmgtfy.com/?q=" + animalName);
-    mixpanel.track("Animal Selected:" + animalName);
+    // mixpanel.track("Animal Selected:" + animalName);
 });
 
 // Fake Cart
@@ -373,6 +369,17 @@ $(document).on('click', '.skyward', function () {
 // -@ http://analytics.google.com/?referrer=justinbieber
 
 //    (Moved to layout.jade)
+
+// Page Title
+// -> Heavily inspired by zerosixthree.se, code by me.
+
+var originalTitle = document.title;
+
+$(window).focus(function() {
+    document.title = originalTitle;
+}).blur(function() {
+    document.title = "I miss you! ♥ ";
+});
 
 // SNOW!
 // -> Winter wrap-up planned for March.
@@ -652,3 +659,11 @@ t.prototype.process=function(){var e=this.$scrollElement.scrollTop()+this.option
 e(this.selector).parentsUntil(this.options.target,".active").removeClass("active");var n=this.selector+'[data-target="'+t+'"],'+this.selector+'[href="'+t+'"]';var r=e(n).parents("li").addClass("active");if(r.parent(".dropdown-menu").length){r=r.closest("li.dropdown").addClass("active")}r.trigger("activate.bs.scrollspy")};var n=e.fn.scrollspy;e.fn.scrollspy=function(n){return this.each(function(){var r=e(this);var i=r.data("bs.scrollspy");var s=typeof n=="object"&&n;if(!i)r.data("bs.scrollspy",i=new t(this,s));
 if(typeof n=="string")i[n]()})};e.fn.scrollspy.Constructor=t;e.fn.scrollspy.noConflict=function(){e.fn.scrollspy=n;return this};e(window).on("load",function(){e('[data-spy="scroll"]').each(function(){var t=e(this);t.scrollspy(t.data())})})}(jQuery);
 
+// Toggle Visibility
+function toggle_visibility(id) {
+   var e = document.getElementById(id);
+   if(e.style.display == 'block')
+      e.style.display = 'none';
+   else
+      e.style.display = 'block';
+}

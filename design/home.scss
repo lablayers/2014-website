@@ -162,10 +162,10 @@ canvas {
 }
 
 // Banner
-#mhacks {
+#shorty {
   border-radius: 0px;
-  color: #FEC00F;
-  background: #646464;
+  color: white;
+  background: rgb(25, 113, 101);
   display: block;
   line-height: 66px;
   padding: 0 30px;
@@ -174,7 +174,7 @@ canvas {
   -webkit-transition: background 0.25s ease-in;
   @extend .hidden-mobile;
   &:hover {
-    background: darken(#646464, 25%);
+    background: lighten(rgb(25, 113, 101), 12%);
   }
  i {
     font-size: 30px;
@@ -642,7 +642,7 @@ section#social {
 }
 
 // Showcase
-#showcase {
+#showcase, #pennapps, #pilotphilly {
   // -@ http://lea.verou.me/css3patterns/#blueprint-grid
   background-color: $orange;
   background-image: linear-gradient(rgba(255,255,255,.4) 2px, transparent 2px),
@@ -656,7 +656,7 @@ section#social {
     text-decoration: underline;
     font-weight: bold;
   }
-  i.icon-mhacks {
+  i.icon-mhacks, i.icon-pennapps {
     font-size: 300px;
     text-shadow: 0 0 10px rgba(0,0,0,.5);
   }
@@ -672,11 +672,16 @@ section#social {
       @extend .button-jumbo;
     }
   }
-  .fb-root {
+  #fb-root {
     position: relative;
     min-height: 500px;
     display: block;
+    text-align: center;
   }
+}
+
+#pennapps {
+  background-color: lighten(red, 12%);
 }
 
 // ILITE Robotics

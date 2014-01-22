@@ -88,9 +88,9 @@ block content
         //   a(href='http://twitter.com/lablayers')
         //     i.icon-twitter
         //     span Twitter
-    a.banner#mhacks(href='#showcase')
-      i.icon-mhacks
-      | I'm coming to MHacks! Click here to learn more.
+    a.banner#shorty(href='http://shortyawards.com/lablayers')
+      i.icon-right-hand
+      | I'm running for the Shorty Award in #science! Vote for me now!
     header#top(data-identity='victor').visible
       canvas#snow
       .wrapper
@@ -126,54 +126,6 @@ block content
         i.icon-deviantart
         | LabLayers*
         span 116 Watchers
-    section#showcase(data-identity='victor')
-      h2 I'm Coming to MHacks!
-      br
-      .row
-        .col4
-          i.icon-mhacks
-        .col8
-          .wrapper
-            b I am currently at MHacks! Follow me on Twitter:
-            a.twitter-timeline(href='https://twitter.com/lablayers', data-widget-id='424359863045476352') Tweets by @lablayers
-              script
-                  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-          .wrapper
-            b OLD POST: Remember this?
-            p After months of back-and-forth chattering between me, my family, and the organizers of MHacks, my parents have finally decided to let me come to MHacks (at the last possible minute!) How awesome is that?
-            br
-            .fb-root
-              script (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));
-              div.fb-post(data-href="https://www.facebook.com/photo.php?fbid=247016672125437&amp;set=a.124621211031651.25621.124349814392124&amp;type=1" data-width="440")
-                .fb-xfbml-parse-ignore
-                  .content
-                    p Erm, nevermind. Facebook appears to be blocked. 
-                      i.icon-emo-p
-                    hr
-                    a(href="https://www.facebook.com/photo.php?fbid=247016672125437&amp;set=a.124621211031651.25621.124349814392124&amp;type=1") Post
-                    by
-                    a(href="https://www.facebook.com/MHacksHackathon") MHacks
-            br
-            b So here's my hackathon idea:
-            p I want to do something related to the web and art!
-            p It's a product that will be used by beginners and professional artists alike.
-            p If you want to be on my team, please be in touch!
-            br
-            b Looking for a team member?
-            p If you're looking for someone to join your team, I'm the perfect guy for extensive frontend work and quite a bit of backend work.
-              a(href='http://fav.me/d6ttmo3') I've also won 1st place at PilotPhilly for building a hackable collaboration tool. 
-              | Scroll down to see  my awesomeness site and please be in touch!
-            br
-            b Coming to MHacks?
-            p Please be in touch with me - we can definitely meet up at the event! 
-              i.icon-emo-like
-            br
-            a.button(href='http://twitter.com/LabLayers') 
-              i.icon-twitter 
-              | Tweet @LabLayers
-            a.button(href='#contact')
-              i.icon-email 
-              | Contact Me!
     section#unicorn(data-identity='victor' data-abtesting='3' data-stickem='please')
       p They call me a
       h2
@@ -273,6 +225,113 @@ block content
             | });
       div.parallax.stars
       div.parallax.code
+    section#showcase(data-identity='victor')
+      h2
+        i.icon-idea 
+        | Hackathons!
+      br
+      .row
+        .col4
+          i.icon-mhacks
+        .col8
+          .wrapper
+            b Campus Adventures
+            br
+            br
+            p My MHacks project was a crowdsourced bucket list for college students, built 
+              | with Node.js and MySQL. It offers high school students a new perspective on what 
+              | really goes in a specific college and my team plans to launch the product
+              | later this year.
+            br
+            a.button(href='http://arewestillhacking.com') 
+              i.icon-flow-branch  
+              | AreWeStillHacking.com 
+            a.button(href='#backstory' onclick='toggle_visibility("backstory");') 
+              i.icon-list 
+              | Read the Backstory 
+            br
+            br
+            #fb-root
+              script
+                  (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));
+                .fb-post(data-href='https://www.facebook.com/photo.php?fbid=257994744360963&set=a.124621211031651.25621.124349814392124&type=1' data-width='466')
+                  .fb-xfbml-parse-ignore
+                    a(href='https://www.facebook.com/photo.php?fbid=257994744360963&set=a.124621211031651.25621.124349814392124&type=1') Post
+                    | by
+                    a(href='https://www.facebook.com/MHacksHackathon') MHacks
+                    | .
+          // .wrapper.backstory
+            b I am currently at MHacks! Follow me on Twitter:
+            a.twitter-timeline(href='https://twitter.com/lablayers', data-widget-id='424359863045476352') Tweets by @lablayers
+              script
+                  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+          // div#backstory
+          .wrapper.backstory#backstory(style="display: none;")
+            b BACKSTORY: Remember this?
+            p After months of back-and-forth chattering between me, my family, and the organizers of MHacks, my parents have finally decided to let me come to MHacks (at the last possible minute!) How awesome is that?
+            br
+            #fb-root
+              div.fb-post(data-href="https://www.facebook.com/photo.php?fbid=247016672125437&amp;set=a.124621211031651.25621.124349814392124&amp;type=1" data-width="440")
+                .fb-xfbml-parse-ignore
+                  .content
+                    p Erm, nevermind. Facebook appears to be blocked. 
+                      i.icon-emo-p
+                    hr
+                    a(href="https://www.facebook.com/photo.php?fbid=247016672125437&amp;set=a.124621211031651.25621.124349814392124&amp;type=1") Post
+                    by
+                    a(href="https://www.facebook.com/MHacksHackathon") MHacks
+            br
+            b So here's my hackathon idea:
+            p I want to do something related to the web and art!
+            p It's a product that will be used by beginners and professional artists alike.
+            p If you want to be on my team, please be in touch!
+            br
+            b Looking for a team member?
+            p If you're looking for someone to join your team, I'm the perfect guy for extensive frontend work and quite a bit of backend work.
+              a(href='http://fav.me/d6ttmo3') I've also won 1st place at PilotPhilly for building a hackable collaboration tool. 
+              | Scroll down to see  my awesomeness site and please be in touch!
+            br
+            b Coming to MHacks?
+            p Please be in touch with me - we can definitely meet up at the event! 
+              i.icon-emo-like
+            br
+            a.button(href='http://twitter.com/LabLayers') 
+              i.icon-twitter 
+              | Tweet @LabLayers 
+            a.button(href='#contact') 
+              i.icon-email 
+              | Contact Me! 
+    section#pennapps(data-identity='victor')
+      .row
+        .col4
+          i.icon-pennapps
+        .col8
+          .wrapper
+            b What's next?
+            p I'll be at PennApps in West Philly, and I just can't wait until Valentine's Day before I can start hacking awesome things again!
+            br
+            b Looking for a team member?
+            p If you're looking for someone to join your team, I'm the perfect guy for extensive frontend work and quite a bit of backend work. 
+              a(href='http://fav.me/d6ttmo3') I've also won 1st place at PilotPhilly for building a hackable collaboration tool. 
+              | I also have experience with the Kinect Sensor and Raspberry PIs, as well as engineering FRC robots. Scroll down to see my awesomeness and please be in touch!
+            br
+            b Coming to PennApps?
+            p Please be in touch with me - we can definitely meet up at the Hackathon! 
+              i.icon-emo-like
+            br
+            a.button(href='http://twitter.com/LabLayers') 
+              i.icon-twitter 
+              | Tweet @LabLayers 
+            a.button(href='#contact') 
+              i.icon-email 
+              | Contact Me! 
+    // section#pilotphilly(data-identity='victor')
+      .row
+        .col4
+          i.icon-pilotphilly
+        .col8
+          .wrapper
+            b PilotPhilly
     section#portfolio(data-identity='victor')
     section#ilite(data-identity='victor') <!-- data-pin='please' -->
       .row
@@ -893,7 +952,7 @@ block content
       h2 Easter Eggs!
       p I've hid at least 30+ easter eggs on my site. Have you found any yet?
     footer
-      a.skyward(href='#')
+      a.skyward
         span Back to Top
         i.icon-tardis
       aside
@@ -908,7 +967,7 @@ block content
         i.github
         |  Take a look at the 
         a(href='#credits' onclick='launch("credits")') credits. 
-        | Fork me on 
+        | This site is Open Source on  
         a(href='http://github.com/lablayers/lablayers.github.io/')
           i.icon-github 
         | Pages!
