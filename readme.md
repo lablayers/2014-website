@@ -2,7 +2,7 @@
 
 A website for my digital self for the digital era. It really reflects who I am and my colorful personality! :)
 
-This is the third time I have registered my website in nearly a year. Known issues can be found in this repo's [GitHub Issues](https://github.com/LabLayers/lablayers.github.io/issues).
+This is the third time I have redesigned my website in nearly a year. Known issues can be found in this repo's [GitHub Issues](https://github.com/LabLayers/lablayers.github.io/issues).
 
 ## What's New?
 * Just about everything!
@@ -16,7 +16,7 @@ This is the third time I have registered my website in nearly a year. Known issu
 * A CSS3 Framework built from the ground up by myself instead of Bootstrap. [Seriously, though!](https://github.com/LabLayers/lablayers.github.io/tree/master/design)
 * Removed the backend and switched to Google Forms because there really isn't a point for one.
 
-## Standards
+## Standards ![Status](http://img.shields.io/production/ready.png?color=green)
 This should pretty much explain everything:
 
 [![HTML5 Powered with Connectivity / Realtime, CSS3 / Styling, Graphics, 3D &amp; Effects, Multimedia, Performance & Integration, and Semantics](http://www.w3.org/html/logo/badge/html5-badge-h-connectivity-css3-graphics-multimedia-performance-semantics.png)](http://www.w3.org/html/logo/)
@@ -45,7 +45,7 @@ I have also made iframes not load until it is visible in the viewport, saving th
 ## Backend ![Status](http://img.shields.io/production/coming%20soon.png?color=red)
 ~~One of the limitations with hosting on GitHub is that it doesn't support PHP and because of that there really isn't a backend (but I have found creative ways to working around that!) The backend will be remotely run with OpenShift... eventually.~~
 
-Oh wait, GitHub pages supports [Jekyll](http://jekyllrb.com/) and [Octopress](http://octopress.org/)! I will definitely look into this!
+*Oh wait, GitHub pages supports [Jekyll](http://jekyllrb.com/) and [Octopress](http://octopress.org/)!* I will definitely be implementing this in the near future!
 
 [https://equinox-ttfm.rhcloud.com/](https://equinox-ttfm.rhcloud.com/) - Node.js for modified HackerChat demo and possibly some other side projects.
 
@@ -57,6 +57,8 @@ Oh wait, GitHub pages supports [Jekyll](http://jekyllrb.com/) and [Octopress](ht
 Try the Konami code and [get my Chrome Extension here](https://chrome.google.com/webstore/detail/harlem-shake-the-web/ldejkceiibdbkgjfiagpjhjdadgkelib?hl=en). It even works on mobile - just tap twice instead of "AB".
 
 Click the Back to Top button in the bottom-right corner and see what happens.
+
+Click the "Add to Cart" button in the browser and click "Checkout" to donate some Bitcoin via Coinbase!
 
 Try finding allusions to One Direction, The Hitchhiker's Guide, My Little Pony, AKB48, Chicago: The Musical, 256^2, among other.
 
@@ -80,8 +82,26 @@ It wasn't until I installed Google Analytics in August 2013 that I discovered th
 
 In September 2013, I redesigned my site with something simple, but it never really got finished. 
 
-Something during early January 2014, I launched this current design!
+The current design was created early January 2014 and unveiled right before  [MHacks](http://www.mhacks.org/) with lots of positive feedback.
 
 Kudos to my friends at [Precise Servers](http://preciseservers.com) for the domain name! Maybe I should redesign their site...
 
 * Before iframes and external resources, of course.
+
+## Testimonials
+
+> Wow... nice website. If anyone deserves to be at MHACKS it's definitely you. I'm really glad that you made it!
+ - Jeffrey Caldwell
+ 
+
+
+> forget the 15 year old thang, Victor you are so legit! his work is unf*cking real
+ - Nancy Xiao
+
+
+
+> I saw his website. It's absolutely phenomenal...definitely beats anything I've made and I'm almost twice his age!
+ - Eric Yu
+
+## Sign My Guestbook!
+Now that you've read all this, go sign my semi-secret guestbook: click my name at the top of the page, type in your name, and hit the enter key. :smile:
