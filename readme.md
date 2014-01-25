@@ -10,6 +10,7 @@ This is the third time I have redesigned my website in nearly a year. Known issu
 * It's not just flat, it's dynamic flat.
 * Pop culture [everywhere](#easter-eggs-). (Spoiler alert!)
 * An even lower bandwidth footprint, placing the site under 500KB* with the heavy use of CSS3 and lack of images.
+   * In fact, the only image used on my site is a vector avatar. I used icon fonts for everything else.
 * Hosted on GitHub Pages and protected with Cloudflare instead of hosting off a Raspberry Pi.
    * This results in up to 95% faster load times for people as far as Europe.
 * Jade and Sass replacing PHP and LESS.
@@ -59,7 +60,7 @@ Try the Konami code and [get my Chrome Extension here](https://chrome.google.com
 Click the Back to Top button in the bottom-right corner and see what happens.
 
 Click the "Add to Cart" button in the browser and click "Checkout" to donate some Bitcoin via Coinbase!
-
+ 
 Try finding allusions to One Direction, The Hitchhiker's Guide, My Little Pony, AKB48, Chicago: The Musical, 256^2, among other.
 
 ## Other
@@ -91,17 +92,35 @@ Kudos to my friends at [Precise Servers](http://preciseservers.com) for the doma
 ## Testimonials
 
 > Wow... nice website. If anyone deserves to be at MHACKS it's definitely you. I'm really glad that you made it!
- - Jeffrey Caldwell
+> - [Jeffrey Caldwell](https://www.facebook.com/photo.php?fbid=257994744360963&set=a.124621211031651.25621.124349814392124&type=1&comment_id=481149&offset=0&total_comments=6)
  
 
-
+-
 > forget the 15 year old thang, Victor you are so legit! his work is unf*cking real
- - Nancy Xiao
+> - [Nancy Xiao](https://www.facebook.com/photo.php?fbid=257994744360963&set=a.124621211031651.25621.124349814392124&type=1&comment_id=481133&offset=0&total_comments=6)
 
 
-
+-
 > I saw his website. It's absolutely phenomenal...definitely beats anything I've made and I'm almost twice his age!
- - Eric Yu
+> - [Eric Yu](https://www.facebook.com/photo.php?fbid=257994744360963&set=a.124621211031651.25621.124349814392124&type=1&comment_id=481187&offset=0&total_comments=6)
+ 
+
+-
+> Your website is sickk! :D
+> - [Karl Coelho](https://github.com/LabLayers/lablayers.github.io/edit/master/readme.md)
+
+
+-
+> Just wanted to say that your site is gorgeous. Awesome job
+> - [Shashank Bhargava](https://www.facebook.com/groups/PennAppsHS/permalink/207525019449816/?comment_id=207525312783120&offset=0&total_comments=8)
+
+
+-
+> dude victor this site is coming along so nicely. so dope. (omfg it literally harlem shakes.)
+> - [Avi Romanoff](https://www.facebook.com/events/1417893651779691/permalink/1429310360638020/?comment_id=1429311747304548&offset=0&total_comments=16)
+
+
+-
 
 ## Sign My Guestbook!
 Now that you've read all this, go sign my semi-secret guestbook: click my name at the top of the page, type in your name, and hit the enter key. :smile:
