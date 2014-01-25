@@ -9,10 +9,10 @@ This is the third time I have redesigned my website in nearly a year. Known issu
 * A sidebar following design trends everywhere.
 * It's not just flat, it's dynamic flat.
 * Pop culture [everywhere](#easter-eggs-). (Spoiler alert!)
-* An even lower bandwidth footprint, placing the site under 500KB* with the heavy use of CSS3 and lack of images.
+* An even lower bandwidth hoofprint, placing the site under 500KB* with the heavy use of CSS3 and lack of images.
    * In fact, the only image used on my site is a vector avatar. I used icon fonts for everything else.
 * Hosted on GitHub Pages and protected with Cloudflare instead of hosting off a Raspberry Pi.
-   * This results in up to 95% faster load times for people as far as Europe.
+   * This results in up to 95% faster load times for ponies as far as Europe.
 * Jade and Sass replacing PHP and LESS.
 * A CSS3 Framework built from the ground up by myself instead of Bootstrap. [Seriously, though!](https://github.com/LabLayers/lablayers.github.io/tree/master/design)
 * Removed the backend and switched to Google Forms because there really isn't a point for one.
@@ -91,7 +91,7 @@ Kudos to my friends at [Precise Servers](http://preciseservers.com) for the doma
 
 ## Testimonials
 
-> Wow... nice website. If anyone deserves to be at MHACKS it's definitely you. I'm really glad that you made it!
+> Wow... nice website. If anypony deserves to be at MHACKS it's definitely you. I'm really glad that you made it!
 > - [Jeffrey Caldwell](https://www.facebook.com/photo.php?fbid=257994744360963&set=a.124621211031651.25621.124349814392124&type=1&comment_id=481149&offset=0&total_comments=6)
  
 
@@ -107,7 +107,7 @@ Kudos to my friends at [Precise Servers](http://preciseservers.com) for the doma
 
 -
 > Your website is sickk! :D
-> - [Karl Coelho](https://github.com/LabLayers/lablayers.github.io/edit/master/readme.md)
+> - [Karl Coelho](https://twitter.com/therealcoelho/status/427165201712959489)
 
 
 -
