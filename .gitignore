@@ -5,6 +5,7 @@ vectors/test/
 ignore/
 webtunes/
 mp3/
+conf/
 demo.html
 
 # Testfiles #
@@ -19,6 +20,10 @@ github-enterprise.*
 screen-*.png
 screen-*.webp
 screen-*.jpeg
+flight.svg
+errorhandler.php
+extract.php
+mailer.php
 
 # Unused JS Libraries #
 #######################
