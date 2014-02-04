@@ -3624,30 +3624,28 @@ section#social {
       line-height: 0px;
       transform: scale(0.8) translate(0, -20%);
       -webkit-transform: scale(0.8) translate(0, -20%);
-      filter: blur(1px);
-      -webkit-filter: blur(1px);
       transition: all .3s 3.3s ease;
       -webkit-transition: all .3s 3.3s ease; }
-    /* line 460, home.scss */
+    /* line 458, home.scss */
     #unicorn .frame .thumbnail {
       text-align: center;
       overflow: hidden; }
-      /* line 463, home.scss */
+      /* line 461, home.scss */
       #unicorn .frame .thumbnail.news {
         background: #ed458b;
         color: white;
         text-shadow: 0px 0px #d11463, 1px 1px #d11463, 2px 2px #d11463, 3px 3px #d11463, 4px 4px #d11463, 5px 5px #d11463, 6px 6px #d11463, 7px 7px #d11463, 8px 8px #d11463, 9px 9px #d11463, 10px 10px #d11463, 11px 11px #d11463, 12px 12px #d11463, 13px 13px #d11463, 14px 14px #d11463, 15px 15px #d11463, 16px 16px #d11463, 17px 17px #d11463, 18px 18px #d11463, 19px 19px #d11463, 20px 20px #d11463, 21px 21px #d11463, 22px 22px #d11463, 23px 23px #d11463, 24px 24px #d11463, 25px 25px #d11463, 26px 26px #d11463, 27px 27px #d11463, 28px 28px #d11463, 29px 29px #d11463, 30px 30px #d11463, 31px 31px #d11463, 32px 32px #d11463, 33px 33px #d11463, 34px 34px #d11463, 35px 35px #d11463, 36px 36px #d11463, 37px 37px #d11463, 38px 38px #d11463, 39px 39px #d11463, 40px 40px #d11463, 41px 41px #d11463, 42px 42px #d11463, 43px 43px #d11463, 44px 44px #d11463, 45px 45px #d11463, 46px 46px #d11463, 47px 47px #d11463, 48px 48px #d11463, 49px 49px #d11463, 50px 50px #d11463, 51px 51px #d11463, 52px 52px #d11463, 53px 53px #d11463, 54px 54px #d11463, 55px 55px #d11463, 56px 56px #d11463, 57px 57px #d11463, 58px 58px #d11463, 59px 59px #d11463, 60px 60px #d11463, 61px 61px #d11463, 62px 62px #d11463, 63px 63px #d11463, 64px 64px #d11463, 65px 65px #d11463, 66px 66px #d11463, 67px 67px #d11463, 68px 68px #d11463, 69px 69px #d11463, 70px 70px #d11463, 71px 71px #d11463, 72px 72px #d11463, 73px 73px #d11463, 74px 74px #d11463, 75px 75px #d11463, 76px 76px #d11463, 77px 77px #d11463, 78px 78px #d11463, 79px 79px #d11463, 80px 80px #d11463, 81px 81px #d11463, 82px 82px #d11463, 83px 83px #d11463, 84px 84px #d11463, 85px 85px #d11463, 86px 86px #d11463, 87px 87px #d11463, 88px 88px #d11463, 89px 89px #d11463, 90px 90px #d11463, 91px 91px #d11463, 92px 92px #d11463, 93px 93px #d11463, 94px 94px #d11463, 95px 95px #d11463, 96px 96px #d11463, 97px 97px #d11463, 98px 98px #d11463, 99px 99px #d11463, 100px 100px #d11463, 101px 101px #d11463, 102px 102px #d11463, 103px 103px #d11463, 104px 104px #d11463, 105px 105px #d11463, 106px 106px #d11463, 107px 107px #d11463, 108px 108px #d11463, 109px 109px #d11463, 110px 110px #d11463, 111px 111px #d11463, 112px 112px #d11463, 113px 113px #d11463, 114px 114px #d11463, 115px 115px #d11463, 116px 116px #d11463, 117px 117px #d11463, 118px 118px #d11463, 119px 119px #d11463, 120px 120px #d11463, 121px 121px #d11463, 122px 122px #d11463, 123px 123px #d11463, 124px 124px #d11463, 125px 125px #d11463, 126px 126px #d11463, 127px 127px #d11463, 128px 128px #d11463, 129px 129px #d11463, 130px 130px #d11463, 131px 131px #d11463, 132px 132px #d11463, 133px 133px #d11463, 134px 134px #d11463, 135px 135px #d11463, 136px 136px #d11463, 137px 137px #d11463, 138px 138px #d11463, 139px 139px #d11463, 140px 140px #d11463, 141px 141px #d11463, 142px 142px #d11463, 143px 143px #d11463, 144px 144px #d11463, 145px 145px #d11463, 146px 146px #d11463, 147px 147px #d11463, 148px 148px #d11463, 149px 149px #d11463, 150px 150px #d11463, 151px 151px #d11463, 152px 152px #d11463, 153px 153px #d11463, 154px 154px #d11463, 155px 155px #d11463, 156px 156px #d11463, 157px 157px #d11463, 158px 158px #d11463, 159px 159px #d11463, 160px 160px #d11463, 161px 161px #d11463, 162px 162px #d11463, 163px 163px #d11463, 164px 164px #d11463, 165px 165px #d11463, 166px 166px #d11463, 167px 167px #d11463, 168px 168px #d11463, 169px 169px #d11463, 170px 170px #d11463, 171px 171px #d11463, 172px 172px #d11463, 173px 173px #d11463, 174px 174px #d11463, 175px 175px #d11463, 176px 176px #d11463, 177px 177px #d11463, 178px 178px #d11463, 179px 179px #d11463, 180px 180px #d11463, 181px 181px #d11463, 182px 182px #d11463, 183px 183px #d11463, 184px 184px #d11463, 185px 185px #d11463, 186px 186px #d11463, 187px 187px #d11463, 188px 188px #d11463, 189px 189px #d11463, 190px 190px #d11463, 191px 191px #d11463, 192px 192px #d11463, 193px 193px #d11463, 194px 194px #d11463, 195px 195px #d11463, 196px 196px #d11463, 197px 197px #d11463, 198px 198px #d11463, 199px 199px #d11463, 200px 200px #d11463; }
-      /* line 468, home.scss */
+      /* line 466, home.scss */
       #unicorn .frame .thumbnail.food {
         background: #f39c12;
         color: white;
         text-shadow: 0px 0px #c87f0a, 1px 1px #c87f0a, 2px 2px #c87f0a, 3px 3px #c87f0a, 4px 4px #c87f0a, 5px 5px #c87f0a, 6px 6px #c87f0a, 7px 7px #c87f0a, 8px 8px #c87f0a, 9px 9px #c87f0a, 10px 10px #c87f0a, 11px 11px #c87f0a, 12px 12px #c87f0a, 13px 13px #c87f0a, 14px 14px #c87f0a, 15px 15px #c87f0a, 16px 16px #c87f0a, 17px 17px #c87f0a, 18px 18px #c87f0a, 19px 19px #c87f0a, 20px 20px #c87f0a, 21px 21px #c87f0a, 22px 22px #c87f0a, 23px 23px #c87f0a, 24px 24px #c87f0a, 25px 25px #c87f0a, 26px 26px #c87f0a, 27px 27px #c87f0a, 28px 28px #c87f0a, 29px 29px #c87f0a, 30px 30px #c87f0a, 31px 31px #c87f0a, 32px 32px #c87f0a, 33px 33px #c87f0a, 34px 34px #c87f0a, 35px 35px #c87f0a, 36px 36px #c87f0a, 37px 37px #c87f0a, 38px 38px #c87f0a, 39px 39px #c87f0a, 40px 40px #c87f0a, 41px 41px #c87f0a, 42px 42px #c87f0a, 43px 43px #c87f0a, 44px 44px #c87f0a, 45px 45px #c87f0a, 46px 46px #c87f0a, 47px 47px #c87f0a, 48px 48px #c87f0a, 49px 49px #c87f0a, 50px 50px #c87f0a, 51px 51px #c87f0a, 52px 52px #c87f0a, 53px 53px #c87f0a, 54px 54px #c87f0a, 55px 55px #c87f0a, 56px 56px #c87f0a, 57px 57px #c87f0a, 58px 58px #c87f0a, 59px 59px #c87f0a, 60px 60px #c87f0a, 61px 61px #c87f0a, 62px 62px #c87f0a, 63px 63px #c87f0a, 64px 64px #c87f0a, 65px 65px #c87f0a, 66px 66px #c87f0a, 67px 67px #c87f0a, 68px 68px #c87f0a, 69px 69px #c87f0a, 70px 70px #c87f0a, 71px 71px #c87f0a, 72px 72px #c87f0a, 73px 73px #c87f0a, 74px 74px #c87f0a, 75px 75px #c87f0a, 76px 76px #c87f0a, 77px 77px #c87f0a, 78px 78px #c87f0a, 79px 79px #c87f0a, 80px 80px #c87f0a, 81px 81px #c87f0a, 82px 82px #c87f0a, 83px 83px #c87f0a, 84px 84px #c87f0a, 85px 85px #c87f0a, 86px 86px #c87f0a, 87px 87px #c87f0a, 88px 88px #c87f0a, 89px 89px #c87f0a, 90px 90px #c87f0a, 91px 91px #c87f0a, 92px 92px #c87f0a, 93px 93px #c87f0a, 94px 94px #c87f0a, 95px 95px #c87f0a, 96px 96px #c87f0a, 97px 97px #c87f0a, 98px 98px #c87f0a, 99px 99px #c87f0a, 100px 100px #c87f0a, 101px 101px #c87f0a, 102px 102px #c87f0a, 103px 103px #c87f0a, 104px 104px #c87f0a, 105px 105px #c87f0a, 106px 106px #c87f0a, 107px 107px #c87f0a, 108px 108px #c87f0a, 109px 109px #c87f0a, 110px 110px #c87f0a, 111px 111px #c87f0a, 112px 112px #c87f0a, 113px 113px #c87f0a, 114px 114px #c87f0a, 115px 115px #c87f0a, 116px 116px #c87f0a, 117px 117px #c87f0a, 118px 118px #c87f0a, 119px 119px #c87f0a, 120px 120px #c87f0a, 121px 121px #c87f0a, 122px 122px #c87f0a, 123px 123px #c87f0a, 124px 124px #c87f0a, 125px 125px #c87f0a, 126px 126px #c87f0a, 127px 127px #c87f0a, 128px 128px #c87f0a, 129px 129px #c87f0a, 130px 130px #c87f0a, 131px 131px #c87f0a, 132px 132px #c87f0a, 133px 133px #c87f0a, 134px 134px #c87f0a, 135px 135px #c87f0a, 136px 136px #c87f0a, 137px 137px #c87f0a, 138px 138px #c87f0a, 139px 139px #c87f0a, 140px 140px #c87f0a, 141px 141px #c87f0a, 142px 142px #c87f0a, 143px 143px #c87f0a, 144px 144px #c87f0a, 145px 145px #c87f0a, 146px 146px #c87f0a, 147px 147px #c87f0a, 148px 148px #c87f0a, 149px 149px #c87f0a, 150px 150px #c87f0a, 151px 151px #c87f0a, 152px 152px #c87f0a, 153px 153px #c87f0a, 154px 154px #c87f0a, 155px 155px #c87f0a, 156px 156px #c87f0a, 157px 157px #c87f0a, 158px 158px #c87f0a, 159px 159px #c87f0a, 160px 160px #c87f0a, 161px 161px #c87f0a, 162px 162px #c87f0a, 163px 163px #c87f0a, 164px 164px #c87f0a, 165px 165px #c87f0a, 166px 166px #c87f0a, 167px 167px #c87f0a, 168px 168px #c87f0a, 169px 169px #c87f0a, 170px 170px #c87f0a, 171px 171px #c87f0a, 172px 172px #c87f0a, 173px 173px #c87f0a, 174px 174px #c87f0a, 175px 175px #c87f0a, 176px 176px #c87f0a, 177px 177px #c87f0a, 178px 178px #c87f0a, 179px 179px #c87f0a, 180px 180px #c87f0a, 181px 181px #c87f0a, 182px 182px #c87f0a, 183px 183px #c87f0a, 184px 184px #c87f0a, 185px 185px #c87f0a, 186px 186px #c87f0a, 187px 187px #c87f0a, 188px 188px #c87f0a, 189px 189px #c87f0a, 190px 190px #c87f0a, 191px 191px #c87f0a, 192px 192px #c87f0a, 193px 193px #c87f0a, 194px 194px #c87f0a, 195px 195px #c87f0a, 196px 196px #c87f0a, 197px 197px #c87f0a, 198px 198px #c87f0a, 199px 199px #c87f0a, 200px 200px #c87f0a; }
-      /* line 473, home.scss */
+      /* line 471, home.scss */
       #unicorn .frame .thumbnail.choco {
         background: #62bc4d;
         color: white;
         text-shadow: 0px 0px #4d9b3b, 1px 1px #4d9b3b, 2px 2px #4d9b3b, 3px 3px #4d9b3b, 4px 4px #4d9b3b, 5px 5px #4d9b3b, 6px 6px #4d9b3b, 7px 7px #4d9b3b, 8px 8px #4d9b3b, 9px 9px #4d9b3b, 10px 10px #4d9b3b, 11px 11px #4d9b3b, 12px 12px #4d9b3b, 13px 13px #4d9b3b, 14px 14px #4d9b3b, 15px 15px #4d9b3b, 16px 16px #4d9b3b, 17px 17px #4d9b3b, 18px 18px #4d9b3b, 19px 19px #4d9b3b, 20px 20px #4d9b3b, 21px 21px #4d9b3b, 22px 22px #4d9b3b, 23px 23px #4d9b3b, 24px 24px #4d9b3b, 25px 25px #4d9b3b, 26px 26px #4d9b3b, 27px 27px #4d9b3b, 28px 28px #4d9b3b, 29px 29px #4d9b3b, 30px 30px #4d9b3b, 31px 31px #4d9b3b, 32px 32px #4d9b3b, 33px 33px #4d9b3b, 34px 34px #4d9b3b, 35px 35px #4d9b3b, 36px 36px #4d9b3b, 37px 37px #4d9b3b, 38px 38px #4d9b3b, 39px 39px #4d9b3b, 40px 40px #4d9b3b, 41px 41px #4d9b3b, 42px 42px #4d9b3b, 43px 43px #4d9b3b, 44px 44px #4d9b3b, 45px 45px #4d9b3b, 46px 46px #4d9b3b, 47px 47px #4d9b3b, 48px 48px #4d9b3b, 49px 49px #4d9b3b, 50px 50px #4d9b3b, 51px 51px #4d9b3b, 52px 52px #4d9b3b, 53px 53px #4d9b3b, 54px 54px #4d9b3b, 55px 55px #4d9b3b, 56px 56px #4d9b3b, 57px 57px #4d9b3b, 58px 58px #4d9b3b, 59px 59px #4d9b3b, 60px 60px #4d9b3b, 61px 61px #4d9b3b, 62px 62px #4d9b3b, 63px 63px #4d9b3b, 64px 64px #4d9b3b, 65px 65px #4d9b3b, 66px 66px #4d9b3b, 67px 67px #4d9b3b, 68px 68px #4d9b3b, 69px 69px #4d9b3b, 70px 70px #4d9b3b, 71px 71px #4d9b3b, 72px 72px #4d9b3b, 73px 73px #4d9b3b, 74px 74px #4d9b3b, 75px 75px #4d9b3b, 76px 76px #4d9b3b, 77px 77px #4d9b3b, 78px 78px #4d9b3b, 79px 79px #4d9b3b, 80px 80px #4d9b3b, 81px 81px #4d9b3b, 82px 82px #4d9b3b, 83px 83px #4d9b3b, 84px 84px #4d9b3b, 85px 85px #4d9b3b, 86px 86px #4d9b3b, 87px 87px #4d9b3b, 88px 88px #4d9b3b, 89px 89px #4d9b3b, 90px 90px #4d9b3b, 91px 91px #4d9b3b, 92px 92px #4d9b3b, 93px 93px #4d9b3b, 94px 94px #4d9b3b, 95px 95px #4d9b3b, 96px 96px #4d9b3b, 97px 97px #4d9b3b, 98px 98px #4d9b3b, 99px 99px #4d9b3b, 100px 100px #4d9b3b, 101px 101px #4d9b3b, 102px 102px #4d9b3b, 103px 103px #4d9b3b, 104px 104px #4d9b3b, 105px 105px #4d9b3b, 106px 106px #4d9b3b, 107px 107px #4d9b3b, 108px 108px #4d9b3b, 109px 109px #4d9b3b, 110px 110px #4d9b3b, 111px 111px #4d9b3b, 112px 112px #4d9b3b, 113px 113px #4d9b3b, 114px 114px #4d9b3b, 115px 115px #4d9b3b, 116px 116px #4d9b3b, 117px 117px #4d9b3b, 118px 118px #4d9b3b, 119px 119px #4d9b3b, 120px 120px #4d9b3b, 121px 121px #4d9b3b, 122px 122px #4d9b3b, 123px 123px #4d9b3b, 124px 124px #4d9b3b, 125px 125px #4d9b3b, 126px 126px #4d9b3b, 127px 127px #4d9b3b, 128px 128px #4d9b3b, 129px 129px #4d9b3b, 130px 130px #4d9b3b, 131px 131px #4d9b3b, 132px 132px #4d9b3b, 133px 133px #4d9b3b, 134px 134px #4d9b3b, 135px 135px #4d9b3b, 136px 136px #4d9b3b, 137px 137px #4d9b3b, 138px 138px #4d9b3b, 139px 139px #4d9b3b, 140px 140px #4d9b3b, 141px 141px #4d9b3b, 142px 142px #4d9b3b, 143px 143px #4d9b3b, 144px 144px #4d9b3b, 145px 145px #4d9b3b, 146px 146px #4d9b3b, 147px 147px #4d9b3b, 148px 148px #4d9b3b, 149px 149px #4d9b3b, 150px 150px #4d9b3b, 151px 151px #4d9b3b, 152px 152px #4d9b3b, 153px 153px #4d9b3b, 154px 154px #4d9b3b, 155px 155px #4d9b3b, 156px 156px #4d9b3b, 157px 157px #4d9b3b, 158px 158px #4d9b3b, 159px 159px #4d9b3b, 160px 160px #4d9b3b, 161px 161px #4d9b3b, 162px 162px #4d9b3b, 163px 163px #4d9b3b, 164px 164px #4d9b3b, 165px 165px #4d9b3b, 166px 166px #4d9b3b, 167px 167px #4d9b3b, 168px 168px #4d9b3b, 169px 169px #4d9b3b, 170px 170px #4d9b3b, 171px 171px #4d9b3b, 172px 172px #4d9b3b, 173px 173px #4d9b3b, 174px 174px #4d9b3b, 175px 175px #4d9b3b, 176px 176px #4d9b3b, 177px 177px #4d9b3b, 178px 178px #4d9b3b, 179px 179px #4d9b3b, 180px 180px #4d9b3b, 181px 181px #4d9b3b, 182px 182px #4d9b3b, 183px 183px #4d9b3b, 184px 184px #4d9b3b, 185px 185px #4d9b3b, 186px 186px #4d9b3b, 187px 187px #4d9b3b, 188px 188px #4d9b3b, 189px 189px #4d9b3b, 190px 190px #4d9b3b, 191px 191px #4d9b3b, 192px 192px #4d9b3b, 193px 193px #4d9b3b, 194px 194px #4d9b3b, 195px 195px #4d9b3b, 196px 196px #4d9b3b, 197px 197px #4d9b3b, 198px 198px #4d9b3b, 199px 199px #4d9b3b, 200px 200px #4d9b3b; }
-    /* line 479, home.scss */
+    /* line 477, home.scss */
     #unicorn .frame article {
       margin: 0px 20px 5px 20px;
       padding: 0px;
@@ -3655,7 +3653,7 @@ section#social {
       font-size: 12px;
       line-height: 1.8em;
       color: black; }
-      /* line 486, home.scss */
+      /* line 484, home.scss */
       #unicorn .frame article p {
         padding: 0px 10px 22px 10px;
         transition: all 0.5s 1.3s ease;
@@ -3663,7 +3661,7 @@ section#social {
         transform: rotate(0) scale(1) translate(0, 20%);
         -webkit-transform: rotate(0) scale(1) translate(0, 20%);
         opacity: 0; }
-      /* line 494, home.scss */
+      /* line 492, home.scss */
       #unicorn .frame article .span4 {
         padding: 8px;
         border-radius: 4px;
@@ -3673,22 +3671,22 @@ section#social {
         transform: translate(0, 20%);
         -webkit-transform: translate(0, 20%);
         opacity: 0; }
-        /* line 503, home.scss */
+        /* line 501, home.scss */
         #unicorn .frame article .span4:nth-child(2) {
           transition-delay: 2.3s;
           -webkit-transition-delay: 2.3s; }
-        /* line 507, home.scss */
+        /* line 505, home.scss */
         #unicorn .frame article .span4:nth-child(3) {
           transition-delay: 2.6s;
           -webkit-transition-delay: 2.6s; }
-        /* line 511, home.scss */
+        /* line 509, home.scss */
         #unicorn .frame article .span4 .thumbnail {
           display: block;
           height: 150px;
           line-height: 130px;
           margin-bottom: 8px;
           font-size: 10em; }
-      /* line 519, home.scss */
+      /* line 517, home.scss */
       #unicorn .frame article a {
         border-radius: 0px;
         color: #1e98d3;
@@ -3700,7 +3698,7 @@ section#social {
         #unicorn .frame article a:hover {
           background: #1e98d3;
           color: white; }
-    /* line 528, home.scss */
+    /* line 526, home.scss */
     #unicorn .frame aside {
       margin: 20px;
       background: white;
@@ -3715,7 +3713,7 @@ section#social {
       -webkit-transition: all 0.5s 2.9s ease;
       transform: translate(-50%, 100%) scale(0.8);
       -webkit-transform: translate(-50%, 100%) scale(0.8); }
-      /* line 542, home.scss */
+      /* line 540, home.scss */
       #unicorn .frame aside strong {
         color: black;
         font-weight: bold;
@@ -3724,14 +3722,14 @@ section#social {
         margin-bottom: 1em;
         border-bottom: 1px solid lightGray;
         display: block; }
-      /* line 551, home.scss */
+      /* line 549, home.scss */
       #unicorn .frame aside a {
         color: #ee4144;
         cursor: pointer; }
-        /* line 554, home.scss */
+        /* line 552, home.scss */
         #unicorn .frame aside a:hover {
           text-decoration: underline; }
-        /* line 557, home.scss */
+        /* line 555, home.scss */
         #unicorn .frame aside a.checkout {
           border-radius: 0px;
           color: #ee4144;
@@ -3742,10 +3740,10 @@ section#social {
           #unicorn .frame aside a.checkout:hover {
             background: #ee4144;
             color: white; }
-          /* line 561, home.scss */
+          /* line 559, home.scss */
           #unicorn .frame aside a.checkout:hover {
             text-decoration: none; }
-      /* line 566, home.scss */
+      /* line 564, home.scss */
       #unicorn .frame aside .span4 {
         padding: 8px;
         border-radius: 4px;
@@ -3755,20 +3753,20 @@ section#social {
         margin-top: 1em;
         animation: fade-in-bottom-scale 0.5s ease;
         -webkit-animation: fade-in-bottom-scale 0.5s ease; }
-        /* line 575, home.scss */
+        /* line 573, home.scss */
         #unicorn .frame aside .span4:last-of-type {
           margin-bottom: 1.5em; }
-        /* line 578, home.scss */
+        /* line 576, home.scss */
         #unicorn .frame aside .span4 .thumbnail {
           float: left;
           height: 3.5em;
           width: 3.5em;
           margin-right: 8px; }
-          /* line 583, home.scss */
+          /* line 581, home.scss */
           #unicorn .frame aside .span4 .thumbnail i {
             font-size: 30px;
             line-height: 1.4em; }
-    /* line 590, home.scss */
+    /* line 588, home.scss */
     #unicorn .frame.code {
       background: none;
       box-shadow: none;
@@ -3778,18 +3776,18 @@ section#social {
       padding: 0px;
       font-size: 12px;
       line-height: 1.1em; }
-  /* line 602, home.scss */
+  /* line 600, home.scss */
   #unicorn.visible i.icon-colt-horn {
     animation: radiance 8s ease infinite;
     -webkit-animation: radiance 8s ease infinite;
     transform: rotate(-30deg) scale(2) translate(-45px, 5px);
     -webkit-transform: rotate(-30deg) scale(2) translate(-45px, 5px); }
-  /* line 609, home.scss */
+  /* line 607, home.scss */
   #unicorn.visible .frame nav.navbar {
     opacity: 1;
     transform: scale(1) translate(0, 0%);
     -webkit-transform: scale(1) translate(0, 0%); }
-  /* line 614, home.scss */
+  /* line 612, home.scss */
   #unicorn.visible .frame .notice {
     margin: 20px 20px 20px 20px;
     line-height: 1.8em;
@@ -3798,46 +3796,46 @@ section#social {
     -webkit-transform: translate(0, 0) scale(1);
     filter: blur(0px);
     -webkit-filter: blur(0px); }
-  /* line 624, home.scss */
+  /* line 622, home.scss */
   #unicorn.visible .frame article p {
     opacity: 1;
     transform: scale(1) translate(0, 0%);
     -webkit-transform: scale(1) translate(0, 0%); }
-  /* line 629, home.scss */
+  /* line 627, home.scss */
   #unicorn.visible .frame article .span4 {
     opacity: 1;
     transform: translate(0, 0%);
     -webkit-transform: translate(0, 0%); }
-  /* line 635, home.scss */
+  /* line 633, home.scss */
   #unicorn.visible .frame aside {
     opacity: 1;
     transform: scale(1) translate(0, 0%);
     -webkit-transform: scale(1) translate(0, 0%); }
 
-/* line 645, home.scss */
+/* line 643, home.scss */
 #showcase, #pennapps, #pilotphilly {
   background-color: #f39c12;
   background-image: linear-gradient(rgba(255, 255, 255, 0.4) 2px, transparent 2px), linear-gradient(90deg, rgba(255, 255, 255, 0.4) 2px, transparent 2px), linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
   background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
   background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
   color: white; }
-  /* line 655, home.scss */
+  /* line 653, home.scss */
   #showcase b, #pennapps b, #pilotphilly b {
     text-decoration: underline;
     font-weight: bold; }
-  /* line 659, home.scss */
+  /* line 657, home.scss */
   #showcase i.icon-mhacks, #showcase i.icon-pennapps, #pennapps i.icon-mhacks, #pennapps i.icon-pennapps, #pilotphilly i.icon-mhacks, #pilotphilly i.icon-pennapps {
     font-size: 300px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
-  /* line 663, home.scss */
+  /* line 661, home.scss */
   #showcase h2, #pennapps h2, #pilotphilly h2 {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
-  /* line 666, home.scss */
+  /* line 664, home.scss */
   #showcase .wrapper, #pennapps .wrapper, #pilotphilly .wrapper {
     background: rgba(255, 255, 255, 0.8);
     color: black;
     padding: 20px; }
-    /* line 670, home.scss */
+    /* line 668, home.scss */
     #showcase .wrapper section#about figure a, section#about figure #showcase .wrapper a, #showcase .wrapper #unicorn .frame article a, #unicorn .frame article #showcase .wrapper a, #showcase .wrapper #unicorn .frame aside a.checkout, #unicorn .frame aside #showcase .wrapper a.checkout, #showcase .wrapper a.button, #showcase .wrapper #ilite article a, #ilite article #showcase .wrapper a, #showcase .wrapper #hackerchat article a:not(.pilot), #hackerchat article #showcase .wrapper a:not(.pilot), #showcase .wrapper #phlclosings article a, #phlclosings article #showcase .wrapper a, #showcase .wrapper #drones article a, #drones article #showcase .wrapper a, #showcase #event article .wrapper .bottom a, #event article #showcase .wrapper .bottom a, #showcase #more article .wrapper .bottom a, #more article #showcase .wrapper .bottom a, #showcase .wrapper #robotics a, #robotics #showcase .wrapper a, #showcase .wrapper #art a, #art #showcase .wrapper a, #showcase .wrapper #writing a, #writing #showcase .wrapper a, #showcase .wrapper #music a.lastfm, #music #showcase .wrapper a.lastfm, #showcase .wrapper a#iesucks, #pennapps .wrapper section#about figure a, section#about figure #pennapps .wrapper a, #pennapps .wrapper #unicorn .frame article a, #unicorn .frame article #pennapps .wrapper a, #pennapps .wrapper #unicorn .frame aside a.checkout, #unicorn .frame aside #pennapps .wrapper a.checkout, #pennapps .wrapper a.button, #pennapps .wrapper #ilite article a, #ilite article #pennapps .wrapper a, #pennapps .wrapper #hackerchat article a:not(.pilot), #hackerchat article #pennapps .wrapper a:not(.pilot), #pennapps .wrapper #phlclosings article a, #phlclosings article #pennapps .wrapper a, #pennapps .wrapper #drones article a, #drones article #pennapps .wrapper a, #pennapps #event article .wrapper .bottom a, #event article #pennapps .wrapper .bottom a, #pennapps #more article .wrapper .bottom a, #more article #pennapps .wrapper .bottom a, #pennapps .wrapper #robotics a, #robotics #pennapps .wrapper a, #pennapps .wrapper #art a, #art #pennapps .wrapper a, #pennapps .wrapper #writing a, #writing #pennapps .wrapper a, #pennapps .wrapper #music a.lastfm, #music #pennapps .wrapper a.lastfm, #pennapps .wrapper a#iesucks, #pilotphilly .wrapper section#about figure a, section#about figure #pilotphilly .wrapper a, #pilotphilly .wrapper #unicorn .frame article a, #unicorn .frame article #pilotphilly .wrapper a, #pilotphilly .wrapper #unicorn .frame aside a.checkout, #unicorn .frame aside #pilotphilly .wrapper a.checkout, #pilotphilly .wrapper a.button, #pilotphilly .wrapper #ilite article a, #ilite article #pilotphilly .wrapper a, #pilotphilly .wrapper #hackerchat article a:not(.pilot), #hackerchat article #pilotphilly .wrapper a:not(.pilot), #pilotphilly .wrapper #phlclosings article a, #phlclosings article #pilotphilly .wrapper a, #pilotphilly .wrapper #drones article a, #drones article #pilotphilly .wrapper a, #pilotphilly #event article .wrapper .bottom a, #event article #pilotphilly .wrapper .bottom a, #pilotphilly #more article .wrapper .bottom a, #more article #pilotphilly .wrapper .bottom a, #pilotphilly .wrapper #robotics a, #robotics #pilotphilly .wrapper a, #pilotphilly .wrapper #art a, #art #pilotphilly .wrapper a, #pilotphilly .wrapper #writing a, #writing #pilotphilly .wrapper a, #pilotphilly .wrapper #music a.lastfm, #music #pilotphilly .wrapper a.lastfm, #pilotphilly .wrapper a#iesucks {
       background: #4f4e4c;
       color: white;
@@ -3850,30 +3848,30 @@ section#social {
       /* line 143, global/_buttons.scss */
       #showcase .wrapper section#about figure a:active, section#about figure #showcase .wrapper a:active, #showcase .wrapper #unicorn .frame article a:active, #unicorn .frame article #showcase .wrapper a:active, #showcase .wrapper #unicorn .frame aside a.checkout:active, #unicorn .frame aside #showcase .wrapper a.checkout:active, #showcase .wrapper a.button:active, #showcase .wrapper #ilite article a:active, #ilite article #showcase .wrapper a:active, #showcase .wrapper #hackerchat article a:active:not(.pilot), #hackerchat article #showcase .wrapper a:active:not(.pilot), #showcase .wrapper #phlclosings article a:active, #phlclosings article #showcase .wrapper a:active, #showcase .wrapper #drones article a:active, #drones article #showcase .wrapper a:active, #showcase #event article .wrapper .bottom a:active, #event article #showcase .wrapper .bottom a:active, #showcase #more article .wrapper .bottom a:active, #more article #showcase .wrapper .bottom a:active, #showcase .wrapper #robotics a:active, #robotics #showcase .wrapper a:active, #showcase .wrapper #art a:active, #art #showcase .wrapper a:active, #showcase .wrapper #writing a:active, #writing #showcase .wrapper a:active, #showcase .wrapper #music a.lastfm:active, #music #showcase .wrapper a.lastfm:active, #showcase .wrapper a#iesucks:active, #showcase .wrapper section#about figure a:focus, section#about figure #showcase .wrapper a:focus, #showcase .wrapper #unicorn .frame article a:focus, #unicorn .frame article #showcase .wrapper a:focus, #showcase .wrapper #unicorn .frame aside a.checkout:focus, #unicorn .frame aside #showcase .wrapper a.checkout:focus, #showcase .wrapper a.button:focus, #showcase .wrapper #ilite article a:focus, #ilite article #showcase .wrapper a:focus, #showcase .wrapper #hackerchat article a:focus:not(.pilot), #hackerchat article #showcase .wrapper a:focus:not(.pilot), #showcase .wrapper #phlclosings article a:focus, #phlclosings article #showcase .wrapper a:focus, #showcase .wrapper #drones article a:focus, #drones article #showcase .wrapper a:focus, #showcase #event article .wrapper .bottom a:focus, #event article #showcase .wrapper .bottom a:focus, #showcase #more article .wrapper .bottom a:focus, #more article #showcase .wrapper .bottom a:focus, #showcase .wrapper #robotics a:focus, #robotics #showcase .wrapper a:focus, #showcase .wrapper #art a:focus, #art #showcase .wrapper a:focus, #showcase .wrapper #writing a:focus, #writing #showcase .wrapper a:focus, #showcase .wrapper #music a.lastfm:focus, #music #showcase .wrapper a.lastfm:focus, #showcase .wrapper a#iesucks:focus, #pennapps .wrapper section#about figure a:active, section#about figure #pennapps .wrapper a:active, #pennapps .wrapper #unicorn .frame article a:active, #unicorn .frame article #pennapps .wrapper a:active, #pennapps .wrapper #unicorn .frame aside a.checkout:active, #unicorn .frame aside #pennapps .wrapper a.checkout:active, #pennapps .wrapper a.button:active, #pennapps .wrapper #ilite article a:active, #ilite article #pennapps .wrapper a:active, #pennapps .wrapper #hackerchat article a:active:not(.pilot), #hackerchat article #pennapps .wrapper a:active:not(.pilot), #pennapps .wrapper #phlclosings article a:active, #phlclosings article #pennapps .wrapper a:active, #pennapps .wrapper #drones article a:active, #drones article #pennapps .wrapper a:active, #pennapps #event article .wrapper .bottom a:active, #event article #pennapps .wrapper .bottom a:active, #pennapps #more article .wrapper .bottom a:active, #more article #pennapps .wrapper .bottom a:active, #pennapps .wrapper #robotics a:active, #robotics #pennapps .wrapper a:active, #pennapps .wrapper #art a:active, #art #pennapps .wrapper a:active, #pennapps .wrapper #writing a:active, #writing #pennapps .wrapper a:active, #pennapps .wrapper #music a.lastfm:active, #music #pennapps .wrapper a.lastfm:active, #pennapps .wrapper a#iesucks:active, #pennapps .wrapper section#about figure a:focus, section#about figure #pennapps .wrapper a:focus, #pennapps .wrapper #unicorn .frame article a:focus, #unicorn .frame article #pennapps .wrapper a:focus, #pennapps .wrapper #unicorn .frame aside a.checkout:focus, #unicorn .frame aside #pennapps .wrapper a.checkout:focus, #pennapps .wrapper a.button:focus, #pennapps .wrapper #ilite article a:focus, #ilite article #pennapps .wrapper a:focus, #pennapps .wrapper #hackerchat article a:focus:not(.pilot), #hackerchat article #pennapps .wrapper a:focus:not(.pilot), #pennapps .wrapper #phlclosings article a:focus, #phlclosings article #pennapps .wrapper a:focus, #pennapps .wrapper #drones article a:focus, #drones article #pennapps .wrapper a:focus, #pennapps #event article .wrapper .bottom a:focus, #event article #pennapps .wrapper .bottom a:focus, #pennapps #more article .wrapper .bottom a:focus, #more article #pennapps .wrapper .bottom a:focus, #pennapps .wrapper #robotics a:focus, #robotics #pennapps .wrapper a:focus, #pennapps .wrapper #art a:focus, #art #pennapps .wrapper a:focus, #pennapps .wrapper #writing a:focus, #writing #pennapps .wrapper a:focus, #pennapps .wrapper #music a.lastfm:focus, #music #pennapps .wrapper a.lastfm:focus, #pennapps .wrapper a#iesucks:focus, #pilotphilly .wrapper section#about figure a:active, section#about figure #pilotphilly .wrapper a:active, #pilotphilly .wrapper #unicorn .frame article a:active, #unicorn .frame article #pilotphilly .wrapper a:active, #pilotphilly .wrapper #unicorn .frame aside a.checkout:active, #unicorn .frame aside #pilotphilly .wrapper a.checkout:active, #pilotphilly .wrapper a.button:active, #pilotphilly .wrapper #ilite article a:active, #ilite article #pilotphilly .wrapper a:active, #pilotphilly .wrapper #hackerchat article a:active:not(.pilot), #hackerchat article #pilotphilly .wrapper a:active:not(.pilot), #pilotphilly .wrapper #phlclosings article a:active, #phlclosings article #pilotphilly .wrapper a:active, #pilotphilly .wrapper #drones article a:active, #drones article #pilotphilly .wrapper a:active, #pilotphilly #event article .wrapper .bottom a:active, #event article #pilotphilly .wrapper .bottom a:active, #pilotphilly #more article .wrapper .bottom a:active, #more article #pilotphilly .wrapper .bottom a:active, #pilotphilly .wrapper #robotics a:active, #robotics #pilotphilly .wrapper a:active, #pilotphilly .wrapper #art a:active, #art #pilotphilly .wrapper a:active, #pilotphilly .wrapper #writing a:active, #writing #pilotphilly .wrapper a:active, #pilotphilly .wrapper #music a.lastfm:active, #music #pilotphilly .wrapper a.lastfm:active, #pilotphilly .wrapper a#iesucks:active, #pilotphilly .wrapper section#about figure a:focus, section#about figure #pilotphilly .wrapper a:focus, #pilotphilly .wrapper #unicorn .frame article a:focus, #unicorn .frame article #pilotphilly .wrapper a:focus, #pilotphilly .wrapper #unicorn .frame aside a.checkout:focus, #unicorn .frame aside #pilotphilly .wrapper a.checkout:focus, #pilotphilly .wrapper a.button:focus, #pilotphilly .wrapper #ilite article a:focus, #ilite article #pilotphilly .wrapper a:focus, #pilotphilly .wrapper #hackerchat article a:focus:not(.pilot), #hackerchat article #pilotphilly .wrapper a:focus:not(.pilot), #pilotphilly .wrapper #phlclosings article a:focus, #phlclosings article #pilotphilly .wrapper a:focus, #pilotphilly .wrapper #drones article a:focus, #drones article #pilotphilly .wrapper a:focus, #pilotphilly #event article .wrapper .bottom a:focus, #event article #pilotphilly .wrapper .bottom a:focus, #pilotphilly #more article .wrapper .bottom a:focus, #more article #pilotphilly .wrapper .bottom a:focus, #pilotphilly .wrapper #robotics a:focus, #robotics #pilotphilly .wrapper a:focus, #pilotphilly .wrapper #art a:focus, #art #pilotphilly .wrapper a:focus, #pilotphilly .wrapper #writing a:focus, #writing #pilotphilly .wrapper a:focus, #pilotphilly .wrapper #music a.lastfm:focus, #music #pilotphilly .wrapper a.lastfm:focus, #pilotphilly .wrapper a#iesucks:focus {
         background-color: #3a3938; }
-  /* line 675, home.scss */
+  /* line 673, home.scss */
   #showcase #fb-root, #pennapps #fb-root, #pilotphilly #fb-root {
     position: relative;
     min-height: 500px;
     display: block;
     text-align: center; }
 
-/* line 683, home.scss */
+/* line 681, home.scss */
 #pennapps {
   background-color: #ff3d3d; }
 
-/* line 688, home.scss */
+/* line 686, home.scss */
 #ilite {
   background: #7951a1;
   background: linear-gradient(#814ca0 50%, #210148 100%);
   color: white; }
-  /* line 692, home.scss */
+  /* line 690, home.scss */
   #ilite i.icon-bootstrap:before {
     color: #814ca0;
     background: white; }
-  /* line 696, home.scss */
+  /* line 694, home.scss */
   #ilite article {
     padding: 0px 18px; }
-    /* line 699, home.scss */
+    /* line 697, home.scss */
     #ilite article a {
       background: #62bc4d;
       color: white;
@@ -3890,11 +3888,11 @@ section#social {
       #ilite article a:active, #ilite article a:focus {
         box-shadow: 0px -3px rgba(0, 0, 0, 0.1) inset, 0px 0px rgba(0, 0, 0, 0.2);
         background-color: #51a33d; }
-  /* line 708, home.scss */
+  /* line 706, home.scss */
   #ilite .demo a {
     color: inherit;
     border-radius: 0px; }
-  /* line 712, home.scss */
+  /* line 710, home.scss */
   #ilite .demo .nones-emulator {
     background: linear-gradient(#814ca0, #210148);
     display: block;
@@ -3902,35 +3900,35 @@ section#social {
     padding: 0px 8px;
     font-size: 10px;
     line-height: 20px; }
-    /* line 719, home.scss */
+    /* line 717, home.scss */
     #ilite .demo .nones-emulator ::selection {
       background: #77B900;
       color: white;
       text-shadow: 0px 0px 2px white; }
-    /* line 724, home.scss */
+    /* line 722, home.scss */
     #ilite .demo .nones-emulator .navbar-top {
       background: rgba(0, 0, 0, 0.5);
       height: 20px;
       text-align: right;
       padding: 0px 8px;
       overflow: hidden; }
-      /* line 730, home.scss */
+      /* line 728, home.scss */
       #ilite .demo .nones-emulator .navbar-top .block {
         padding: 0px 4px;
         transition: background 0.15s;
         -webkit-transition: background 0.15s;
         line-height: 20px;
         display: inline-block; }
-        /* line 736, home.scss */
+        /* line 734, home.scss */
         #ilite .demo .nones-emulator .navbar-top .block:hover {
           background: black; }
-    /* line 741, home.scss */
+    /* line 739, home.scss */
     #ilite .demo .nones-emulator i {
       font-size: 30px;
       color: black;
       text-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px white;
       line-height: 1.2em; }
-    /* line 747, home.scss */
+    /* line 745, home.scss */
     #ilite .demo .nones-emulator .navbar-menu {
       background: #62bc4d;
       background: linear-gradient(#7ac143 0%, #64a831 55%, #579626 75%, #4a871b 100%);
@@ -3938,7 +3936,7 @@ section#social {
       text-align: left;
       padding: 0px 8px;
       text-shadow: 0 0 8px black; }
-      /* line 754, home.scss */
+      /* line 752, home.scss */
       #ilite .demo .nones-emulator .navbar-menu .block {
         padding: 0px 4px;
         transition: text-shadow 0.15s;
@@ -3947,32 +3945,32 @@ section#social {
         display: inline-block;
         color: white;
         font-size: inherit; }
-        /* line 762, home.scss */
+        /* line 760, home.scss */
         #ilite .demo .nones-emulator .navbar-menu .block:hover {
           text-shadow: 0 0 8px white; }
-        /* line 765, home.scss */
+        /* line 763, home.scss */
         #ilite .demo .nones-emulator .navbar-menu .block i {
           text-shadow: 0 0 8px black;
           transition: text-shadow 0.15s;
           -webkit-transition: text-shadow 0.15s;
           color: white;
           font-size: inherit; }
-          /* line 771, home.scss */
+          /* line 769, home.scss */
           #ilite .demo .nones-emulator .navbar-menu .block i:hover {
             text-shadow: 0 0 8px white; }
-    /* line 777, home.scss */
+    /* line 775, home.scss */
     #ilite .demo .nones-emulator .content {
       background: white;
       color: black;
       height: auto;
       margin: 0px 8px;
       padding: 0px 8px; }
-      /* line 783, home.scss */
+      /* line 781, home.scss */
       #ilite .demo .nones-emulator .content .slidez {
         height: 100px;
         background: gray;
         position: relative; }
-        /* line 787, home.scss */
+        /* line 785, home.scss */
         #ilite .demo .nones-emulator .content .slidez .caption {
           background: rgba(0, 0, 0, 0.5);
           color: white;
@@ -3982,7 +3980,7 @@ section#social {
           height: 100px;
           width: 150px;
           padding: 4px; }
-      /* line 799, home.scss */
+      /* line 797, home.scss */
       #ilite .demo .nones-emulator .content .row .span4 {
         margin-top: 6px;
         background: #a86bcc;
@@ -3996,79 +3994,79 @@ section#social {
         -webkit-transform: scale(1, 1) rotateY(1deg);
         transition: all 0.5s linear;
         -webkit-transition: all 0.5s linear; }
-        /* line 812, home.scss */
+        /* line 810, home.scss */
         #ilite .demo .nones-emulator .content .row .span4:hover {
           transform: scale(1.2, 1.2) rotateY(360deg);
           -webkit-transform: scale(1.2, 1.2) rotateY(360deg);
           box-shadow: 0 0 4px black; }
-      /* line 818, home.scss */
+      /* line 816, home.scss */
       #ilite .demo .nones-emulator .content .row .span3 {
         height: 75px; }
-        /* line 820, home.scss */
+        /* line 818, home.scss */
         #ilite .demo .nones-emulator .content .row .span3 .item {
           border: 1px solid gray;
           height: 36px;
           margin-bottom: 3px; }
-        /* line 825, home.scss */
+        /* line 823, home.scss */
         #ilite .demo .nones-emulator .content .row .span3 .twitter {
           background: #9edbf9;
           border: none; }
-        /* line 829, home.scss */
+        /* line 827, home.scss */
         #ilite .demo .nones-emulator .content .row .span3 .photos {
           background: #c590c9;
           border: none; }
-      /* line 834, home.scss */
+      /* line 832, home.scss */
       #ilite .demo .nones-emulator .content .row .span6 {
         background: gray;
         background: radial-gradient(#ffffff 0%, #d3d3d3 90%);
         box-shadow: inset 0px -30px 10px white;
         height: 75px; }
-    /* line 842, home.scss */
+    /* line 840, home.scss */
     #ilite .demo .nones-emulator .footer {
       background: #221e1f;
       color: #787878;
       margin: 0px 8px;
       padding: 12px 12px;
       line-height: 1.5em; }
-      /* line 849, home.scss */
+      /* line 847, home.scss */
       #ilite .demo .nones-emulator .footer p {
         color: #7951A1;
         margin-top: 0.2em; }
 
-/* line 860, home.scss */
+/* line 858, home.scss */
 #hackerchat {
   background: #333333;
   color: #C8C8C8; }
-  /* line 865, home.scss */
+  /* line 863, home.scss */
   #hackerchat i.icon-bootstrap:before {
     color: #333333;
     background: #C8C8C8; }
-  /* line 869, home.scss */
+  /* line 867, home.scss */
   #hackerchat .heightfix {
     display: table-cell;
     position: relative; }
-    /* line 873, home.scss */
+    /* line 871, home.scss */
     #hackerchat .heightfix .browser, #hackerchat .heightfix #event article .wrapper, #event article #hackerchat .heightfix .wrapper, #hackerchat .heightfix #more article .wrapper, #more article #hackerchat .heightfix .wrapper, #hackerchat .heightfix #music .wrapper .album, #music .wrapper #hackerchat .heightfix .album {
       position: absolute;
       width: 100%;
       height: 100%;
       position: absolute;
       display: table; }
-      /* line 879, home.scss */
+      /* line 877, home.scss */
       #hackerchat .heightfix .browser .frame, #hackerchat .heightfix #event article .wrapper .frame, #event article #hackerchat .heightfix .wrapper .frame, #hackerchat .heightfix #more article .wrapper .frame, #more article #hackerchat .heightfix .wrapper .frame, #hackerchat .heightfix #music .wrapper .album .frame, #music .wrapper #hackerchat .heightfix .album .frame {
         position: relative;
         position: absolute;
         display: table;
         width: 100%;
         height: 90%; }
-      /* line 886, home.scss */
+      /* line 884, home.scss */
       #hackerchat .heightfix .browser iframe, #hackerchat .heightfix #event article .wrapper iframe, #event article #hackerchat .heightfix .wrapper iframe, #hackerchat .heightfix #more article .wrapper iframe, #more article #hackerchat .heightfix .wrapper iframe, #hackerchat .heightfix #music .wrapper .album iframe, #music .wrapper #hackerchat .heightfix .album iframe {
         width: 100%;
         height: 100%; }
-  /* line 892, home.scss */
+  /* line 890, home.scss */
   #hackerchat article {
     display: table-cell; }
-    /* line 895, home.scss */
+    /* line 893, home.scss */
     #hackerchat article a:not(.pilot) {
       color: white;
       background: linear-gradient(#62bc4d, #3b762d);
@@ -4080,14 +4078,14 @@ section#social {
       /* line 78, global/_buttons.scss */
       #hackerchat article a:not(.pilot):active, #hackerchat article a:not(.pilot):focus {
         box-shadow: inset 0 0 500px rgba(50, 50, 50, 0.2); }
-  /* line 900, home.scss */
+  /* line 898, home.scss */
   #hackerchat a.pilot {
     margin-top: 20px;
     color: inherit;
     position: relative;
     display: block;
     border-radius: 4px; }
-    /* line 901, home.scss */
+    /* line 899, home.scss */
     #hackerchat a.pilot section#about figure a, section#about figure #hackerchat a.pilot a, #hackerchat a.pilot #unicorn .frame article a, #unicorn .frame article #hackerchat a.pilot a, #hackerchat a.pilot #unicorn .frame aside a.checkout, #unicorn .frame aside #hackerchat a.pilot a.checkout, #hackerchat a.pilot #ilite article a, #ilite article #hackerchat a.pilot a, #hackerchat a.pilot article a:not(.pilot), #hackerchat article a.pilot a:not(.pilot), #hackerchat a.pilot .button, #hackerchat a.pilot #phlclosings article a, #phlclosings article #hackerchat a.pilot a, #hackerchat a.pilot #drones article a, #drones article #hackerchat a.pilot a, #hackerchat a.pilot #event article .wrapper .bottom a, #event article .wrapper .bottom #hackerchat a.pilot a, #hackerchat a.pilot #more article .wrapper .bottom a, #more article .wrapper .bottom #hackerchat a.pilot a, #hackerchat a.pilot #robotics a, #robotics #hackerchat a.pilot a, #hackerchat a.pilot #art a, #art #hackerchat a.pilot a, #hackerchat a.pilot #writing a, #writing #hackerchat a.pilot a, #hackerchat a.pilot #music a.lastfm, #music #hackerchat a.pilot a.lastfm, #hackerchat a.pilot #contact form input#ss-submit, #contact form #hackerchat a.pilot input#ss-submit, #hackerchat a.pilot footer .skyward span, footer .skyward #hackerchat a.pilot span, #hackerchat a.pilot #iesucks {
       background: #4f4e4c;
       color: white;
@@ -4100,7 +4098,7 @@ section#social {
       /* line 143, global/_buttons.scss */
       #hackerchat a.pilot section#about figure a:active, section#about figure #hackerchat a.pilot a:active, #hackerchat a.pilot #unicorn .frame article a:active, #unicorn .frame article #hackerchat a.pilot a:active, #hackerchat a.pilot #unicorn .frame aside a.checkout:active, #unicorn .frame aside #hackerchat a.pilot a.checkout:active, #hackerchat a.pilot #ilite article a:active, #ilite article #hackerchat a.pilot a:active, #hackerchat a.pilot article a:active:not(.pilot), #hackerchat article a.pilot a:active:not(.pilot), #hackerchat a.pilot .button:active, #hackerchat a.pilot #phlclosings article a:active, #phlclosings article #hackerchat a.pilot a:active, #hackerchat a.pilot #drones article a:active, #drones article #hackerchat a.pilot a:active, #hackerchat a.pilot #event article .wrapper .bottom a:active, #event article .wrapper .bottom #hackerchat a.pilot a:active, #hackerchat a.pilot #more article .wrapper .bottom a:active, #more article .wrapper .bottom #hackerchat a.pilot a:active, #hackerchat a.pilot #robotics a:active, #robotics #hackerchat a.pilot a:active, #hackerchat a.pilot #art a:active, #art #hackerchat a.pilot a:active, #hackerchat a.pilot #writing a:active, #writing #hackerchat a.pilot a:active, #hackerchat a.pilot #music a.lastfm:active, #music #hackerchat a.pilot a.lastfm:active, #hackerchat a.pilot #contact form input#ss-submit:active, #contact form #hackerchat a.pilot input#ss-submit:active, #hackerchat a.pilot footer .skyward span:active, footer .skyward #hackerchat a.pilot span:active, #hackerchat a.pilot #iesucks:active, #hackerchat a.pilot section#about figure a:focus, section#about figure #hackerchat a.pilot a:focus, #hackerchat a.pilot #unicorn .frame article a:focus, #unicorn .frame article #hackerchat a.pilot a:focus, #hackerchat a.pilot #unicorn .frame aside a.checkout:focus, #unicorn .frame aside #hackerchat a.pilot a.checkout:focus, #hackerchat a.pilot #ilite article a:focus, #ilite article #hackerchat a.pilot a:focus, #hackerchat a.pilot article a:focus:not(.pilot), #hackerchat article a.pilot a:focus:not(.pilot), #hackerchat a.pilot .button:focus, #hackerchat a.pilot #phlclosings article a:focus, #phlclosings article #hackerchat a.pilot a:focus, #hackerchat a.pilot #drones article a:focus, #drones article #hackerchat a.pilot a:focus, #hackerchat a.pilot #event article .wrapper .bottom a:focus, #event article .wrapper .bottom #hackerchat a.pilot a:focus, #hackerchat a.pilot #more article .wrapper .bottom a:focus, #more article .wrapper .bottom #hackerchat a.pilot a:focus, #hackerchat a.pilot #robotics a:focus, #robotics #hackerchat a.pilot a:focus, #hackerchat a.pilot #art a:focus, #art #hackerchat a.pilot a:focus, #hackerchat a.pilot #writing a:focus, #writing #hackerchat a.pilot a:focus, #hackerchat a.pilot #music a.lastfm:focus, #music #hackerchat a.pilot a.lastfm:focus, #hackerchat a.pilot #contact form input#ss-submit:focus, #contact form #hackerchat a.pilot input#ss-submit:focus, #hackerchat a.pilot footer .skyward span:focus, footer .skyward #hackerchat a.pilot span:focus, #hackerchat a.pilot #iesucks:focus {
         background-color: #3a3938; }
-    /* line 913, home.scss */
+    /* line 911, home.scss */
     #hackerchat a.pilot span {
       margin-top: 1em;
       opacity: 0;
@@ -4109,7 +4107,7 @@ section#social {
       display: inline-block;
       padding-right: 20px;
       text-align: right; }
-    /* line 924, home.scss */
+    /* line 922, home.scss */
     #hackerchat a.pilot i.icon-pilotphilly {
       float: right;
       display: inline;
@@ -4119,26 +4117,26 @@ section#social {
       opacity: 0.5;
       transform: rotate(-20deg);
       -webkit-transform: rotate(-20deg); }
-    /* line 936, home.scss */
+    /* line 934, home.scss */
     #hackerchat a.pilot:hover span {
       opacity: 1;
       -webkit-transform: translate(0, 0);
       transform: translate(0, 0); }
-    /* line 941, home.scss */
+    /* line 939, home.scss */
     #hackerchat a.pilot:hover i.icon-pilotphilly {
       opacity: 1;
       transform: rotate(0deg);
       -webkit-transform: rotate(0deg); }
 
-/* line 951, home.scss */
+/* line 949, home.scss */
 #cloudchat {
   background: #ceedfc;
   color: black; }
-  /* line 954, home.scss */
+  /* line 952, home.scss */
   #cloudchat i.icon-bootstrap:before {
     content: ':)';
     color: #ceedfc; }
-  /* line 958, home.scss */
+  /* line 956, home.scss */
   #cloudchat section#about figure a, section#about figure #cloudchat a, #cloudchat #unicorn .frame article a, #unicorn .frame article #cloudchat a, #cloudchat #unicorn .frame aside a.checkout, #unicorn .frame aside #cloudchat a.checkout, #cloudchat #showcase .wrapper a.button, #showcase .wrapper #cloudchat a.button, #cloudchat #pennapps .wrapper a.button, #pennapps .wrapper #cloudchat a.button, #cloudchat #pilotphilly .wrapper a.button, #pilotphilly .wrapper #cloudchat a.button, #cloudchat #ilite article a, #ilite article #cloudchat a, #cloudchat #hackerchat article a:not(.pilot), #hackerchat article #cloudchat a:not(.pilot), #cloudchat #hackerchat a.pilot a.button, #hackerchat a.pilot #cloudchat a.button, #cloudchat a.button, #cloudchat #phlclosings article a, #phlclosings article #cloudchat a, #cloudchat #drones article a, #drones article #cloudchat a, #cloudchat #event article .wrapper .bottom a, #event article .wrapper .bottom #cloudchat a, #cloudchat #more article .wrapper .bottom a, #more article .wrapper .bottom #cloudchat a, #cloudchat #robotics a, #robotics #cloudchat a, #cloudchat #art a, #art #cloudchat a, #cloudchat #writing a, #writing #cloudchat a, #cloudchat #music a.lastfm, #music #cloudchat a.lastfm, #cloudchat a#iesucks {
     background: #1e98d3;
     color: white;
@@ -4151,14 +4149,14 @@ section#social {
     /* line 143, global/_buttons.scss */
     #cloudchat section#about figure a:active, section#about figure #cloudchat a:active, #cloudchat #unicorn .frame article a:active, #unicorn .frame article #cloudchat a:active, #cloudchat #unicorn .frame aside a.checkout:active, #unicorn .frame aside #cloudchat a.checkout:active, #cloudchat #ilite article a:active, #ilite article #cloudchat a:active, #cloudchat #hackerchat article a:active:not(.pilot), #hackerchat article #cloudchat a:active:not(.pilot), #cloudchat a.button:active, #cloudchat #phlclosings article a:active, #phlclosings article #cloudchat a:active, #cloudchat #drones article a:active, #drones article #cloudchat a:active, #cloudchat #event article .wrapper .bottom a:active, #event article .wrapper .bottom #cloudchat a:active, #cloudchat #more article .wrapper .bottom a:active, #more article .wrapper .bottom #cloudchat a:active, #cloudchat #robotics a:active, #robotics #cloudchat a:active, #cloudchat #art a:active, #art #cloudchat a:active, #cloudchat #writing a:active, #writing #cloudchat a:active, #cloudchat #music a.lastfm:active, #music #cloudchat a.lastfm:active, #cloudchat a#iesucks:active, #cloudchat section#about figure a:focus, section#about figure #cloudchat a:focus, #cloudchat #unicorn .frame article a:focus, #unicorn .frame article #cloudchat a:focus, #cloudchat #unicorn .frame aside a.checkout:focus, #unicorn .frame aside #cloudchat a.checkout:focus, #cloudchat #ilite article a:focus, #ilite article #cloudchat a:focus, #cloudchat #hackerchat article a:focus:not(.pilot), #hackerchat article #cloudchat a:focus:not(.pilot), #cloudchat a.button:focus, #cloudchat #phlclosings article a:focus, #phlclosings article #cloudchat a:focus, #cloudchat #drones article a:focus, #drones article #cloudchat a:focus, #cloudchat #event article .wrapper .bottom a:focus, #event article .wrapper .bottom #cloudchat a:focus, #cloudchat #more article .wrapper .bottom a:focus, #more article .wrapper .bottom #cloudchat a:focus, #cloudchat #robotics a:focus, #robotics #cloudchat a:focus, #cloudchat #art a:focus, #art #cloudchat a:focus, #cloudchat #writing a:focus, #writing #cloudchat a:focus, #cloudchat #music a.lastfm:focus, #music #cloudchat a.lastfm:focus, #cloudchat a#iesucks:focus {
       background-color: #197eaf; }
-  /* line 962, home.scss */
+  /* line 960, home.scss */
   #cloudchat .row {
     z-index: 5;
     position: relative; }
-    /* line 965, home.scss */
+    /* line 963, home.scss */
     #cloudchat .row article {
       display: table-cell; }
-    /* line 969, home.scss */
+    /* line 967, home.scss */
     #cloudchat .row .demo {
       display: table-cell;
       position: relative;
@@ -4166,18 +4164,18 @@ section#social {
       padding: 4px;
       font-size: 12px;
       box-shadow: 0 0 10px gray; }
-      /* line 977, home.scss */
+      /* line 975, home.scss */
       #cloudchat .row .demo .note {
         background: #a10e11;
         color: white; }
-      /* line 981, home.scss */
+      /* line 979, home.scss */
       #cloudchat .row .demo input {
         display: block;
         width: 100%;
         padding: 8px;
         border-radius: 4px;
         border: 1px solid gray; }
-  /* line 990, home.scss */
+  /* line 988, home.scss */
   #cloudchat i.thing-1, #cloudchat i.thing-2 {
     position: absolute;
     color: white;
@@ -4187,30 +4185,30 @@ section#social {
     z-index: 0px;
     transition: left 0.8s 1s ease-in-out, right 0.8s 1s ease-in-out, opacity 0.5s 1s ease-in-out;
     -webkit-transition: left 0.8s 1s ease-in-out, right 0.8s 1s ease-in-out, opacity 0.5s 1s ease-in-out; }
-  /* line 1000, home.scss */
+  /* line 998, home.scss */
   #cloudchat i.thing-2 {
     left: -220px; }
-  /* line 1003, home.scss */
+  /* line 1001, home.scss */
   #cloudchat i.thing-1 {
     right: -220px; }
-  /* line 1007, home.scss */
+  /* line 1005, home.scss */
   #cloudchat.visible i.thing-1, #cloudchat.visible i.thing-2 {
     opacity: 1; }
-  /* line 1010, home.scss */
+  /* line 1008, home.scss */
   #cloudchat.visible i.thing-2 {
     left: -20px; }
-  /* line 1013, home.scss */
+  /* line 1011, home.scss */
   #cloudchat.visible i.thing-1 {
     right: -20px; }
 
-/* line 1020, home.scss */
+/* line 1018, home.scss */
 #phlclosings {
   background: #2980b9;
   color: white; }
-  /* line 1027, home.scss */
+  /* line 1025, home.scss */
   #phlclosings .demo .frame iframe {
     width: 100%; }
-  /* line 1034, home.scss */
+  /* line 1032, home.scss */
   #phlclosings article a {
     background: #b81113;
     color: white;
@@ -4224,14 +4222,14 @@ section#social {
     #phlclosings article a:active, #phlclosings article a:focus {
       background-color: #930d0f; }
 
-/* line 1042, home.scss */
+/* line 1040, home.scss */
 #drones {
   background: #5ba525;
   color: white; }
-  /* line 1048, home.scss */
+  /* line 1046, home.scss */
   #drones article p {
     margin: 1em 2em; }
-  /* line 1054, home.scss */
+  /* line 1052, home.scss */
   #drones article a {
     background: #1e98d3;
     color: white;
@@ -4244,30 +4242,30 @@ section#social {
     /* line 143, global/_buttons.scss */
     #drones article a:active, #drones article a:focus {
       background-color: #197eaf; }
-  /* line 1061, home.scss */
+  /* line 1059, home.scss */
   #drones .slides iframe {
     width: 100%;
     height: 350px; }
 
-/* line 1070, home.scss */
+/* line 1068, home.scss */
 #event, #more {
   background: #1e98d3;
   color: white; }
-  /* line 1074, home.scss */
+  /* line 1072, home.scss */
   #event article, #more article {
     padding: 6px;
     text-shadow: none; }
-    /* line 1078, home.scss */
+    /* line 1076, home.scss */
     #event article .wrapper, #more article .wrapper {
       margin: 1em auto;
       background: #edece3;
       color: #4f4e4c; }
-      /* line 1083, home.scss */
+      /* line 1081, home.scss */
       #event article .wrapper hr, #more article .wrapper hr {
         border: none;
         border-bottom: 1px solid #b1ad86 !important;
         margin: 0.5em auto; }
-      /* line 1089, home.scss */
+      /* line 1087, home.scss */
       #event article .wrapper .bottom a, #more article .wrapper .bottom a {
         background: #4f4e4c;
         color: white;
@@ -4281,11 +4279,11 @@ section#social {
         #event article .wrapper .bottom a:active, #event article .wrapper .bottom a:focus, #more article .wrapper .bottom a:active, #more article .wrapper .bottom a:focus {
           background-color: #3a3938; }
 
-/* line 1097, home.scss */
+/* line 1095, home.scss */
 #more {
   background: #828dc0; }
 
-/* line 1102, home.scss */
+/* line 1100, home.scss */
 #tfmonster {
   color: white;
   background: #ee4144;
@@ -4295,7 +4293,7 @@ section#social {
   padding: 0px 30px;
   overflow: hidden;
   position: relative; }
-  /* line 1111, home.scss */
+  /* line 1109, home.scss */
   #tfmonster i {
     position: absolute;
     left: 30px;
@@ -4305,21 +4303,21 @@ section#social {
     -webkit-transition: all 0.5s 1s ease;
     transform: rotate(0deg) scale(1);
     -webkit-transform: rotate(0deg) scale(1); }
-  /* line 1121, home.scss */
+  /* line 1119, home.scss */
   #tfmonster.visible i {
     transform: rotate(30deg) scale(1.5);
     -webkit-transform: rotate(30deg) scale(1.5);
     opacity: 0.7; }
 
-/* line 1129, home.scss */
+/* line 1127, home.scss */
 #science, #lab {
   background: #002f4b;
   color: white; }
-  /* line 1132, home.scss */
+  /* line 1130, home.scss */
   #science article, #lab article {
     padding: 6px;
     text-align: left; }
-    /* line 1137, home.scss */
+    /* line 1135, home.scss */
     #science article .slide, #lab article .slide {
       max-width: 20em;
       margin: auto;
@@ -4334,79 +4332,79 @@ section#social {
       text-align: right;
       padding-top: 3em;
       position: relative; }
-      /* line 1151, home.scss */
+      /* line 1149, home.scss */
       #science article .slide span, #lab article .slide span {
         background: black;
         background: rgba(0, 0, 0, 0.5);
         color: white;
         padding: 6px; }
-      /* line 1157, home.scss */
+      /* line 1155, home.scss */
       #science article .slide.ai, #lab article .slide.ai {
         background: #ed458b; }
-      /* line 1160, home.scss */
+      /* line 1158, home.scss */
       #science article .slide.passwords, #lab article .slide.passwords {
         background: #f39c12; }
-        /* line 1162, home.scss */
+        /* line 1160, home.scss */
         #science article .slide.passwords code, #lab article .slide.passwords code {
           position: absolute;
           top: 0px;
           left: 0px;
           width: 100%;
           font-size: 60px; }
-        /* line 1169, home.scss */
+        /* line 1167, home.scss */
         #science article .slide.passwords span, #lab article .slide.passwords span {
           background: #ee4144;
           color: white;
           padding: 6px;
           position: relative;
           display: inline-block; }
-      /* line 1177, home.scss */
+      /* line 1175, home.scss */
       #science article .slide.files, #lab article .slide.files {
         background: #828dc0; }
-      /* line 1180, home.scss */
+      /* line 1178, home.scss */
       #science article .slide.boil, #lab article .slide.boil {
         background: #ee4144; }
-      /* line 1183, home.scss */
+      /* line 1181, home.scss */
       #science article .slide.gold, #lab article .slide.gold {
         text-shadow: 1px 1px #8d5b33, 2px 2px #8f8f8f, 0px 0 1px #8f8f8f;
         background: #e0c40b;
         color: ivory;
         font-weight: bold; }
-      /* line 1189, home.scss */
+      /* line 1187, home.scss */
       #science article .slide.wavelengths, #lab article .slide.wavelengths {
         background: #ffa004; }
-    /* line 1193, home.scss */
+    /* line 1191, home.scss */
     #science article ul, #science article .info, #lab article ul, #lab article .info {
       background: lightGray;
       padding: 6px;
       border-bottom-left-radius: 4px;
       border-bottom-right-radius: 4px;
       color: black; }
-      /* line 1199, home.scss */
+      /* line 1197, home.scss */
       #science article ul li, #science article .info li, #lab article ul li, #lab article .info li {
         padding-left: 2em;
         border-top: 1px solid gray; }
-        /* line 1202, home.scss */
+        /* line 1200, home.scss */
         #science article ul li:first-child, #science article .info li:first-child, #lab article ul li:first-child, #lab article .info li:first-child {
           border-top: none; }
-        /* line 1205, home.scss */
+        /* line 1203, home.scss */
         #science article ul li:before, #science article .info li:before, #lab article ul li:before, #lab article .info li:before {
           content: "";
           color: black;
           font-family: "Stargazer";
           margin-left: -30px;
           padding-right: 12px; }
-    /* line 1214, home.scss */
+    /* line 1212, home.scss */
     #science article p, #lab article p {
       background: white;
       padding: 6px;
       color: black; }
 
-/* line 1223, home.scss */
+/* line 1221, home.scss */
 #robotics {
   background: #002f4b;
   color: white; }
-  /* line 1226, home.scss */
+  /* line 1224, home.scss */
   #robotics a {
     background: #5ba525;
     color: white;
@@ -4420,21 +4418,21 @@ section#social {
     #robotics a:active, #robotics a:focus {
       background-color: #49841e; }
 
-/* line 1233, home.scss */
+/* line 1231, home.scss */
 #cad {
   background: #b81113;
   background: linear-gradient(#b81113, #2c0405);
   color: white; }
 
-/* line 1240, home.scss */
+/* line 1238, home.scss */
 #art {
   background: #ccd9c8;
   color: #4f4e4c; }
-  /* line 1245, home.scss */
+  /* line 1243, home.scss */
   #art iframe {
     width: 100%;
     height: 300px; }
-  /* line 1249, home.scss */
+  /* line 1247, home.scss */
   #art a {
     background: #4e6252;
     color: white;
@@ -4448,12 +4446,12 @@ section#social {
     #art a:active, #art a:focus {
       background-color: #3c4b3f; }
 
-/* line 1256, home.scss */
+/* line 1254, home.scss */
 #writing {
   box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.5);
   color: #4f4e4c;
   background: #fdf9d7; }
-  /* line 1260, home.scss */
+  /* line 1258, home.scss */
   #writing a {
     background: #4f4e4c;
     color: white;
@@ -4467,36 +4465,36 @@ section#social {
     #writing a:active, #writing a:focus {
       background-color: #3a3938; }
 
-/* line 1266, home.scss */
+/* line 1264, home.scss */
 #film {
   box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.5);
   background-image: linear-gradient(to bottom right, #d38312, #a83279);
   color: white;
   text-align: center; }
-  /* line 1271, home.scss */
+  /* line 1269, home.scss */
   #film article {
     text-align: center;
     padding: 6px; }
-    /* line 1275, home.scss */
+    /* line 1273, home.scss */
     #film article .video {
       display: block;
       background: black;
       width: 100%;
       height: 200px; }
 
-/* line 1286, home.scss */
+/* line 1284, home.scss */
 #music {
   box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.5);
   background-image: linear-gradient(to bottom right, #002f4b, #e0be00);
   color: white; }
-  /* line 1290, home.scss */
+  /* line 1288, home.scss */
   #music .wrapper {
     transform: scale(1.25);
     -webkit-transform: scale(1.25);
     transition: all 1.25s;
     -webkit-transition: all 1.25s;
     opacity: 0.1; }
-    /* line 1296, home.scss */
+    /* line 1294, home.scss */
     #music .wrapper .album {
       line-height: 1.1em;
       color: #4f4e4c;
@@ -4504,7 +4502,7 @@ section#social {
       display: inline-block;
       margin: 6px;
       padding: 6px 6px; }
-      /* line 1304, home.scss */
+      /* line 1302, home.scss */
       #music .wrapper .album .thumbnail {
         background: white;
         display: inline-block;
@@ -4514,7 +4512,7 @@ section#social {
         box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3);
         margin-right: 6px;
         text-decoration: none; }
-        /* line 1313, home.scss */
+        /* line 1311, home.scss */
         #music .wrapper .album .thumbnail:after {
           display: block;
           content: "▶";
@@ -4528,16 +4526,16 @@ section#social {
           opacity: 0;
           transition: opacity 0.2s ease;
           -webkit-transition: opacity 0.2s ease; }
-        /* line 1327, home.scss */
+        /* line 1325, home.scss */
         #music .wrapper .album .thumbnail.playing:after {
           content: "◼"; }
-      /* line 1331, home.scss */
+      /* line 1329, home.scss */
       #music .wrapper .album .artist {
         font-size: 12px; }
-      /* line 1334, home.scss */
+      /* line 1332, home.scss */
       #music .wrapper .album:hover .thumbnail:after {
         opacity: 1; }
-  /* line 1339, home.scss */
+  /* line 1337, home.scss */
   #music a.lastfm {
     background: #ee4144;
     color: white;
@@ -4551,47 +4549,47 @@ section#social {
     /* line 143, global/_buttons.scss */
     #music a.lastfm:active, #music a.lastfm:focus {
       background-color: #eb1c1f; }
-  /* line 1345, home.scss */
+  /* line 1343, home.scss */
   #music.visible .wrapper {
     transform: scale(1);
     -webkit-transform: scale(1);
     opacity: 1; }
 
-/* line 1353, home.scss */
+/* line 1351, home.scss */
 #contact {
   background: #843caf;
   color: white; }
-  /* line 1358, home.scss */
+  /* line 1356, home.scss */
   #contact form select, #contact form textarea {
     width: 100%; }
-  /* line 1361, home.scss */
+  /* line 1359, home.scss */
   #contact form input:not(#ss-submit) {
     width: 50%;
     display: table-cell;
     float: left; }
-    /* line 1365, home.scss */
+    /* line 1363, home.scss */
     #contact form input:not(#ss-submit):first-child {
       border-top-right-radius: 0px;
       border-bottom-right-radius: 0px; }
-    /* line 1369, home.scss */
+    /* line 1367, home.scss */
     #contact form input:not(#ss-submit):last-child {
       border-top-left-radius: 0px;
       border-bottom-left-radius: 0px; }
-  /* line 1374, home.scss */
+  /* line 1372, home.scss */
   #contact form textarea {
     height: 5em; }
-  /* line 1377, home.scss */
+  /* line 1375, home.scss */
   #contact form #entry_88530688 {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px; }
-  /* line 1381, home.scss */
+  /* line 1379, home.scss */
   #contact form #entry_1457997342 {
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px; }
-  /* line 1385, home.scss */
+  /* line 1383, home.scss */
   #contact form input, #contact form textarea, #contact form select {
     margin-bottom: 0.2em; }
-  /* line 1388, home.scss */
+  /* line 1386, home.scss */
   #contact form input#ss-submit {
     background: #5ba525;
     color: white;
@@ -4609,67 +4607,67 @@ section#social {
     /* line 143, global/_buttons.scss */
     #contact form input#ss-submit:active, #contact form input#ss-submit:focus {
       background-color: #49841e; }
-  /* line 1398, home.scss */
+  /* line 1396, home.scss */
   #contact .telefono .guacamole, #contact .telefono .caliente, #contact .telefono .chipotle, #contact .telefono .gustas, #contact .telefono .tortilla‎, #contact .telefono .mios, #contact .telefono .mexico, #contact .telefono .frijoles, #contact .telefono .dota, #contact .telefono .tortillas {
     font-size: 0;
     visibility: hidden; }
-    /* line 1401, home.scss */
+    /* line 1399, home.scss */
     #contact .telefono .guacamole:before, #contact .telefono .caliente:before, #contact .telefono .chipotle:before, #contact .telefono .gustas:before, #contact .telefono .tortilla‎:before, #contact .telefono .mios:before, #contact .telefono .mexico:before, #contact .telefono .frijoles:before, #contact .telefono .dota:before, #contact .telefono .tortillas:before {
       font-size: 30px;
       visibility: visible;
       display: inline; }
-  /* line 1407, home.scss */
+  /* line 1405, home.scss */
   #contact .telefono .tortillas:before {
     content: '1778'; }
-  /* line 1408, home.scss */
+  /* line 1406, home.scss */
   #contact .telefono .dota:before {
     content: '- '; }
-  /* line 1409, home.scss */
+  /* line 1407, home.scss */
   #contact .telefono .guacamole:before {
     content: ') '; }
-  /* line 1410, home.scss */
+  /* line 1408, home.scss */
   #contact .telefono .mexico:before {
     content: '696'; }
-  /* line 1411, home.scss */
+  /* line 1409, home.scss */
   #contact .telefono .frijoles:before {
     content: '9981'; }
-  /* line 1412, home.scss */
+  /* line 1410, home.scss */
   #contact .telefono .chipotle:before {
     content: '969 '; }
-  /* line 1413, home.scss */
+  /* line 1411, home.scss */
   #contact .telefono .gustas:before {
     content: ' - '; }
-  /* line 1414, home.scss */
+  /* line 1412, home.scss */
   #contact .telefono .caliente:before {
     content: '571'; }
-  /* line 1415, home.scss */
+  /* line 1413, home.scss */
   #contact .telefono .mios:before {
     content: '('; }
-  /* line 1418, home.scss */
+  /* line 1416, home.scss */
   #contact .correo .zayn, #contact .correo .louis, #contact .correo .niall, #contact .correo .liam, #contact .correo .harry {
     font-size: 0;
     visibility: hidden; }
-    /* line 1421, home.scss */
+    /* line 1419, home.scss */
     #contact .correo .zayn:before, #contact .correo .louis:before, #contact .correo .niall:before, #contact .correo .liam:before, #contact .correo .harry:before {
       font-size: 30px;
       visibility: visible;
       display: inline; }
-  /* line 1427, home.scss */
+  /* line 1425, home.scss */
   #contact .correo .louis:before {
     content: 'hel'; }
-  /* line 1428, home.scss */
+  /* line 1426, home.scss */
   #contact .correo .niall:before {
     content: 'lo'; }
-  /* line 1429, home.scss */
+  /* line 1427, home.scss */
   #contact .correo .zayn:before {
     content: '@'; }
-  /* line 1430, home.scss */
+  /* line 1428, home.scss */
   #contact .correo .harry:before {
     content: 'victorlourng'; }
-  /* line 1431, home.scss */
+  /* line 1429, home.scss */
   #contact .correo .liam:before {
     content: '.com'; }
-  /* line 1433, home.scss */
+  /* line 1431, home.scss */
   #contact p.note {
     padding: 30px;
     margin-top: 60px;
@@ -4677,28 +4675,28 @@ section#social {
     background: rgba(0, 0, 0, 0.5);
     border-radius: 4px; }
 
-/* line 1443, home.scss */
+/* line 1441, home.scss */
 footer {
   background: #34495e;
   color: #ecf0f1;
   text-align: left;
   overflow: hidden;
   position: static; }
-  /* line 1456, home.scss */
+  /* line 1454, home.scss */
   footer a {
     color: #ecf0f1; }
-    /* line 1458, home.scss */
+    /* line 1456, home.scss */
     footer a:hover {
       color: #16a085; }
-  /* line 1462, home.scss */
+  /* line 1460, home.scss */
   footer .skyward {
     float: right;
     color: #ecf0f1;
     position: relative; }
-    /* line 1466, home.scss */
+    /* line 1464, home.scss */
     footer .skyward i.icon-tardis {
       position: absolute; }
-    /* line 1469, home.scss */
+    /* line 1467, home.scss */
     footer .skyward i.icon-tardis:before {
       position: absolute;
       font-size: 300px;
@@ -4710,7 +4708,7 @@ footer {
       transition: all 0.25s;
       -webkit-transform: rotate(-15deg);
       -webkit-transition: all 0.25s; }
-    /* line 1481, home.scss */
+    /* line 1479, home.scss */
     footer .skyward:hover i.icon-tardis:before {
       -webkit-transform: rotate(0deg);
       transform: rotate(0deg);
@@ -4718,7 +4716,7 @@ footer {
       color: #003865;
       text-shadow: 0 0 50px white;
       background: radial-gradient(#ffffff 0%, rgba(255, 255, 255, 0) 80%); }
-    /* line 1489, home.scss */
+    /* line 1487, home.scss */
     footer .skyward span {
       margin-right: 140px;
       background: #4f4e4c;
@@ -4732,11 +4730,11 @@ footer {
       /* line 143, global/_buttons.scss */
       footer .skyward span:active, footer .skyward span:focus {
         background-color: #3a3938; }
-  /* line 1497, home.scss */
+  /* line 1495, home.scss */
   footer aside a {
     position: relative;
     z-index: 5; }
-  /* line 1501, home.scss */
+  /* line 1499, home.scss */
   footer aside i.icon-network {
     position: relative;
     z-index: 1;
@@ -4750,12 +4748,12 @@ footer {
     width: 30px;
     margin-right: 20px;
     z-index: 0; }
-    /* line 1515, home.scss */
+    /* line 1513, home.scss */
     footer aside i.icon-network i.icon-heart:before {
       animation: heartbeat 1s infinite;
       -webkit-animation: heartbeat 1s infinite;
       position: absolute; }
-    /* line 1521, home.scss */
+    /* line 1519, home.scss */
     footer aside i.icon-network:before {
       position: absolute;
       z-index: -1;
@@ -4769,7 +4767,7 @@ footer {
       opacity: 0.3;
       color: #ecf0f1; }
 
-/* line 1541, home.scss */
+/* line 1539, home.scss */
 modal#likemystatus window {
   top: 10%;
   vertical-align: 80%;
@@ -4777,40 +4775,40 @@ modal#likemystatus window {
   overflow-x: hidden;
   bottom: 10%; }
 
-/* line 1550, home.scss */
+/* line 1548, home.scss */
 modal#credits window {
   background: #2c3e50;
   color: white; }
-  /* line 1554, home.scss */
+  /* line 1552, home.scss */
   modal#credits window .content a {
     color: white;
     transition: padding 0.2s;
     -webkit-transition: padding 0.2s;
     line-height: 1.8em; }
-    /* line 1559, home.scss */
+    /* line 1557, home.scss */
     modal#credits window .content a:hover {
       color: #16a085;
       padding-left: 20px; }
-    /* line 1563, home.scss */
+    /* line 1561, home.scss */
     modal#credits window .content a.no {
       border-bottom: 1px dotted white; }
-    /* line 1566, home.scss */
+    /* line 1564, home.scss */
     modal#credits window .content a.no:hover {
       color: white;
       border-bottom: 1px solid white;
       padding-left: 0px; }
-  /* line 1572, home.scss */
+  /* line 1570, home.scss */
   modal#credits window .content h4 {
     margin-top: 1em; }
-  /* line 1575, home.scss */
+  /* line 1573, home.scss */
   modal#credits window .content p {
     line-height: 1.5em;
     margin-bottom: 1em;
     margin-top: .5em; }
-  /* line 1582, home.scss */
+  /* line 1580, home.scss */
   modal#credits window .rockets {
     position: relative; }
-    /* line 1585, home.scss */
+    /* line 1583, home.scss */
     modal#credits window .rockets i.icon-solar {
       position: absolute;
       left: 75px;
@@ -4818,7 +4816,7 @@ modal#credits window {
       font-size: 120px;
       color: gold;
       z-index: 1; }
-    /* line 1596, home.scss */
+    /* line 1594, home.scss */
     modal#credits window .rockets .moon {
       z-index: 5;
       position: relative;
@@ -4830,7 +4828,7 @@ modal#credits window {
       display: inline-block;
       transform: rotate(120deg);
       -webkit-transform: rotate(120deg); }
-      /* line 1607, home.scss */
+      /* line 1605, home.scss */
       modal#credits window .rockets .moon .halfCircle {
         height: 45px;
         width: 90px;
@@ -4840,15 +4838,15 @@ modal#credits window {
         background: gray; }
 
 @media only screen and (max-width: 780px) {
-  /* line 1621, home.scss */
+  /* line 1619, home.scss */
   body {
     padding-left: 0px; }
 
-  /* line 1624, home.scss */
+  /* line 1622, home.scss */
   .hidden-mobile, #shorty, #hackerchat a.pilot, modal#credits window .rockets, canvas, iframe, .browser, #event article .wrapper, #more article .wrapper, #music .wrapper .album, #about figure, .stickem-container, #hackerchat .heightfix {
     display: none !important; }
 
-  /* line 1627, home.scss */
+  /* line 1625, home.scss */
   header, section, footer {
     position: relatve;
     width: 100%;
@@ -4856,53 +4854,53 @@ modal#credits window {
     padding: 20px 5px;
     text-align: center; }
 
-  /* line 1632, home.scss */
+  /* line 1630, home.scss */
   header#top {
     padding: 150px 10px 72px 10px;
     max-height: 300px; }
-    /* line 1635, home.scss */
+    /* line 1633, home.scss */
     header#top h1 {
       font-size: 50px;
       line-height: 1em; }
-      /* line 1638, home.scss */
+      /* line 1636, home.scss */
       header#top h1 span {
         opacity: 1 !important;
         text-shadow: 0 0 4px rgba(0, 0, 0, 0.5) !important; }
-    /* line 1643, home.scss */
+    /* line 1641, home.scss */
     header#top form {
       display: none !important; }
-    /* line 1646, home.scss */
+    /* line 1644, home.scss */
     header#top p {
       font-size: 20px; }
 
-  /* line 1650, home.scss */
+  /* line 1648, home.scss */
   #social a {
     display: block !important;
     width: 100% !important;
     text-shadow: none !important; }
 
-  /* line 1655, home.scss */
+  /* line 1653, home.scss */
   .skyward {
     float: none;
     display: block;
     width: 100%;
     z-index: 5;
     margin-bottom: 1em; }
-    /* line 1661, home.scss */
+    /* line 1659, home.scss */
     .skyward i.icon-tardis {
       display: none; }
-    /* line 1664, home.scss */
+    /* line 1662, home.scss */
     .skyward span {
       margin-right: 0px !important;
       display: block;
       width: 100%;
       padding: 12px !important;
       font-size: 30px; } }
-/* line 1675, home.scss */
+/* line 1673, home.scss */
 body.inthetardis {
   background: #4f4e4c;
   background: linear-gradient(#81375c, #624c73, #1f2643, #16223c, #27324e, #1a344b); }
-  /* line 1680, home.scss */
+  /* line 1678, home.scss */
   body.inthetardis header, body.inthetardis section {
     animation: inthetardis 4s ease;
     -webkit-animation: inthetardis 4s ease;
@@ -4910,7 +4908,7 @@ body.inthetardis {
     background: #edece3;
     transition: box-shadow 0.5s ease;
     -webkit-transition: box-shadow 0.5s ease; }
-  /* line 1688, home.scss */
+  /* line 1686, home.scss */
   body.inthetardis i.icon-tardis {
     position: fixed !important;
     bottom: 120px !important;
@@ -4921,23 +4919,23 @@ body.inthetardis {
     animation: shimmydown 4s linear;
     -webkit-animation: shimmydown 4s linear; }
 
-/* line 1701, home.scss */
+/* line 1699, home.scss */
 html.mobile, body.mobile {
   background-color: #34495e;
   max-width: 500px;
   margin: auto;
   box-shadow: 0 0 20px black; }
 
-/* line 1709, home.scss */
+/* line 1707, home.scss */
 #iesucks {
   background: #1e98d3;
   border-radius: 0px;
   background: none; }
 
-/* line 1716, home.scss */
+/* line 1714, home.scss */
 body.reset {
   background: white !important; }
-  /* line 1718, home.scss */
+  /* line 1716, home.scss */
   body.reset *, body.reset *:before, body.reset *:after {
     background: white !important;
     margin: 0 !important;
@@ -4969,10 +4967,10 @@ body.reset {
     -webkit-animation: none !important;
     -webkit-transition: none !important;
     -webkit-transform: none !important; }
-  /* line 1750, home.scss */
+  /* line 1748, home.scss */
   body.reset a, body.reset a * {
     color: blue !important;
     text-decoration: underline !important; }
-  /* line 1754, home.scss */
+  /* line 1752, home.scss */
   body.reset window, body.reset modal, body.reset canvas, body.reset iframe, body.reset li.bottom {
     display: none !important; }
