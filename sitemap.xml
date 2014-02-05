@@ -4,6 +4,7 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<url><loc>http://victorlourng.com/</loc></url>
-<url><loc>http://lablayers.github.io/</loc></url>
+<url><loc>http://www.victorlourng.com/</loc></url>
+<url><loc>http://www.victorlourng.com/journal/</loc></url>
+<url><loc>http://www.victorlourng.com/science/</loc></url>
 </urlset>
