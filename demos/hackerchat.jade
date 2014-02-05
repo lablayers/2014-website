@@ -1,0 +1,24 @@
+doctype 5
+html
+  head
+    title HackerChat Demo
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width,initial-scale=1.0,minimum-scale = 1.0,maximum-scale=1.0,user-scalable=no')
+    meta(name='robots' content='nofollow')
+    link(href='http://hackerchat.im/css/style.css' rel='stylesheet' type='text/css')
+  body(style='text-align:center')
+    section#header-block
+      br
+      br(style='clearfix: both;')
+      h1(style='font-size: 30px;') HackerChat
+      .lead(style='font-size: 24px;') Hackable collaboration.
+      br
+    section#login
+      form(method='post' action='http://hackerchat.im/')
+        .panel.panel-default.panel-name
+          .panel-heading
+            | HELLO
+            small my name is
+          .panel-body
+            input#namebox(type='text', name='name', placeholder='Name', required='required')
+        input.go(type='submit', value='Blow my mind')
