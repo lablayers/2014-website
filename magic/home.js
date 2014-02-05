@@ -361,6 +361,30 @@ $(document).on('click', '.skyward', function () {
     }, 4000);
 });
 
+// Schools
+$.ajax({ 
+    type: 'GET', 
+    url: 'http://cors.io/closings.victorlourng.com/api/?all', 
+    data: { get_param: 'value' }, 
+    dataType: 'json',
+    success: function (data) { 
+        $.each(data, function(index, element) {
+            $('.schools-philly').append('<div class="school"><b class="name">' + element.name + '</b> is <em class="status">' + element.status + '</em></div>');
+        });
+    }
+});
+$.ajax({ 
+    type: 'GET', 
+    url: 'http://cors.io/closings.victorlourng.com/dc/api/?all', 
+    data: { get_param: 'value' }, 
+    dataType: 'json',
+    success: function (data) { 
+        $.each(data, function(index, element) {
+            $('.schools-dc').append('<div class="school"><b class="name">' + element.name + '</b> is <em class="status">' + element.status + '</em></div>');
+        });
+    }
+});
+
 // Plugins and Fascinatingly Boring Code BELOW:
 // -> Now that you've made it this far... you've been warned. ;P
 
