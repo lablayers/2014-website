@@ -615,8 +615,6 @@ section#social {
         opacity: 1;
         transform: translate(0,0) scale(1);
         -webkit-transform: translate(0,0) scale(1);
-        filter: blur(0px);
-        -webkit-filter: blur(0px);
       }
       article {
         p {
@@ -1022,9 +1020,14 @@ section#social {
   .demo {
     @extend .col6;
     .frame {
-      iframe {
-        width: 100%;
-      }
+      background: #2980B9;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      max-height: 20em;
+      overflow: scroll;
+      font-size: 80%;
+      line-height: 1.8em;
     }
   }
   article {
@@ -1060,6 +1063,14 @@ section#social {
       width: 100%;
       height: 350px;
     }
+  }
+}
+
+// Drawalongs
+#drawalongs {
+  a {
+    @include button-subtle($purple);
+    @extend .button-jumbo;
   }
 }
 

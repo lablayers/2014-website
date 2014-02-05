@@ -88,9 +88,9 @@ block content
         //   a(href='http://twitter.com/lablayers')
         //     i.icon-twitter
         //     span Twitter
-    a.banner#shorty(href='http://shortyawards.com/lablayers')
+    a.banner#shorty(href='http://lablayers.deviantart.com/journal/Help-Your-Fellow-Deviants-Win-The-Shorty-Awards-425848576')
       i.icon-right-hand
-      | I'm running for the Shorty Award in #science! Vote for me now!
+      | The Shorty Awards are here! Vote for @LabLayers in science and @FIRSTweets in education!
     header#top(data-identity='victor').visible
       canvas#snow
       .wrapper
@@ -186,12 +186,15 @@ block content
                     | Lorem ipsum sat and donated blood to the Red Cross. 
                     a(href='http://www.redcross.org/') You should too!
                     .cart
-                    a.checkout(href='https://coinbase.com/checkouts/d0b44027fb95a7920a2aae61ae646b29')
+                    a.checkout(id='donate' href='https://coinbase.com/checkouts/d0b44027fb95a7920a2aae61ae646b29')
                       i.icon-bitcoin 
                       |  Checkout
+                    br
+                    // i.icon-up-hand 
+                    // | Donate me some Bitcoin!
       br
       p (a list of skills go here)
-      p PHP, Node.JS, CSS3, LESS, Sass, and more!
+      p I'm pretty great with PHP, Node.JS, CSS3, LESS, Sass, and more!
       br
       div.browser
         .toolbar
@@ -416,6 +419,41 @@ block content
               a.block(href='https://marketplace.firefox.com/app/ilite/')   Firefox Marketplace  
               | -
               a.block(href='http://iliterobotics.org/glass.json?ver=1')   Send to Glass  
+    // section#servers(data-identity='victor')
+      .row
+        .col6
+          article
+            h2
+              i.icon-database
+              |   Precise Servers
+            .tech
+              attr
+                tooltip
+                  ul
+                    li PHP
+                    li Custom CMS
+                i.icon-php
+              attr
+                tooltip
+                  ul
+                    li MongoDB
+                    li Amgular.js
+                i.icon-mongodb
+              attr
+                tooltip
+                  ul
+                    li HTML5
+                    li CSS3
+                    li LESS
+                    li Bootstrap 3.1
+                i.icon-html5 
+                i.icon-css3 
+                i.icon-bootstrap
+            ul.details
+              li A platform for game servers
+            a.button.red(href='http://preciseservers.com/') Redesign Coming Soon!
+          .slides.heightfix
+        .col6
     section#hackerchat(data-identity='victor')
       .row
         .heightfix
@@ -427,7 +465,7 @@ block content
                 a(href='http://hackerchat.im/' target='_blank')
                   i.icon-share
             .frame
-              iframe(src='about:blank' data-src='http://hackerchat.im/' sandbox='allow-same-origin allow-scripts allow-forms allow-popups' height='350')
+              iframe(src='about:blank' data-src='/demos/hackerchat.html' height='350')
         article
           h2
             i.icon-hackerchat
@@ -536,7 +574,11 @@ block content
                 a(href='http://closings.victorlourng.com/' target='_blank')
                   i.icon-share
             .frame
-              iframe(src='about:blank' data-src='http://closings.victorlourng.com/' sandbox='allow-scripts allow-forms' height='350')
+              h3 List of Closings
+              .schools-philly
+              h3 DC Area Closings
+              .schools-dc
+              p Can't find you school? It's probably open!
         article
           h2
             i.icon-liberty-bell
@@ -564,7 +606,7 @@ block content
               i.icon-css3 
               i.icon-yeti
           br
-          p.lead An API for school closings.
+          p.lead An API for school closings. Now for DC.
           a(href='http://closings.victorlourng.com') Visit Site
           a(href='http://closings.victorlourng.com/#API') API Docs
           a(href='http://twitter.com/PHLClosings')
@@ -581,17 +623,51 @@ block content
         a.button.gradient.green(href='https://venture-lab.stanford.edu/venture13/team_ideas/7451/') Business Model
       .slides.heightfix
         iframe(src='about:blank' data-src='https://www.slideshare.net/slideshow/embed_code/22420879' height='350' width='350')
-    // section#servers(data-identity='victor')
-      article
-        h2
-          i.icon-database
-          |   Precise Servers
-          p
-        a.button.red(href='http://preciseservers.com/') Visit Site
-      .slides.heightfix
+    section#drawalongs(data-identity='victor')
+      .row
+        .col6
+          p.note Drawalongs is launching later this week!
+          | [Interactive Anti-Screenshot Coming Soon!]
+          br
+          br
+          a.button(href='http://lablayers.deviantart.com/journal/A-Little-Something-I-ve-Been-Working-On-431766237') A Quick Preview
+        .col6
+          article
+            h2
+              i.icon-group
+              |   Drawalongs
+            .tech
+              attr
+                tooltip
+                  ul
+                    li Node.js
+                    li Jade
+                    li Express
+                    li Socket.io
+                    li Coffeescript
+                i.icon-nodejs
+              attr
+                tooltip
+                  ul
+                    li MongoDB
+                    li Angular.js
+                    li jQuery
+                i.icon-mongodb
+              attr
+                tooltip
+                  ul
+                    li HTML5
+                    li CSS3
+                    li Sass
+                    li Custom Framework
+                i.icon-html5 
+                i.icon-css3 
+            br
+            p.lead Drawalongs is a training ground for artists to collaborate, improve, and recieve feedback.
+          .slides.heightfix
     section#event(data-identity='victor')
       h2 Event Pages
-      p.lead In addition , I've also built sites for some really cool events.
+      p.lead In addition, I've also built sites for some really cool events.
       .row
         article
           .wrapper
@@ -620,7 +696,6 @@ block content
             h5
               i.icon-first 
               | Haymarket FLL
-            br
             hr
             p A LEGO MindStorms competition for kids in elementary school. The site was built in under 3 hours!
             hr
@@ -658,7 +733,15 @@ block content
               a(href='https://chrome.google.com/webstore/detail/harlem-shake-the-web/ldejkceiibdbkgjfiagpjhjdadgkelib?hl=en') 
                 i.icon-chrome 
                 | Install for Chrome
-
+          .wrapper
+            h5 passport-deviantart
+            hr
+            p A deviantART passport oAuth strategy for Node.js.
+            hr
+            .bottom
+              a(href='https://npmjs.org/package/passport-deviantart') 
+                i.icon-npm 
+                | install passport-deviantart
           .wrapper
             h5 Sta.sh Windows 8 App
             hr
@@ -677,10 +760,6 @@ block content
             h5 PaintSwipe
             hr
             p A high extensive drawing app. Android, created in App Inventor.
-          .wrapper
-            h5 deviantART Node.js
-            hr
-            p Libraries for deviantART.
           .wrapper
             h5 Draw something blah
             hr
@@ -755,7 +834,7 @@ block content
     section#creative(data-identity='victor')
     section#art(data-identity='victor')
       h2 Art
-      p.lead I'm an aspiring artist hungry for improvement. Go blame deviantART.
+      p.lead I'm an aspiring artist hungry for improvement.
       br
       .row
         .col6
@@ -775,14 +854,17 @@ block content
       h2 Writing
       p.lead I like to write about advice, experiences, and cool tech tutorials.
       a(href='http://lablayers.deviantart.com/journal')
-        i.icon-deviantart
+        i.icon-deviantart 
         | My Journal
       a(href='http://medium.com/@LabLayers')
         i.icon-pencil 
         | Medium
-      a(href='http://www.victorlourng.com/2013')
+      a(href='http://2013-victor.rhcloud.com/')
         i.icon-news 
-        | My Journal
+        | Archive
+      a(href='http://www.victorlourng.com/journal')
+        i.icon-food 
+        | Jekyll (WIP)
       br
       br
       a(href='http://fav.me/d6ttmo3')
@@ -800,10 +882,10 @@ block content
       a(href='http://www.victorlourng.com/2013/node-ftw')
         i.icon-news 
         | Personal: Node.js is the New PHP
-      a(href='http://www.victorlourng.com/2013/its-a-metropolis')
+      // a(href='http://www.victorlourng.com/2013/its-a-metropolis')
         i.icon-kaboom  
         | My Weekend At: DC.INDIE
-      a(href='http://www.victorlourng.com/2013/otakon')
+      // a(href='http://www.victorlourng.com/2013/otakon')
         i.icon-kaboom  
         | My Weekend At: Otakon
     section#film(data-identity='victor')
@@ -900,9 +982,9 @@ block content
           .artist RQ
         a.album(href='http://www.youtube.com/watch?v=Xs_tFFUSiiI')
           .thumbnail
-          .title Shadow of Flower
-          .artist The Living Tombstone
-        a.album(href='http://www.youtube.com/watch?v=kGSB98RskJM')
+          .title Blackout City
+          .artist Anamanaguchi
+        a.album(href='https://www.youtube.com/watch?v=GItw1qZLdsU')
           .thumbnail
           .title Cave In
           .artist Owl City
@@ -1005,9 +1087,11 @@ block content
             i.icon-close
         div.content
           .rockets
-            i.icon-solar
+            i.icon-rocket
             .moon
               .halfCircle
+            .sun
+            i.icon-star
             p Really cool animated CSS3 love story coming soon!
             br
             hr
