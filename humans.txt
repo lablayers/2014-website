@@ -43,10 +43,12 @@
 /*     \/___/  \/_/\/__/\/____/                         */
 
 
-    Standards: HTML5, CSS3 (SCSS via Chipotle powered)
+    Standards: HTML5, CSS3 (SCSS powered via Chipotle)
     Generator: GitHub Pages (Jekyll powered)
     Components: Modernizr, jQuery, Scooter
     Software: Sublime Text, Node.js
+    Fonts: Varela Round, Open Sans
+    Readme: github.com/LabLayers/lablayers.github.io/blob/master/readme.md
 
 
 /*       ___  __                                __       */
