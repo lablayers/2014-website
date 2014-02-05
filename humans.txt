@@ -1,22 +1,60 @@
+/*                              __           __        */
+/*                             /\ \         /\ \       */
+/*      ___     __      ___    \_\ \  __  __\ \ \      */
+/*     /'___\ /'__`\  /' _ `\  /'_` \/\ \/\ \\ \ \     */
+/*    /\ \__//\ \L\.\_/\ \/\ \/\ \L\ \ \ \_\ \\ \_\    */
+/*    \ \____\ \__/.\_\ \_\ \_\ \___,_\/`____ \\/\_\   */
+/*     \/____/\/__/\/_/\/_/\/_/\/__,_ /`/___/> \\/_/   */
+/*                                        /\___/       */
+/*                                        \/__/        */
 
-__          __                      _                                     _ 
-\ \        / /                     | |                                   | |
- \ \  /\  / /___    __ _ _ __ ___  | |__  _   _ _ __ ___   __ _ _ __  ___| |
-  \ \/  \/ // _ \  / _` | '__/ _ \ | '_ \| | | | '_ ` _ \ / _` | '_ \/ __| |
-   \  /\  /|  __/ | (_| | | |  __/ | | | | |_| | | | | | | (_| | | | \__ \_|
-    \/  \/  \___|  \__,_|_|  \___| |_| |_|\__,_|_| |_| |_|\__,_|_| |_|___(_)
+    Filename: humans.txt
+    Info: You see, I love candy. I'm human, after all.
+    Dimension: Space
+    Galaxy: Milky Way
+    Planet: Earth
+    Language: English
 
 
+/*                                  ___                 */
+/*                                 /\_ \                */
+/*     _____      __    ___   _____\//\ \      __       */
+/*    /\ '__`\  /'__`\ / __`\/\ '__`\\ \ \   /'__`\     */
+/*    \ \ \L\ \/\  __//\ \L\ \ \ \L\ \\_\ \_/\  __/     */
+/*     \ \ ,__/\ \____\ \____/\ \ ,__//\____\ \____\    */
+/*      \ \ \/  \/____/\/___/  \ \ \/ \/____/\/____/    */
+/*       \ \_\                  \ \_\                   */
+/*        \/_/                   \/_/                   */
 
-/*   A W E S O M E   G U Y   I N   C H A R G E   O F   A L L   T H I S   */
 
-Victor Lourng (CEO, SysAdmin, UX) twitter.com/lablayers
+    Human: Victor Lourng
+    Title: CEO, SysAdmin, UX, Agile, DevOps, UI
+    Contact: hello (at) victorlourng.com
+    Twitter: twitter.com/lablayers
+    Location: Lower Moreland, PA, USA, North America
 
 
+/*              __                                      */
+/*           __/\ \__                                   */
+/*      ____/\_\ \ ,_\    __                            */
+/*     /',__\/\ \ \ \/  /'__`\                          */
+/*    /\__, `\ \ \ \ \_/\  __/                          */
+/*    \/\____/\ \_\ \__\ \____\                         */
+/*     \/___/  \/_/\/__/\/____/                         */
 
-/*   S I T E   */
 
-Manufacture Date: 2014/1.1
-Language: English
-Standards: HTML5, CSS3 (SCSS powered)
-CMS: Jekyll
+    Standards: HTML5, CSS3 (SCSS via Chipotle powered)
+    Generator: GitHub Pages (Jekyll powered)
+    Components: Modernizr, jQuery, Scooter
+    Software: Sublime Text, Node.js
+
+
+/*       ___  __                                __       */
+/*      /  //'__`\                             /\ \      */
+/*     /  //\_\L\ \      __  __    ___   __  __\ \ \     */
+/*   /<  < \/_/_\_<_    /\ \/\ \  / __`\/\ \/\ \\ \ \    */
+/*   \ `\ `\ /\ \L\ \   \ \ \_\ \/\ \L\ \ \ \_\ \\ \_\   */
+/*    `\ `\_|\ \____/    \/`____ \ \____/\ \____/ \/\_\  */
+/*      `\//  \/___/      `/___/> \/___/  \/___/   \/_/  */
+/*                           /\___/                      */
+/*                           \/__/                       */
