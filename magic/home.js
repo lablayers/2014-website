@@ -30,6 +30,7 @@ document.createElement("tooltip");
 document.createElement("article");
 
 // Disable Pointer Events on Scroll
+// -> Actually made my site slower!
 // -@ http://www.thecssninja.com/javascript/pointer-events-60fps
 // var body = document.body,
 //     timer;
@@ -83,7 +84,7 @@ $(window).scroll(function () {
     if (scrollTimer) {
         clearTimeout(scrollTimer);   // clear any previous pending timer
     }
-    scrollTimer = setTimeout(handleScroll, 20);   // set new timer
+    scrollTimer = setTimeout(handleScroll, 100);   // set new timer
 });
 
 function handleScroll() {
@@ -108,7 +109,10 @@ function handleScroll() {
                 return $(this).data("src");
             });
         } else {
-            el.removeClass("visible"); 
+            if (!$(this).hasClass("onceler")) {
+                el.removeClass("visible"); 
+            };
+            // el.removeClass("visible"); 
         }
     });
 }
