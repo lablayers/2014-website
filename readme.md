@@ -119,8 +119,10 @@ Kudos to my friends at [Precise Servers](http://preciseservers.com) for the doma
 > dude victor this site is coming along so nicely. so dope. (omfg it literally harlem shakes.)
 > - [Avi Romanoff](https://www.facebook.com/events/1417893651779691/permalink/1429310360638020/?comment_id=1429311747304548&offset=0&total_comments=16)
 
+-
+> if there was a nobel prize for CSS hacking, i'd nominate you
+> - [sugarcookies via HipChat](https://www.hipchat.com/grIU9aHZF)
 
 -
-
 ## Sign My Guestbook!
 Now that you've read all this, go sign my semi-secret guestbook: click my name at the top of the page, type in your name, and hit the enter key. :smile:
