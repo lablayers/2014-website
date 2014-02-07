@@ -83,3 +83,9 @@ noscript div, .oldie {
   display: block;
   text-align: center;
 }
+
+// Disable Pointer Events on Scroll
+.disable-hover {
+// .disable-hover * {
+  pointer-events: none !important;
+}

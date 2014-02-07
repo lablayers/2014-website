@@ -343,6 +343,10 @@ noscript div, .oldie {
   display: block;
   text-align: center; }
 
+/* line 88, global/_base.scss */
+.disable-hover {
+  pointer-events: none !important; }
+
 /* line 2, global/_scrollbars.scss */
 ::-webkit-scrollbar {
   height: 0;
