@@ -75,3 +75,7 @@ build
 # Sass #
 ########
 .sass-cache/
+
+# Jekyll #
+########
+_site/

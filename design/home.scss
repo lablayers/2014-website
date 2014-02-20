@@ -1067,10 +1067,20 @@ section#social {
 }
 
 // Drawalongs
-#drawalongs {
-  a {
-    @include button-subtle($purple);
-    @extend .button-jumbo;
+$ps: #500000;
+#servers {
+  background: $ps;
+  color: white;
+  @extend .dark-text-shadow;
+  article {
+    a {
+      @include button-subtle(#C22127);
+      @extend .button-jumbo;
+    }
+    i.icon-bootstrap:before {
+      background: white;
+      color: $ps;
+    }
   }
 }
 
