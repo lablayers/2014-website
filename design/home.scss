@@ -606,7 +606,7 @@ section#social {
       transform: rotate(-30deg) scale(2) translate(-45px,5px);
       -webkit-transform: rotate(-30deg) scale(2) translate(-45px,5px);
     }
-    .frame {
+    .browser.visible .frame {
       nav.navbar {
         opacity: 1;
         transform: scale(1) translate(0,0%);

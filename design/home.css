@@ -4055,29 +4055,29 @@ section#social {
     transform: rotate(-30deg) scale(2) translate(-45px, 5px);
     -webkit-transform: rotate(-30deg) scale(2) translate(-45px, 5px); }
   /* line 610, home.scss */
-  #unicorn.visible .frame nav.navbar {
+  #unicorn.visible .browser.visible .frame nav.navbar, #unicorn.visible #event article .visible.wrapper .frame nav.navbar, #event article #unicorn.visible .visible.wrapper .frame nav.navbar, #unicorn.visible #more article .visible.wrapper .frame nav.navbar, #more article #unicorn.visible .visible.wrapper .frame nav.navbar, #unicorn.visible #music .wrapper .visible.album .frame nav.navbar, #music .wrapper #unicorn.visible .visible.album .frame nav.navbar {
     opacity: 1;
     transform: scale(1) translate(0, 0%);
     -webkit-transform: scale(1) translate(0, 0%); }
   /* line 615, home.scss */
-  #unicorn.visible .frame .notice {
+  #unicorn.visible .browser.visible .frame .notice, #unicorn.visible #event article .visible.wrapper .frame .notice, #event article #unicorn.visible .visible.wrapper .frame .notice, #unicorn.visible #more article .visible.wrapper .frame .notice, #more article #unicorn.visible .visible.wrapper .frame .notice, #unicorn.visible #music .wrapper .visible.album .frame .notice, #music .wrapper #unicorn.visible .visible.album .frame .notice {
     margin: 20px 20px 20px 20px;
     line-height: 1.8em;
     opacity: 1;
     transform: translate(0, 0) scale(1);
     -webkit-transform: translate(0, 0) scale(1); }
   /* line 623, home.scss */
-  #unicorn.visible .frame article p {
+  #unicorn.visible .browser.visible .frame article p, #unicorn.visible #event article .visible.wrapper .frame article p, #event article #unicorn.visible .visible.wrapper .frame article p, #unicorn.visible #more article .visible.wrapper .frame article p, #more article #unicorn.visible .visible.wrapper .frame article p, #unicorn.visible #music .wrapper .visible.album .frame article p, #music .wrapper #unicorn.visible .visible.album .frame article p {
     opacity: 1;
     transform: scale(1) translate(0, 0%);
     -webkit-transform: scale(1) translate(0, 0%); }
   /* line 628, home.scss */
-  #unicorn.visible .frame article .span4 {
+  #unicorn.visible .browser.visible .frame article .span4, #unicorn.visible #event article .visible.wrapper .frame article .span4, #event article #unicorn.visible .visible.wrapper .frame article .span4, #unicorn.visible #more article .visible.wrapper .frame article .span4, #more article #unicorn.visible .visible.wrapper .frame article .span4, #unicorn.visible #music .wrapper .visible.album .frame article .span4, #music .wrapper #unicorn.visible .visible.album .frame article .span4 {
     opacity: 1;
     transform: translate(0, 0%);
     -webkit-transform: translate(0, 0%); }
   /* line 634, home.scss */
-  #unicorn.visible .frame aside {
+  #unicorn.visible .browser.visible .frame aside, #unicorn.visible #event article .visible.wrapper .frame aside, #event article #unicorn.visible .visible.wrapper .frame aside, #unicorn.visible #more article .visible.wrapper .frame aside, #more article #unicorn.visible .visible.wrapper .frame aside, #unicorn.visible #music .wrapper .visible.album .frame aside, #music .wrapper #unicorn.visible .visible.album .frame aside {
     opacity: 1;
     transform: scale(1) translate(0, 0%);
     -webkit-transform: scale(1) translate(0, 0%); }
@@ -4138,7 +4138,7 @@ section#social {
   #gestice article {
     background: rgba(0, 0, 0, 0.5);
     padding-bottom: 30px;
-    padding-top: 10px;
+    padding-top: 20px;
     border-radius: 8px; }
     /* line 700, home.scss */
     #gestice article a {
