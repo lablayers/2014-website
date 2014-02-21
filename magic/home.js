@@ -125,6 +125,16 @@ function handleScroll() {
             el.addClass("visible");
         }
     });
+    $(".animate, #event article, #more article, #science article, #lab article, #film article").each(function(i, el) {
+        var el = $(el);
+        // if (el.visible(true)) {
+        // -> A section MUST be in the viewport and 200px from the bottom in order for 
+        //    some awesome CSS3 animations to happen!
+        // -@ http://stackoverflow.com/questions/16569941/use-jquery-to-detect-when-an-element-is-near-the-bottom-of-the-page
+        if (   ($(this).offset().top) < ($(window).scrollTop() + $(window).height() - 178)  &&  el.visible(true)  ) {
+            el.addClass("visible");
+        }
+    });
 }
 
 // // -> PERFORMANCE ISSUES!
