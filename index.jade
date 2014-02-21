@@ -228,7 +228,7 @@ block content
             | });
       div.parallax.stars
       div.parallax.code
-    section#showcase(data-identity='victor')
+    // section#showcase(data-identity='victor')
       h2
         i.icon-idea 
         | Hackathons!
@@ -262,12 +262,12 @@ block content
                     | by
                     a(href='https://www.facebook.com/MHacksHackathon') MHacks
                     | .
-          // .wrapper.backstory
+          .wrapper.twitterfeed
             b I am currently at MHacks! Follow me on Twitter:
             a.twitter-timeline(href='https://twitter.com/lablayers', data-widget-id='424359863045476352') Tweets by @lablayers
               script
                   !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-          // div#backstory
+        div#backstory
           .wrapper.backstory#backstory(style="display: none;")
             b BACKSTORY: Remember this?
             p After months of back-and-forth chattering between me, my family, and the organizers of MHacks, my parents have finally decided to let me come to MHacks (at the last possible minute!) How awesome is that?
@@ -303,7 +303,7 @@ block content
             a.button(href='#contact') 
               i.icon-email 
               | Contact Me! 
-    section#pennapps(data-identity='victor')
+    // section#pennapps(data-identity='victor')
       .row
         .col4
           i.icon-pennapps
@@ -335,6 +335,87 @@ block content
           .wrapper
             b PilotPhilly
     section#portfolio(data-identity='victor')
+    section#gestice(data-identity='victor')
+      .row
+        figure
+          .pebble
+              .poke-left
+              .poke-right-1
+              .poke-right-2
+              .poke-right-3
+              .frame
+                .poke-top
+                .display
+                  // .post-success.paths
+                    | Phone
+                    br
+                    | Unlocked
+                  // .success.paths.leap-interactive(onclick='swipePhone();')
+                    | Shake
+                    br
+                    | Me!
+                  a.not-success.paths.leap-interactive(href='http://gestice.org/' target='_blank')
+                    // (onclick='grabPebble();')
+                    | Demo
+                    br
+                    | Me!
+                .poke-bottom
+          // .android
+              .phone-shell
+                  .manufacturer GESTICE
+                  .lcd.leap-interactive
+                    .screen-off
+                      time  
+                      p (Display Off)
+                    .screen-unlocked
+                      time It works!
+                      p You can open any app with unique gestures.
+                      .row
+                        .col-md-3
+                          img(src='/img/android/Chrome.png', alt='')
+                          | Chrome
+                        .col-md-3
+                          img(src='/img/android/Maps.png', alt='')
+                          | Maps
+                        .col-md-3
+                          img(src='/img/android/Pebble.jpg', alt='')
+                          | Pebble
+                        .col-md-3
+                          img(src='/img/android/Gestice.png', alt='')
+                          | Gestice
+                    .screen-locked
+                      .android-header-bar
+                      script(type='text/javascript')
+                      time 20:14 
+                      span Shake to Unlock
+        article
+          h2
+            i.icon-pennapps
+            |   Gestice
+          .tech
+            attr
+              tooltip
+                ul
+                  li Smartwatch SDK
+              | Pebble
+            attr
+              tooltip
+                ul
+                  li Javascript Framework
+              | Leap Motion
+            attr
+              tooltip
+                ul
+                  li HTML5
+                  li CSS3
+                  li LESS
+              i.icon-html5 
+              i.icon-css3 
+          br
+          p A new way to unlock your Android.
+          br
+          a(href='http://gestice.org/') Gestice.org
+          a(href='http://www.xataka.com/accesorios/gestice-combina-tu-pebble-con-tu-smartphone-android-para-desbloquearlo') Xataka Article (ES)
     section#ilite(data-identity='victor') <!-- data-pin='please' -->
       .row
         article
@@ -419,41 +500,6 @@ block content
               a.block(href='https://marketplace.firefox.com/app/ilite/')   Firefox Marketplace  
               | -
               a.block(href='http://iliterobotics.org/glass.json?ver=1')   Send to Glass  
-    // section#servers(data-identity='victor')
-      .row
-        .col6
-          article
-            h2
-              i.icon-database
-              |   Precise Servers
-            .tech
-              attr
-                tooltip
-                  ul
-                    li PHP
-                    li Custom CMS
-                i.icon-php
-              attr
-                tooltip
-                  ul
-                    li MongoDB
-                    li Amgular.js
-                i.icon-mongodb
-              attr
-                tooltip
-                  ul
-                    li HTML5
-                    li CSS3
-                    li LESS
-                    li Bootstrap 3.1
-                i.icon-html5 
-                i.icon-css3 
-                i.icon-bootstrap
-            ul.details
-              li A platform for game servers
-            a.button.red(href='http://preciseservers.com/') Redesign Coming Soon!
-          .slides.heightfix
-        .col6
     section#hackerchat(data-identity='victor')
       .row
         .heightfix
@@ -661,8 +707,8 @@ block content
                 i.icon-bootstrap
             br
             p.lead A platform for high-end hosted game servers. 
-            a.button.red(href='http://preciseservers.com/') PreciseServers.com
-            a.button.red(href='http://preciseservers.com/forums') Forums
+            a(href='http://preciseservers.com/') PreciseServers.com
+            a(href='http://preciseservers.com/forums') Forums
     // section#drawalongs(data-identity='victor')
       .row
         .col6

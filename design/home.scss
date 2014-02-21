@@ -78,6 +78,9 @@ i.icon-bootstrap:before {
 // WebTunes
 @import "global/_webtunesmini.scss";
 
+// Gestice
+@import "global/_gestice.scss";
+
 // Custom Variables
 $thickness: 4px;
 
@@ -678,6 +681,45 @@ section#social {
 
 #pennapps {
   background-color: lighten(red, 12%);
+}
+
+// Gestice
+#gestice {
+  background: #DEC18D;
+  color: white;
+  box-shadow: 0 0 4px black inset;
+  @extend .dark-text-shadow;
+  figure, article {
+    @extend .col6;
+  }
+  article { 
+    background: rgba(0, 0, 0, 0.5);
+    padding-bottom: 30px;
+    padding-top: 20px;
+    border-radius: 8px;
+    a {
+      @include button-border(white);
+      @extend .button-jumbo;
+      border-radius: 100px;
+      margin: 0px 5px;
+      &:hover {
+        color: #702500;
+        text-shadow: none;
+      }
+    }
+  }
+  .pebble {
+    opacity: 0;
+    transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+  }
+  &.visible {
+    .pebble {
+      opacity: 1;
+      -webkit-animation: fall-up 1s ease;
+      animation: fall-up 1s ease;
+    }
+  }
 }
 
 // ILITE Robotics
