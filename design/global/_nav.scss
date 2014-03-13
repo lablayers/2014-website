@@ -1,4 +1,4 @@
-nav[role="navigation"] menu {
+menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -33,9 +33,10 @@ nav[role="navigation"] menu {
             i {
                 float: left;
                 display: block;
-                line-height: 66px;
+                line-height: 66px!important;
                 width: 66px;
                 text-align: center;
+                color: white;
                 .flame, .fire, .fuel {
                     position: absolute;
                     margin-top: -26px;

@@ -52,7 +52,7 @@
 
 // Icons
 @import "global/_stargazer.scss";
-i.icon-bootstrap:before {
+.icon-bootstrap:before {
   content: 'B';
   position: relative;
   display: inline-block;
@@ -120,7 +120,7 @@ header, section, footer {
   text-shadow: rgba(41, 52, 63, 0.4) 0px -1px 0px;
 }
 
-ul.details {
+.details {
     border-top: 1px dotted;
     margin: 1em 2em;
     li {
@@ -187,7 +187,7 @@ canvas {
 
 
 // Header
-header#top {
+#top {
   display: table;
   padding: 0 60px;
   position: relative;
@@ -285,7 +285,7 @@ header#top {
 }
 
 // About
-section#about {
+#about {
   color: white;
   background: $purple; //#0099B5;
   // animation: colors 40s infinite;
@@ -342,7 +342,7 @@ section#about {
 }
 
 // Social
-section#social {
+#social {
   background: black;
   padding: 0;
   a {
@@ -366,7 +366,7 @@ section#social {
     // Almost-Infinite Southeast Flat Shadow
     // -> Todo: Create Sass @mixin to automate the process!
       &.twitter {
-        background: #00acee; 
+        background: #00acee;
         @include longshadow(#0094CD); // text-shadow: #0094CD 1px 1px, #0094CD 2px 2px, #0094CD 3px 3px, #0094CD 4px 4px, #0094CD 5px 5px, #0094CD 6px 6px, #0094CD 7px 7px, #0094CD 8px 8px, #0094CD 9px 9px, #0094CD 10px 10px, #0094CD 11px 11px, #0094CD 12px 12px, #0094CD 13px 13px, #0094CD 14px 14px, #0094CD 15px 15px, #0094CD 16px 16px, #0094CD 17px 17px, #0094CD 18px 18px, #0094CD 19px 19px, #0094CD 20px 20px, #0094CD 21px 21px, #0094CD 22px 22px, #0094CD 23px 23px, #0094CD 24px 24px, #0094CD 25px 25px, #0094CD 26px 26px, #0094CD 27px 27px, #0094CD 28px 28px, #0094CD 29px 29px, #0094CD 30px 30px, #0094CD 31px 31px, #0094CD 32px 32px, #0094CD 33px 33px, #0094CD 34px 34px, #0094CD 35px 35px, #0094CD 36px 36px, #0094CD 37px 37px, #0094CD 38px 38px, #0094CD 39px 39px, #0094CD 40px 40px, #0094CD 41px 41px, #0094CD 42px 42px, #0094CD 43px 43px, #0094CD 44px 44px, #0094CD 45px 45px, #0094CD 46px 46px, #0094CD 47px 47px, #0094CD 48px 48px, #0094CD 49px 49px, #0094CD 50px 50px, #0094CD 51px 51px, #0094CD 52px 52px, #0095CE 53px 53px, #0095CF 54px 54px, #0096D0 55px 55px, #0097D1 56px 56px, #0097D2 57px 57px, #0098D2 58px 58px, #0098D3 59px 59px, #0099D4 60px 60px, #009AD5 61px 61px, #009AD6 62px 62px, #009BD7 63px 63px, #009CD8 64px 64px, #009CD8 65px 65px, #009DD9 66px 66px, #009DDA 67px 67px, #009EDB 68px 68px, #009FDC 69px 69px, #009FDD 70px 70px, #00A0DD 71px 71px, #00A0DE 72px 72px, #00A1DF 73px 73px, #00A2E0 74px 74px, #00A2E1 75px 75px, #00A3E2 76px 76px, #00A4E3 77px 77px, #00A4E3 78px 78px, #00A5E4 79px 79px, #00A5E5 80px 80px, #00A6E6 81px 81px, #00A7E7 82px 82px, #00A7E8 83px 83px, #00A8E8 84px 84px, #00A8E9 85px 85px, #00A9EA 86px 86px, #00AAEB 87px 87px, #00AAEC 88px 88px, #00ABED 89px 89px, #00ACEE 90px 90px;
           &:hover { background: lighten(#00acee, 10%); }
       }
@@ -655,7 +655,7 @@ section#social {
     text-decoration: underline;
     font-weight: bold;
   }
-  i.icon-mhacks, i.icon-pennapps {
+  .icon-mhacks, .icon-pennapps {
     font-size: 300px;
     text-shadow: 0 0 10px rgba(0,0,0,.5);
   }
@@ -666,7 +666,7 @@ section#social {
     background: rgba(255,255,255,.8);
     color: black;
     padding: 20px;
-    a.button {
+    .button {
       @include button-subtle($dark);
       @extend .button-jumbo;
     }
@@ -692,7 +692,7 @@ section#social {
   figure, article {
     @extend .col6;
   }
-  article { 
+  article {
     background: rgba(0, 0, 0, 0.5);
     padding-bottom: 30px;
     padding-top: 20px;
@@ -731,7 +731,7 @@ section#social {
     color: #814ca0;
     background: white;
   }
-  article { 
+  article {
     @extend .col6;
     padding: 0px 18px;
     a {
@@ -900,7 +900,7 @@ section#social {
   // background-repeat: repeat;
   background: lighten(#000, 20%);
   color: #C8C8C8;
-  i.icon-bootstrap:before {
+  .icon-bootstrap:before {
     color: lighten(#000, 20%);
     background: #C8C8C8;
   }
@@ -935,7 +935,7 @@ section#social {
       @extend .button-jumbo;
     }
   }
-  a.pilot {
+  .pilot {
     .button {
       @include button-subtle($dark);
     }
@@ -959,7 +959,7 @@ section#social {
       padding-right: 20px;
       text-align: right;
     }
-    i.icon-pilotphilly {
+    .icon-pilotphilly {
       float: right;
       display: inline;
       position: absolute;
@@ -976,7 +976,7 @@ section#social {
         -webkit-transform: translate(0,0);
         transform: translate(0,0);
       }
-      i.icon-pilotphilly {
+      .icon-pilotphilly {
         opacity: 1;
         transform: rotate(0deg);
         -webkit-transform: rotate(0deg);
@@ -989,11 +989,11 @@ section#social {
 #cloudchat {
   background: lighten($ltblue, 10%);
   color: black;
-  i.icon-bootstrap:before {
+  .icon-bootstrap:before {
     content: ':)';
     color: lighten($ltblue, 10%);
   }
-  a.button {
+  .button {
     @include button-subtle($blue);
     @extend .button-jumbo;
   }
@@ -1025,7 +1025,7 @@ section#social {
       }
     }
   }
-  i.thing-1, i.thing-2 {
+  .thing-1, .thing-2 {
     position: absolute;
     color: white;
     opacity: 0.4;
@@ -1035,20 +1035,20 @@ section#social {
     transition: left 0.8s 1s ease-in-out, right 0.8s 1s ease-in-out, opacity 0.5s 1s ease-in-out;
     -webkit-transition: left 0.8s 1s ease-in-out, right 0.8s 1s ease-in-out, opacity 0.5s 1s ease-in-out;
   }
-  i.thing-2 {
+  .thing-2 {
     left: -220px;
   }
-  i.thing-1 {
+  .thing-1 {
     right: -220px;
   }
   &.visible {
-    i.thing-1, i.thing-2 {
+    .thing-1, .thing-2 {
       opacity: 1;
     }
-    i.thing-2 {
+    .thing-2 {
       left: -20px;
     }
-    i.thing-1 {
+    .thing-1 {
       right: -20px;
     }
   }
@@ -1136,7 +1136,7 @@ $ps: #500000;
     @extend .col4;
     padding: 6px;
     text-shadow: none;
-    opacity: 0;
+    /* opacity: 0;
     transform: rotate(-5deg) translate(0,50%);
     -webkit-transform: rotate(-5deg) translate(0,50%);
     @extend .transition;
@@ -1146,17 +1146,17 @@ $ps: #500000;
       -webkit-transform: rotate(0deg) translate(0,0%);
       &:nth-child(3n+1) {
         transition-delay: 0s;
-        -webkit-transition-delay: 0s; 
+        -webkit-transition-delay: 0s;
       }
       &:nth-child(3n+2) {
         transition-delay: .65s;
-        -webkit-transition-delay: .65s; 
+        -webkit-transition-delay: .65s;
       }
       &:nth-child(3n+3) {
         transition-delay: 1.05s;
-        -webkit-transition-delay: 1.05s; 
+        -webkit-transition-delay: 1.05s;
       }
-    }
+    } */
     .wrapper {
       margin: 1em auto;
       @extend .browser;
@@ -1215,7 +1215,7 @@ $ps: #500000;
     @extend .tile;
     padding: 6px;
     text-align: left;
-    opacity: 0;
+    /* opacity: 0;
     transform: rotate(-5deg) translate(0,50%);
     -webkit-transform: rotate(-5deg) translate(0,50%);
     @extend .transition;
@@ -1225,17 +1225,17 @@ $ps: #500000;
       -webkit-transform: rotate(0deg) translate(0,0%);
       &:nth-child(3n+1) {
         transition-delay: 0s;
-        -webkit-transition-delay: 0s; 
+        -webkit-transition-delay: 0s;
       }
       &:nth-child(3n+2) {
         transition-delay: .65s;
-        -webkit-transition-delay: .65s; 
+        -webkit-transition-delay: .65s;
       }
       &:nth-child(3n+3) {
         transition-delay: 1.05s;
-        -webkit-transition-delay: 1.05s; 
+        -webkit-transition-delay: 1.05s;
       }
-    }
+    } */
     .slide {
       max-width: 20em;
       margin: auto;
@@ -1369,7 +1369,7 @@ $ps: #500000;
   box-shadow: inset 0 0 60px rgba(0,0,0,0.5);
   background-image: linear-gradient(to bottom right, #d38312, #a83279);
   color: white;
-  text-align: center; 
+  text-align: center;
   article {
     @extend .col4;
     text-align: center;
@@ -1438,7 +1438,7 @@ $ps: #500000;
       }
     }
   }
-  a.lastfm {
+  .lastfm {
     @include button-subtle($red);
     @extend .button-jumbo;
     @extend .transition;
@@ -1565,10 +1565,10 @@ footer {
     float: right;
     color: $clouds;
     position: relative;
-    i.icon-tardis {
+    .icon-tardis {
       position: absolute;
     }
-    i.icon-tardis:before {
+    .icon-tardis:before {
       position: absolute;
       font-size: 300px;
       margin-top: -60px;
@@ -1580,7 +1580,7 @@ footer {
       -webkit-transform: rotate(-15deg);
       -webkit-transition: all 0.25s;
     }
-    &:hover i.icon-tardis:before {
+    &:hover .icon-tardis:before {
       -webkit-transform: rotate(0deg);
       transform: rotate(0deg);
       opacity: 1;
@@ -1600,7 +1600,7 @@ footer {
       position: relative;
       z-index: 5;
     }
-    i.icon-network {
+    .icon-network {
       position: relative;
       z-index: 1;
       display: inline-block;
@@ -1613,7 +1613,7 @@ footer {
       width: 30px;
       margin-right: 20px;
       z-index: 0;
-      i.icon-heart {
+      .icon-heart {
         &:before {
           animation: heartbeat 1s infinite;
           -webkit-animation: heartbeat 1s infinite;
@@ -1684,7 +1684,7 @@ modal#credits window {
   .rockets {
     position: relative;
     @extend .hidden-mobile;
-    i.icon-solar {
+    .icon-solar {
       position: absolute;
       left: 75px;
       top: -5px;
@@ -1731,7 +1731,7 @@ modal#credits window {
     padding: 20px 5px;
     text-align: center;
   }
-  header#top {
+  #top {
     padding: 150px 10px 72px 10px;
     max-height: 300px;
     h1 {
@@ -1760,7 +1760,7 @@ modal#credits window {
     width: 100%;
     z-index: 5;
     margin-bottom: 1em;
-    i.icon-tardis {
+    .icon-tardis {
       display: none;
     }
     span {
@@ -1774,7 +1774,7 @@ modal#credits window {
 }
 
 // Hmm...
-body.inthetardis { // , body.menu-expanded {
+.inthetardis { // , body.menu-expanded {
   background: $dark;
   background: linear-gradient(#81375C, #624C73, #1F2643, #16223C, #27324E, #1A344B);
   // transition: background 0.5s ease-in;
@@ -1787,7 +1787,7 @@ body.inthetardis { // , body.menu-expanded {
     transition: box-shadow 0.5s ease;
     -webkit-transition: box-shadow 0.5s ease;
   }
-  i.icon-tardis {
+  .icon-tardis {
     position: fixed!important;
     bottom: 120px!important;
     right: 80px!important;
@@ -1800,7 +1800,7 @@ body.inthetardis { // , body.menu-expanded {
 }
 
 // Mobile Emulator
-html.mobile, body.mobile {
+.mobile, body.mobile {
   background-color: $wet-asphalt;
   max-width: 500px;
   margin: auto;
@@ -1815,7 +1815,7 @@ html.mobile, body.mobile {
 }
 
 // Reset
-body.reset {
+.reset {
   background: white!important;
   *, *:before, *:after {
     background: white!important;
