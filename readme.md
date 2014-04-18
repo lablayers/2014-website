@@ -74,7 +74,7 @@ Feel free to copy and paste whatever you need the as long as you attribute me an
 
 Kudos to the open source developers who have put hard work into the various libraries and code snippets used on my site.
 
-Also, that starry night background image belongs to GitHub and some of these icons belong to Salesforce. I asked both of these companies for permission regarding personal use, however they prefer not to have them floating around the internet. Company logos, of course, belong to their respective company. Be sure to read the [credits](http://victorlourng.com/#credits) for more sources.
+Company logos, of course, belong to their respective company. Be sure to read the [credits](http://victorlourng.com/#credits) for more sources.
 
 ## Previous Versions
 I launched VictorLourng.com in February 2012 with a highly skeumorphic design and a huge 3D slideshow written in jQuery. Only five months later would my design be outdated with the introduction of iOS7 and when the movement towards flat design really picked up.
