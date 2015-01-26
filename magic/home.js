@@ -404,7 +404,7 @@ $(document).on('click', '.skyward', function () {
 // Schools
 $.ajax({ 
     type: 'GET', 
-    url: 'http://cors.io/closings.victorlourng.com/api/?all', 
+    url: 'https://cors-anywhere.herokuapp.com/http://closings.victorlourng.com/api/?all', 
     data: { get_param: 'value' }, 
     dataType: 'json',
     success: function (data) { 
@@ -415,7 +415,7 @@ $.ajax({
 });
 $.ajax({ 
     type: 'GET', 
-    url: 'http://cors.io/closings.victorlourng.com/dc/api/?all', 
+    url: 'https://cors-anywhere.herokuapp.com/http://closings.victorlourng.com/dc/api/?all', 
     data: { get_param: 'value' }, 
     dataType: 'json',
     success: function (data) { 
