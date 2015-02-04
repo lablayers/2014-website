@@ -2,7 +2,7 @@
 
 A website for my digital self for the digital era. It really reflects who I am and my colorful personality! :)
 
-This is the third time I have redesigned my website in nearly a year. Known issues can be found in this repo's [GitHub Issues](https://github.com/LabLayers/lablayers.github.io/issues).
+This is the third time I have redesigned my website in nearly a year.
 
 ## What's New?
 * Just about everything!
