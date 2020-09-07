@@ -1,4 +1,4 @@
-#[VictorLourng.com](victorlourng.com) [![Gittip](http://img.shields.io/gittip/lablayers.png)](https://www.gittip.com/lablayers/) ![Status](http://img.shields.io/production/deprecated.png?color=red)
+# [VictorLourng.com](victorlourng.com) [![Gittip](http://img.shields.io/gittip/lablayers.png)](https://www.gittip.com/lablayers/) ![Status](http://img.shields.io/production/deprecated.png?color=red)
 
 A website for my digital self for the digital era. It really reflects who I am and my colorful personality! :)
 
